@@ -1,0 +1,8 @@
+.large-code{
+  .slidev-code {
+    @apply text-5!;
+    code {
+      @apply leading-8;
+    } 
+  }
+}

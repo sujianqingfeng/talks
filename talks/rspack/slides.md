@@ -28,7 +28,7 @@ growY: 50
 ---
 # Webpack
 
-<img src='/webpack.png' />
+<img v-click src='/webpack.png' />
 
 
 ---
@@ -38,7 +38,7 @@ growY: 50
 
 # Webpack
 
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
 
   <v-clicks>
 
@@ -49,10 +49,12 @@ growY: 50
 
 
 ---
+growX: 0
+growY: 50
 ---
 # Rust
 
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
   <v-clicks>
 
   - 开发语言
@@ -64,12 +66,14 @@ growY: 50
 
 
 ---
+growX: 0
+growY: 50
 ---
 
 # Trend
 
 
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
   <v-clicks>
 
   - SWC
@@ -81,12 +85,13 @@ growY: 50
 
 
 ---
+growX: 0
+growY: 50
 ---
-
 
 # Pack Tools
  
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
   <v-clicks>
 
   - Vite
@@ -97,12 +102,14 @@ growY: 50
 
 
 ---
+growX: 0
+growY: 50
 ---
 
 
 # 为什么重写打包器
 
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
   <v-clicks>
 
   - 性能瓶颈
@@ -112,12 +119,14 @@ growY: 50
 
 
 ---
+growX: 0
+growY: 50
 ---
 
 # 为什么选择rspack
 
 
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
   <v-clicks>
 
   - 代码修改量小
@@ -128,12 +137,13 @@ growY: 50
 
 
 ---
+growX: 0
+growY: 50
 ---
-
 
 # Rspack vs Vite
 
-<div h-full flex justify-start items-center text-8>
+<div h-90 flex justify-start items-center text-8>
   <v-clicks>
 
   - 开发阶段，vite快
@@ -145,10 +155,11 @@ growY: 50
 
 ---
 layout: center
+growX: 50
+growY: 50
 ---
 
 # Rspack vs Webpack
-
 
 
 ---
@@ -156,7 +167,7 @@ layout: center
 
 # Dev stage
 
-<img src="/dev.gif" />
+<img v-click src="/dev.gif" />
 
 
 ---
@@ -165,30 +176,33 @@ layout: center
 # Build stage
 
 
-<img src="/build.gif" />
+<img v-click src="/build.gif" />
 
 
 ---
 layout: center
+growX: 50
+growY: 50
 ---
 
 # 迁移实战
 
 
-
 ---
+growX: 10
+growY: 0
 ---
 
-# config file
+# Config file
 
 
 <div h-90 flex justify-between items-center>
-  <div flex-1 text-10>
+  <div v-click flex-1 text-10>
     rspack.config.{js,ts,mjs,cjs}
   </div>
 
 
-  <div flex-1>
+  <div class='large-code' v-click flex-1>
 
   ```js
   module.exports = {
@@ -201,129 +215,142 @@ layout: center
 </div>
 
 
-<style>
-.slidev-code {
-  @apply text-5!;
-  code {
-    @apply leading-8;
-  } 
-}
-</style>
-
-
-
 
 
 ---
+growX: 10
+growY: 0
 ---
 
-# entry
-
-```js
-entry: {
-  app: './src/main.js',
-},
-```
+# Entry
 
 
----
----
-# resolve
+<div v-click class='large-code'>
 
-```js
-const path = require('path')
-const r = (...p) => path.resolve(__dirname, ...p)
-
-resolve: {
-  alias: {
-    '@': r('src'),
+  ```js
+  entry: {
+    app: './src/main.js',
   },
-  extensions: ['.vue', '.js', '.json'],
-  fallback: {
-    // os: require.resolve('os-browserify/browser'),
-    // tty: require.resolve('tty-browserify'),
-    // util: require.resolve('util/')
+  ```
+</div>
+
+
+---
+growX: 10
+growY: 0
+---
+# Resolve
+
+<div v-click class="large-code">
+
+
+  ```js
+  const path = require('path')
+  const r = (...p) => path.resolve(__dirname, ...p)
+
+  resolve: {
+    alias: {
+      '@': r('src'),
+    },
+    extensions: ['.vue', '.js', '.json'],
+    fallback: {
+      // os: require.resolve('os-browserify/browser'),
+      // tty: require.resolve('tty-browserify'),
+    },
   },
-},
 
-```
-
-
----
----
-
-# plugin
-
-```js
-const { VueLoaderPlugin } = require('vue-loader')
-
-plugins: [new VueLoaderPlugin()],
-```
+  ```
+</div>
 
 
 ---
+growX: 10
+growY: 0
 ---
 
-# loader
+# Plugin
 
 
-```js
-rules: [
-  {
-    test: /\.vue$/,
-    use: [
-      {
-        loader: 'vue-loader',
-        options: {
-          experimentalInlineMatchResource: true,
+<div class="large-code">
+
+  ```js
+  const { VueLoaderPlugin } = require('vue-loader')
+
+  plugins: [new VueLoaderPlugin()],
+  ```
+</div>
+
+---
+growX: 10
+growY: 0
+---
+
+# Loader
+
+<div flex justify-between items-start gap-4>
+
+  <div v-click flex-1>
+
+  ```js
+  rules: [
+    {
+      test: /\.vue$/,
+      use: [
+        {
+          loader: 'vue-loader',
+          options: {
+            experimentalInlineMatchResource: true,
+          },
         },
+      ],
+    },
+    {
+      test: /\.scss$/,
+      loader: 'sass-loader',
+      type: 'css',
+    },
+    {
+      test: /\.(png|jpg|gif)$/i,
+      type: 'asset/resource',
+    },
+  ],
+    
+  ```
+  </div>
+
+  <div v-click flex-1>
+
+  ```js
+  rules: [
+    {
+      test: /\.xlsx$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'file/[name].[hash:8][ext]',
       },
-    ],
-  },
-  {
-    test: /\.scss$/,
-    loader: 'sass-loader',
-    type: 'css',
-  },
-  {
-    test: /\.(png|jpg|gif)$/i,
-    type: 'asset/resource',
-  },
-],
-```
-
-
-
----
----
-
-# loader
-
-
-```js
-rules: [
-  {
-    test: /\.xlsx$/,
-    type: 'asset/resource',
-    generator: {
-      filename: 'file/[name].[hash:8][ext]',
     },
-  },
-  {
-    test: /\.(svg)(\?.*)?$/,
-    type: 'asset',
-    generator: {
-      filename: '[name].[hash:8][ext]',
+    {
+      test: /\.(svg)(\?.*)?$/,
+      type: 'asset',
+      generator: {
+        filename: '[name].[hash:8][ext]',
+      },
     },
-  },
-],
-```
+  ],
+  ```
+  </div>
+</div>
 
 
 ---
+growX: 10
+growY: 0
 ---
 
-# builtin
+# Builtin
+
+
+<div class="large-code" v-click>
 
 ```js
 builtins: {
@@ -331,32 +358,33 @@ builtins: {
     targets: ['> 1%', 'last 2 versions'],
   },
   define: {
-    'process.env': {
-    },
+    'process.env': {},
   },
-  html: [
-    {
+  html: [{
       template: r('./public/index.html'),
     },
   ],
 },
 ```
-
+</div>
 
 
 ---
+growX: 10
+growY: 0
 ---
 
-# dev proxy
+# Dev proxy
 
 
+<div v-click class="large-code">
 
 ```js
 devServer: {
   port: 8081,
   historyApiFallback: true,
   proxy: {
-    '/admin': {
+    '/api': {
       target: 'http://test.com/api/',
       changeOrigin: true,
       ws: false,
@@ -364,13 +392,17 @@ devServer: {
   },
 },
 ```
+</div>
 
 
 ---
+growX: 10
+growY: 0
 ---
 
-# output
+# Output
 
+<div v-click class="large-code">
 
 ```js
 output: {
@@ -380,12 +412,13 @@ output: {
   cssChunkFilename: 'css/[name].[hash].css',
 }
 ```
-
-
+</div>
 
 
 ---
 layout: center
+growX: 50
+growY: 50
 ---
 
 # Tips
@@ -481,4 +514,4 @@ growY: 50
 ---
 
 # Thank you
-Power by [slidev](https://sli.dev) [PPT](https://github.com/sujianqingfeng/slidev-unocss)
+Power by [slidev](https://sli.dev) [PPT](https://github.com/sujianqingfeng/talks)
