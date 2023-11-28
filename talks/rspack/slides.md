@@ -1,11 +1,31 @@
 ---
-layout: cover
+layout: center
 highlighter: shiki
 colorSchema: dark
 transition: fade-out
 title: Rspack
 mdc: true
+growX: 50
+growY: 50
 ---
+
+
+
+<div w-full h-full flex-center text-30 position-relative>
+  <p c-gray opacity-5 tracking-10 uppercase>check In</p>
+  <div position-absolute border p-2 rounded-2 border-gray  class="left-50% top-50% translate--50%">
+    <img src="/check-in.png" h-70 w-70 rounded-2 />
+  </div>
+</div>
+
+
+---
+layout: center
+growX: 50
+growY: 50
+---
+
+
 
 <h1 text-center>Rspack</h1>
 
@@ -19,9 +39,15 @@ growY: 50
 
 # Rspack 是什么
 
-<div text-center text-4 v-click>
-  rust写的webpack
-</div>
+
+---
+layout: center
+growX: 50
+growY: 50
+---
+
+# Rust + Webpack
+
 
 
 ---
@@ -80,6 +106,7 @@ growY: 50
   - Light CSS
   - DPrint
   - Oxlint
+  - Rustify Prettier
   </v-clicks>
 </div>
 
@@ -483,6 +510,7 @@ layout: center
 
   ``` json
   "@vue/composition-api": "^1.0.0-rc.8",
+  //...
   ```
   </div>
 
@@ -492,6 +520,7 @@ layout: center
 
   ```json
   "@vue/composition-api": "^1.7.2",
+  // ...
   ```
   </div>
 
@@ -515,3 +544,22 @@ growY: 50
 
 # Thank you
 Power by [slidev](https://sli.dev) [PPT](https://github.com/sujianqingfeng/talks)
+
+
+
+---
+layout: center
+growX: 50
+growY: 50
+---
+
+
+
+<div w-full h-full flex-center text-40 position-relative>
+  <p c-gray opacity-5 tracking-10 uppercase>Review</p>
+  <div position-absolute border p-2 rounded-2 border-gray  class="left-50% top-50% translate--50%">
+    <img src="/score.png" h-70 w-70 rounded-2 />
+  </div>
+</div>
+
+
