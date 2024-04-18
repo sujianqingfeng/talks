@@ -7,7 +7,8 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "dev:rspack": "pnpm --filter rspack run dev"
+    "dev:rspack": "pnpm --filter rspack run dev",
+    "dev:keyboard": "pnpm --filter custom-keyboard run dev"
   },
   "devDependencies": {
     "@sujian/eslint-config": "^1.0.2"
