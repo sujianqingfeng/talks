@@ -1,3 +1,4 @@
 # talks
 
 [rspack online](https://talks-bice.vercel.app/)
+[keyboard online](https://talks-keyboard.vercel.app)
