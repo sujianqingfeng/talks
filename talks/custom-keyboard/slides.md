@@ -15,10 +15,24 @@ mdc: true
 
 # 客制化键盘
 
-旺工牌-贺聂双
+贺聂双
 
 <style>
 .page-1.slidev-layout{
   background-image: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.733)), url(/bg-intraduce.webp) !important;
+}
+</style>
+
+---
+transition: fade
+---
+
+<img src='/coder.jpg' />
+
+
+<style>
+
+.slidev-layout {
+  @apply p-0;
 }
 </style>
