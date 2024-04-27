@@ -198,7 +198,7 @@ transition: fade
 
 ---
 
-<img class="h-full" src="split.gif"/>
+<img class="h-full" src="/split.gif"/>
 
 <style>
 .slidev-layout {
@@ -210,7 +210,7 @@ transition: fade
 ---
 
 
-<img class="h-full" src="split2.gif"/>
+<img class="h-full" src="/split2.gif"/>
 
 <style>
 .slidev-layout {
