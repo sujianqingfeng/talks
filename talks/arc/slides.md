@@ -1,5 +1,4 @@
 ---
-background: https://cover.sli.dev
 title: Arc Browser
 highlighter: shiki
 drawings:
@@ -17,7 +16,7 @@ layout: cover
 贺聂双 / <span text-3>旺工牌</span>   
 
 <p class="fixed bottom-10 text-3 color-gray">
- 28/4/2024
+ 29/4/2024
 </p>
 
 
@@ -70,7 +69,7 @@ transition: fade
 
 <div flex h-full>
   <div w-80 py-10 px-14 mr-10>
-    <div class="text-8 font-bold">传统标签设计</div>
+    <div class="text-8 font-bold slide-text-primary">传统标签设计</div>
     <div h-90 flex flex-col justify-center >
       <p v-click="2" text-6>标签</p>
       <p v-click="3" text-6>收藏</p>
@@ -98,7 +97,7 @@ transition: fade
 <div flex h-full>
   <div w-80 py-10 px-14 mr-10>
     <div class="slide-text-primary text-8 font-bold">Label</div>
-    <div h-80 flex flex-col justify-center >
+    <div h-100 flex flex-col justify-center >
       <p v-click="1" text-6>设计合二为一</p>
       <p v-click="2" text-6>位置区分功能</p>
       <p v-click="3" text-6 ml-4>今日标签<span text-4>(12h)</span> </p>
@@ -122,7 +121,7 @@ transition: fade
 
 <div flex h-full>
   <div w-80 py-10 px-14 mr-10>
-    <div class="text-8 font-bold">场景</div>
+    <div class="text-8 font-bold slide-text-primary">场景</div>
     <div h-90 flex flex-col justify-center >
       <p v-click="2" text-6>标签栏塞满</p>
       <p v-click="3" text-6>杂乱、不便查找</p>
@@ -333,6 +332,7 @@ transition: fade
       <p v-click="2" text-6>播放提示</p>
       <p v-click="3" text-6>笔记</p>
       <p v-click="4" text-6>画板</p>
+      <p v-click="5" text-8>. . .</p>
     </div>
   </div>
   <div flex-1 h-full class="slide-right-to-left">
