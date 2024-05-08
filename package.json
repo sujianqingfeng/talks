@@ -10,6 +10,7 @@
     "dev:rspack": "pnpm --filter rspack run dev",
     "dev:keyboard": "pnpm --filter custom-keyboard run dev",
     "dev:arc": "pnpm --filter arc run dev",
+    "dev:schema": "pnpm --filter uniapp-schema run dev",
     "build:arc": "pnpm --filter arc run build",
     "export:arc": "pnpm --filter arc run export"
   },
