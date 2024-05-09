@@ -14,7 +14,7 @@ const createAppSchemaJumpFn = (params) => {
       if (plus.runtime.isApplicationExist(pname, action)) {
         const mContext = plus.android.runtimeMainActivity()
         const Uri = plus.android.importClass('android.net.Uri')
-        const Intent = plus.android.importClass('android.content.Intent')
+        const Intent = plus.android.importClass('android.content.Intent') // native intent
         const intent = new Intent(Intent.ACTION_VIEW, Uri.parse(schema))
         mContext.startActivity(intent)
       } else {
@@ -23,9 +23,8 @@ const createAppSchemaJumpFn = (params) => {
     }
 
     if (isIos) {
-      plus.runtime.launchApplication({ action: schema }, function (e) {
-        console.error(`Open app failed: ${e.message}`)
-        plus.runtime.openURL(iosMarketUrl)
+      plus.runtime.launchApplication({ action: schema }, function () {
+        plus.runtime.openURL(iosMarketUrl) // fail callback
       })
     }
   }
