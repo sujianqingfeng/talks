@@ -37,7 +37,7 @@ watch(
 </script>
 
 <template>
-  <div class="shadow p-6 relative rounded-1">
+  <div class="shadow-lg p-6 relative rounded-1">
     <video ref="videoRef" hidden></video>
 
     <div class="flex items-start gap-2">

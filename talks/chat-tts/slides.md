@@ -13,86 +13,62 @@ layout: cover
 <h1 class="flex items-center gap-4 color-primary"><img class="h-14 inline-block" src="/logo.svg"/> Chat TTS</h1>
 
 
-贺聂双 / <span text-3>旺工牌</span>   
+贺聂双 / <span text-3>AIS</span>   
 
 <p class="fixed bottom-10 text-3 color-gray">
- 29/4/2024
+ 26/6/2024
 </p>
 
 
 ---
+transition: fade
+---
 
-
-<div h-full flex items-center justify-center>
-  <div class="slide-text-primary text-20"><strong class="inline-block color-primary">T</strong>ext-<strong class="inline-block color-primary">t</strong>o-<strong class="inline-block color-primary">S</strong>peech</div>
+<div h-full flex items-center justify-center color-primary>
+  <div class="slide-text-primary text-20"><strong class="inline-block color-red">T</strong>ext-<strong class="inline-block color-red">t</strong>o-<strong class="inline-block color-red">S</strong>peech</div>
 </div>
 
 
 ---
-
-# 技术原理
-
-<div class="flex justify-around items-center">
-  <div v-click="1" shadow rounded-2 text-6 h-35 w-35 leading-35 text-center>文本分析</div>
-  <div v-click="2" class="relative">
-    <div w-40 h-2px relative class="bg-#013C5E">
-      <i class="i-material-symbols:arrow-forward-ios text-5 absolute right--2 top--2.5 color-primary" />
-      <div absolute>
-        <p class="text-3 !m-0">词法分析、语法分析、音素</p>
-      </div>
-    </div>
-  </div>
-  <div v-click="2" shadow rounded-2 text-6 h-35 w-35 leading-35 text-center>语音合成</div>
-</div>
-
-
-
-<div class="flex flex-col justify-center items-end mr-35 my-5">
-  <div v-click="3" class="flex items-center gap-4">
-    <div h-20 w-2px relative class="bg-#013C5E">
-      <i class="i-material-symbols:arrow-forward-ios text-5 absolute right--2.4 bottom--2 color-primary rotate-90" />
-      <div absolute left--20 text-right>
-        <p class="text-3 !m-0">音韵学规则</p>
-        <p class="text-3 !m-0">语调</p>
-        <p class="text-3 !m-0">停顿</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div flex justify-around items-center class="flex-row-reverse">
-
-  <div v-click="3" shadow rounded-2 text-6 h-35 w-35 leading-35 text-center>个性化调整</div>
-
-  <div v-click="4" class="relative">
-    <div w-40 h-2px relative class="bg-#013C5E">
-      <i class="i-material-symbols:arrow-forward-ios text-5 absolute left--2 top--2.5 color-primary rotate-180" />
-      <div absolute right-0>
-        <p class="text-3 !m-0">语音风格、语速、音色</p>
-      </div>
-    </div>
-  </div>
-  
-  <div v-click="4" shadow rounded-2 text-6 h-35 w-35 leading-35 text-center>输出语音</div>
-</div>
-
-  
-
+transition: fade
 ---
 
-# 应用场景
+<div h-full flex items-center justify-center color-primary text-20 >
+  <p relative v-motion :initial="{ x: 60 }" :enter="{ x: 60 }" :click-2="{x: 0}">
+    文本转语音
+    <div v-click="1" class="chat absolute  text-8 left-0">
+      用于对话场景的
+    </div>
+  </p>
+
+  <div v-click="2" v-motion :initial="{ x: -30 }" :enter="{ x: 0 }">模型</div>
+</div>
 
 
-<div mt-30 text-6>
+<style scoped>
 
-  <v-clicks>
+.chat.slidev-vclick-target {
+  --at-apply: top--15 transition-all duration-500;
+}
 
-  - 辅助技术：为视障人士提供阅读帮助，使网络内容更加无障碍。
-  - 客户服务：在智能客服系统中的应用，提升用户体验。
-  - 教育娱乐：有声读物、语言学习软件，使学习更有趣味性。
-  - 智能家居：智能音箱、车载导航等，通过语音交互实现家居控制和导航。
-  </v-clicks>
+.chat.slidev-vclick-hidden {
+  --at-apply: top--10;
+}
+</style>
+
+
+
+
+---
+clicks: 3
+---
+
+
+
+<div v-click="1" h-full flex items-center justify-center>
+  <Audio src="/audio.wav" tag='ChatTTS' text='这个模型是专门为对话场景设计的,目前只支持英文跟中文。
+最大的模型是使用了十万小时的一个中英文数据训练的。
+然后在huggingface上开源了一个四万小时的未监督微调的模型.' :start="$clicks === 2" />
 </div>
 
 
@@ -145,6 +121,62 @@ clicks: 3
 </div>
 
 
+
+
+
+---
+
+# 应用场景
+
+
+<div mt-30 text-6>
+
+  <v-clicks>
+
+  - 辅助技术：为视障人士提供阅读帮助，使网络内容更加无障碍。
+  - 客户服务：在智能客服系统中的应用，提升用户体验。
+  - 教育娱乐：有声读物、语言学习软件，使学习更有趣味性。
+  - 智能家居：智能音箱、车载导航等，通过语音交互实现家居控制和导航。
+  </v-clicks>
+</div>
+
+
+---
+
+# 不足
+
+- 音质
+- 音色
+- 不稳定
+
+
+
+
+
+---
+
+
+# 安全
+
+
+- 低音质
+- fff 
+- 应用上面
+
+
+<div class="blur-sm">
+ <img src="/curve.svg" h-20/>
+</div>
+
+
+
+---
+
+# 总结
+
+
+语音合成作为生成式AI的重要组成部分，不仅需关注其技术应用和发展，更需要在伦理和技术实现上找到平衡点。
+
 ---
 
 <div>
@@ -164,3 +196,10 @@ clicks: 3
     </a>
   </div>
 </div>
+
+
+---
+
+refs
+
+https://www.bilibili.com/video/BV1hi421S7Qd
