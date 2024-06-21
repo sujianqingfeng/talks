@@ -16,7 +16,7 @@ layout: cover
 贺聂双 / <span text-3>AIS</span>   
 
 <p class="fixed bottom-10 text-3 color-gray">
- 26/6/2024
+ 25/6/2024
 </p>
 
 
@@ -130,20 +130,56 @@ clicks: 4
 
 
 ---
+transition: fade
+---
 
-- 开源
+<h1 color-primary>开源计划</h1>
 
 
-<iframe src="https://github.com/2noise/ChatTTS.git"/>
+<div h-90 flex  items-center justify-center gap-10>
+
+  <div v-click="2" flex text-14 gap-4>
+    <div>star</div>
+    <div color-primary font-bold>25k</div>
+  </div>
+
+  <div v-click="1" flex text-14 gap-4>
+    <div>month</div>
+    <div color-primary font-bold>1</div>
+  </div>
 
 
+  <div v-click="3" flex text-14 gap-4>
+    <div>fork</div>
+    <div color-primary font-bold>2.7k</div>
+  </div>
+
+</div>
 
 
 
 
 ---
 
-# 应用场景
+<h1 color-primary>开源计划</h1>
+
+
+<div h-full flex items-center justify-center gap-10>
+  
+  [![Star History Chart](https://api.star-history.com/svg?repos=2noise/ChatTTS&type=Date)](https://star-history.com/#2noise/ChatTTS&Date)
+
+</div>
+
+
+<style scoped>
+  img{
+    --at-apply: w-80%;
+  }
+</style>
+
+---
+
+<h1 color-primary>应用场景</h1>
 
 
 <div mt-30 text-6>
@@ -160,45 +196,80 @@ clicks: 4
 
 ---
 
-# 不足
+<h1 color-primary>不足</h1>
 
-- 音质
+
+
+<div h-90 flex items-center justify-start gap-10 text-6>
+
+
+
+<v-clicks>
+
+
 - 音色
 - 不稳定
+- 音质
+</v-clicks>
 
 
 
+</div>
 
 
 ---
 
 
-# 安全
+<h1 color-primary>安全</h1>
 
 
-- 低音质
-- fff 
-- 应用上面
+
+<div h-90 flex items-center justify-start gap-10 text-6>
+
+  <ul>
+    <li v-click="1">
+      <div class="blur-sm">
+        <img src="/curve.svg" h-13 w-30/>
+      </div>
+    </li>
+    <li v-click="2">非法应用</li>
+  </ul>
 
 
-<div class="blur-sm">
- <img src="/curve.svg" h-20/>
+
+  <ul ml-50>
+    <li v-click="3">少量高频噪声，压缩音频质量</li>
+    <li v-click="4">30s</li>
+    <li v-click="5">检测模型</li>
+  </ul>
+
 </div>
 
 
 
+
+---
+clicks: 3
 ---
 
-# 总结
+<h1 color-primary>总结</h1>
 
 
-语音合成作为生成式AI的重要组成部分，不仅需关注其技术应用和发展，更需要在伦理和技术实现上找到平衡点。
+
+<div h-90 flex flex-col items-center justify-center>
+  <Audio v-click="1" src="/introduce.wav" tag='ChatTTS' text='语音合成作为生成式AI的重要组成部分，不仅需关注其技术应用和发展，更需要在伦理和技术实现上找到平衡点。' :start="$clicks === 2" />
+</div>
+
+
+
+
+
 
 ---
 
 <div>
   <img h-80 m-auto src="/url.png"/>
-  <p text-12 text-center>chattts.com</p>
+  <p text-12 text-center color-primary>chattts.com</p>
 </div>
 
 
@@ -217,6 +288,8 @@ clicks: 4
 
 ---
 
-refs
 
-https://www.bilibili.com/video/BV1hi421S7Qd
+<h1 color-primary>Refs</h1>
+
+- https://github.com/2noise/ChatTTS
+- https://www.bilibili.com/video/BV1hi421S7Qd
