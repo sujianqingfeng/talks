@@ -60,65 +60,82 @@ transition: fade
 
 
 ---
-clicks: 3
+clicks: 6
 ---
 
 
-
-<div v-click="1" h-full flex items-center justify-center>
-  <Audio src="/audio.wav" tag='ChatTTS' text='这个模型是专门为对话场景设计的,目前只支持英文跟中文。
+<div h-full flex flex-col items-center justify-center gap-6>
+  <Audio v-click="1" src="/introduce.wav" tag='ChatTTS' text='这个模型是专门为对话场景设计的,目前只支持英文跟中文。
 最大的模型是使用了十万小时的一个中英文数据训练的。
-然后在huggingface上开源了一个四万小时的未监督微调的模型.' :start="$clicks === 2" />
+然后在huggingface上开源了一个四万小时的未监督微调的模型。' :start="$clicks === 2" />
+
+
+  <div class="flex justify-end items-center gap-10 w-full">
+    <Play v-click="5" src="/introduce-detail-1.wav" :start="$clicks===6"/>
+    <Play v-click="3" src="/introduce-detail-0.wav" :start="$clicks===4"/>
+  </div>
 </div>
 
 
 
 
---- 
+---
+clicks: 7
+---
 
-# 特点
+<h1 color-primary>Speaks</h1>
 
-- 多语言
-- 大规模数据训练
-- 对话任务兼容
+
+<div h-95 flex flex-col items-center justify-center gap-10>
+
+  <div v-click="1" class="shadow-lg p-6 rounded-1">
+    四川美食确实以辣闻名，但也有不辣的选择。比如甜水面、赖汤圆、蛋烘糕、叶儿粑等，这些小吃口味温和，甜而不腻，也很受欢迎。
+  </div>
+
+  <div flex justify-end w-full gap-10>
+    <Play v-click="6" src="/introduce-detail-0.wav" :start="$clicks===7"/>
+    <Play v-click="4" src="/introduce-detail-0.wav" :start="$clicks===5"/>
+    <Play v-click="2" src="/introduce-detail-0.wav" :start="$clicks===3"/>
+  </div>
+</div>
+
+
+
+
+
+---
+clicks: 4
+---
+
+<h1 color-primary>多语言</h1>
+
+
+<div h-90 flex flex-col items-center justify-center gap-10>
+
+  <Audio v-click="1" class="w-160" src="/zh-chattts.wav" tag='ChatTTS' text='ChatTTS是一款强大的对话式文本转语音的模型.' :start="$clicks ===2" />
+
+  <Audio v-click="3" class="w-160" src="/en-chattts.wav" tag='ChatTTS' text='ChatTTS is a text-to-speech model designed for dialogue applications.' :start="$clicks ===4" />
+</div>
+
+
+---
+
+<h1 color-primary>语言切换</h1>
+
+
+---
+
+<h1 color-primary>韵律特征</h1>
+
+
+
+---
+
 - 开源
-- 控制和安全性
-- 易用
 
 
+<iframe src="https://github.com/2noise/ChatTTS.git"/>
 
-
----
-
-# 多语言 
-
-
-
-
-ChatTTS is a text-to-speech model designed for dialogue applications.
-
-
-<div v-click="1" h-full flex items-center justify-center>
-  <Audio src="/audio.wav" tag='ChatTTS' text='ChatTTS是一款强大的对话式文本转语音的模型.' :start="$clicks ===2" />
-</div>
-
-
----
-
-# 语言切换
-
-
-
-
-
----
-transition: fade
-clicks: 3
----
-
-<div v-click="1" h-full flex items-center justify-center>
-  <Audio src="/audio.wav" tag='ChatTTS' text='四川美食确实以辣闻名，但也有不辣的选择。比如甜水面、赖汤圆、蛋烘糕、叶儿粑等，这些小吃口味温和，甜而不腻，也很受欢迎。' :start="$clicks ===2" />
-</div>
 
 
 

@@ -56,7 +56,7 @@ watch(
     </div>
 
     <div
-      class="bg-primary h-2px absolute left-0 bottom-0 text-4"
+      class="bg-#013C5E h-2px absolute left-0 bottom-0 text-4"
       :style="{ width: percentage + '%' }"
     ></div>
   </div>
