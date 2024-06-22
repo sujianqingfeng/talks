@@ -93,9 +93,9 @@ clicks: 7
   </div>
 
   <div flex justify-end w-full gap-10>
-    <Play v-click="6" src="/introduce-detail-0.wav" :start="$clicks===7"/>
-    <Play v-click="4" src="/introduce-detail-0.wav" :start="$clicks===5"/>
-    <Play v-click="2" src="/introduce-detail-0.wav" :start="$clicks===3"/>
+    <Play v-click="6" src="/speak-3.wav" :start="$clicks===7"/>
+    <Play v-click="4" src="/speak-2.wav" :start="$clicks===5"/>
+    <Play v-click="2" src="/speak-1.wav" :start="$clicks===3"/>
   </div>
 </div>
 
@@ -119,13 +119,35 @@ clicks: 4
 
 
 ---
+clicks: 4
+---
 
 <h1 color-primary>语言切换</h1>
 
 
+
+<div h-90 flex flex-col items-center justify-center gap-10>
+
+  <Audio v-click="1" class="w-160" src="/zh-switch.wav" tag='ChatTTS' text='这些元素其实是glam rock，然后加这种bling的感觉。我觉得像这个衣服有一些jacket，比如说那个oversized的那个丹宁的jacket，我觉得是可以offduty的model。' :start="$clicks ===2" />
+
+  <Audio v-click="3" class="w-160" src="/en-switch.wav" tag='ChatTTS' text='These elements are in fact the 迷惑摇滚,combined with a little bit of 闪耀. I think that some 外套 among these clothes like the 大号的 denim 外套. I think i can 模特,下班着装.' :start="$clicks ===4" />
+</div>
+
+
+
+---
+clicks: 4
 ---
 
 <h1 color-primary>韵律特征</h1>
+
+
+<div h-90 flex flex-col items-center justify-center gap-10>
+
+  <Audio v-click="1" class="w-160" src="/zh-control.wav" tag='ChatTTS' text='那ChatTTS不仅能够生成自然流畅的语言[uv_break]，还能控制[laugh]笑声[laugh]，[uv_break]停顿啊和语气词啊等副语言现象[uv_break]。其这个韵律呢超越了许多开源模型。' :start="$clicks ===2" />
+
+  <Audio v-click="3" class="w-160" src="/en-control.wav" tag='ChatTTS' text='It supports mixed language input [uv_break] and offers multi speaker capabilities with precise control over prosodic elements[uv_break] like [laugh]laughter[laugh],pauses,[uv_break]and intonation.' :start="$clicks ===4" />
+</div>
 
 
 
@@ -207,6 +229,7 @@ transition: fade
 <v-clicks>
 
 
+- 吞音
 - 音色
 - 不稳定
 - 音质
@@ -257,11 +280,8 @@ clicks: 3
 
 
 <div h-90 flex flex-col items-center justify-center>
-  <Audio v-click="1" src="/introduce.wav" tag='ChatTTS' text='语音合成作为生成式AI的重要组成部分，不仅需关注其技术应用和发展，更需要在伦理和技术实现上找到平衡点。' :start="$clicks === 2" />
+  <Audio v-click="1" src="/conclusion.wav" tag='ChatTTS' text='语音合成作为生成式AI的重要组成部分，不仅需关注其技术应用和发展，更需要在伦理和技术实现上找到平衡点。' :start="$clicks === 2" />
 </div>
-
-
-
 
 
 
