@@ -162,7 +162,7 @@ transition: fade
 
   <div v-click="2" flex text-14 gap-4>
     <div>star</div>
-    <div color-primary font-bold>25k</div>
+    <div color-primary font-bold>25.7k</div>
   </div>
 
   <div v-click="1" flex text-14 gap-4>
@@ -173,7 +173,7 @@ transition: fade
 
   <div v-click="3" flex text-14 gap-4>
     <div>fork</div>
-    <div color-primary font-bold>2.7k</div>
+    <div color-primary font-bold>2.8k</div>
   </div>
 
 </div>
@@ -275,7 +275,7 @@ transition: fade
 clicks: 3
 ---
 
-<h1 color-primary>总结</h1>
+<!-- <h1 color-primary>总结</h1> -->
 
 
 

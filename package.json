@@ -13,7 +13,8 @@
     "dev:schema": "pnpm --filter uniapp-schema run dev",
     "dev:tts": "pnpm --filter chat-tts run dev",
     "build:arc": "pnpm --filter arc run build",
-    "export:arc": "pnpm --filter arc run export"
+    "export:arc": "pnpm --filter arc run export",
+    "export:tts": "pnpm --filter chat-tts run export"
   },
   "devDependencies": {
     "@sujian/eslint-config": "^1.0.2"
