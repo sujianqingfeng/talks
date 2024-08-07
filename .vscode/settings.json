@@ -1,5 +1,13 @@
 {
-  "cSpell.words": ["pname", "rspack", "slidev", "sujian", "Uniapp"],
+  "cSpell.words": [
+    "deepseek",
+    "pname",
+    "rspack",
+    "Sider",
+    "slidev",
+    "sujian",
+    "Uniapp"
+  ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
