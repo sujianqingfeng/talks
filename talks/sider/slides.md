@@ -122,7 +122,7 @@ transition:  fade
   :initial="{ x: 35, y: 225 }"
   :enter="{ x: 0, y: 0, 'font-weight': 500 }"
   :click-1="{ x: 0, y: 0 }"
-  :class="$nav.currentPage === 4 ? 'slide-text-primary':''"
+  :class="$nav.currentPage >= $page ? 'slide-text-primary':''"
   text-12
   inline-block
   >
@@ -140,9 +140,22 @@ transition:  fade
 
   - GPTs
   </div>
+
+  <div v-click="4">
+
+  - Vision
+  </div>
 </div>
 
 
+<div absolute top-0 right-0 z-1>
+  <img v-if="$clicks===2" w-98 src="/chat-1.gif"/>
+  <img v-if="$clicks===4" w-120 src="/chat-vision.gif"/>
+</div>
+
+
+---
+clicks: 9
 ---
 
 
@@ -158,16 +171,28 @@ transition:  fade
   - 总结 <span v-click="2" text-4>/网站、视频、文件</span>
   </div>
 
-  <div v-click="3">
+  <div v-click="5">
 
-  - 翻译 <span v-click="4" text-4>/划词、对照翻译、TTS、PDF</span>
+  - 翻译 <span v-click="6" text-4>/划词、对照翻译、TTS、PDF</span>
   </div>
 
-  <div v-click="5">
+  <div v-click="8">
 
   - OCR
   </div>
 </div>
+
+
+
+<div absolute top-0 right-0 z-1>
+  <img v-if="$clicks===2" w-105 src="/summary-page.gif"/>
+  <img v-if="$clicks===3" w-120 src="/summary-video-1.gif"/>
+  <img v-if="$clicks===4" w-120 src="/summary-video-2.gif"/>
+  <video v-if="$clicks===6" w-120 src="/translate-p.mp4" autoPlay/>
+  <img v-if="$clicks===7" w-130 src="/translate-page.gif" />
+  <img v-if="$clicks===9" w-130 src="/ocr.gif" />
+</div>
+
 
 
 
@@ -186,19 +211,27 @@ transition:  fade
   - 生成 
   </div>
 
-  <div v-click="3">
+  <div v-click="2">
 
   - 拼写、语法检测 
   </div>
 
-  <div v-click="5">
+  <div v-click="3">
 
-  - 润色
+  - 对内容处理（润色、翻译等）
   </div>
+</div>
+
+<div absolute top-0 right-0 z-1>
+  <img v-if="$clicks===1" w-130 src="/text-generate.gif"/>
+  <img v-if="$clicks===3" w-130 src="/text-replace.gif"/>
 </div>
 
 
 
+
+---
+clicks: 7
 ---
 
 
@@ -211,7 +244,7 @@ transition:  fade
 <div h-100 text-6 flex flex-col justify-center items-start>
   <div v-click="1">
 
-  - 图生文 
+  - 文生图
   </div>
 
   <div v-click="2">
@@ -219,22 +252,36 @@ transition:  fade
   - 背景移除、替换
   </div>
 
-  <div v-click="3">
+  <div v-click="4">
 
   - 对象移除
   </div>
 
 
-  <div v-click="4">
+  <div v-click="5">
 
   - 文本移除
   </div>
 
-  <div v-click="5">
+  <div v-click="6">
 
   - 质量提升
   </div>
 </div>
+
+<div absolute top-40 right-20 z-1>
+  <video v-if="$clicks===2" w-120 src="/remove-bg.mp4" autoPlay loop/>
+  <video v-if="$clicks===3" w-120 src="/replace-bg.mp4" autoPlay loop/>
+  <video v-if="$clicks===4" w-120 src="/remove-brushed-area.mp4" autoPlay loop/>
+  <video v-if="$clicks===5" w-120 src="/remove-text.mp4" autoPlay loop/>
+  <video v-if="$clicks===6" w-120 src="/upscale.mp4" autoPlay loop/>
+
+</div>
+
+<div v-click="7" slide-text-primary absolute top-60 right-40 font-500 text-20>
+  Stability.AI
+</div>
+
 
 
 --- 
@@ -263,11 +310,6 @@ transition:  fade
   <div v-click="1">
 
   - 做到极致 
-  </div>
-
-  <div v-click="2">
-
-  - 跨平台
   </div>
 
 </div>

@@ -45,7 +45,7 @@ const isOver = computed(() => time.value > 60 * 7)
 <template>
   <header
     v-if="$nav.currentPage > 1"
-    class="absolute right-2 top-2 text-5 font-450"
+    class="absolute right-2 top-2 text-5 font-450 z-0"
     :class="{ 'color-red': isOver }"
   >
     {{ format }}
