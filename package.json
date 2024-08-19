@@ -6,6 +6,7 @@
   "license": "MIT",
   "keywords": [],
   "main": "index.js",
+  "workspaces": ["talks/*"],
   "scripts": {
     "dev:rspack": "pnpm --filter rspack run dev",
     "dev:keyboard": "pnpm --filter custom-keyboard-hat run dev",
@@ -13,7 +14,7 @@
     "dev:schema": "pnpm --filter uniapp-schema run dev",
     "dev:tts": "pnpm --filter chat-tts run dev",
     "dev:sider": "pnpm --filter sider run dev",
-    "dev:eslint": "pnpm --filter eslint run dev",
+    "dev:eslint": "bun --filter talks-eslint dev",
     "build:arc": "pnpm --filter arc run build",
     "export:arc": "pnpm --filter arc run export",
     "export:tts": "pnpm --filter chat-tts run export"

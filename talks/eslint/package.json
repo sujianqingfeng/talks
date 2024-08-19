@@ -1,5 +1,5 @@
 {
-  "name": "eslint",
+  "name": "talks-eslint",
   "type": "module",
   "private": true,
   "scripts": {
