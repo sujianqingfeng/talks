@@ -32,7 +32,7 @@ const style = computed(() => {
 
 
 <template>
-  <div :style="style" class="rounded-full flex items-center justify-center text-white font-500 border">
+  <div :style="style" class="rounded-full flex items-center justify-center text-white font-500 border transition-all">
     {{ text }}
   </div>
 </template>
