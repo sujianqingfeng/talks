@@ -27,7 +27,7 @@ const bgColor = computed(() => `rgb(${red.value}, ${green.value}, ${blue.value})
 
 
 <template>
-  <div class="text-10 transition-all duration-300 text-white p-2" :style="{ backgroundColor: bgColor }">
+  <div class="text-10 transition-all duration-300 text-white p-2 w-full" :style="{ backgroundColor: bgColor }">
     rgb({{ red }}, {{ green }}, {{ blue }})
   </div>
 </template>
