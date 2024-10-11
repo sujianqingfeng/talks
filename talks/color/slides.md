@@ -50,25 +50,49 @@ layout: center
 
 ---
 
+# 范围
+
+
+
+<div class="flex flex-col justify-center items-center h-100">
+
+<div v-click="1" class="text-14 flex items-center justify-center">
+  <div  
+    v-motion
+    :initial="{ x: 40 }"
+    :enter="{ x: 40 }"
+    :click-1="{ x: 50 }"
+    :click-2="{ x: -10 }"
+    :leave="{ x: 50 }">0-255</div>
+    <span v-click="2" class='text-10'>8bit</span>
+  </div>
+  <div v-click="3" class="text-10">
+    0x11111111 = 255
+  </div>
+</div>
+
+
+<!-- 早期的计算机和显示设备使用 8 位来表示每个颜色通道的数值，这是因为 8 位处理在硬件上比较高效，既能保持足够的颜色细节，也能减小存储和计算的复杂度。 -->
+
+---
+
 <div class="flex justify-between items-center h-100">
   <div class="flex flex-col items-center">
     <div class="text-30">R</div>
-    <div v-click="1" class="text-14">0-255</div>
-    <div v-click="2" class="bg-[rgb(255,0,0)] p-2 text-10 text-white">rgb(255,0,0)</div>
+    <div v-click="1" class="bg-[rgb(255,0,0)] p-2 text-10 text-white rounded-lg">rgb(255,0,0)</div>
   </div>
 
   <div class="flex flex-col items-center">
     <div class="text-30">G</div>
-    <div v-click="1" class="text-14">0-255</div>
-    <div v-click="2" class="bg-[rgb(0,255,0)] p-2 text-10 text-white">rgb(0,255,0)</div>
+    <div v-click="2" class="bg-[rgb(0,255,0)] p-2 text-10 text-white rounded-lg">rgb(0,255,0)</div>
   </div>
 
   <div class="flex flex-col items-center">
     <div class="text-30">B</div>
-    <div v-click="1" class="text-14">0-255</div>
-    <div v-click="2" class="bg-[rgb(0,0,255)] p-2 text-10 text-white">rgb(0,0,255)</div>
+    <div v-click="3" class="bg-[rgb(0,0,255)] p-2 text-10 text-white rounded-lg">rgb(0,0,255)</div>
   </div>
 </div>
+
 
 
 
@@ -76,33 +100,33 @@ layout: center
 clicks: 5
 ---
 
+# RGB <span> {{ $clicks + 1 }} </span>
 
+<div class="flex flex-col items-center justify-center h-100">
+  <RandomColor :count="$clicks" />
 
-<div class="flex flex-col items-center justify-center h-full">
-
-<RandomColor :count="$clicks" />
-
-<div v-click="4" class="text-10 flex items-center">
- 256 * 256 * 256 = <span v-click="5" class="text-20 text-red">16,777,216</span>
+  <div v-click="4" class="text-10 flex items-center">
+  256 * 256 * 256 = <span v-click="5" class="text-20 text-red">16,777,216</span>
+  </div>
 </div>
 
-</div>
-
+---
+clicks: 6
 ---
 
 # 十六进制
 
 
-<div class="flex flex-col justify-center h-full">
+<div class="flex flex-col justify-center h-100 gap-5">
 
 
 <div class="text-10" v-click="1">
-<span class="bg-[rgb(0,0,0)] text-white">rgb(0,0,0)</span> - <span class="bg-[rgb(255,255,255)] text-black">rgb(255,255,255)</span>
+<span class="bg-[rgb(0,0,0)] text-white p-2 rounded-lg">rgb(0,0,0)</span> - <span class="bg-[rgb(255,255,255)] text-black p-2 rounded-lg border-1">rgb(255,255,255)</span>
 </div>
 
 
 <div class="text-10" v-click="2">
-<span class="bg-[#000000] text-white">0x000000</span> - <span class="bg-[#FFFFFF] text-black">0xFFFFFF</span>
+<span class="bg-[#000000] text-white p-2 rounded-lg">0x000000</span> - <span class="bg-[#FFFFFF] text-black p-2 rounded-lg border-1">0xFFFFFF</span>
 </div>
 
 
@@ -121,6 +145,8 @@ clicks: 5
 </div>
 
 
+<!-- 十六进制表示法可以用更少的字符来表示相同的数值,可以减少数据量，同时二进制转换的效率更高 -->
+
 
 ---
 clicks: 4
@@ -129,7 +155,7 @@ clicks: 4
 # 转换 <span> {{ $clicks+1 }} </span>
 
 
-<div class="flex justify-center items-center h-full">
+<div class="flex justify-center items-center h-100">
 <Cover :count="$clicks" />
 </div>
 
@@ -137,13 +163,20 @@ clicks: 4
 ---
 
 # Alpha 透明度
+用于表示颜色的不透明度
 
-<div class="flex justify-around items-center h-110">
-  <div v-click="1" class="bg-[rgb(255,0,0)] text-10 text-white">rgb(255,0,0)</div>
-  <div v-click="2" class="bg-[rgb(255,0,0)] bg-opacity-50 text-10 text-white">rgba(255,0,0,0.5)</div>
-  <div v-click="3" class="bg-[#ff000080] text-10 text-white">#ff000080</div>
+<div class="flex justify-around items-center h-95 relative w-full">
+  <div v-click="4" class="absolute top-50% left-50% translate-x-[-50%] translate-y-[-50%] text-60 tracking-[5rem] z--1">WXB</div>
+  <div v-click="1" class="bg-[rgb(255,0,0)] text-10 text-white p-2 rounded-lg">rgb(255,0,0)</div>
+  <div v-click="2" class="bg-[rgb(255,0,0)] bg-opacity-50 text-10 text-white p-2 rounded-lg">rgba(255,0,0,0.5)</div>
+  <div v-click="3" class="bg-[#ff000080] text-10 text-white p-2 rounded-lg">#ff000080</div>
+
 </div>
 
+
+<!-- 复杂的视觉效果
+层叠效果
+创建出深度和层次感 -->
 
 ---
 layout: center
@@ -163,9 +196,10 @@ layout: center
 
 <div class="flex flex-col justify-center h-95">
 
-<p v-click="1">色相（Hue） -> 颜色的种类</p>
-<p v-click="2">饱和度（Saturation） -> 颜色的纯度</p>
-<p v-click="3">亮度（Lightness） -> 颜色的明暗</p>
+
+<p v-click="1"> <span class="w-[11rem] inline-block">色相（Hue）</span> <solar-arrow-right-bold class="mr-2"/>  颜色的种类</p>
+<p v-click="2"> <span class="w-[11rem] inline-block">饱和度（Saturation）</span> <solar-arrow-right-bold class="mr-2"/>  颜色的纯度</p>
+<p v-click="3"> <span class="w-[11rem] inline-block">亮度（Lightness）</span> <solar-arrow-right-bold class="mr-2"/>  颜色的明暗</p>
 
 </div>
 
@@ -182,7 +216,7 @@ layout: center
 
 
 
-<div v-click="1" class="h-110 flex flex-col justify-center">
+<div v-click="1" class="h-100 flex flex-col justify-center">
 
 ```js
 R' = R / 255
@@ -227,12 +261,14 @@ layout: center
 
 
 
-<div v-click="3" class="flex items-center text-10">
- <span class="w-20">0</span>  <div class="bg-[hsl(0,100%,50%)] h-10 w-10 inline-block rounded-full"></div>
-</div>
+<div class="flex justify-center items-center gap-12">
+  <div v-click="3" class="flex items-center text-10 gap-2">
+  0 <div class="bg-[hsl(0,100%,50%)] h-10 w-10 inline-block rounded-full"></div>
+  </div>
 
-<div v-click="4" class="flex items-center text-10">
- <span class="w-20">180</span> <div class="bg-[hsl(180,100%,50%)] h-10 w-10 inline-block rounded-full"></div>
+  <div v-click="4" class="flex items-center text-10 gap-2">
+  180 <div class="bg-[hsl(180,100%,50%)] h-10 w-10 inline-block rounded-full"></div>
+  </div>
 </div>
 
 
@@ -287,10 +323,10 @@ layout: center
 clicks: 5
 ---
 
-# HSL
+# HSL <span> {{ $clicks + 1 }} </span>
 
 
-<div class="flex justify-around items-center h-110">
+<div class="flex justify-around items-center h-100">
 
 <RandomHSLColor :count="$clicks" />
 
@@ -304,7 +340,7 @@ clicks: 5
 # 其他颜色模型
 
 
-<div class="flex flex-col justify-center gap-2 h-110 text-8">
+<div class="flex flex-col justify-center gap-2 h-100 text-8">
 
 <v-clicks>
 
@@ -315,6 +351,9 @@ clicks: 5
 </v-clicks>
 
 </div>
+
+
+<!-- 9种左右 -->
 
 
 ---

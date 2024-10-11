@@ -27,7 +27,7 @@ const bgColor = computed(() => `hsl(${h.value}, ${s.value}%, ${l.value}%)`)
 
 
 <template>
-  <div class="text-10 transition-all duration-300 text-white p-2 w-full" :style="{ backgroundColor: bgColor }">
+  <div class="text-10 transition-all duration-300 text-white p-2 w-full rounded-lg" :style="{ backgroundColor: bgColor }">
     hsl({{ h }}, {{ s }}%, {{ l }}%)
   </div>
 </template>
