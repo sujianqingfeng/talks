@@ -35,7 +35,9 @@ const colors = [
 const name = computed(() => colors[props.count % colors.length].name)
 const color = computed(() => colors[props.count % colors.length].color)
 const bgColor = computed(() => `rgb(${color.value[0]}, ${color.value[1]}, ${color.value[2]})`)
-const hexBgColor = computed(() => `#${color.value.map(c => c.toString(16)).join('')}`)
+const hexBgColor = computed(() => {
+  return `#${color.value.map(c => c.toString(16).padStart(2, '0')).join('')}`
+})
 </script>
 
 
