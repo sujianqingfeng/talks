@@ -348,7 +348,7 @@ layout: center
 
 
 ---
-clicks: 5
+clicks: 4
 ---
 
 # HSL <span> {{ $clicks + 1 }} </span>
