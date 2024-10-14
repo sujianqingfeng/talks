@@ -19,7 +19,8 @@
     "build:arc": "pnpm --filter arc run build",
     "export:arc": "pnpm --filter arc run export",
     "export:tts": "pnpm --filter chat-tts run export",
-    "export:eslint": "pnpm --filter talks-eslint run export"
+    "export:eslint": "pnpm --filter talks-eslint run export",
+    "export:color": "pnpm --filter color run export"
   },
   "devDependencies": {
     "@sujian/eslint-config": "^1.0.2"

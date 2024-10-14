@@ -5,16 +5,29 @@ drawings:
 transition: fade
 overviewSnapshots: true
 layout: cover
+clicks: 1
 ---
 
-# 数字世界中的色彩表达
-
+<h1 class="transition-all duration-300"  :class="$clicks === 1 ? 'slide-text-primary' : ''">数字世界中的色彩表达</h1>
 
 贺聂双 / <span text-3>AIS</span>   
 
 
+<!-- 
+之前强哥做了一个分享，在他的眼里，世界可能是另外一个颜色。
+但是强哥又从事颜色比较敏感的职业，他是如何保证颜色的一致性呢？
 
-<!-- 用强哥的话题引入 -->
+那是因为我们的设计系统能够准确的表达颜色，所以能够保证颜色的一致性。
+所以今天做了这个简单的分享。
+
+数字世界中的色彩表达，也可以说计算机中的色彩表达。
+
+那在数字世界中，色彩是如何表达的呢？
+
+正如我们当前的屏幕，上面有不同的颜色，不同是怎么来的呢？
+
+其实我们可以想到三原色
+-->
 
 ---
 
@@ -29,7 +42,8 @@ layout: cover
 
 
 <!--
-另外的版本: 红黄蓝 （颜料）
+小学: 另外的版本: 红黄蓝 （颜料）
+初中: 红绿蓝 （RGB）
 -->
 
 ---
@@ -38,7 +52,10 @@ layout: cover
   <img src="/intersection.jpg" class="w-100" />
 </div>
 
-<!-- 通过调整三原色的比例，可以得到不同的颜色，所以在计算机中的也可以这样表示 -->
+<!-- 
+通过调整三原色的比例，可以得到不同的颜色，
+所以在计算机中的也可以这样表示 
+-->
 
 
 ---
@@ -72,7 +89,9 @@ layout: center
 </div>
 
 
-<!-- 早期的计算机和显示设备使用 8 位来表示每个颜色通道的数值，这是因为 8 位处理在硬件上比较高效，既能保持足够的颜色细节，也能减小存储和计算的复杂度。 -->
+<!-- 
+早期的计算机和显示设备使用 8 位来表示每个颜色通道的数值，这是因为 8 位处理在硬件上比较高效，既能保持足够的颜色细节，也能减小存储和计算的复杂度。 
+-->
 
 ---
 
@@ -95,6 +114,8 @@ layout: center
 
 
 
+<!-- 三原色 对于的就有三个值，所以我们可以这样来表示 -->
+
 
 ---
 clicks: 5
@@ -103,7 +124,7 @@ clicks: 5
 # RGB <span> {{ $clicks + 1 }} </span>
 
 <div class="flex flex-col items-center justify-center h-100">
-  <RandomColor :count="$clicks" />
+  <RandomColor :count="$clicks > 4 ? 4 : $clicks" />
 
   <div v-click="4" class="text-10 flex items-center">
   256 * 256 * 256 = <span v-click="5" class="text-20 text-red">16,777,216</span>
@@ -145,7 +166,11 @@ clicks: 6
 </div>
 
 
-<!-- 十六进制表示法可以用更少的字符来表示相同的数值,可以减少数据量，同时二进制转换的效率更高 -->
+<!-- 
+十六进制表示法可以用更少的字符来表示相同的数值,可以减少数据量，同时二进制转换的效率更高
+
+所以在很多场景下，一般都是十六进制表示法。
+-->
 
 
 ---
@@ -174,9 +199,11 @@ clicks: 4
 </div>
 
 
-<!-- 复杂的视觉效果
+<!-- 
+复杂的视觉效果
 层叠效果
-创建出深度和层次感 -->
+创建出深度和层次感 
+-->
 
 ---
 layout: center
@@ -239,6 +266,7 @@ else:
 </div>
 
 
+ <!-- 上面计算其实不算复杂，但是口算还是有难度，一般都是借助于工具转行 -->
 
 ---
 layout: center
@@ -328,7 +356,7 @@ clicks: 5
 
 <div class="flex justify-around items-center h-100">
 
-<RandomHSLColor :count="$clicks" />
+<RandomHSLColor :count="$clicks > 4 ? 4 : $clicks" />
 
 </div>
 
