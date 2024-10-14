@@ -35,7 +35,7 @@ const colors = [
   }
 ]
 
-const currentName = ref('')
+const currentName = ref('茶花红')
 
 watch(()=>props.count, (value) => {
   const current = colors[value % colors.length]

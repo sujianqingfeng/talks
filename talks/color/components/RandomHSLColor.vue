@@ -68,6 +68,8 @@ watch(() => props.count, (value) => {
   s.value = sValue
   l.value = lValue
   name.value = current.name
+},{
+  immediate: true
 })
 
 const bgColor = computed(() => `hsl(${h.value}, ${s.value}%, ${l.value}%)`)
