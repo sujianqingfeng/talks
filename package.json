@@ -16,6 +16,8 @@
     "dev:sider": "pnpm --filter sider run dev",
     "dev:eslint": "pnpm --filter talks-eslint run dev",
     "dev:color": "pnpm --filter color run dev",
+    "dev:domain": "pnpm --filter domain run dev",
+    "dev:deepseek": "pnpm --filter deepseek run dev",
     "build:arc": "pnpm --filter arc run build",
     "export:arc": "pnpm --filter arc run export",
     "export:tts": "pnpm --filter chat-tts run export",
