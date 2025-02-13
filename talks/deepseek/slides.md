@@ -202,3 +202,67 @@ https://x.com/Kimi_Moonshot/status/1882413059513471044
 
 We need to enable models to search on their own!
 o1 doesn't restrict how the model thinks!
+
+
+确定路线
+Do RL with exact rewards! Don't be constrained by Reward Models.
+
+
+# deepseek r1-zero
+
+
+# 强化学习算法（Reinforcement Learning Algorithm）
+
+
+GRPO (Group Relative Policy Optimization，组相对策略优化) 和 PPO (Proximal Policy Optimization，近端策略优化) 都是强化学习算法，用于优化策略模型，但它们在实现方式和结构上有所不同1. GRPO是PPO的一种变体，它通过在组内对奖励进行归一化来优化策略，提高了训练效率，
+
+
+
+# 训练模板(Training Template) 
+
+
+<img src='training-template.png'/>
+
+
+# 奖励模型（Reward Modeling）
+
+- 准确性奖励
+- 格式奖励
+
+
+举例说明
+
+
+# 模型学会了思考
+
+
+<img src='moment.png'/>
+
+# benchmarks
+
+<img src='zero-benchmarks.png'/>
+
+
+验证可行
+
+
+# 一些问题
+
+- 可读性
+- language mixing
+
+
+
+
+<img src='r1-zero-drawback.png'/>
+
+
+
+# r1
+
+https://magazine.sebastianraschka.com/p/understanding-reasoning-llms
+
+<img src='r1.webp'/>
+
+
+
