@@ -472,13 +472,54 @@ class: text-center
 
 # 用户增长
 
-<div class="w-4/5 mx-auto">
-  <img src='./dau.png' class="rounded-lg shadow-xl"/>
+<div class="stats-container">
+  <div class="stats-content">
+    <div class="stats-header">
+      <div class="stats-title">日活跃用户</div>
+      <div class="stats-subtitle">Daily Active Users</div>
+    </div>
+    <div class="stats-chart">
+      <img src='./dau.png' class="stats-image"/>
+    </div>
+  </div>
+  <div class="stats-source">
+    来源：https://uniquecapital.feishu.cn/wiki/BBQMwlMfCitM1dkli9AcLWzanJb?table=blk6L0UGxdLEkLAH
+  </div>
 </div>
 
-<div class="text-xs text-gray-400 mt-4">
-  来源：https://uniquecapital.feishu.cn/wiki/BBQMwlMfCitM1dkli9AcLWzanJb?table=blk6L0UGxdLEkLAH
-</div>
+<style>
+.stats-container {
+  @apply flex flex-col items-center justify-center h-full;
+}
+
+.stats-content {
+  @apply w-4/5 bg-gray-100 bg-opacity-5 rounded-xl p-8;
+}
+
+.stats-header {
+  @apply mb-8 text-center;
+}
+
+.stats-title {
+  @apply text-3xl font-bold mb-2;
+}
+
+.stats-subtitle {
+  @apply text-lg text-gray-400;
+}
+
+.stats-chart {
+  @apply bg-gray-100 bg-opacity-5 rounded-xl p-4;
+}
+
+.stats-image {
+  @apply w-full rounded-lg shadow-xl;
+}
+
+.stats-source {
+  @apply text-xs text-gray-400 mt-4 text-center;
+}
+</style>
 
 ---
 layout: center
@@ -486,9 +527,47 @@ layout: center
 
 # 下载量
 
-<div class="w-4/5 mx-auto">
-  <img src='./download.png' class="rounded-lg shadow-xl"/>
+<div class="stats-container">
+  <div class="stats-content">
+    <div class="stats-header">
+      <div class="stats-title">应用下载趋势</div>
+      <div class="stats-subtitle">Download Trends</div>
+    </div>
+    <div class="stats-chart">
+      <img src='./download.png' class="stats-image"/>
+    </div>
+  </div>
 </div>
+
+<style>
+.stats-container {
+  @apply flex flex-col items-center justify-center h-full;
+}
+
+.stats-content {
+  @apply w-4/5 bg-gray-100 bg-opacity-5 rounded-xl p-8;
+}
+
+.stats-header {
+  @apply mb-8 text-center;
+}
+
+.stats-title {
+  @apply text-3xl font-bold mb-2;
+}
+
+.stats-subtitle {
+  @apply text-lg text-gray-400;
+}
+
+.stats-chart {
+  @apply bg-gray-100 bg-opacity-5 rounded-xl p-4;
+}
+
+.stats-image {
+  @apply w-full rounded-lg shadow-xl;
+}
+</style>
 
 ---
 
