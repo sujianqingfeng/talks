@@ -1,7 +1,8 @@
 ---
 theme: seriph
 background: https://source.unsplash.com/collection/94734566/1920x1080
-title: DeepSeek-R1破圈
+# some information about your slides (markdown enabled)
+title: DeepSeek - AI 编程的新时代
 info: |
   DeepSeek 破圈
 class: text-center
@@ -11,16 +12,8 @@ transition: slide-left
 mdc: true
 ---
 
-# DeepSeek R1破圈
+#  DeepSeek 破圈
 
-
-
----
-
-# ai.com
-
-
-<!-- 这里引出deepseek -->
 
 
 ---
@@ -32,7 +25,7 @@ mdc: true
 DeepSeek
 @deepseek_ai
 ·
-2024-11-20
+Nov 20, 2024
 🚀 DeepSeek-R1-Lite-Preview is now live: unleashing supercharged reasoning power!
 
 🔍 o1-preview-level performance on AIME & MATH benchmarks.
@@ -44,7 +37,7 @@ DeepSeek
 DeepSeek
 @deepseek_ai
 ·
-2024-12-26
+Dec 26, 2024
 🚀 Introducing DeepSeek-V3!
 
 Biggest leap forward yet:
@@ -58,7 +51,7 @@ Biggest leap forward yet:
 DeepSeek
 @deepseek_ai
 ·
-2025-1-15
+Jan 15
 🎉 Introducing DeepSeek App!
 
 🔐 Easy login: E-mail/Google Account/Apple ID
@@ -71,7 +64,7 @@ DeepSeek
 DeepSeek
 @deepseek_ai
 ·
-2025-1-20
+Jan 20
 🚀 DeepSeek-R1 is here!
 
 ⚡ Performance on par with OpenAI-o1
@@ -211,6 +204,8 @@ todo:这里可以用一个动画来表达我们的认知有限
 ---
 
 # 为什么我们需要推理模型
+通用&不使用场景
+
 
 - 谜题&数字证明
 - 复制的决策
@@ -219,10 +214,14 @@ todo:这里可以用一个动画来表达我们的认知有限
 - 。。。
 
 
+- 1+1 想多了 容易错
+- 常识性问题
+
 
 ---
 
 # 如何去复现o1
+
 
 
 
@@ -468,6 +467,5 @@ A：<think></think><answer>2</answer> 0分
 
 
 
---- 
 
-Thank you
+
