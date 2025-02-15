@@ -693,37 +693,59 @@ layout: center
 layout: default
 ---
 
-# 为什么我们需要推理模型
+# 推理模型的使用场景
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-  <div v-click class="feature-card">
-    <div class="text-xl font-bold text-blue-400 mb-2">谜题 & 数字证明</div>
-    <p class="opacity-80">处理复杂的数学问题和逻辑推理</p>
+<div class="grid grid-cols-2 gap-8 mt-12 px-8">
+  <div v-click class="scenario-card">
+    <div class="card-header">
+      <div class="i-carbon-function-math text-3xl"></div>
+      <div class="text-xl font-bold">谜题 & 数字证明</div>
+    </div>
+    <div class="card-content">处理复杂的数学问题和逻辑推理</div>
   </div>
   
-  <div v-click class="feature-card">
-    <div class="text-xl font-bold text-blue-400 mb-2">复杂决策</div>
-    <p class="opacity-80">在多个选项中进行深入分析和选择</p>
+  <div v-click class="scenario-card">
+    <div class="card-header">
+      <div class="i-carbon-decision-tree text-3xl"></div>
+      <div class="text-xl font-bold">复杂决策</div>
+    </div>
+    <div class="card-content">在多个选项中进行深入分析和选择</div>
   </div>
   
-  <div v-click class="feature-card">
-    <div class="text-xl font-bold text-blue-400 mb-2">开放式答案</div>
-    <p class="opacity-80">生成详细且有逻辑的解释</p>
+  <div v-click class="scenario-card">
+    <div class="card-header">
+      <div class="i-carbon-text-creation text-3xl"></div>
+      <div class="text-xl font-bold">开放式答案</div>
+    </div>
+    <div class="card-content">生成详细且有逻辑的解释</div>
   </div>
   
-  <div v-click class="feature-card">
-    <div class="text-xl font-bold text-blue-400 mb-2">显式多步思考</div>
-    <p class="opacity-80">展示清晰的推理过程</p>
+  <div v-click class="scenario-card">
+    <div class="card-header">
+      <div class="i-carbon-flow text-3xl"></div>
+      <div class="text-xl font-bold">显式多步思考</div>
+    </div>
+    <div class="card-content">展示清晰的推理过程</div>
   </div>
 </div>
 
 <style>
-.feature-card {
-  @apply bg-dark-100 bg-opacity-10 rounded-lg p-6 transition-all duration-300;
+.scenario-card {
+  @apply relative p-6;
+  @apply bg-gradient-to-br from-gray-100/10 to-gray-100/5;
+  @apply backdrop-blur-sm rounded-xl;
+  @apply border border-gray-500/10;
+  @apply transition-all duration-300;
+  @apply hover:scale-102 hover:shadow-lg;
+  @apply hover:border-gray-500/20;
 }
 
-.feature-card:hover {
-  @apply bg-opacity-20 transform scale-105;
+.card-header {
+  @apply flex items-center gap-4 mb-4;
+}
+
+.card-content {
+  @apply text-base opacity-80;
 }
 </style>
 
@@ -751,10 +773,96 @@ class: text-center
 
 # 过程激励模型
 
-- 树搜索派系
-- 蒸馏派系（r1-lite）
+<div class="process-model-container">
+  <div class="model-cards">
+    <div v-click class="model-card">
+      <div class="card-header">
+        <div class="i-carbon-tree text-3xl"></div>
+        <div class="header-text">树搜索派系</div>
+      </div>
+      <div class="card-content">
+        <div class="content-wrapper">
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="i-carbon-dot-mark text-sm"></div>
+              <span>多路径探索</span>
+            </div>
+            <div class="feature-item">
+              <div class="i-carbon-dot-mark text-sm"></div>
+              <span>动态评估</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-click class="model-card">
+      <div class="card-header">
+        <div class="i-carbon-model text-3xl"></div>
+        <div class="header-text">蒸馏派系</div>
+      </div>
+      <div class="card-content">
+        <div class="content-wrapper">
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="i-carbon-dot-mark text-sm"></div>
+              <span>知识迁移</span>
+            </div>
+            <div class="feature-item">
+              <div class="i-carbon-dot-mark text-sm"></div>
+              <span>模型压缩</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<style>
+.process-model-container {
+  @apply w-full px-8 py-6;
+}
 
+.model-cards {
+  @apply grid grid-cols-2 gap-8;
+}
+
+.model-card {
+  @apply relative overflow-hidden;
+  @apply bg-gradient-to-br from-gray-100/10 to-gray-100/5;
+  @apply backdrop-blur-sm rounded-xl;
+  @apply border border-gray-500/10;
+  @apply transition-all duration-300;
+  @apply hover:scale-102 hover:shadow-lg;
+  @apply hover:border-gray-500/20;
+}
+
+.card-header {
+  @apply flex items-center gap-4 p-6 pb-4;
+  @apply border-b border-gray-500/10;
+}
+
+.header-text {
+  @apply text-xl font-bold;
+}
+
+.card-content {
+  @apply p-6;
+}
+
+.content-wrapper {
+  @apply space-y-4;
+}
+
+.feature-list {
+  @apply space-y-3;
+}
+
+.feature-item {
+  @apply flex items-center gap-2;
+  @apply text-base opacity-80;
+}
+</style>
 
 ---
 layout: center
