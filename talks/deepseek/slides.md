@@ -254,7 +254,7 @@ layout: default
   </div>
 
   <div class="right-col">
-    <div class="summary-section">
+    <div class="summary-section" v-click>
       <div class="quote">
         <div class="quote-text">这一成果展示了在数据和算法优化方面的卓越研究和工程能力，表明即使没有庞大的GPU集群，也能通过高效利用资源实现前沿模型的训练。同时，作者对技术报告的详细性表示赞赏。</div>
       </div>
@@ -300,7 +300,7 @@ layout: default
 }
 
 .tweet {
-  @apply w-full h-[180px] object-contain rounded-lg;
+  @apply w-full object-contain rounded-lg;
 }
 
 .right-col {
@@ -343,7 +343,7 @@ layout: default
   </div>
 
   <div class="right-col">
-    <div class="summary-section">
+    <div class="summary-section" v-click>
       <div class="quote">
         <div class="quote-text">DeepSeek的R1模型性价比很高，表现令人印象深刻。</div>
       </div>
@@ -416,7 +416,7 @@ class: gap-4
 # 市场反应
 
 <div class="market-container">
-  <div class="market-card">
+  <div class="market-card" v-click>
     <div class="market-header">
       <div class="market-title">NVIDIA</div>
     </div>
@@ -425,7 +425,7 @@ class: gap-4
     </div>
   </div>
 
-  <div class="market-card">
+  <div class="market-card" v-click>
     <div class="market-header">
       <div class="market-title">中芯国际</div>
     </div>
@@ -466,20 +466,12 @@ class: gap-4
 </style>
 
 ---
-layout: center
-class: text-center
----
 
+# 日活跃用户
 
 <div class="stats-container">
   <div class="stats-content">
-    <div class="stats-header">
-      <div class="stats-title">日活跃用户</div>
-      <div class="stats-subtitle">Daily Active Users</div>
-    </div>
-    <div class="stats-chart">
-      <img src='./dau.png' class="stats-image"/>
-    </div>
+    <img src='./dau.png' class="stats-image"/>
   </div>
   <div class="stats-source">
     来源：https://uniquecapital.feishu.cn/wiki/BBQMwlMfCitM1dkli9AcLWzanJb?table=blk6L0UGxdLEkLAH
@@ -488,82 +480,57 @@ class: text-center
 
 <style>
 .stats-container {
-  @apply flex flex-col items-center justify-center h-full;
+  @apply flex flex-col items-center justify-center h-full gap-4;
 }
 
 .stats-content {
-  @apply w-4/5 bg-gray-100 bg-opacity-5 rounded-xl p-8;
-}
-
-.stats-header {
-  @apply mb-8 text-center;
-}
-
-.stats-title {
-  @apply text-3xl font-bold mb-2;
-}
-
-.stats-subtitle {
-  @apply text-lg text-gray-400;
-}
-
-.stats-chart {
-  @apply bg-gray-100 bg-opacity-5 rounded-xl p-4;
+  @apply w-4/5 bg-gray-100 bg-opacity-5 rounded-xl p-6;
+  @apply border border-gray-500 border-opacity-5;
+  @apply backdrop-blur-sm;
+  @apply transition-all duration-300;
+  @apply hover:bg-opacity-10;
 }
 
 .stats-image {
   @apply w-full rounded-lg shadow-xl;
+  @apply transition-transform duration-300;
+  @apply hover:scale-102;
 }
 
 .stats-source {
-  @apply text-xs text-gray-400 mt-4 text-center;
+  @apply text-xs opacity-50 text-center;
+  @apply transition-opacity duration-300;
+  @apply hover:opacity-80;
 }
 </style>
 
 ---
-layout: center
----
 
+# 应用下载趋势
 
 <div class="stats-container">
   <div class="stats-content">
-    <div class="stats-header">
-      <div class="stats-title">应用下载趋势</div>
-      <div class="stats-subtitle">Download Trends</div>
-    </div>
-    <div class="stats-chart">
-      <img src='./download.png' class="stats-image"/>
-    </div>
+    <img src='./download.png' class="stats-image"/>
   </div>
 </div>
 
 <style>
 .stats-container {
-  @apply flex flex-col items-center justify-center h-full;
+  @apply flex flex-col items-center justify-center h-full gap-4;
 }
 
 .stats-content {
-  @apply w-4/5 bg-gray-100 bg-opacity-5 rounded-xl p-8;
-}
-
-.stats-header {
-  @apply mb-8 text-center;
-}
-
-.stats-title {
-  @apply text-3xl font-bold mb-2;
-}
-
-.stats-subtitle {
-  @apply text-lg text-gray-400;
-}
-
-.stats-chart {
-  @apply bg-gray-100 bg-opacity-5 rounded-xl p-4;
+  @apply w-4/5 bg-gray-100 bg-opacity-5 rounded-xl p-6;
+  @apply border border-gray-500 border-opacity-5;
+  @apply backdrop-blur-sm;
+  @apply transition-all duration-300;
+  @apply hover:bg-opacity-10;
 }
 
 .stats-image {
-  @apply w-full rounded-lg shadow-xl;
+  @apply h-full rounded-lg shadow-xl;
+  @apply transition-transform duration-300;
+  @apply hover:scale-102;
 }
 </style>
 
@@ -593,11 +560,11 @@ class: text-center
 <div class="flex gap-8">
   <div class="flex-1">
     <div class="mt-4">
-      <div class="card p-4 mb-4">
+      <div class="card p-4 mb-4" v-click='1'>
         <h3 class="font-bold mb-2">提示词不够精确</h3>
         <p class="opacity-80">当提示词比较简单，没有准确描述时容易出错</p>
       </div>
-      <div class="card p-4">
+      <div class="card p-4" v-click='3'>
         <h3 class="font-bold mb-2">需要更多思考空间</h3>
         <p class="opacity-80">Model needs more tokens to think</p>
       </div>
@@ -605,7 +572,7 @@ class: text-center
   </div>
 
   <div class="flex-1">
-    <div class="">
+    <div v-click='2' class="">
       <img src='./chain-of-thought.png' class="rounded-lg shadow-xl"/>
     </div>
   </div>
@@ -675,10 +642,16 @@ class: text-center
 <!-- 为每个问题编写思维链是可行的 但我们的认知是有限的 我们需要一个推理模型来帮助我们构建思维链 -->
 
 ---
-layout: center
----
 
-# 第一个推理模型：o1
+
+<div text-4xl h-full flex justify-center items-center>
+<div v-motion :initial="{ x: 0 }" :enter="{ x: 0 }" :click-1="{ x: -10 }">
+  第一个推理模型
+</div>
+<div text-red v-click='1' v-motion :initial="{ x: -10 }" :enter="{ x: 0 }">o1</div>
+</div>
+
+
 
 
 ---
@@ -769,6 +742,8 @@ class: text-center
 <img class="w-4/5 mx-auto" src='./step-by-step.png'/>
 
 
+---
+transition: fade
 ---
 
 # 过程激励模型
@@ -890,7 +865,7 @@ The Thought Process Behind Kimi k1.5
 </div>
 
 
-<p text-center>来源：https://x.com/Kimi_Moonshot/status/1882413059513471044</p>
+<p text-center text-sm opacity-60>来源：https://x.com/Kimi_Moonshot/status/1882413059513471044</p>
 
 
 
@@ -899,19 +874,19 @@ The Thought Process Behind Kimi k1.5
 # Kimi如何去找到灵感
 
 <div class="grid grid-cols-1 gap-4">
-  <div class="insight-card">
+  <div class="insight-card" v-click='1'>
     <div class="text-xl font-bold mb-2">Enable Self-Search</div>
     <div class="text-lg">We need to enable models to search on their own!</div>
     <div class="text-base opacity-80">我们需要让模型能够自主进行搜索！</div>
   </div>
 
-  <div class="insight-card">
+  <div class="insight-card" v-click='2'>
     <div class="text-xl font-bold mb-2">Unrestricted Thinking</div>
     <div class="text-lg">o1 doesn't restrict how the model thinks!</div>
     <div class="text-base opacity-80">o1 并不限制模型的思考方式！</div>
   </div>
 
-  <div class="insight-card">
+  <div class="insight-card" v-click='3'>
     <div class="text-xl font-bold mb-2">Exact Rewards</div>
     <div class="text-lg">Do RL with exact rewards! Don't be constrained by Reward Models.</div>
     <div class="text-base opacity-80">使用精确奖励进行强化学习！不要被奖励模型所束缚。</div>
@@ -991,7 +966,7 @@ class: text-center
 # 奖励模型（Reward Modeling）
 
 <div class="flex gap-8 mt-8">
-  <div class="reward-card flex-2">
+  <div class="reward-card flex-2" v-click='1'>
     <div class="text-xl font-bold mb-4">准确性奖励</div>
     <div class="reward-example">
       <div class="example-header mb-2">示例</div>
@@ -1021,7 +996,7 @@ class: text-center
     </div>
   </div>
 
-  <div class="reward-card flex-3">
+  <div class="reward-card flex-3" v-click='2'>
     <div class="text-xl font-bold mb-4">格式奖励</div>
     <div class="reward-example">
       <div class="example-header mb-2">示例</div>
@@ -1118,14 +1093,12 @@ class: text-center
       <div class="glow-effect"></div>
     </div>
   </div>
-  
-  <div class="verification-container">
-    <div class="verification-badge">
-      <div class="i-carbon-checkmark-filled inline-block text-lg"></div>
-      <span>验证可行</span>
-      <div class="badge-glow"></div>
+    <div class="info-section flex items-center gap-2" v-click='1'>
+                <div class="i-carbon-checkmark-filled inline-block text-lg"></div>
+      <div class="info-text">
+        验证可行
+      </div>
     </div>
-  </div>
 </div>
 
 <style>
@@ -1171,6 +1144,18 @@ class: text-center
 
 .verification-badge .i-carbon-checkmark-filled {
   @apply text-red-500 text-opacity-80;
+}
+
+.info-section {
+  @apply bg-gray-100 bg-opacity-5 rounded-lg p-4;
+  @apply border border-gray-500 border-opacity-5;
+  @apply backdrop-blur-sm;
+  @apply transition-all duration-300;
+  @apply hover:bg-opacity-10;
+}
+
+.info-text {
+  @apply text-lg opacity-80;
 }
 </style>
 
@@ -1321,7 +1306,7 @@ class: text-center
         <img src='./r1-distill.png' class="main-image"/>
       </div>
     </div>
-    <div class="info-section">
+    <div class="info-section" v-click='1'>
       <div class="info-text">
         证明推理数据质量很高
       </div>
@@ -1386,7 +1371,7 @@ class: text-center
 <div class="roadmap-container">
   <div class="timeline-grid">
     <div class="milestone-row">
-      <div class="milestone-card">
+      <div class="milestone-card" v-click='1'>
         <div class="milestone-header">
           <div class="date">2024.2</div>
           <div class="title">DeepSeekMath</div>
@@ -1397,7 +1382,7 @@ class: text-center
       </div>
     </div>
     <div class="grid grid-cols-2 gap-2">
-      <div class="milestone-card">
+      <div class="milestone-card" v-click='2'>
         <div class="milestone-header">
           <div class="date">2024.5</div>
           <div class="title">DeepSeek-V2</div>
@@ -1422,7 +1407,7 @@ class: text-center
           </div>
         </div>
       </div>
-      <div class="milestone-card">
+      <div class="milestone-card" v-click='3'>
         <div class="milestone-header">
           <div class="date">2024.12</div>
           <div class="title">DeepSeek-V3</div>
@@ -1524,28 +1509,28 @@ class: text-center
 
 <div class="foundation-container">
   <div class="foundation-grid">
-    <div class="foundation-card">
+    <div class="foundation-card" v-click='1'>
       <div class="card-icon i-carbon-chart-line-data"></div>
       <div class="card-content">
         <div class="card-title">强大的性能表现</div>
         <div class="card-desc">达到 o1 水平的推理能力</div>
       </div>
     </div>
-    <div class="foundation-card">
+    <div class="foundation-card" v-click='2'>
       <div class="card-icon i-carbon-development"></div>
       <div class="card-content">
         <div class="card-title">整个业界的难题</div>
         <div class="card-desc">解决推理模型的关键问题</div>
       </div>
     </div>
-    <div class="foundation-card">
+    <div class="foundation-card" v-click='3'>
       <div class="i-carbon-idea text-2xl opacity-80"></div>
       <div class="card-content">
         <div class="card-title">多个方向的验证</div>
         <div class="card-desc">PRM、PURE RL、Distillation</div>
       </div>
     </div>
-    <div class="foundation-card">
+    <div class="foundation-card" v-click='4'>
       <div class="card-icon i-carbon-deployment-policy"></div>
       <div class="card-content">
         <div class="card-title">开源 & 客户端</div>
@@ -1596,21 +1581,21 @@ class: text-center
 
 <div class="future-container">
   <div class="future-grid">
-    <div class="future-card">
+    <div class="future-card" v-click='1'>
       <div class="card-icon i-carbon-model-alt"></div>
       <div class="card-content">
         <div class="card-title">CoT 能够激发现有模型的能力</div>
         <div class="card-desc">通过思维链提升模型性能</div>
       </div>
     </div>
-    <div class="future-card">
+    <div class="future-card" v-click='2'>
       <div class="card-icon i-carbon-machine-learning"></div>
       <div class="card-content">
         <div class="card-title">RL 才刚刚开始</div>
         <div class="card-desc">强化学习的更多可能性</div>
       </div>
     </div>
-    <div class="future-card">
+    <div class="future-card" v-click='3'>
       <div class="i-carbon-cloud text-2xl opacity-80"></div>
       <div class="card-content">
         <div class="card-title">基础设施终于有一个值得部署的模型</div>
@@ -1619,14 +1604,14 @@ class: text-center
     </div>
   </div>
   <div class="future-grid mt-6">
-    <div class="future-card">
+    <div class="future-card" v-click='4'>
       <div class="card-icon i-carbon-time"></div>
       <div class="card-content">
         <div class="card-title">思考时间延长</div>
         <div class="card-desc">更长的推理时间，更准确的结果</div>
       </div>
     </div>
-    <div class="future-card">
+    <div class="future-card" v-click='5'>
       <div class="i-carbon-text-creation text-2xl opacity-80"></div>
       <div class="card-content">
         <div class="card-title">Long2Short</div>
