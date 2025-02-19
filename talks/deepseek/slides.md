@@ -1010,7 +1010,7 @@ class: text-center
             </div>
             <div class="font-mono text-sm bg-gray-100 bg-opacity-5 p-3 rounded">
               <span class="opacity-70">&lt;think&gt;</span>
-              用户问我1+1等于几，这是一个简单的数学问题，答案是2
+              用户问我1+1等于几，这是一个简单的数学问题，.....
               <span class="opacity-70">&lt;/think&gt;</span>
               <br/>
               <span class="opacity-70">&lt;answer&gt;</span>2<span class="opacity-70">&lt;/answer&gt;</span>
