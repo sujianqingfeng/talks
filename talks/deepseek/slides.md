@@ -241,14 +241,14 @@ layout: default
   <div class="left-col">
     <div class="person-card">
       <div class="person-info">
-        <img src='./Karpathy.webp' class="avatar"/>
+        <img src='/Karpathy.webp' class="avatar"/>
         <div class="info">
           <h2 class="name">Andrej Karpathy</h2>
           <div class="title">OpenAI 的创始成员和研究员</div>
         </div>
       </div>
       <div class="tweet-container">
-        <img src='./react-Karpathy.png' class="tweet"/>
+        <img src='/react-Karpathy.png' class="tweet"/>
       </div>
     </div>
   </div>
@@ -330,14 +330,14 @@ layout: default
   <div class="left-col">
     <div class="person-card">
       <div class="person-info">
-        <img src='./altman.jpg' class="avatar"/>
+        <img src='/altman.jpg' class="avatar"/>
         <div class="info">
           <h2 class="name">Sam Altman</h2>
           <div class="title">OpenAI CEO</div>
         </div>
       </div>
       <div class="tweet-container">
-        <img src='./react-altman.png' class="tweet"/>
+        <img src='/react-altman.png' class="tweet"/>
       </div>
     </div>
   </div>
@@ -421,7 +421,7 @@ class: gap-4
       <div class="market-title">NVIDIA</div>
     </div>
     <div class="chart-container">
-      <img src='./nvidia-stock.png' class="chart"/>
+      <img src='/nvidia-stock.png' class="chart"/>
     </div>
   </div>
 
@@ -430,7 +430,7 @@ class: gap-4
       <div class="market-title">中芯国际</div>
     </div>
     <div class="chart-container">
-      <img src='./smic-stock.png' class="chart"/>
+      <img src='/smic-stock.png' class="chart"/>
     </div>
   </div>
 </div>
@@ -471,7 +471,7 @@ class: gap-4
 
 <div class="stats-container">
   <div class="stats-content">
-    <img src='./dau.png' class="stats-image"/>
+    <img src='/dau.png' class="stats-image"/>
   </div>
   <div class="stats-source">
     来源：https://uniquecapital.feishu.cn/wiki/BBQMwlMfCitM1dkli9AcLWzanJb?table=blk6L0UGxdLEkLAH
@@ -510,7 +510,7 @@ class: gap-4
 
 <div class="stats-container">
   <div class="stats-content">
-    <img src='./download.png' class="stats-image"/>
+    <img src='/download.png' class="stats-image"/>
   </div>
 </div>
 
@@ -573,7 +573,7 @@ class: text-center
 
   <div class="flex-1">
     <div v-click='2' class="">
-      <img src='./chain-of-thought.png' class="rounded-lg shadow-xl"/>
+      <img src='/chain-of-thought.png' class="rounded-lg shadow-xl"/>
     </div>
   </div>
 </div>
@@ -659,7 +659,7 @@ class: text-center
 # o1 benchmarks
 
 <div class="w-4/5 mx-auto mt-20">
-  <img src='./o1-benchmarks.png' class="rounded-lg shadow-xl"/>
+  <img src='/o1-benchmarks.png' class="rounded-lg shadow-xl"/>
 </div>
 
 ---
@@ -739,7 +739,7 @@ class: text-center
 # OpenAI 的最后公开的论文
 
 
-<img class="w-4/5 mx-auto" src='./step-by-step.png'/>
+<img class="w-4/5 mx-auto" src='/step-by-step.png'/>
 
 
 ---
@@ -955,7 +955,7 @@ class: text-center
 
 # 训练模板(Training Template) 
 
-<img src='./training-template.png'/>
+<img src='/training-template.png'/>
 
 
 <!-- 数字题、代码 -->
@@ -1067,7 +1067,7 @@ class: text-center
   <div class="w-3/4 relative">
     <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-1 h-12 bg-gradient-to-b from-transparent via-gray-400 to-transparent opacity-10"></div>
     <div class="image-container p-4 bg-gray-100 bg-opacity-5 rounded-lg border border-opacity-5">
-      <img src='./moment.png' class="w-full h-auto rounded shadow-sm"/>
+      <img src='/moment.png' class="w-full h-auto rounded shadow-sm"/>
     </div>
     <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 w-1 h-12 bg-gradient-to-b from-transparent via-gray-400 to-transparent opacity-10"></div>
   </div>
@@ -1088,7 +1088,7 @@ class: text-center
   <div class="w-4/5">
     <div class="image-container">
       <div class="p-4 bg-gray-100 bg-opacity-5 rounded-lg border border-opacity-5">
-        <img src='./zero-benchmarks.png' class="w-full h-auto rounded"/>
+        <img src='/zero-benchmarks.png' class="w-full h-auto rounded"/>
       </div>
       <div class="glow-effect"></div>
     </div>
@@ -1177,7 +1177,7 @@ class: text-center
     </div>
     <div class="example-container">
       <div class="example-image">
-        <img src='./r1-zero-drawback.png' class="w-full h-auto rounded-lg"/>
+        <img src='/r1-zero-drawback.png' class="w-full h-auto rounded-lg"/>
       </div>
     </div>
   </div>
@@ -1232,7 +1232,7 @@ class: text-center
   <div class="implementation-content">
     <div class="image-section h-100">
       <div class="image-wrapper">
-        <img src='./r1.webp' class="main-image"/>
+        <img src='/r1.webp' class="main-image"/>
       </div>
     </div>
     <div class="info-section">
@@ -1303,7 +1303,7 @@ class: text-center
   <div class="distillation-content">
     <div class="image-section h-80">
       <div class="image-wrapper">
-        <img src='./r1-distill.png' class="main-image"/>
+        <img src='/r1-distill.png' class="main-image"/>
       </div>
     </div>
     <div class="info-section" v-click='1'>
@@ -1361,7 +1361,7 @@ class: text-center
 # pure rl（qwen）
 
 
-<img src='./rl-qwen-32.png'/>
+<img src='/rl-qwen-32.png'/>
 
 
 ---
