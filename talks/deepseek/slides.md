@@ -1293,7 +1293,7 @@ class: text-center
 # r1 benchmark
 
 
-<img class="h-100 m-auto" src='./r1-benchmarks.png'/>
+<img class="h-100 m-auto" src='/r1-benchmarks.png'/>
 
 ---
 
