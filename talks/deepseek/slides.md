@@ -637,14 +637,18 @@ layout: center
 class: text-center
 ---
 
-# Chain of Thought (CoT)
+<!-- # 思维链 -->
+
+<div text-6xl h-full flex justify-center items-center>
+思维链(Chain of Thought)
+</div>
 
 <!-- 为每个问题编写思维链是可行的 但我们的认知是有限的 我们需要一个推理模型来帮助我们构建思维链 -->
 
 ---
 
 
-<div text-4xl h-full flex justify-center items-center>
+<div text-6xl h-full flex justify-center items-center>
 <div v-motion :initial="{ x: 0 }" :enter="{ x: 0 }" :click-1="{ x: -10 }">
   第一个推理模型
 </div>
@@ -729,7 +733,10 @@ class: text-center
 ---
 
 
-# 如何去复现o1
+
+<div text-6xl h-full flex justify-center items-center>
+  如何去复现o1
+</div>
 
 
 
@@ -907,7 +914,15 @@ layout: center
 class: text-center
 ---
 
-# DeepSeek R1 的论文
+
+
+<div text-6xl h-full flex justify-center items-center>
+  <!-- DeepSeek R1 -->
+  DeepSeek R1 的论文
+</div>
+
+
+
 
 
 ---
@@ -915,7 +930,10 @@ layout: center
 class: text-center
 ---
 
-# DeepSeek r1-zero
+
+<div text-6xl h-full flex justify-center items-center>
+  DeepSeek r1-zero
+</div>
 
 
 ---
@@ -1490,7 +1508,10 @@ layout: center
 class: text-center
 ---
 
-# 为什么要做这些创新
+<div text-6xl h-full flex justify-center items-center>
+  为什么要做这些创新
+</div>
+
 
 
 
@@ -1499,7 +1520,10 @@ layout: center
 class: text-center
 ---
 
-# 没卡！！！
+
+<div text-6xl h-full flex justify-center items-center color-red>
+  没卡！！！
+</div>
 
 
 
