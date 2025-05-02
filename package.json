@@ -6,7 +6,9 @@
   "license": "MIT",
   "keywords": [],
   "main": "index.js",
-  "workspaces": ["talks/*"],
+  "workspaces": [
+    "talks/*"
+  ],
   "scripts": {
     "dev:rspack": "pnpm --filter rspack run dev",
     "dev:keyboard": "pnpm --filter custom-keyboard-hat run dev",
@@ -28,6 +30,13 @@
     "export:deepseek": "pnpm --filter deepseek run export"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.2.8",
+    "@iconify-json/ci": "^1.2.2",
+    "@iconify-json/cib": "^1.2.2",
+    "@iconify-json/logos": "^1.1.42",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.33",
+    "@iconify-json/uil": "^1.2.3",
     "@sujian/eslint-config": "^1.0.2"
   }
 }
