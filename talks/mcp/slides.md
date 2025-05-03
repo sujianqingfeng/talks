@@ -67,27 +67,32 @@ layout: center
 class: "bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-900/30"
 ---
 
-
-
-
 # MCP 是什么？<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600"> 模型上下文协议</span>
 
 <div class="mt-4 text-xl text-indigo-700 dark:text-indigo-300 font-medium">可以把它想象成 <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-md text-indigo-800 dark:text-indigo-100">AI 的 USB-C 接口</span></div>
 
-<div grid="~ cols-2 gap-12" class="mt-8 items-center">
+<div class="mt-8 text-gray-600 dark:text-gray-400">
+让我们对比一下 MCP 出现前后的情况...
+</div>
 
-<div class="space-y-6">
-  <div class="p-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
-    <div class="font-bold text-lg text-red-700 dark:text-red-300 mb-2 flex items-center">
-      <div class="i-carbon-close-filled mr-2"></div>MCP 之前
-    </div>
-    <div class="text-red-600 dark:text-red-300">
-      每个 AI 和每个工具都需要混乱的自定义连接。
-      <br/><br/>
-      <span class="italic">(想象一下每个设备都需要不同的充电器！)</span>
-    </div>
+---
+layout: center
+class: "bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-900/30"
+---
 
-```mermaid {scale: 0.7, theme: 'neutral'}
+# MCP 之前：混乱的连接
+
+<div class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 max-w-2xl mx-auto">
+  <div class="font-bold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center justify-center">
+    <div class="i-carbon-close-filled mr-2"></div>MCP 之前
+  </div>
+  <div class="text-red-600 dark:text-red-300 text-center mb-4">
+    每个 AI 和每个工具都需要混乱的自定义连接。
+    <br/>
+    <span class="italic text-sm">(想象一下每个设备都需要不同的充电器！)</span>
+  </div>
+  
+```mermaid {scale: 0.8, theme: 'neutral'}
 graph TD
     subgraph AI 模型
         A[AI 模型 1]
@@ -114,22 +119,27 @@ graph TD
     style T3 fill:#ccf,stroke:#333,stroke-width:2px
     style T4 fill:#ccf,stroke:#333,stroke-width:2px
 ```
-    <div class="text-center text-sm text-red-500 dark:text-red-300 mt-2 font-mono">M 个模型 x N 个工具 = M*N 个连接</div>
-  </div>
+  <div class="text-center text-sm text-red-500 dark:text-red-300 mt-3 font-mono">M 个模型 x N 个工具 = M*N 个连接</div>
 </div>
 
-<div class="space-y-6">
-  <div class="p-4 rounded-xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
-    <div class="font-bold text-lg text-green-700 dark:text-green-300 mb-2 flex items-center">
-      <div class="i-carbon-checkmark-filled mr-2"></div>使用 MCP
-    </div>
-    <div class="text-green-600 dark:text-green-300">
-      一个 <span class="font-bold">标准协议</span> 允许任何兼容的 AI 连接到任何兼容的工具。
-      <br/><br/>
-      <span class="italic">(一个标准端口搞定一切！)</span>
-    </div>
+---
+layout: center
+class: "bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-900/30"
+---
 
-```mermaid {scale: 0.7, theme: 'neutral'}
+# 使用 MCP：统一的标准
+
+<div class="mt-6 p-6 rounded-xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 max-w-2xl mx-auto">
+  <div class="font-bold text-lg text-green-700 dark:text-green-300 mb-3 flex items-center justify-center">
+    <div class="i-carbon-checkmark-filled mr-2"></div>使用 MCP
+  </div>
+  <div class="text-green-600 dark:text-green-300 text-center mb-4">
+    一个 <span class="font-bold">标准协议</span> 允许任何兼容的 AI 连接到任何兼容的工具。
+    <br/>
+    <span class="italic text-sm">(一个标准端口搞定一切！)</span>
+  </div>
+
+```mermaid {scale: 0.8, theme: 'neutral'}
 graph TD
     subgraph AI 模型
         A[AI 模型 1]
@@ -158,17 +168,10 @@ graph TD
     style T3 fill:#ccf,stroke:#333,stroke-width:2px
     style T4 fill:#ccf,stroke:#333,stroke-width:2px
 ```
-    <div class="text-center text-sm text-green-500 dark:text-green-300 mt-2 font-mono">M 个模型 + N 个工具 = M+N 个连接</div>
-  </div>
+  <div class="text-center text-sm text-green-500 dark:text-green-300 mt-3 font-mono">M 个模型 + N 个工具 = M+N 个连接</div>
 </div>
-
-</div>
-
-
 
 ---
-
-
 
 # 关键前提：模型需支持 MCP
 
@@ -208,221 +211,53 @@ graph TD
 
 # 哪些工具支持 MCP？<span class="text-sm opacity-70 ml-2">客户端 - Featured</span>
 
-<div class="mt-6">
-  <div class="grid grid-cols-3 gap-6">
-    <!-- Windsurf -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-blue-200 group-hover:dark:shadow-indigo-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fmcp.so%2Ficons%2Fwindsurf.png&w=3840&q=75" alt="Windsurf Logo" class="h-12 object-contain">
-        </div>
-        <div class="text-center text-indigo-800 dark:text-indigo-200 font-medium">Windsurf</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">New purpose-built IDE</div>
-      </div>
+<div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+
+  <!-- Category 1: Code Editors & IDEs -->
+  <div v-click="1" class="space-y-3">
+    <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300 mb-2 border-b border-indigo-200 dark:border-indigo-700 pb-1">
+      <div class="i-carbon-code mr-2"></div> Code Editors & IDEs
+    </h3>
+    <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+      <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fmcp.so%2Ficons%2Fwindsurf.png&w=64&q=75" alt="Windsurf" class="h-6 w-6 object-contain flex-shrink-0">
+      <div><span class="font-medium">Windsurf:</span> Purpose-built IDE</div>
     </div>
-    <!-- ChatWise -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-teal-500 to-cyan-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-cyan-200 dark:border-cyan-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-teal-200 group-hover:dark:shadow-cyan-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fchatwise.app%2F_app%2Fimmutable%2Fassets%2Ficon.BlYxxTy5.png&w=3840&q=75" alt="ChatWise Logo" class="h-12 object-contain">
-        </div>
-        <div class="text-center text-cyan-800 dark:text-cyan-200 font-medium">ChatWise</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">AI chatbot</div>
-      </div>
+    <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+      <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fmcp.so%2Ficons%2Fcursor.png&w=64&q=75" alt="Cursor" class="h-6 w-6 object-contain flex-shrink-0">
+      <div><span class="font-medium">Cursor:</span> The AI Code Editor</div>
     </div>
-    <!-- Cursor -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-pink-200 dark:border-pink-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-purple-200 group-hover:dark:shadow-pink-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fmcp.so%2Ficons%2Fcursor.png&w=3840&q=75" alt="Cursor Logo" class="h-12 object-contain">
-        </div>
-        <div class="text-center text-pink-800 dark:text-pink-200 font-medium">Cursor</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">The AI Code Editor</div>
-      </div>
+    <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+      <logos-visual-studio-code class="text-2xl flex-shrink-0"/>
+      <div><span class="font-medium">VS Code (OSS):</span> Official Support</div>
     </div>
-    <!-- VS Code OSS -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-sky-500 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-sky-200 dark:border-sky-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-blue-200 group-hover:dark:shadow-sky-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <logos-visual-studio-code class="text-5xl"/>
-        </div>
-        <div class="text-center text-sky-800 dark:text-sky-200 font-medium">VS Code (OSS)</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">(Official Support)</div>
-      </div>
+     <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+      <span class="text-2xl font-bold flex-shrink-0 w-6 text-center">C</span>
+      <div><span class="font-medium">Cline:</span> Autonomous Coding Agent</div>
     </div>
-    <!-- DeepChat -->
-     <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-gray-500 to-slate-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-slate-200 dark:border-slate-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-gray-200 group-hover:dark:shadow-slate-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fdeepchat.thinkinai.xyz%2Flogo.png&w=3840&q=75" alt="DeepChat Logo" class="h-12 object-contain">
-        </div>
-        <div class="text-center text-slate-800 dark:text-slate-200 font-medium">DeepChat</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Desktop AI Partner</div>
-      </div>
-    </div>
-    <!-- Y Gui -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-lime-500 to-green-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-green-200 dark:border-green-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-lime-200 group-hover:dark:shadow-green-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">Y-Gui</span>
-        </div>
-        <div class="text-center text-green-800 dark:text-green-200 font-medium">Y Gui</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Web-based MCP GUI</div>
-      </div>
-    </div>
-    <!-- Cherry Studio -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-rose-200 dark:border-rose-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-pink-200 group-hover:dark:shadow-rose-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">🍒</span>
-        </div>
-        <div class="text-center text-rose-800 dark:text-rose-200 font-medium">Cherry Studio</div>
-         <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">(Open Source Desktop)</div>
-      </div>
-    </div>
-    <!-- HyperChat -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-red-200 dark:border-red-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-orange-200 group-hover:dark:shadow-red-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <span class="text-5xl font-bold">⚡</span>
-        </div>
-        <div class="text-center text-red-800 dark:text-red-200 font-medium">HyperChat</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Open Chat Client</div>
-      </div>
-    </div>
-    <!-- Cline -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-amber-500 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-amber-200 dark:border-amber-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-yellow-200 group-hover:dark:shadow-amber-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">C</span>
-        </div>
-        <div class="text-center text-amber-800 dark:text-amber-200 font-medium">Cline</div>
-         <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Autonomous Coding Agent</div>
-      </div>
-    </div>
-    <!-- Y-Cli -->
-     <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-lime-500 to-green-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-green-200 dark:border-green-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-lime-200 group-hover:dark:shadow-green-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">Y-cli</span>
-        </div>
-        <div class="text-center text-green-800 dark:text-green-200 font-medium">y-cli 🚀</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Terminal Chat App</div>
-      </div>
-    </div>
-    <!-- Continue -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-300 to-indigo-400 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-blue-200 group-hover:dark:shadow-indigo-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">⏩</span>
-        </div>
-        <div class="text-center text-indigo-800 dark:text-indigo-200 font-medium">Continue</div>
-         <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Custom AI Assistants</div>
-      </div>
-    </div>
-    <!-- Roo Code -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-purple-400 to-violet-500 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-violet-200 dark:border-violet-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-purple-200 group-hover:dark:shadow-violet-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <span class="text-5xl">🦘</span>
-        </div>
-        <div class="text-center text-violet-800 dark:text-violet-200 font-medium">Roo Code</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">AI Agent Dev Team</div>
-      </div>
-    </div>
-    <!-- 5ire -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-500 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-emerald-200 dark:border-emerald-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-green-200 group-hover:dark:shadow-emerald-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <span class="text-5xl">🖐️</span>
-        </div>
-        <div class="text-center text-emerald-800 dark:text-emerald-200 font-medium">5ire</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Cross-platform AI Assistant</div>
-      </div>
-    </div>
-    <!-- MCP Playground -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-sky-500 to-blue-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-blue-200 dark:border-blue-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-sky-200 group-hover:dark:shadow-blue-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <img src="https://mcp.so/logo.png" alt="MCP Logo" class="h-12 object-contain">
-        </div>
-        <div class="text-center text-blue-800 dark:text-blue-200 font-medium">MCP Playground</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Call MCP Tools Online</div>
-      </div>
-    </div>
-    <!-- Lutra -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-500 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-gray-200 group-hover:dark:shadow-gray-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <img src="https://lutra.ai/favicon.ico" alt="Lutra Logo" class="h-12 object-contain">
-        </div>
-        <div class="text-center text-gray-800 dark:text-gray-200 font-medium">Lutra</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">MCP Client for Everyone</div>
-      </div>
-    </div>
-    <!-- Refact.ai -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-orange-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-orange-200 dark:border-orange-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-red-200 group-hover:dark:shadow-orange-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-          <span class="text-5xl">♻️</span>
-        </div>
-        <div class="text-center text-orange-800 dark:text-orange-200 font-medium">Refact.ai</div>
-        <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Open-source AI Agent</div>
-      </div>
-    </div>
-    <!-- MCP Connect -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-light-blue-500 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-light-blue-200 dark:border-light-blue-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-cyan-200 group-hover:dark:shadow-light-blue-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">🔗</span>
-        </div>
-        <div class="text-center text-light-blue-800 dark:text-light-blue-200 font-medium">MCP Connect</div>
-         <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">Connect Cloud to Local</div>
-      </div>
-    </div>
-    <!-- Zed -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-zinc-500 to-neutral-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-zinc-200 group-hover:dark:shadow-neutral-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">Z</span>
-        </div>
-        <div class="text-center text-neutral-800 dark:text-neutral-200 font-medium">Zed</div>
-         <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">High-performance Editor</div>
-      </div>
-    </div>
-     <!-- chatmcp -->
-    <div class="group relative transform transition-all hover:scale-105 hover:z-10 hover:shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-sky-600 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity blur-sm"></div>
-      <div class="p-5 border border-sky-200 dark:border-sky-800 bg-white dark:bg-gray-800 rounded-xl relative shadow-md group-hover:shadow-cyan-200 group-hover:dark:shadow-sky-900/40 transition-all h-full flex flex-col">
-        <div class="flex items-center justify-center mb-3 flex-grow">
-           <span class="text-5xl font-bold">💬</span>
-        </div>
-        <div class="text-center text-sky-800 dark:text-sky-200 font-medium">ChatMCP</div>
-         <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-1">(Open Source Chat Client)</div>
-      </div>
+    <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+       <span class="text-2xl font-bold flex-shrink-0 w-6 text-center">Z</span>
+      <div><span class="font-medium">Zed:</span> High-performance Editor</div>
     </div>
   </div>
+
+  <!-- Category 2: Chat Clients & Assistants -->
+  <div v-click="2" class="space-y-3">
+    <h3 class="text-lg font-semibold text-cyan-700 dark:text-cyan-300 mb-2 border-b border-cyan-200 dark:border-cyan-700 pb-1">
+      <div class="i-carbon-chat mr-2"></div> Chat Clients & Assistants
+    </h3>
+    <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+      <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fchatwise.app%2F_app%2Fimmutable%2Fassets%2Ficon.BlYxxTy5.png&w=64&q=75" alt="ChatWise" class="h-6 w-6 object-contain flex-shrink-0">
+      <div><span class="font-medium">ChatWise:</span> AI chatbot</div>
+    </div>
+    <div class="flex items-center gap-2 p-2 bg-white/80 dark:bg-gray-800/80 rounded shadow-sm">
+       <span class="text-2xl flex-shrink-0 w-6 text-center">🍒</span>
+      <div><span class="font-medium">Cherry Studio:</span> Open Source Desktop</div>
+    </div>
+  </div>
+
 </div>
 
-<div class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400 italic rounded-lg py-2 px-4 bg-gray-100 dark:bg-gray-800 inline-block mx-auto">
+<div v-click="4" class="mt-6 text-center text-xs text-gray-500 dark:text-gray-400 italic rounded-lg py-1 px-3 bg-gray-100 dark:bg-gray-800 inline-block mx-auto">
   Source: <a href="https://mcp.so/clients?tag=featured" target="_blank" class="underline">mcp.so Featured Clients</a> (List may change)
 </div>
 
