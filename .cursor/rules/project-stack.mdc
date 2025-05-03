@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Stack
+
+This project is developed using the following technologies:
+
+- **Slide Framework:** [sli.dev](mdc:https:/sli.dev)
+- **CSS Framework:** [UnoCSS](mdc:https:/unocss.dev)

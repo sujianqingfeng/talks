@@ -189,6 +189,12 @@ importers:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
     devDependencies:
+      '@iconify-json/logos':
+        specifier: ^1.1.42
+        version: 1.1.44
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.33
+        version: 1.2.33
       '@slidev/types':
         specifier: ^51.6.0
         version: 51.6.0(@nuxt/kit@3.13.2(rollup@4.40.1)(webpack-sources@3.2.3))(@vue/compiler-sfc@3.5.13)(postcss@8.5.3)(typescript@5.8.3)(vite@6.3.4(@types/node@18.19.45)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.1))
