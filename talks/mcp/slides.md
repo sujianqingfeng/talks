@@ -50,7 +50,12 @@ class: text-center
 </div>
 </div>
 
-<div v-click class="mt-10 relative py-3">
+---
+layout: center
+class: text-center
+---
+
+<div class="mt-10 relative py-3">
   <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl opacity-90 blur"></div>
   <div class="relative text-2xl font-bold text-white px-6 py-2">
     这就是 MCP 发挥作用的地方！
@@ -61,6 +66,109 @@ class: text-center
 layout: center
 class: "bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-blue-900/30"
 ---
+
+
+
+
+# MCP 是什么？<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600"> 模型上下文协议</span>
+
+<div class="mt-4 text-xl text-indigo-700 dark:text-indigo-300 font-medium">可以把它想象成 <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-md text-indigo-800 dark:text-indigo-100">AI 的 USB-C 接口</span></div>
+
+<div grid="~ cols-2 gap-12" class="mt-8 items-center">
+
+<div class="space-y-6">
+  <div class="p-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+    <div class="font-bold text-lg text-red-700 dark:text-red-300 mb-2 flex items-center">
+      <div class="i-carbon-close-filled mr-2"></div>MCP 之前
+    </div>
+    <div class="text-red-600 dark:text-red-300">
+      每个 AI 和每个工具都需要混乱的自定义连接。
+      <br/><br/>
+      <span class="italic">(想象一下每个设备都需要不同的充电器！)</span>
+    </div>
+
+```mermaid {scale: 0.7, theme: 'neutral'}
+graph TD
+    subgraph AI 模型
+        A[AI 模型 1]
+        B[AI 模型 2]
+    end
+    subgraph 工具与数据
+        T1[数据库]
+        T2[文件系统]
+        T3[API X]
+        T4[API Y]
+    end
+    A --> T1
+    A --> T2
+    A --> T3
+    A --> T4
+    B --> T1
+    B --> T2
+    B --> T3
+    B --> T4
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style T1 fill:#ccf,stroke:#333,stroke-width:2px
+    style T2 fill:#ccf,stroke:#333,stroke-width:2px
+    style T3 fill:#ccf,stroke:#333,stroke-width:2px
+    style T4 fill:#ccf,stroke:#333,stroke-width:2px
+```
+    <div class="text-center text-sm text-red-500 dark:text-red-300 mt-2 font-mono">M 个模型 x N 个工具 = M*N 个连接</div>
+  </div>
+</div>
+
+<div class="space-y-6">
+  <div class="p-4 rounded-xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
+    <div class="font-bold text-lg text-green-700 dark:text-green-300 mb-2 flex items-center">
+      <div class="i-carbon-checkmark-filled mr-2"></div>使用 MCP
+    </div>
+    <div class="text-green-600 dark:text-green-300">
+      一个 <span class="font-bold">标准协议</span> 允许任何兼容的 AI 连接到任何兼容的工具。
+      <br/><br/>
+      <span class="italic">(一个标准端口搞定一切！)</span>
+    </div>
+
+```mermaid {scale: 0.7, theme: 'neutral'}
+graph TD
+    subgraph AI 模型
+        A[AI 模型 1]
+        B[AI 模型 2]
+    end
+    subgraph MCP 标准
+        MCP((MCP))
+    end
+    subgraph 工具与数据
+        T1[数据库]
+        T2[文件系统]
+        T3[API X]
+        T4[API Y]
+    end
+    A --> MCP
+    B --> MCP
+    MCP --> T1
+    MCP --> T2
+    MCP --> T3
+    MCP --> T4
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style MCP fill:#cfc,stroke:#333,stroke-width:4px
+    style T1 fill:#ccf,stroke:#333,stroke-width:2px
+    style T2 fill:#ccf,stroke:#333,stroke-width:2px
+    style T3 fill:#ccf,stroke:#333,stroke-width:2px
+    style T4 fill:#ccf,stroke:#333,stroke-width:2px
+```
+    <div class="text-center text-sm text-green-500 dark:text-green-300 mt-2 font-mono">M 个模型 + N 个工具 = M+N 个连接</div>
+  </div>
+</div>
+
+</div>
+
+
+
+---
+
+
 
 # 关键前提：模型需支持 MCP
 
