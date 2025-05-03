@@ -266,7 +266,7 @@ layout: two-cols
 class: "bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20"
 ---
 
-# 面临哪些挑战？
+# 面临哪些挑战？ (1/2)
 
 <div class="text-xl mb-6 text-amber-700 dark:text-amber-300 font-medium">MCP 功能强大，但仍处于早期阶段</div>
 
@@ -304,8 +304,19 @@ class: "bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:
 
 ::right::
 
-<div class="space-y-6 pl-6 pt-20">
-  <div v-click="3" class="p-4 rounded-xl bg-white dark:bg-gray-800 border-l-4 border-blue-500 shadow-sm">
+<!-- Content moved to the next slide -->
+<div class="pt-20"></div>
+
+
+---
+layout: default
+class: "bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20"
+---
+
+# 面临哪些挑战？ (2/2)
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  <div v-click="1" class="p-4 rounded-xl bg-white dark:bg-gray-800 border-l-4 border-blue-500 shadow-sm">
     <div class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2 flex items-center">
       <div class="i-carbon-search text-2xl mr-2"></div>
       发现机制
@@ -315,7 +326,7 @@ class: "bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:
     </div>
   </div>
 
-  <div v-click="4" class="p-4 rounded-xl bg-white dark:bg-gray-800 border-l-4 border-purple-500 shadow-sm">
+  <div v-click="2" class="p-4 rounded-xl bg-white dark:bg-gray-800 border-l-4 border-purple-500 shadow-sm">
     <div class="text-lg font-bold text-purple-600 dark:text-purple-400 mb-2 flex items-center">
       <div class="i-carbon-code text-2xl mr-2"></div>
       复杂性
@@ -324,13 +335,13 @@ class: "bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:
       构建健壮且安全的服务器需要专业知识和谨慎。需要注意边界情况和错误处理。
     </div>
   </div>
+</div>
 
-  <div v-click="5" class="p-6 mt-10 rounded-xl bg-gradient-to-br from-amber-100 to-red-100 dark:from-amber-900/50 dark:to-red-900/50 shadow-md">
-    <div class="text-center text-lg font-medium text-amber-800 dark:text-amber-200">
-      行业正在努力寻找解决方案，但需要
-      <span class="font-bold text-red-600 dark:text-red-400">保持谨慎</span>，
-      尤其是在安全方面。
-    </div>
+<div v-click="3" class="p-6 mt-10 rounded-xl bg-gradient-to-br from-amber-100 to-red-100 dark:from-amber-900/50 dark:to-red-900/50 shadow-md max-w-3xl mx-auto">
+  <div class="text-center text-lg font-medium text-amber-800 dark:text-amber-200">
+    行业正在努力寻找解决方案，但需要
+    <span class="font-bold text-red-600 dark:text-red-400">保持谨慎</span>，
+    尤其是在安全方面。
   </div>
 </div>
 
