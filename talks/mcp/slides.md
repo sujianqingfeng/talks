@@ -36,16 +36,13 @@ class: text-center
 
 # 你是否曾经希望你的 AI 能够...
 
-<div class="mt-12 flex justify-center">
-<!-- 使用更清晰的列表样式 -->
-<div class="space-y-5 text-left max-w-2xl text-lg">
-
-*   <div class="flex items-center"><div class="i-carbon-flash text-2xl text-yellow-500 mr-3"></div> 查找 <span class="font-semibold text-blue-600 dark:text-blue-400">实时</span> 信息（而不仅仅是旧的训练数据）？</div>
-*   <div class="flex items-center"><div class="i-carbon-document text-2xl text-blue-500 mr-3"></div> 访问你 <span class="font-semibold text-blue-600 dark:text-blue-400">特定</span> 的文档或代码？</div>
-*   <div class="flex items-center"><div class="i-carbon-database text-2xl text-green-500 mr-3"></div> 连接到 <span class="font-semibold text-blue-600 dark:text-blue-400">你公司</span> 的数据库？</div>
-*   <div class="flex items-center"><div class="i-carbon-tool-box text-2xl text-purple-500 mr-3"></div> 代表你使用 <span class="font-semibold text-blue-600 dark:text-blue-400">其他</span> 软件工具？</div>
-
-</div>
+<div class="mt-10 flex flex-col items-center justify-center">
+  <ul class="space-y-5 text-left max-w-2xl text-xl list-disc list-inside">
+    <li v-click>查找 <span class="font-semibold text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/50">实时</span> 信息（而不仅仅是旧的训练数据）？</li>
+    <li v-click>访问你 <span class="font-semibold text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/50">特定</span> 的文档或代码？</li>
+    <li v-click>连接到 <span class="font-semibold text-green-700 dark:text-green-300 px-1.5 py-0.5 rounded bg-green-100 dark:bg-green-900/50">你公司</span> 的数据库？</li>
+    <li v-click>代表你使用 <span class="font-semibold text-purple-700 dark:text-purple-300 px-1.5 py-0.5 rounded bg-purple-100 dark:bg-purple-900/50">其他</span> 软件工具？</li>
+  </ul>
 </div>
 
 ---
@@ -53,26 +50,49 @@ layout: center
 class: text-center
 ---
 
-<!-- 使用更简洁的强调方式 -->
-<div class="mt-10 relative py-3">
-  <div class="relative text-3xl font-bold text-gray-800 dark:text-gray-200 px-6 py-3 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm">
-    这就是 MCP 发挥作用的地方！
+<!-- 优化：Apple 风格强调 -->
+<div 
+  v-click 
+  class="
+    p-6
+    rounded-lg
+    inline-block 
+  "
+>
+  <div class="flex items-center justify-center gap-3">
+    <div class="i-carbon-plug text-4xl text-blue-500 dark:text-blue-400"></div>
+    <div class="text-3xl font-semibold text-gray-900 dark:text-gray-50"> 
+      这就是 MCP 发挥作用的地方！
+    </div>
   </div>
 </div>
 
 ---
 layout: center
 # 使用更中性的背景
-class: "bg-gray-50 dark:bg-gray-900" 
+class: "bg-gray-50 dark:bg-gray-900 text-center"
 ---
 
 # MCP 是什么？<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500"> 模型上下文协议</span>
 
-<!-- 调整副标题样式 -->
-<div class="mt-5 text-xl text-gray-700 dark:text-gray-300 font-medium">可以把它想象成 <span class="px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded-md text-gray-800 dark:text-gray-100 font-mono text-base">AI 的 USB-C 接口</span></div>
+<!-- 添加简短核心定义 -->
+<div v-click class="mt-6 text-xl text-gray-800 dark:text-gray-200">
+  一个用于连接 AI 模型与外部工具和数据的<span class="font-semibold text-blue-600 dark:text-blue-400">标准接口</span>。
+</div>
 
-<div class="mt-10 text-gray-500 dark:text-gray-400">
-让我们对比一下 MCP 出现前后的情况...
+<!-- 优化类比展示 -->
+<div v-click class="mt-8 text-lg text-gray-600 dark:text-gray-400">
+  简单来说，你可以把它想象成：
+</div>
+
+<div v-click class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-lg shadow-md border border-gray-300 dark:border-gray-600">
+  <div class="i-carbon-usb text-2xl text-blue-500"></div>
+  <span class="font-mono text-lg font-medium text-gray-900 dark:text-gray-50">AI 的 USB-C 接口</span>
+</div>
+
+<!-- 优化过渡句 -->
+<div v-click class="mt-12 text-gray-500 dark:text-gray-400 animate-fade-in animate-delay-500">
+  为了理解它的重要性，让我们看看 MCP 出现前后的对比...
 </div>
 
 ---
@@ -83,45 +103,55 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 # MCP 之前：混乱的连接
 
-<!-- 使用更柔和的警告框样式 -->
-<div class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-2xl mx-auto shadow-sm">
-  <div class="font-semibold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center justify-center">
-    <div class="i-carbon-error text-xl mr-2"></div>MCP 之前
+<div class="flex flex-col items-center justify-center gap-6 mt-6">
+
+  <!-- 1. 现象总结 -->
+  <div class="p-4 rounded-lg bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-xl text-center text-base text-red-700 dark:text-red-300 font-semibold" v-click>
+    每个 AI 和每个工具都需要各自定制的连接，极其混乱。
   </div>
-  <div class="text-red-600 dark:text-red-400 text-center mb-5 text-base leading-relaxed">
-    每个 AI 和每个工具都需要混乱的自定义连接。
-    <br/>
-    <span class="italic text-sm opacity-80">(想象一下每个设备都需要不同的充电器！)</span>
+
+  <!-- 2. 图示 -->
+  <div class="w-full max-w-2xl" v-click>
+    ```mermaid {scale: 0.8, theme: 'neutral'}
+    graph TD
+        subgraph AI 模型
+            A[AI 模型 1]
+            B[AI 模型 2]
+        end
+        subgraph 工具与数据
+            T1[数据库]
+            T2[文件系统]
+            T3[API X]
+            T4[API Y]
+        end
+        A --> T1
+        A --> T2
+        A --> T3
+        A --> T4
+        B --> T1
+        B --> T2
+        B --> T3
+        B --> T4
+        style A fill:#f9f,stroke:#333,stroke-width:2px
+        style B fill:#f9f,stroke:#333,stroke-width:2px
+        style T1 fill:#ccf,stroke:#333,stroke-width:2px
+        style T2 fill:#ccf,stroke:#333,stroke-width:2px
+        style T3 fill:#ccf,stroke:#333,stroke-width:2px
+        style T4 fill:#ccf,stroke:#333,stroke-width:2px
+    ```
   </div>
-  
-```mermaid {scale: 0.8, theme: 'neutral'}
-graph TD
-    subgraph AI 模型
-        A[AI 模型 1]
-        B[AI 模型 2]
-    end
-    subgraph 工具与数据
-        T1[数据库]
-        T2[文件系统]
-        T3[API X]
-        T4[API Y]
-    end
-    A --> T1
-    A --> T2
-    A --> T3
-    A --> T4
-    B --> T1
-    B --> T2
-    B --> T3
-    B --> T4
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style T1 fill:#ccf,stroke:#333,stroke-width:2px
-    style T2 fill:#ccf,stroke:#333,stroke-width:2px
-    style T3 fill:#ccf,stroke:#333,stroke-width:2px
-    style T4 fill:#ccf,stroke:#333,stroke-width:2px
-```
-  <div class="text-center text-sm text-red-500 dark:text-red-300 mt-3 font-mono">M 个模型 x N 个工具 = M*N 个连接</div>
+
+  <!-- 3. 问题点 -->
+  <ul class="mt-4 space-y-2 text-left max-w-xl text-red-600 dark:text-red-400 text-base list-disc list-inside" v-click>
+    <li>每增加一个模型或工具，连接数急剧增加</li>
+    <li>维护成本高，易出错</li>
+    <li>缺乏标准，难以扩展</li>
+  </ul>
+
+  <!-- 4. 公式单独突出 -->
+  <div class="mt-4 px-4 py-2 rounded-lg bg-red-100 dark:bg-red-900/50 border border-red-300 dark:border-red-700 text-red-700 dark:text-red-300 font-mono text-lg font-bold" v-click>
+    M 个模型 × N 个工具 = <span class="text-xl">M × N</span> 个连接
+  </div>
 </div>
 
 ---
