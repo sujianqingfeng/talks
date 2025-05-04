@@ -89,7 +89,6 @@ class: "bg-gray-50 dark:bg-gray-900 text-center"
   <div class="i-carbon-usb text-2xl text-blue-500"></div>
   <span class="font-mono text-lg font-medium text-gray-900 dark:text-gray-50">AI 的 USB-C 接口</span>
 </div>
-
 <!-- 优化过渡句 -->
 <div v-click class="mt-12 text-gray-500 dark:text-gray-400 animate-fade-in animate-delay-500">
   为了理解它的重要性，让我们看看 MCP 出现前后的对比...
@@ -99,7 +98,6 @@ class: "bg-gray-50 dark:bg-gray-900 text-center"
 layout: center
 # 使用更中性的背景
 class: "bg-gray-50 dark:bg-gray-900" 
-
 ---
 
 # MCP 之前：混乱的连接
@@ -154,6 +152,7 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 # 使用 MCP：统一的标准
 
+
 <!-- 使用更柔和的成功框样式 -->
 <div class="mt-6 p-6 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800/50 max-w-2xl mx-auto shadow-sm">
   <div class="font-semibold text-lg text-green-700 dark:text-green-300 mb-3 flex items-center justify-center">
@@ -202,44 +201,102 @@ graph TD
 
 ---
 
-# 关键前提：模型需支持 MCP
+# MCP 只是"桥梁"，模型是"大脑
 
-<div class="text-xl mb-8 text-gray-700 dark:text-gray-300 font-medium">MCP 只是"桥梁"，模型是"大脑"</div>
+<!-- Apple 风格卡片布局 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mt-8 items-start">
 
-<!-- 使用标准卡片布局 -->
-<div class="mt-8 max-w-3xl mx-auto space-y-5 text-left">
-  <div class="flex items-start p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
-    <div class="i-carbon-brain text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
-    <div>
-      <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">AI 模型是核心</div>
-      <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">仅仅有 MCP 服务器是不够的。AI 模型本身必须具备理解和使用外部工具的能力（通常称为 Tool Use 或 Function Calling）。</div>
+  <!-- 左侧核心观点 (浅灰色背景卡片) -->
+  <div class="md:col-span-5 space-y-5">
+    <div class="flex items-start p-5 rounded-xl bg-gray-100 dark:bg-gray-800/50 shadow-sm border border-gray-200 dark:border-gray-700/50">
+      <div class="i-carbon-chip text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
+      <div>
+        <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">AI 模型是核心</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+          仅仅有 MCP 服务器是不够的。模型本身必须具备理解和使用外部工具的能力 (Tool Use / Function Calling)。
+        </div>
+      </div>
+    </div>
+    <div class="flex items-start p-5 rounded-xl bg-gray-100 dark:bg-gray-800/50 shadow-sm border border-gray-200 dark:border-gray-700/50">
+      <div class="i-carbon-connect-target text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
+      <div>
+        <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">需要协议实现</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+            模型（或其代理/框架）需实现 MCP 协议才能与 MCP 服务器交互。
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="flex items-start p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
-    <div class="i-carbon-connect-target text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
-    <div>
-      <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">需要协议实现</div>
-      <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">模型（或其代理/框架）需要实现 MCP 协议，才能与 MCP 服务器进行通信和交互。</div>
+  <!-- 右侧具体解释 (白色背景卡片，区分强调点) -->
+  <div class="md:col-span-7 space-y-5">
+    <div class="flex items-start p-5 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
+      <div class="i-carbon-machine-learning-model text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
+      <div>
+        <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">支持情况各异</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">不同模型对工具使用的支持程度不同。一些新模型原生支持，一些则需要通过特定的框架（如 LangChain, Genkit）或客户端集成（如 VS Code 的 Copilot）来实现。</div>
+      </div>
+    </div>
+    <div class="flex items-start p-5 rounded-xl bg-yellow-100 dark:bg-yellow-900/60 shadow-sm border border-yellow-300 dark:border-yellow-700/50">
+        <div class="i-carbon-touch-1 text-3xl text-yellow-600 dark:text-yellow-400 mr-4 mt-1 flex-shrink-0"></div>
+        <div>
+            <div class="font-semibold text-yellow-700 dark:text-yellow-300 mb-1">选择 AI 工具的考量</div>
+            <div class="text-gray-700 dark:text-gray-400 text-sm leading-relaxed">选择 AI 工具时，不仅要看其功能，也要评估其背后的模型是否具备与 MCP 功能兼容的 Tool Use 能力。</div>
+        </div>
     </div>
   </div>
-  
-  <div class="flex items-start p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
-    <div class="i-carbon-machine-learning-model text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
-    <div>
-      <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">支持情况各异</div>
-      <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">不同模型对工具使用的支持程度不同。一些新模型原生支持，一些则需要通过特定的框架（如 LangChain, Genkit）或客户端集成（如 VS Code 的 Copilot）来实现。</div>
-    </div>
-  </div>
-</div>
 
-<div class="mt-10 text-center text-sm text-gray-500 dark:text-gray-400">
-  所以，选择 AI 工具时，也要看其背后的模型是否支持你需要的 MCP 功能。
 </div>
 
 ---
 
-# 哪些工具支持 MCP？<span class="text-sm opacity-70 ml-2">客户端 - Featured</span>
+# 哪些模型已知支持 MCP？
+
+
+<!-- 使用标准卡片布局列出模型 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  
+  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-green-200 dark:border-green-700">
+    <div class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2 flex items-center">
+      Anthropic Claude 系列
+    </div>
+    <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+      由 MCP 协议的提出者 Anthropic 开发。其模型（如 <span class="font-semibold">Claude 3.5 Sonnet</span>）在其官方工具（如 Claude Desktop App）中与 MCP 深度集成，是原生支持的典型代表。
+    </div>
+  </div>
+
+  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-blue-200 dark:border-blue-700">
+    <div class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2 flex items-center">
+      OpenAI GPT 系列
+    </div>
+    <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+      模型（如 <span class="font-semibold">GPT-4</span>）可以通过 <span class="font-semibold">OpenAI Agents SDK</span> 明确连接到 MCP 服务器。这也是一种官方支持的集成方式。
+    </div>
+  </div>
+
+  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-purple-200 dark:border-purple-700">
+    <div class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2 flex items-center">
+      Alibaba Qwen 系列
+    </div>
+    <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+      官方博客明确提到 <span class="font-semibold">Qwen3</span> 加强了对 MCP 的支持，并推荐使用 <span class="font-semibold">Qwen-Agent</span> 框架来利用其 Agent 能力与 MCP 工具交互。
+    </div>
+  </div>
+
+  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-orange-200 dark:border-orange-700">
+    <div class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2 flex items-center">
+      DeepSeek V3 (03-24)
+    </div>
+    <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+      该版本具备改进的函数调用（Function Calling）能力，这是与 MCP 工具交互的基础。虽然官方文档未直接提及 MCP，但其增强的 Agent 能力使其可以通过相应框架接入。
+    </div>
+  </div>
+
+</div>
+
+---
+
+# 哪些工具支持 MCP？
 
 <!-- 统一卡片样式和布局，仅两组 -->
 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
