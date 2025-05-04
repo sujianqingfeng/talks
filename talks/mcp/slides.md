@@ -360,7 +360,6 @@ graph TD
 
 
 ---
-layout: center
 # 使用更中性的背景
 class: "bg-gray-50 dark:bg-gray-900"
 ---
@@ -434,7 +433,6 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 # AI 能做什么？<span class="text-sm opacity-70 ml-2">1/2 开发者篇</span>
 
-<div class="text-xl mb-6 text-gray-700 dark:text-gray-300 font-medium">为开发者解锁超能力！</div>
 
 <!-- 使用标准卡片布局 -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -494,7 +492,6 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 # AI 能做什么？<span class="text-sm opacity-70 ml-2">2/2 日常生活篇</span>
 
-<div class="text-xl mb-6 text-gray-700 dark:text-gray-300 font-medium">让 AI 成为你的生活助手！</div>
 
 <!-- 使用更紧凑的网格和标准卡片 -->
 <div class="grid grid-cols-2 gap-5">
