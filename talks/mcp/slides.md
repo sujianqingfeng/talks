@@ -99,60 +99,52 @@ class: "bg-gray-50 dark:bg-gray-900 text-center"
 layout: center
 # 使用更中性的背景
 class: "bg-gray-50 dark:bg-gray-900" 
+
 ---
 
 # MCP 之前：混乱的连接
 
-<div class="flex flex-col items-center justify-center gap-6 mt-6">
-
-  <!-- 1. 现象总结 -->
-  <div class="p-4 rounded-lg bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-xl text-center text-base text-red-700 dark:text-red-300 font-semibold" v-click>
-    每个 AI 和每个工具都需要各自定制的连接，极其混乱。
+<!-- 使用更柔和的警告框样式 -->
+<div class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-2xl mx-auto shadow-sm">
+  <div class="font-semibold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center justify-center">
+    <div class="i-carbon-error text-xl mr-2"></div>MCP 之前
   </div>
-
-  <!-- 2. 图示 -->
-  <div class="w-full max-w-2xl" v-click>
-    ```mermaid {scale: 0.8, theme: 'neutral'}
-    graph TD
-        subgraph AI 模型
-            A[AI 模型 1]
-            B[AI 模型 2]
-        end
-        subgraph 工具与数据
-            T1[数据库]
-            T2[文件系统]
-            T3[API X]
-            T4[API Y]
-        end
-        A --> T1
-        A --> T2
-        A --> T3
-        A --> T4
-        B --> T1
-        B --> T2
-        B --> T3
-        B --> T4
-        style A fill:#f9f,stroke:#333,stroke-width:2px
-        style B fill:#f9f,stroke:#333,stroke-width:2px
-        style T1 fill:#ccf,stroke:#333,stroke-width:2px
-        style T2 fill:#ccf,stroke:#333,stroke-width:2px
-        style T3 fill:#ccf,stroke:#333,stroke-width:2px
-        style T4 fill:#ccf,stroke:#333,stroke-width:2px
-    ```
+  <div class="text-red-600 dark:text-red-400 text-center mb-5 text-base leading-relaxed">
+    每个 AI 和每个工具都需要混乱的自定义连接。
+    <br/>
+    <span class="italic text-sm opacity-80">(想象一下每个设备都需要不同的充电器！)</span>
   </div>
-
-  <!-- 3. 问题点 -->
-  <ul class="mt-4 space-y-2 text-left max-w-xl text-red-600 dark:text-red-400 text-base list-disc list-inside" v-click>
-    <li>每增加一个模型或工具，连接数急剧增加</li>
-    <li>维护成本高，易出错</li>
-    <li>缺乏标准，难以扩展</li>
-  </ul>
-
-  <!-- 4. 公式单独突出 -->
-  <div class="mt-4 px-4 py-2 rounded-lg bg-red-100 dark:bg-red-900/50 border border-red-300 dark:border-red-700 text-red-700 dark:text-red-300 font-mono text-lg font-bold" v-click>
-    M 个模型 × N 个工具 = <span class="text-xl">M × N</span> 个连接
-  </div>
+  
+```mermaid {scale: 0.8, theme: 'neutral'}
+graph TD
+    subgraph AI 模型
+        A[AI 模型 1]
+        B[AI 模型 2]
+    end
+    subgraph 工具与数据
+        T1[数据库]
+        T2[文件系统]
+        T3[API X]
+        T4[API Y]
+    end
+    A --> T1
+    A --> T2
+    A --> T3
+    A --> T4
+    B --> T1
+    B --> T2
+    B --> T3
+    B --> T4
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style T1 fill:#ccf,stroke:#333,stroke-width:2px
+    style T2 fill:#ccf,stroke:#333,stroke-width:2px
+    style T3 fill:#ccf,stroke:#333,stroke-width:2px
+    style T4 fill:#ccf,stroke:#333,stroke-width:2px
+```
+  <div class="text-center text-sm text-red-500 dark:text-red-300 mt-3 font-mono">M 个模型 x N 个工具 = M*N 个连接</div>
 </div>
+
 
 ---
 layout: center
