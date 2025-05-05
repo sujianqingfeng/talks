@@ -103,7 +103,7 @@ class: "bg-gray-50 dark:bg-gray-900"
 # MCP 之前：混乱的连接
 
 <!-- 使用更柔和的警告框样式 -->
-<div class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-2xl mx-auto shadow-sm">
+<div v-click class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-2xl mx-auto shadow-sm">
   <div class="font-semibold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center justify-center">
     <div class="i-carbon-error text-xl mr-2"></div>MCP 之前
   </div>
@@ -154,7 +154,7 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 
 <!-- 使用更柔和的成功框样式 -->
-<div class="mt-6 p-6 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800/50 max-w-2xl mx-auto shadow-sm">
+<div v-click class="mt-6 p-6 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800/50 max-w-2xl mx-auto shadow-sm">
   <div class="font-semibold text-lg text-green-700 dark:text-green-300 mb-3 flex items-center justify-center">
     <div class="i-carbon-checkmark-outline text-xl mr-2"></div>使用 MCP
   </div>
@@ -208,7 +208,7 @@ graph TD
 
   <!-- 左侧核心观点 (浅灰色背景卡片) -->
   <div class="md:col-span-5 space-y-5">
-    <div class="flex items-start p-5 rounded-xl bg-gray-100 dark:bg-gray-800/50 shadow-sm border border-gray-200 dark:border-gray-700/50">
+    <div v-click class="flex items-start p-5 rounded-xl bg-gray-100 dark:bg-gray-800/50 shadow-sm border border-gray-200 dark:border-gray-700/50">
       <div class="i-carbon-chip text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
       <div>
         <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">AI 模型是核心</div>
@@ -217,7 +217,7 @@ graph TD
         </div>
       </div>
     </div>
-    <div class="flex items-start p-5 rounded-xl bg-gray-100 dark:bg-gray-800/50 shadow-sm border border-gray-200 dark:border-gray-700/50">
+    <div v-click class="flex items-start p-5 rounded-xl bg-gray-100 dark:bg-gray-800/50 shadow-sm border border-gray-200 dark:border-gray-700/50">
       <div class="i-carbon-connect-target text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
       <div>
         <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">需要协议实现</div>
@@ -230,14 +230,14 @@ graph TD
 
   <!-- 右侧具体解释 (白色背景卡片，区分强调点) -->
   <div class="md:col-span-7 space-y-5">
-    <div class="flex items-start p-5 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
+    <div v-click class="flex items-start p-5 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
       <div class="i-carbon-machine-learning-model text-3xl text-blue-500 dark:text-blue-400 mr-4 mt-1 flex-shrink-0"></div>
       <div>
         <div class="font-semibold text-gray-800 dark:text-gray-200 mb-1">支持情况各异</div>
         <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">不同模型对工具使用的支持程度不同。一些新模型原生支持，一些则需要通过特定的框架（如 LangChain, Genkit）或客户端集成（如 VS Code 的 Copilot）来实现。</div>
       </div>
     </div>
-    <div class="flex items-start p-5 rounded-xl bg-yellow-100 dark:bg-yellow-900/60 shadow-sm border border-yellow-300 dark:border-yellow-700/50">
+    <div v-click class="flex items-start p-5 rounded-xl bg-yellow-100 dark:bg-yellow-900/60 shadow-sm border border-yellow-300 dark:border-yellow-700/50">
         <div class="i-carbon-touch-1 text-3xl text-yellow-600 dark:text-yellow-400 mr-4 mt-1 flex-shrink-0"></div>
         <div>
             <div class="font-semibold text-yellow-700 dark:text-yellow-300 mb-1">选择 AI 工具的考量</div>
@@ -256,7 +256,7 @@ graph TD
 <!-- 使用标准卡片布局列出模型 -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
   
-  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-green-200 dark:border-green-700">
+  <div v-click class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-green-200 dark:border-green-700">
     <div class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2 flex items-center">
       Anthropic Claude 系列
     </div>
@@ -265,7 +265,7 @@ graph TD
     </div>
   </div>
 
-  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-blue-200 dark:border-blue-700">
+  <div v-click class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-blue-200 dark:border-blue-700">
     <div class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2 flex items-center">
       OpenAI GPT 系列
     </div>
@@ -274,7 +274,7 @@ graph TD
     </div>
   </div>
 
-  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-purple-200 dark:border-purple-700">
+  <div v-click class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-purple-200 dark:border-purple-700">
     <div class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2 flex items-center">
       Alibaba Qwen 系列
     </div>
@@ -283,7 +283,7 @@ graph TD
     </div>
   </div>
 
-  <div class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-orange-200 dark:border-orange-700">
+  <div v-click class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-orange-200 dark:border-orange-700">
     <div class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2 flex items-center">
       DeepSeek V3 (03-24)
     </div>
@@ -301,56 +301,56 @@ graph TD
 <div class="flex flex-wrap justify-center gap-8 mt-10">
 
   <!-- Windsurf -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fmcp.so%2Ficons%2Fwindsurf.png&w=64&q=75" alt="Windsurf" class="h-12 w-12 object-contain mb-2">
     <div class="font-semibold text-gray-800 dark:text-gray-200">Windsurf</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">AI IDE</div>
   </div>
 
   <!-- Cursor -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fmcp.so%2Ficons%2Fcursor.png&w=64&q=75" alt="Cursor" class="h-12 w-12 object-contain mb-2">
     <div class="font-semibold text-gray-800 dark:text-gray-200">Cursor</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">AI 代码编辑器</div>
   </div>
 
   <!-- VS Code -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <logos-visual-studio-code class="h-12 w-12 mb-2"/>
     <div class="font-semibold text-gray-800 dark:text-gray-200">VS Code</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">官方插件</div>
   </div>
 
   <!-- Trae -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <img src="https://mcp.so/_next/image?url=https%3A%2F%2Flf-cdn.trae.ai%2Fobj%2Ftrae-ai-sg%2Ftrae_website_prod%2Ffavicon.png&w=64&q=75" alt="Trae" class="h-12 w-12 object-contain mb-2">
     <div class="font-semibold text-gray-800 dark:text-gray-200">Trae</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">AI 助手</div>
   </div>
 
   <!-- Zed -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <img src="https://mcp.so/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F79345384%3Fv%3D4&w=64&q=75" alt="Trae" class="h-12 w-12 object-contain mb-2">
     <div class="font-semibold text-gray-800 dark:text-gray-200">Zed</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">高性能编辑器</div>
   </div>
 
   <!-- ChatWise -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <img src="https://mcp.so/_next/image?url=https%3A%2F%2Fchatwise.app%2F_app%2Fimmutable%2Fassets%2Ficon.BlYxxTy5.png&w=64&q=75" alt="ChatWise" class="h-12 w-12 object-contain mb-2">
     <div class="font-semibold text-gray-800 dark:text-gray-200">ChatWise</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">AI 聊天助手</div>
   </div>
 
   <!-- Cherry Studio -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <img src="https://mcp.so/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F187777663%3Fv%3D4&w=64&q=75" alt="ChatWise" class="h-12 w-12 object-contain mb-2">
     <div class="font-semibold text-gray-800 dark:text-gray-200">Cherry Studio</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">开源桌面助手</div>
   </div>
 
   <!-- 纳米AI桌面版 -->
-  <div class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
+  <div v-click class="flex flex-col items-center w-40 p-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-transform hover:scale-105">
     <span class="text-2xl w-12 h-12 flex items-center justify-center bg-green-100 dark:bg-green-900 rounded mb-2 text-green-600 dark:text-green-300 font-bold">N</span>
     <div class="font-semibold text-gray-800 dark:text-gray-200">纳米AI桌面版</div>
     <div class="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">国内 AI 桌面助手</div>
@@ -683,7 +683,7 @@ class: "bg-gray-50 dark:bg-gray-900"
 ---
 
 <div class="w-full h-full flex items-center justify-center">
-  <div class="text-3xl text-center text-gray-700 dark:text-gray-300">
+  <div v-click class="text-3xl text-center text-gray-700 dark:text-gray-300">
     MCP 是下一代 AI 应用的基础 ?
   </div>
 </div>
