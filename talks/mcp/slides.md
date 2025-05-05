@@ -566,101 +566,60 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 
 ---
-layout: two-cols
-# 使用更中性的背景
-class: "bg-gray-50 dark:bg-gray-900"
----
-
-# 面临哪些挑战？ <span class="ml-2 px-2 py-1 bg-red-100 text-red-700 rounded text-base align-middle">问题</span>
-
-<div class="space-y-6 pr-6">
-  <div class="flex items-start gap-4 p-5 rounded-lg bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-700 shadow-sm">
-    <div class="i-carbon-warning-alt text-3xl text-red-500 flex-shrink-0"></div>
-    <div>
-      <div class="font-semibold text-lg text-red-700 dark:text-red-400 mb-1">安全性 <span class="ml-2 px-2 py-0.5 text-xs bg-red-200 text-red-800 rounded-full font-medium">最大挑战</span></div>
-      <div class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-        如何确保服务器不会访问不该访问的内容？<br>
-        <span class="text-xs text-gray-500 dark:text-gray-400 italic">例：天气查询工具被用来读取本地文件？</span>
-      </div>
-    </div>
-  </div>
-  <div class="flex items-start gap-4 p-5 rounded-lg bg-orange-50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-700 shadow-sm">
-    <div class="i-carbon-hourglass text-3xl text-orange-500 flex-shrink-0"></div>
-    <div>
-      <div class="font-semibold text-lg text-orange-700 dark:text-orange-400 mb-1">成熟度</div>
-      <div class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-        标准仍在发展，早期采用者需适应变化和迭代。
-      </div>
-    </div>
-  </div>
-  <div class="flex items-start gap-4 p-5 rounded-lg bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-700 shadow-sm">
-    <div class="i-carbon-user-certification text-3xl text-yellow-500 flex-shrink-0"></div>
-    <div>
-      <div class="font-semibold text-lg text-yellow-700 dark:text-yellow-400 mb-1">上手的门槛</div>
-      <div class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-        对开发者和用户来说，理解和配置 MCP 生态的各类组件、权限和协议细节有一定难度。需要更好的文档和引导。
-      </div>
-    </div>
-  </div>
-</div>
-
-::right::
-
-<div class="flex flex-col items-center justify-center h-full gap-6">
-  <div class="i-carbon-roadblock text-7xl text-red-300 dark:text-red-700 opacity-70"></div>
-  <div class="i-carbon-warning-filled text-5xl text-orange-400 dark:text-orange-300 opacity-80"></div>
-  <div class="text-red-600 dark:text-red-400 text-lg font-bold mt-4">这些挑战阻碍了 MCP 的大规模落地</div>
-</div>
-
----
 layout: default
 # 使用更中性的背景
 class: "bg-gray-50 dark:bg-gray-900"
 ---
 
-# 面临哪些挑战？ (2/2)
+# 完善 MCP 生态：挑战与进展
 
-<!-- 使用标准卡片布局 -->
+<!-- 使用 2x2 网格布局，区分挑战、进展和安全考量 -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  
+  <!-- 挑战 1: 发现机制 (标准样式) -->
   <div v-click="1" class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
     <div class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center">
       <div class="i-carbon-map text-2xl mr-2 text-blue-500 dark:text-blue-400"></div>
-      发现机制
+      挑战：发现机制
     </div>
     <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-      如何找到并信任可靠、安全的 MCP 服务器？目前缺乏一个集中的可信任的工具目录。
+      如何找到并信任可靠、安全的 MCP 服务器？目前缺乏统一、可信的工具目录。
     </div>
   </div>
 
+  <!-- 挑战 2: 复杂性 (标准样式) -->
   <div v-click="2" class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700">
     <div class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center">
       <div class="i-carbon-terminal text-2xl mr-2 text-blue-500 dark:text-blue-400"></div>
-      复杂性
+      挑战：实施复杂性
     </div>
     <div class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-      构建健壮且安全的服务器需要专业知识和谨慎。需要注意边界情况和错误处理。
+      构建健壮、安全的服务器需要专业知识，需仔细处理边界情况和错误。
     </div>
   </div>
 
-  <!-- 新增：上手门槛的解决办法 -->
-  <div v-click="3" class="p-5 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-yellow-200 dark:border-yellow-700">
-    <div class="text-lg font-semibold text-yellow-700 dark:text-yellow-400 mb-2 flex items-center">
-      <div class="i-carbon-user-certification text-2xl mr-2 text-yellow-500"></div>
-      降低上手门槛
+  <!-- 进展: 降低门槛 (黄色高亮) -->
+  <div v-click="3" class="p-5 rounded-lg bg-yellow-50 dark:bg-yellow-900/30 shadow-sm border border-yellow-200 dark:border-yellow-800/50">
+    <div class="text-lg font-semibold text-yellow-700 dark:text-yellow-300 mb-2 flex items-center">
+      <div class="i-carbon-rocket text-2xl mr-2 text-yellow-600 dark:text-yellow-400"></div>
+      进展：降低门槛
     </div>
-    <div class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-      官方和社区正在推出 <span class="font-semibold">一键部署</span> 方案、<span class="font-semibold">可视化配置工具</span>，并持续完善 <span class="font-semibold">详细的入门文档</span> 和 <span class="font-semibold">视频教程</span>，帮助开发者和用户快速上手 MCP 生态。
+    <div class="text-gray-700 dark:text-gray-400 text-sm leading-relaxed">
+      官方和社区正通过 <span class="font-semibold">一键部署</span>、<span class="font-semibold">可视化工具</span>、<span class="font-semibold">文档</span> 和 <span class="font-semibold">教程</span> 简化上手过程。
     </div>
   </div>
-</div>
 
-<!-- 调整强调框样式 -->
-<div v-click="4" class="p-6 mt-12 rounded-lg bg-orange-50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800/50 shadow-sm max-w-3xl mx-auto">
-  <div class="text-center text-base font-medium text-orange-700 dark:text-orange-300 leading-relaxed">
-    行业正在努力寻找解决方案，但需要
-    <span class="font-semibold text-red-600 dark:text-red-400">保持谨慎</span>，
-    尤其是在安全方面。
+  <!-- 安全考量 (红色高亮) -->
+  <div v-click="4" class="p-5 rounded-lg bg-red-50 dark:bg-red-900/30 shadow-sm border border-red-200 dark:border-red-800/50">
+    <div class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2 flex items-center">
+      <div class="i-carbon-security text-2xl mr-2 text-red-600 dark:text-red-400"></div>
+      关键：安全考量
+    </div>
+    <div class="text-gray-700 dark:text-gray-400 text-sm leading-relaxed">
+      连接外部工具引入风险。需 <span class="font-semibold text-red-600 dark:text-red-400">谨慎评估</span> 权限、管理数据安全和操作。信任机制至关重要。
+    </div>
   </div>
+
 </div>
 
 
@@ -723,17 +682,21 @@ class: "bg-gray-50 dark:bg-gray-900"
 
 ---
 
-<div class="text-center w-full h-full">
+<div class="w-full h-full flex items-center justify-center">
+  <div class="text-3xl text-center text-gray-700 dark:text-gray-300">
     MCP 是下一代 AI 应用的基础 ?
+  </div>
 </div>
 
----
 
 ---
 layout: cover
-class: "text-center bg-gray-100 dark:bg-gray-900"
+# Use a slightly softer background and ensure full height
+class: "text-center bg-gray-50 dark:bg-gray-800 grid place-content-center h-full" 
 ---
 
-# 谢谢！
+<div class="space-y-8">
+  <h1 class="text-5xl font-bold text-gray-800 dark:text-gray-100">Thank You!</h1>
+</div>
 
 
