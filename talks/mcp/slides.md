@@ -95,15 +95,15 @@ class: "bg-gray-50 dark:bg-gray-900 text-center"
 </div>
 
 ---
-layout: center
+layout: default
 # 使用更中性的背景
-class: "bg-gray-50 dark:bg-gray-900" 
+class: "bg-gray-50 dark:bg-gray-900"
 ---
 
-# MCP 之前：混乱的连接
+# MCP 之前：混乱的连接 {.text-left}
 
 <!-- 使用更柔和的警告框样式 -->
-<div v-click class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-2xl mx-auto shadow-sm">
+<div v-click class="mt-6 p-6 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 max-w-2xl mx-auto shadow-sm text-center">
   <div class="font-semibold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center justify-center">
     <div class="i-carbon-error text-xl mr-2"></div>MCP 之前
   </div>
@@ -145,16 +145,15 @@ graph TD
 
 
 ---
-layout: center
 # 使用更中性的背景
 class: "bg-gray-50 dark:bg-gray-900" 
 ---
 
-# 使用 MCP：统一的标准
+# 使用 MCP：统一的标准 {.text-left}
 
 
 <!-- 使用更柔和的成功框样式 -->
-<div v-click class="mt-6 p-6 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800/50 max-w-2xl mx-auto shadow-sm">
+<div v-click class="mt-6 p-6 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800/50 max-w-2xl mx-auto shadow-sm text-center">
   <div class="font-semibold text-lg text-green-700 dark:text-green-300 mb-3 flex items-center justify-center">
     <div class="i-carbon-checkmark-outline text-xl mr-2"></div>使用 MCP
   </div>
@@ -663,7 +662,7 @@ class: "text-center bg-gray-50 dark:bg-gray-800 grid place-content-center h-full
 ---
 
 <div class="space-y-8">
-  <h1 class="text-5xl font-bold text-gray-800 dark:text-gray-100">Thank You!</h1>
+  <h1 class="text-5xl text-gray-800 dark:text-gray-100">Thank You!</h1>
 </div>
 
 
