@@ -40,7 +40,7 @@ class: text-center
   <ul class="space-y-5 text-left max-w-2xl text-xl list-disc list-inside">
     <li v-click>查找 <span class="font-semibold text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/50">实时</span> 信息（而不仅仅是旧的训练数据）？</li>
     <li v-click>访问你 <span class="font-semibold text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/50">特定</span> 的文档或代码？</li>
-    <li v-click>连接到 <span class="font-semibold text-green-700 dark:text-green-300 px-1.5 py-0.5 rounded bg-green-100 dark:bg-green-900/50">你公司</span> 的数据库？</li>
+    <li v-click>连接到 <span class="font-semibold text-green-700 dark:text-green-300 px-1.5 py-0.5 rounded bg-green-100 dark:bg-green-900/50">公司</span> 的数据库？</li>
     <li v-click>代表你使用 <span class="font-semibold text-purple-700 dark:text-purple-300 px-1.5 py-0.5 rounded bg-purple-100 dark:bg-purple-900/50">其他</span> 软件工具？</li>
   </ul>
 </div>
@@ -372,20 +372,13 @@ class: "bg-gray-50 dark:bg-gray-900"
   <div class="space-y-4">
     <div class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 text-center pb-2 border-b border-gray-200 dark:border-gray-700">🇨🇳 国内平台</div>
     <div v-click="1" class="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center gap-4">
-      <div class="i-carbon-store text-3xl text-blue-500 flex-shrink-0"></div>
-      <div>
-        <div class="font-medium text-gray-800 dark:text-gray-200"><a href="https://mcp.appmall.com" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">MCP AppMall</a></div>
-        <div class="text-sm text-gray-500 dark:text-gray-400">提供 MCP 工具的应用市场</div>
-      </div>
-    </div>
-    <div v-click="2" class="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center gap-4">
       <i-logos-alibaba-cloud class="text-3xl flex-shrink-0"/>
       <div>
         <div class="font-medium text-gray-800 dark:text-gray-200"><a href="https://bailian.console.aliyun.com/?tab=mcp#/mcp-market" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">阿里云百炼 MCP 市场</a></div>
         <div class="text-sm text-gray-500 dark:text-gray-400">阿里云提供的 MCP 工具市场</div>
       </div>
     </div>
-     <div v-click="3" class="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center gap-4">
+     <div v-click="2" class="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center gap-4">
       <i-logos-tencent-cloud class="text-3xl flex-shrink-0"/>
       <div>
         <div class="font-medium text-gray-800 dark:text-gray-200"><a href="https://tcb.cloud.tencent.com/mcp-server" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">腾讯云 CloudBase MCP</a></div>
@@ -529,23 +522,6 @@ class: "bg-gray-50 dark:bg-gray-900"
     </div>
   </div>
   
-  <div v-click="3" class="p-5 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
-    <div class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center">
-      <div class="i-carbon-book text-2xl mr-2 text-blue-500"></div>
-      学习与信息获取
-    </div>
-    <div class="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed ml-1">
-      <div class="flex items-start gap-2">
-        <div class="i-carbon-chevron-right text-blue-500 flex-shrink-0 mt-1"></div>
-        <div>"查找关于'人工智能伦理'的最新中文研究论文，并总结摘要。" <span class="text-xs text-gray-400 dark:text-gray-500 italic block mt-1">(AI 通过 MCP 连接学术搜索/网页)</span></div>
-      </div>
-      <div class="flex items-start gap-2">
-        <div class="i-carbon-chevron-right text-blue-500 flex-shrink-0 mt-1"></div>
-        <div>"帮我找一个简单的红烧肉菜谱，需要有视频教程。" <span class="text-xs text-gray-400 dark:text-gray-500 italic block mt-1">(AI 通过 MCP 连接下厨房/B站)</span></div>
-      </div>
-    </div>
-  </div>
-  
   <div v-click="4" class="p-5 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center">
       <div class="i-carbon-light text-2xl mr-2 text-blue-500"></div> <!-- Changed icon for better representation -->
@@ -610,16 +586,7 @@ class: "bg-gray-50 dark:bg-gray-900"
   </div>
 
   <!-- 安全考量 (红色高亮) -->
-  <div v-click="4" class="p-5 rounded-lg bg-red-50 dark:bg-red-900/30 shadow-sm border border-red-200 dark:border-red-800/50">
-    <div class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2 flex items-center">
-      <div class="i-carbon-security text-2xl mr-2 text-red-600 dark:text-red-400"></div>
-      关键：安全考量
-    </div>
-    <div class="text-gray-700 dark:text-gray-400 text-sm leading-relaxed">
-      连接外部工具引入风险。需 <span class="font-semibold text-red-600 dark:text-red-400">谨慎评估</span> 权限、管理数据安全和操作。信任机制至关重要。
-    </div>
-  </div>
-
+  <!-- removed v-click="4" -->
 </div>
 
 
