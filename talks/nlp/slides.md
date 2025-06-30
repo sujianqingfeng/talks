@@ -100,15 +100,145 @@ mdc: true
 
 
 --- 
+clicks: 3
+---
 
 # 假设有三段话
 
+<div class="flex flex-col justify-center h-full">
 
-- 促销！促销！速点链接！
-- 促销！速点领取！
-- 免费！ 速点链接！
+<!-- 第一段话 -->
+<div v-motion
+  :initial="{ opacity: 0, x: -50 }"
+  :enter="{ opacity: 1, x: 0, transition: { delay: 200, duration: 600 } }"
+  class="relative mb-8">
+  <div class="flex items-center">
+    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4 text-sm">1</div>
+    <div class="flex-1 p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl shadow-md border-l-4 border-blue-400">
+      <div class="text-2xl font-medium leading-relaxed">
+        <span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 400 } }"
+          :class="{ 'bg-yellow-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">促销</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 500 } }"
+          :class="{ 'bg-yellow-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">促销</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 600 } }"
+          :class="{ 'bg-green-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">速点</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 700 } }"
+          :class="{ 'bg-purple-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">链接</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 第二段话 -->
+<div v-motion
+  :initial="{ opacity: 0, x: -50 }"
+  :enter="{ opacity: 1, x: 0, transition: { delay: 400, duration: 600 } }"
+  class="relative mb-8">
+  <div class="flex items-center">
+    <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-4 text-sm">2</div>
+    <div class="flex-1 p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-xl shadow-md border-l-4 border-green-400">
+      <div class="text-2xl font-medium leading-relaxed">
+        <span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 800 } }"
+          :class="{ 'bg-yellow-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">促销</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 900 } }"
+          :class="{ 'bg-green-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">速点</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 1000 } }"
+          :class="{ 'bg-pink-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">领取</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 第三段话 -->
+<div v-motion
+  :initial="{ opacity: 0, x: -50 }"
+  :enter="{ opacity: 1, x: 0, transition: { delay: 600, duration: 600 } }"
+  class="relative mb-8">
+  <div class="flex items-center">
+    <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-4 text-sm">3</div>
+    <div class="flex-1 p-6 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl shadow-md border-l-4 border-purple-400">
+      <div class="text-2xl font-medium leading-relaxed">
+        <span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 1200 } }"
+          :class="{ 'bg-orange-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">免费</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 1300 } }"
+          :class="{ 'bg-green-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">速点</span><span v-if="$clicks >= 1" class="mx-1 text-gray-400">|</span><span v-motion
+          :initial="{ opacity: 0, y: 10 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 1400 } }"
+          :class="{ 'bg-purple-200 px-2 py-1 rounded': $clicks >= 1 }"
+          class="transition-all duration-300">链接</span><span v-if="$clicks === 0" class="text-red-500 text-xl">！</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
 
 
 
 ---
+
+
+# 词表
+
+<div class="flex justify-center items-center h-full">
+  <table class="border-collapse border-2 border-gray-400 text-lg">
+    <tr>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center font-medium">促销</td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center font-medium">速点</td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center font-medium">链接</td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center font-medium">免费</td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center font-medium">领取</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+      <td class="border border-gray-400 p-3 w-16 h-16 text-center"></td>
+    </tr>
+  </table>
+</div>
+
