@@ -21,6 +21,7 @@
     "dev:domain": "pnpm --filter domain run dev",
     "dev:deepseek": "pnpm --filter deepseek run dev",
     "dev:mcp": "pnpm --filter mcp run dev",
+    "dev:nlp": "pnpm --filter nlp run dev",
     "build:arc": "pnpm --filter arc run build",
     "build:deepseek": "pnpm --filter deepseek run build",
     "export:arc": "pnpm --filter arc run export",
