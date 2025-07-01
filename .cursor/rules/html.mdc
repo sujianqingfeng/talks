@@ -1,0 +1,7 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+
+# 不要使用空行，不然解析会有问题
