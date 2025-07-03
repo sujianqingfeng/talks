@@ -410,3 +410,32 @@ clicks: 3
 
 
 
+---
+clicks: 1
+---
+
+<div class="flex items-center justify-center h-full">
+  <!-- 词频 - 默认居中，点击后向左移动 -->
+  <div v-motion
+    :initial="{ opacity: 1, x: 0 }"
+    :click-1="{ x: -100, transition: { duration: 800 } }"
+    class="text-8xl font-bold text-gray-700">
+    词频
+  </div>
+  
+  <!-- 稀有 - 点击后从左侧移动到右侧 -->
+  <div v-motion
+    v-click="1"
+    :initial="{ opacity: 0, x: -100 }"
+    :enter="{ opacity: 1, x: 100, transition: { duration: 800 } }"
+    class="text-8xl font-bold text-gray-700">
+    稀有
+  </div>
+</div>
+
+---
+
+
+
+
+
