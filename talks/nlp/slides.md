@@ -347,4 +347,66 @@ clicks: 1
 </div>
 
 
+---
+clicks: 3
+---
+
+<div class="flex flex-col items-center justify-center h-full space-y-8">
+  <!-- 虚假的关键词 -->
+  <div class="w-full max-w-4xl">
+    <div :class="{ 
+      'bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-200 shadow-lg': $clicks >= 3 
+    }" class="rounded-xl p-6 transition-all duration-800">
+      <div v-click="3" v-motion
+        :initial="{ opacity: 0, y: -20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+        class="bg-gradient-to-r from-gray-600 to-gray-700 text-white px-4 py-2 rounded-lg inline-block mb-4 font-bold text-lg shadow-md">
+        虚假的关键词
+      </div>
+      <div v-click="1" class="grid grid-cols-3 gap-6">
+        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-2xl font-bold text-gray-800 mb-2">常见</div>
+          <div class="text-sm text-gray-500">频繁出现</div>
+        </div>
+        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-2xl font-bold text-gray-800 mb-2">像路人甲</div>
+          <div class="text-sm text-gray-500">缺乏特色</div>
+        </div>
+        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-2xl font-bold text-gray-800 mb-2">不特别</div>
+          <div class="text-sm text-gray-500">无区分度</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 真实的关键词 -->
+  <div class="w-full max-w-4xl">
+    <div :class="{ 
+      'bg-gradient-to-r from-emerald-50 to-emerald-100 border border-emerald-200 shadow-lg': $clicks >= 3 
+    }" class="rounded-xl p-6 transition-all duration-800">
+      <div v-click="3" v-motion
+        :initial="{ opacity: 0, y: -20 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+        class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 rounded-lg inline-block mb-4 font-bold text-lg shadow-md">
+        真实的关键词
+      </div>
+      <div v-click="2" class="grid grid-cols-3 gap-6">
+        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-2xl font-bold text-gray-800 mb-2">稀有</div>
+          <div class="text-sm text-gray-500">出现较少</div>
+        </div>
+        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-2xl font-bold text-gray-800 mb-2">有区分度</div>
+          <div class="text-sm text-gray-500">独特性强</div>
+        </div>
+        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-2xl font-bold text-gray-800 mb-2">代表性</div>
+          <div class="text-sm text-gray-500">能够标识</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
