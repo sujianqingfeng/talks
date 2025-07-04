@@ -1387,3 +1387,11 @@ clicks: 2
     <div class="text-7xl font-bold text-yellow-700 tracking-widest select-none">视频</div>
   </div>
 </div>
+
+---
+clicks: 2
+---
+
+# 词语相似度分析
+
+<div class="flex items-center justify-center h-full w-full"><div class="flex w-full max-w-6xl items-center"><div class="flex-shrink-0 w-1/2 flex flex-col justify-center space-y-8"><div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 香蕉</div><div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 高兴</div></div><div class="flex-1 flex flex-col justify-center space-y-8 ml-16"><div class="w-full"><div class="bg-gray-200 rounded-full h-8 relative overflow-hidden"><div v-motion :initial="{ width: '0%' }" :click-1="{ width: '85%', transition: { duration: 800 } }" class="bg-gradient-to-r from-orange-400 to-orange-600 h-full rounded-full transition-all duration-800 ease-out"></div><div v-click="1" class="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">85%</div></div></div><div class="w-full"><div class="bg-gray-200 rounded-full h-8 relative overflow-hidden"><div v-motion :initial="{ width: '0%' }" :click-2="{ width: '15%', transition: { duration: 800 } }" class="bg-gradient-to-r from-gray-500 to-gray-700 h-full rounded-full transition-all duration-800 ease-out"></div><div v-click="2" class="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">15%</div></div></div></div></div></div>
