@@ -213,6 +213,9 @@ importers:
       '@slidev/theme-seriph':
         specifier: latest
         version: 0.25.0
+      chart.js:
+        specifier: ^4.4.0
+        version: 4.5.0
       vue:
         specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
@@ -1418,6 +1421,9 @@ packages:
   '@jsdevtools/ez-spawn@3.0.4':
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
+
+  '@kurkle/color@0.3.4':
+    resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
@@ -3329,6 +3335,10 @@ packages:
 
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
+
+  chart.js@4.5.0:
+    resolution: {integrity: sha512-aYeC/jDgSEx8SHWZvANYMioYMZ2KX02W6f6uVfyteuCGcadDLcYVHdfdygsTQkQ4TKn5lghoojAsPj5pu0SnvQ==}
+    engines: {pnpm: '>=8'}
 
   chevrotain-allstar@0.3.1:
     resolution: {integrity: sha512-b7g+y9A0v4mxCW1qUhf3BSVPg+/NvGErk/dOkrDaHA0nQIQGAtrOjlX//9OQtRlSCy+x9rfB5N8yC71lH1nvMw==}
@@ -8109,6 +8119,8 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.1.0
 
+  '@kurkle/color@0.3.4': {}
+
   '@leichtgewicht/ip-codec@2.0.5': {}
 
   '@lillallol/outline-pdf-data-structure@1.0.3': {}
@@ -9449,8 +9461,8 @@ snapshots:
       pptxgenjs: 3.12.0
       prettier: 3.5.1
       recordrtc: 5.6.2
-      shiki: 3.3.0
-      shiki-magic-move: 1.1.0(shiki@3.3.0)(vue@3.5.17(typescript@5.8.3))
+      shiki: 3.7.0
+      shiki-magic-move: 1.1.0(shiki@3.7.0)(vue@3.5.17(typescript@5.8.3))
       typescript: 5.8.3
       unocss: 66.0.0(postcss@8.5.6)(vite@6.1.0(@types/node@22.15.34)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.0))(vue@3.5.17(typescript@5.8.3))
       vue: 3.5.17(typescript@5.8.3)
@@ -9505,8 +9517,8 @@ snapshots:
       nanotar: 0.2.0
       pptxgenjs: 3.12.0
       recordrtc: 5.6.2
-      shiki: 3.3.0
-      shiki-magic-move: 1.1.0(shiki@3.3.0)(vue@3.5.17(typescript@5.8.3))
+      shiki: 3.7.0
+      shiki-magic-move: 1.1.0(shiki@3.7.0)(vue@3.5.17(typescript@5.8.3))
       typescript: 5.8.3
       unocss: 66.0.0(postcss@8.5.6)(vite@6.3.4(@types/node@22.15.34)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.1))(vue@3.5.17(typescript@5.8.3))
       vue: 3.5.17(typescript@5.8.3)
@@ -9917,7 +9929,7 @@ snapshots:
       katex: 0.16.22
       mermaid: 11.6.0
       monaco-editor: 0.51.0
-      shiki: 3.3.0
+      shiki: 3.7.0
       unocss: 66.0.0(postcss@8.5.6)(vite@6.1.0(@types/node@22.15.34)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.0))(vue@3.5.17(typescript@5.7.3))
       unplugin-icons: 22.1.0(@vue/compiler-sfc@3.5.17)
       unplugin-vue-markdown: 28.3.1(vite@6.1.0(@types/node@22.15.34)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.0))
@@ -9951,7 +9963,7 @@ snapshots:
       katex: 0.16.22
       mermaid: 11.6.0
       monaco-editor: 0.51.0
-      shiki: 3.3.0
+      shiki: 3.7.0
       unocss: 66.0.0(postcss@8.5.6)(vite@6.1.0(@types/node@22.15.34)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.0))(vue@3.5.17(typescript@5.8.3))
       unplugin-icons: 22.1.0(@vue/compiler-sfc@3.5.17)
       unplugin-vue-markdown: 28.3.1(vite@6.1.0(@types/node@22.15.34)(jiti@2.4.2)(tsx@4.17.0)(yaml@2.7.0))
@@ -12461,6 +12473,10 @@ snapshots:
   character-entities-legacy@3.0.0: {}
 
   character-entities@2.0.2: {}
+
+  chart.js@4.5.0:
+    dependencies:
+      '@kurkle/color': 0.3.4
 
   chevrotain-allstar@0.3.1(chevrotain@11.0.3):
     dependencies:

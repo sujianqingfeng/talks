@@ -9,3 +9,4 @@ This project is developed using the following technologies:
 
 - **Slide Framework:** [sli.dev](mdc:https:/sli.dev)
 - **CSS Framework:** [UnoCSS](mdc:https:/unocss.dev)
+- 包管理使用pnpm

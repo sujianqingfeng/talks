@@ -561,3 +561,30 @@ clicks: 1
     <div class="text-4xl font-bold text-gray-800">10,000 ÷ 1 = 10,000</div>
   </div>
 </div>
+
+---
+clicks: 1
+---
+
+<div class="flex flex-col items-center justify-center h-full space-y-4">
+  <!-- 公式展示 -->
+  <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl shadow-lg border border-blue-200">
+    <div class="text-center">
+      <div class="flex items-center justify-center text-2xl font-mono">
+        <span class="text-blue-600 font-bold">稀有 = </span>
+        <span v-if="$clicks >= 1" class="text-green-600 font-bold mx-1">log(</span>
+        <div class="bg-white px-3 py-1 rounded-lg shadow-sm border mx-1">
+          <div class="text-sm text-gray-700 text-center">总文档数</div>
+          <div class="border-t border-gray-300 my-1"></div>
+          <div class="text-sm text-gray-700 text-center">含有这个词语的文档数</div>
+        </div>
+        <span v-if="$clicks >= 1" class="text-green-600 font-bold mx-1">)</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 图表展示 -->
+  <div class="w-full max-w-3xl h-64">
+    <TfIdfChart />
+  </div>
+</div>
