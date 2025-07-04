@@ -922,10 +922,10 @@ clicks: 1
   <!-- 两句话 -->
   <div class="flex flex-col items-center space-y-8">
     <div class="text-6xl font-medium text-center">
-      <span class="text-black">这电影</span><span class="text-blue-600">很</span><span class="text-red-500">好</span>
+      <span class="text-black">这电影</span><span class="text-blue-400">很</span><span class="text-red-400">好</span>
     </div>
     <div class="text-6xl font-medium text-center">
-      <span class="text-black">这电影</span><span class="text-blue-600">很</span><span class="text-red-500">棒</span>
+      <span class="text-black">这电影</span><span class="text-blue-400">很</span><span class="text-red-400">棒</span>
     </div>
   </div>
   <!-- Word2Vec 覆盖层 -->
@@ -935,6 +935,62 @@ clicks: 1
     class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90">
     <div class="text-8xl font-bold text-gray-800">
       Word2Vec
+    </div>
+  </div>
+</div>
+
+
+
+
+---
+
+<div class="flex items-center justify-center h-full relative overflow-hidden">
+  <!-- 背景模糊文字 -->
+  <div class="absolute inset-0 text-gray-400 text-sm leading-relaxed p-8 opacity-40 blur-xs select-none">
+    <div class="grid grid-cols-2 gap-4 h-full">
+      <div class="space-y-2">
+        <p>人工智能技术的发展正在改变我们的生活方式，从智能手机到自动驾驶汽车，从语音助手到机器翻译</p>
+        <p>深度学习算法在图像识别、自然语言处理、语音识别等领域取得了突破性进展</p>
+        <p>神经网络模型通过大量数据训练，能够学习复杂的模式和规律</p>
+        <p>机器学习正在revolutionizing各个行业，包括医疗、金融、教育、娱乐等</p>
+        <p>数据科学家利用统计学和计算机科学的方法来分析和解释复杂的数据集</p>
+        <p>云计算平台为AI模型的训练和部署提供了强大的计算资源</p>
+        <p>自然语言处理技术使得计算机能够理解和生成人类语言</p>
+        <p>计算机视觉技术让机器能够识别和理解图像和视频内容</p>
+        <p>强化学习算法通过与环境的交互来学习最优策略</p>
+        <p>大数据技术处理和分析海量信息，发现隐藏的模式和趋势</p>
+        <p>区块链技术为数据安全和隐私保护提供了新的解决方案</p>
+        <p>物联网设备产生的数据为AI训练提供了丰富的素材</p>
+        <p>边缘计算将AI推理能力部署到设备端，减少延迟和带宽需求</p>
+        <p>联邦学习技术在保护数据隐私的同时实现模型的协作训练</p>
+        <p>AutoML技术降低了机器学习的门槛，让更多人能够使用AI工具</p>
+      </div>
+      <div class="space-y-2">
+        <p>量子计算有望在未来为AI提供更强大的计算能力</p>
+        <p>生成式AI模型能够创造出逼真的图像、文本和音频内容</p>
+        <p>多模态AI系统能够同时处理文本、图像、音频等多种类型的数据</p>
+        <p>可解释AI技术让我们能够理解模型的决策过程</p>
+        <p>AI伦理和公平性问题越来越受到关注和重视</p>
+        <p>预训练语言模型在各种NLP任务中展现出了强大的能力</p>
+        <p>迁移学习技术让模型能够将在一个任务上学到的知识应用到其他任务</p>
+        <p>对抗性训练提高了模型的鲁棒性和安全性</p>
+        <p>知识图谱技术帮助AI系统更好地理解和推理知识</p>
+        <p>时间序列分析在金融预测、天气预报等领域有重要应用</p>
+        <p>推荐系统利用用户行为数据为用户提供个性化的内容和服务</p>
+        <p>异常检测技术在网络安全、质量控制等方面发挥重要作用</p>
+        <p>优化算法帮助AI系统找到最优的参数和策略</p>
+        <p>集成学习方法通过组合多个模型来提高预测性能</p>
+        <p>无监督学习从未标记的数据中发现隐藏的结构和模式</p>
+      </div>
+    </div>
+  </div>
+  <!-- 前景标题 -->
+  <div class="relative z-10 text-center">
+    <div class="text-8xl font-bold text-gray-800 mb-4">
+      语料库
+    </div>
+    <div class="text-2xl text-gray-600 font-medium">
+      Corpus
     </div>
   </div>
 </div>
