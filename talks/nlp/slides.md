@@ -994,3 +994,100 @@ clicks: 1
     </div>
   </div>
 </div>
+
+---
+clicks: 1
+---
+
+<div class="flex items-center justify-center h-full">
+  <div class="w-full max-w-6xl px-8">
+    <!-- 标题 -->
+    <div v-click="1" class="text-center mb-12">
+      <div class="text-5xl font-bold text-gray-800 mb-3 tracking-wide">这视频很棒</div>
+    </div>
+    <!-- 主要流程图 -->
+    <div class="flex items-center justify-between">
+      <!-- 左侧：输入词语 -->
+      <div class="flex flex-col space-y-12">
+        <div class="space-y-12">
+          <div class="relative">
+            <div v-click="1" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+              视频
+            </div>
+            <div class="bg-gradient-to-r from-amber-100 to-yellow-100 px-6 py-3 rounded-xl border border-amber-200 shadow-md text-center font-medium text-lg hover:shadow-lg transition-shadow">
+              前一个词
+            </div>
+          </div>
+          <div class="relative">
+            <div v-click="1" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+              棒
+            </div>
+            <div class="bg-gradient-to-r from-amber-100 to-yellow-100 px-6 py-3 rounded-xl border border-amber-200 shadow-md text-center font-medium text-lg hover:shadow-lg transition-shadow">
+              后一个词
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 箭头 -->
+      <div class="flex flex-col items-center mx-10">
+        <div class="text-lg font-semibold text-gray-600 mb-3">输入</div>
+        <div class="text-3xl text-blue-500">→</div>
+      </div>
+      <!-- 中间：神经网络 -->
+      <div class="flex flex-col items-center">
+        <div class="text-lg font-semibold text-gray-700 mb-6">神经网络模型</div>
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl border border-blue-200 shadow-xl">
+          <svg width="200" height="150" viewBox="0 0 200 150" class="mx-auto">
+            <!-- 输入层 -->
+            <circle cx="30" cy="30" r="10" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="30" cy="60" r="10" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="30" cy="90" r="10" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="30" cy="120" r="10" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+            <!-- 隐藏层 -->
+            <circle cx="100" cy="40" r="10" fill="#34d399" stroke="#059669" stroke-width="2"/>
+            <circle cx="100" cy="70" r="10" fill="#34d399" stroke="#059669" stroke-width="2"/>
+            <circle cx="100" cy="100" r="10" fill="#34d399" stroke="#059669" stroke-width="2"/>
+            <!-- 输出层 -->
+            <circle cx="170" cy="55" r="10" fill="#f87171" stroke="#dc2626" stroke-width="2"/>
+            <circle cx="170" cy="85" r="10" fill="#f87171" stroke="#dc2626" stroke-width="2"/>
+            <!-- 连接线 -->
+            <line x1="40" y1="30" x2="90" y2="40" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="30" x2="90" y2="70" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="30" x2="90" y2="100" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="60" x2="90" y2="40" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="60" x2="90" y2="70" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="60" x2="90" y2="100" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="90" x2="90" y2="40" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="90" x2="90" y2="70" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="90" x2="90" y2="100" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="120" x2="90" y2="40" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="120" x2="90" y2="70" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="40" y1="120" x2="90" y2="100" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="110" y1="40" x2="160" y2="55" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="110" y1="40" x2="160" y2="85" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="110" y1="70" x2="160" y2="55" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="110" y1="70" x2="160" y2="85" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="110" y1="100" x2="160" y2="55" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+            <line x1="110" y1="100" x2="160" y2="85" stroke="#6b7280" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+        </div>
+      </div>
+      <!-- 箭头 -->
+      <div class="flex flex-col items-center mx-10">
+        <div class="text-lg font-semibold text-gray-600 mb-3">输出</div>
+        <div class="text-3xl text-green-500">→</div>
+      </div>
+      <!-- 右侧：输出 -->
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <div v-click="1" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+            很
+          </div>
+          <div class="bg-gradient-to-r from-rose-100 to-pink-100 px-8 py-4 rounded-xl border border-rose-200 shadow-md text-center font-medium text-lg hover:shadow-lg transition-shadow">
+            中间词
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
