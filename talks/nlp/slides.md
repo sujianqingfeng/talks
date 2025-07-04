@@ -671,3 +671,137 @@ clicks: 2
     </table>
   </div>
 </div>
+
+---
+clicks: 2
+---
+
+
+<div class="flex h-full items-center justify-center px-8 gap-8">
+  <!-- 左侧：词频表 -->
+  <div class="flex flex-col items-center">
+    <table class="border-collapse border-2 border-gray-400 text-base">
+      <thead>
+        <tr class="bg-blue-100">
+          <th class="border border-gray-400 p-2 font-bold text-sm">促销</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">速点</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">链接</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">免费</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">领取</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 句子1的词频 -->
+        <tr>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.5</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.25</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.25</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0</td>
+        </tr>
+        <!-- 句子2的词频 -->
+        <tr>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.33</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.33</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.33</td>
+        </tr>
+        <!-- 句子3的词频 -->
+        <tr>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.33</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.33</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0.33</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-red-600 text-xs">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="mt-4 text-2xl font-bold text-blue-600">词频</div>
+    <div v-click="1" class="mt-2 text-xl font-bold text-blue-800">TF</div>
+  </div>
+  
+  <!-- 中间：乘号 -->
+  <div class="flex flex-col items-center relative">
+    <div class="text-6xl font-bold text-gray-700">×</div>
+    <div v-click="2" class="text-8xl font-bold text-gray-700 absolute top-22">×</div>
+  </div>
+  
+  <!-- 右侧：稀有度表 -->
+  <div class="flex flex-col items-center">
+    <table class="border-collapse border-2 border-gray-400 text-base">
+      <thead>
+        <tr class="bg-green-100">
+          <th class="border border-gray-400 p-2 font-bold text-sm">促销</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">速点</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">链接</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">免费</th>
+          <th class="border border-gray-400 p-2 font-bold text-sm">领取</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 稀有度值 - 每一行都是相同的 -->
+        <tr>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.2</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.2</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.5</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.5</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.2</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.2</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.5</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.5</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.2</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.2</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.5</td>
+          <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-green-600 text-xs">0.5</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="mt-4 text-2xl font-bold text-green-600">稀有</div>
+    <div v-click="1" class="mt-2 text-xl font-bold text-green-800">IDF</div>
+  </div>
+</div>
+
+
+
+
+---
+clicks: 1
+---
+
+<div class="flex flex-col items-center justify-center h-full">
+  <!-- 第一行文字 -->
+  <div v-motion
+    :initial="{ opacity: 0, y: 0 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+    :click-1="{ y: -20, transition: { duration: 500 } }"
+    class="text-6xl font-bold text-gray-800 text-center mb-8">
+    有多少这个词
+  </div>
+  
+  <!-- 箭头 -->
+  <div v-motion
+    v-click="1"
+    :initial="{ opacity: 0, scale: 0 }"
+    :enter="{ opacity: 1, scale: 1, transition: { duration: 500 } }"
+    class="text-5xl text-gray-600 mb-8">
+    +
+  </div>
+  
+  <!-- 第二行文字 -->
+  <div v-motion
+    v-click="1"
+    :initial="{ opacity: 0, y: 0 }"
+    :enter="{ opacity: 1, y: 20, transition: { delay: 200, duration: 600 } }"
+    class="text-6xl font-bold text-blue-600 text-center">
+    这个词有多稀缺
+  </div>
+</div>
+
