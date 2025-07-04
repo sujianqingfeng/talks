@@ -1325,3 +1325,65 @@ clicks: 8
     </div>
   </div>
 </div>
+
+---
+clicks: 2
+---
+
+<div class="flex items-center justify-center h-full w-full relative">
+  <!-- 词表矩阵，初始居中，点击后左移 -->
+  <div v-motion
+    :initial="{ x: 0, opacity: 1 }"
+    :click-1="{ x: -120, opacity: 1, transition: { duration: 700 } }"
+    class="transition-all duration-700">
+    <div class="flex flex-col items-center">
+      <div class="bg-red-400 text-white text-3xl font-bold px-8 py-2 rounded-lg mb-4 shadow-lg tracking-widest">词表矩阵</div>
+      <table class="border-collapse border-2 border-gray-400 text-lg shadow-xl">
+        <tbody>
+          <tr class="bg-yellow-50">
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">这</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.2</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.1</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.4</td>
+          </tr>
+          <tr class="bg-green-50">
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">很</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.5</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.7</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.4</td>
+          </tr>
+          <tr class="bg-yellow-50">
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">......</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.4</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.3</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.2</td>
+          </tr>
+          <tr :class="[$clicks >= 1 ? 'bg-red-100 font-bold' : 'bg-green-50', 'transition-colors duration-500']">
+            <td :class="[$clicks >= 1 ? 'text-white bg-red-400' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-bold']">视频</td>
+            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">0.4</td>
+            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">0.2</td>
+            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">...</td>
+            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">0.1</td>
+          </tr>
+          <tr class="bg-yellow-50">
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">棒</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.3</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.6</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
+            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- 右侧：视频，点击后出现 -->
+  <div v-motion
+    :initial="{ opacity: 0, x: 100 }"
+    :click-1="{ opacity: 1, x: 0, transition: { duration: 700 } }"
+    class="absolute right-12 top-1/2 transform -translate-y-1/2 flex items-center">
+    <div class="text-7xl font-bold text-yellow-700 tracking-widest select-none">视频</div>
+  </div>
+</div>
