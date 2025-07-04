@@ -443,9 +443,9 @@ clicks: 3
 
 # 词频
 
-<div class="grid grid-cols-2 gap-8 h-full items-center">
+<div class="flex h-full items-center px-8 gap-16">
   <!-- 左侧：句子列表 -->
-  <div class="space-y-6">
+  <div class="flex-1 space-y-4 max-w-md">
     <!-- 句子1 -->
     <div class="p-4 rounded-lg border-l-4 transition-all duration-500"
          :class="$clicks === 1 ? 'bg-gradient-to-r from-blue-200 to-blue-300 border-blue-500 shadow-lg transform scale-105' : 'bg-gradient-to-r from-gray-50 to-gray-100 border-gray-300'">
@@ -480,7 +480,7 @@ clicks: 3
   </div>
   
   <!-- 右侧：词表 -->
-  <div class="flex justify-center">
+  <div class="flex-1 flex justify-center">
           <table class="border-collapse border-2 border-gray-400 text-lg">
         <thead>
           <tr class="bg-pink-100">
@@ -542,23 +542,23 @@ clicks: 1
 
 # 稀有
 
-<div class="flex flex-col items-center justify-center h-full space-y-12">
+<div class="flex flex-col items-center justify-center h-full space-y-8">
   <!-- 第一段 -->
   <div class="text-center">
-    <div class="text-xl text-gray-600 mb-2">总文档数</div>
-    <div class="text-5xl font-bold text-gray-800">10,000</div>
+    <div class="text-lg text-gray-600 mb-2">总文档数</div>
+    <div class="text-4xl font-bold text-gray-800">10,000</div>
   </div>
   
   <!-- 第二段 -->
   <div class="text-center">
-    <div class="text-xl text-gray-600 mb-2">含有这个词语的文档数</div>
-    <div class="text-5xl font-bold text-gray-800">1</div>
+    <div class="text-lg text-gray-600 mb-2">含有这个词语的文档数</div>
+    <div class="text-4xl font-bold text-gray-800">1</div>
   </div>
   
   <!-- 第三段 - 需要点击才显示，带背景颜色 -->
-  <div v-click="1" class="text-center bg-blue-50 p-6 rounded-lg">
-    <div class="text-xl text-gray-600 mb-2">稀有度</div>
-    <div class="text-4xl font-bold text-gray-800">10,000 ÷ 1 = 10,000</div>
+  <div v-click="1" class="text-center bg-blue-50 p-4 rounded-lg">
+    <div class="text-lg text-gray-600 mb-2">稀有度</div>
+    <div class="text-3xl font-bold text-gray-800">10,000 ÷ 1 = 10,000</div>
   </div>
 </div>
 
@@ -586,5 +586,88 @@ clicks: 1
   <!-- 图表展示 -->
   <div class="w-full max-w-3xl h-64">
     <TfIdfChart />
+  </div>
+</div>
+
+---
+clicks: 2
+---
+
+# 稀有计算
+
+<div class="flex h-full items-center px-8 gap-16">
+  <!-- 左侧：句子列表 -->
+  <div class="flex-1 space-y-4 max-w-md">
+    <!-- 句子1 -->
+    <div class="p-3 rounded-lg border-l-4 bg-gradient-to-r from-blue-50 to-blue-100 border-blue-300">
+      <div class="font-bold text-base mb-2">文档1：</div>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-white px-2 py-1 rounded border text-sm">促销</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">促销</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">速点</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">链接</span>
+      </div>
+    </div>
+    <!-- 句子2 -->
+    <div class="p-3 rounded-lg border-l-4 bg-gradient-to-r from-green-50 to-green-100 border-green-300">
+      <div class="font-bold text-base mb-2">文档2：</div>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-white px-2 py-1 rounded border text-sm">促销</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">速点</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">领取</span>
+      </div>
+    </div>
+    <!-- 句子3 -->
+    <div class="p-3 rounded-lg border-l-4 bg-gradient-to-r from-purple-50 to-purple-100 border-purple-300">
+      <div class="font-bold text-base mb-2">文档3：</div>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-white px-2 py-1 rounded border text-sm">免费</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">速点</span>
+        <span class="bg-white px-2 py-1 rounded border text-sm">链接</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 右侧：稀有度计算表 -->
+  <div class="flex-1 flex justify-center">
+    <table class="border-collapse border-2 border-gray-400 text-lg">
+      <thead>
+        <tr class="bg-pink-100">
+          <th class="border border-gray-400 p-3 font-bold">促销</th>
+          <th class="border border-gray-400 p-3 font-bold">速点</th>
+          <th class="border border-gray-400 p-3 font-bold">链接</th>
+          <th class="border border-gray-400 p-3 font-bold">免费</th>
+          <th class="border border-gray-400 p-3 font-bold">领取</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 文档统计 -->
+        <tr class="bg-gray-50">
+          <td class="border border-gray-400 p-3 text-center font-bold text-gray-600 text-sm"
+              v-click="1">出现在2个文档</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-gray-600 text-sm"
+              v-click="1">出现在3个文档</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-gray-600 text-sm"
+              v-click="1">出现在2个文档</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-gray-600 text-sm"
+              v-click="1">出现在1个文档</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-gray-600 text-sm"
+              v-click="1">出现在1个文档</td>
+        </tr>
+        <!-- 稀有度计算 -->
+        <tr>
+          <td class="border border-gray-400 p-3 text-center font-bold text-red-600 text-sm"
+              v-click="2">log(3/2)=0.2</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-red-600 text-sm"
+              v-click="2">log(3/3)=0</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-red-600 text-sm"
+              v-click="2">log(3/2)=0.2</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-red-600 text-sm"
+              v-click="2">log(3/1)=0.5</td>
+          <td class="border border-gray-400 p-3 text-center font-bold text-red-600 text-sm"
+              v-click="2">log(3/1)=0.5</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
