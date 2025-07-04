@@ -912,3 +912,29 @@ clicks: 4
     </div>
   </div>
 </div>
+
+
+---
+clicks: 1
+---
+
+<div class="flex items-center justify-center h-full relative">
+  <!-- 两句话 -->
+  <div class="flex flex-col items-center space-y-8">
+    <div class="text-6xl font-medium text-center">
+      <span class="text-black">这电影</span><span class="text-blue-600">很</span><span class="text-red-500">好</span>
+    </div>
+    <div class="text-6xl font-medium text-center">
+      <span class="text-black">这电影</span><span class="text-blue-600">很</span><span class="text-red-500">棒</span>
+    </div>
+  </div>
+  <!-- Word2Vec 覆盖层 -->
+  <div v-click="1" v-motion
+    :initial="{ opacity: 0, scale: 0.5 }"
+    :enter="{ opacity: 1, scale: 1, transition: { duration: 800 } }"
+    class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90">
+    <div class="text-8xl font-bold text-gray-800">
+      Word2Vec
+    </div>
+  </div>
+</div>
