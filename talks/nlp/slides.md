@@ -818,7 +818,7 @@ clicks: 1
 </div>
 
 ---
-clicks: 4
+clicks: 2
 ---
 
 <div class="flex h-full items-center px-8 gap-16">
@@ -1453,6 +1453,20 @@ class="text-7xl font-bold text-black text-center absolute transition-all duratio
 </div>
 </div>
 
+
+
+
+---
+
+
+<div class="flex items-center justify-center h-full w-full">
+<div class="text-7xl font-bold text-gray-800 text-center leading-tight">
+新增维度：语义相似度
+</div>
+</div>
+
+
+
 ---
 
 <div class="flex items-center justify-center h-full w-full">
@@ -1828,4 +1842,58 @@ clicks: 2
 
 ---
 
-<!-- 37页 -->
+# 方法对比总结
+
+
+<div class="flex items-center justify-center h-full relative">
+  <table class="border-collapse border-4 border-gray-600 text-base bg-white shadow-2xl rounded-lg overflow-hidden">
+    <thead>
+      <tr class="bg-gradient-to-r from-gray-500 to-gray-600 text-white">
+        <th class="border border-gray-600 p-4 w-32 font-bold text-lg">方法</th>
+        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">信息量表达</th>
+        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">优点</th>
+        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">缺点</th>
+        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">适用场景</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
+        <td class="border border-gray-600 p-4 font-bold text-blue-800 text-center">词袋法</td>
+        <td class="border border-gray-600 p-4 text-center">有多少这个词</td>
+        <td class="border border-gray-600 p-4 text-center">简单易实现</td>
+        <td class="border border-gray-600 p-4 text-center">忽略稀有性和语义</td>
+        <td class="border border-gray-600 p-4 text-center">垃圾邮件分类</td>
+      </tr>
+      <tr class="bg-green-50 hover:bg-green-100 transition-colors">
+        <td class="border border-gray-600 p-4 font-bold text-green-800 text-center">TF-IDF</td>
+        <td class="border border-gray-600 p-4 text-center">有多稀缺</td>
+        <td class="border border-gray-600 p-4 text-center">考虑词频和稀有性</td>
+        <td class="border border-gray-600 p-4 text-center">无语义信息</td>
+        <td class="border border-gray-600 p-4 text-center">关键词提取</td>
+      </tr>
+      <tr class="bg-yellow-50 hover:bg-yellow-100 transition-colors">
+        <td class="border border-gray-600 p-4 font-bold text-yellow-800 text-center">Word2Vec</td>
+        <td class="border border-gray-600 p-4 text-center">文本语义</td>
+        <td class="border border-gray-600 p-4 text-center">捕捉词间关系</td>
+        <td class="border border-gray-600 p-4 text-center">不考虑词序<br/>和一词多义</td>
+        <td class="border border-gray-600 p-4 text-center">语义搜索</td>
+      </tr>
+      <tr class="bg-purple-50 hover:bg-purple-100 transition-colors">
+        <td class="border border-gray-600 p-4 font-bold text-purple-800 text-center">BGE</td>
+        <td class="border border-gray-600 p-4 text-center">语境化语义</td>
+        <td class="border border-gray-600 p-4 text-center">动态生成<br/>上下文向量</td>
+        <td class="border border-gray-600 p-4 text-center">训练复杂</td>
+        <td class="border border-gray-600 p-4 text-center">RAG等</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- 点击后出现的覆盖层 -->
+  <div v-click="1" v-motion
+    :initial="{ opacity: 0, scale: 0.5 }"
+    :enter="{ opacity: 1, scale: 1, transition: { duration: 800 } }"
+    class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90">
+    <div class="text-8xl font-bold text-gray-800 text-center leading-tight">
+      信息量的不断提升
+    </div>
+  </div>
+</div>
