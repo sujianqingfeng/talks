@@ -1531,7 +1531,7 @@ clicks: 3
 clicks: 3
 ---
 
-<div class="flex items-center justify-center h-full w-full gap-24 bg-white">
+<div class="flex items-center justify-center h-full w-full gap-24 bg-white relative">
 <!-- 左侧内容 -->
 <div class="flex flex-col items-center justify-center min-w-[180px]">
 <div class="mb-12 flex flex-col items-center">
@@ -1590,21 +1590,107 @@ clicks: 3
 </tbody>
 </table>
 </div>
+
+<!-- 覆盖层：参考Word2Vec覆盖层效果 -->
+<div v-click="3" v-motion
+  :initial="{ opacity: 0, scale: 0.5 }"
+  :enter="{ opacity: 1, scale: 1, transition: { duration: 800 } }"
+  class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90">
+  <div class="text-6xl font-bold text-gray-800 text-center leading-tight">
+    根据语境动态<br>计算词向量
+  </div>
+</div>
 </div>
 
-<!-- 第三次点击时，屏幕中央出现提示语 -->
-<div v-if="$clicks === 3" class="fixed inset-0 flex items-center justify-center pointer-events-none z-50">
-<div class="text-4xl md:text-6xl font-bold text-blue-600 bg-white/95 px-12 py-8 rounded-xl shadow-lg border-2 border-blue-200 animate-fade-in-strong tracking-wide text-center">
-根据语境动态计算词向量
-</div>
+
+
+---
+clicks: 1
+---
+
+<div class="flex items-center justify-center h-full w-full">
+  <div class="w-full max-w-6xl flex items-center justify-center gap-16">
+    <!-- 左侧：Transformer架构图 -->
+    <div class="flex-1 flex justify-center">
+      <svg width="300" height="450" viewBox="0 0 400 600" class="border border-gray-200 rounded-lg bg-white shadow-lg">
+        <!-- 输入嵌入 -->
+        <rect x="50" y="520" width="120" height="40" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
+        <text x="110" y="545" text-anchor="middle" class="text-sm font-medium">Input Embedding</text>
+        <!-- 位置编码 -->
+        <rect x="230" y="520" width="120" height="40" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
+        <text x="290" y="535" text-anchor="middle" class="text-sm font-medium">Positional</text>
+        <text x="290" y="550" text-anchor="middle" class="text-sm font-medium">Encoding</text>
+        <!-- 加法符号 -->
+        <circle cx="200" cy="540" r="15" fill="#fff" stroke="#666" stroke-width="2"/>
+        <text x="200" y="546" text-anchor="middle" class="text-lg font-bold">+</text>
+        <!-- 连接线 -->
+        <line x1="170" y1="540" x2="185" y2="540" stroke="#666" stroke-width="2"/>
+        <line x1="215" y1="540" x2="230" y2="540" stroke="#666" stroke-width="2"/>
+        <line x1="200" y1="525" x2="200" y2="480" stroke="#666" stroke-width="2"/>
+        <!-- 多头注意力机制 -->
+        <rect x="120" y="440" width="160" height="40" fill="#ffd93d" stroke="#ffb300" stroke-width="2" rx="5"/>
+        <text x="200" y="455" text-anchor="middle" class="text-sm font-medium">Multi-Head</text>
+        <text x="200" y="470" text-anchor="middle" class="text-sm font-medium">Attention</text>
+        <!-- Add & Norm -->
+        <rect x="120" y="380" width="160" height="40" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="200" y="405" text-anchor="middle" class="text-sm font-medium">Add &amp; Norm</text>
+        <!-- 前馈网络 -->
+        <rect x="120" y="320" width="160" height="40" fill="#87ceeb" stroke="#4682b4" stroke-width="2" rx="5"/>
+        <text x="200" y="335" text-anchor="middle" class="text-sm font-medium">Feed</text>
+        <text x="200" y="350" text-anchor="middle" class="text-sm font-medium">Forward</text>
+        <!-- Add & Norm -->
+        <rect x="120" y="260" width="160" height="40" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="200" y="285" text-anchor="middle" class="text-sm font-medium">Add &amp; Norm</text>
+        <!-- 线性层 -->
+        <rect x="120" y="200" width="160" height="40" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="200" y="225" text-anchor="middle" class="text-sm font-medium">Linear</text>
+        <!-- Softmax -->
+        <rect x="120" y="140" width="160" height="40" fill="#90ee90" stroke="#32cd32" stroke-width="2" rx="5"/>
+        <text x="200" y="165" text-anchor="middle" class="text-sm font-medium">Softmax</text>
+        <!-- 输出概率 -->
+        <rect x="120" y="80" width="160" height="40" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
+        <text x="200" y="95" text-anchor="middle" class="text-sm font-medium">Output</text>
+        <text x="200" y="110" text-anchor="middle" class="text-sm font-medium">Probabilities</text>
+        <!-- 连接线 -->
+        <line x1="200" y1="440" x2="200" y2="420" stroke="#666" stroke-width="2"/>
+        <line x1="200" y1="380" x2="200" y2="360" stroke="#666" stroke-width="2"/>
+        <line x1="200" y1="320" x2="200" y2="300" stroke="#666" stroke-width="2"/>
+        <line x1="200" y1="260" x2="200" y2="240" stroke="#666" stroke-width="2"/>
+        <line x1="200" y1="200" x2="200" y2="180" stroke="#666" stroke-width="2"/>
+        <line x1="200" y1="140" x2="200" y2="120" stroke="#666" stroke-width="2"/>
+        <!-- 残差连接 -->
+        <path d="M 90 460 Q 70 460 70 400 Q 70 340 90 340" stroke="#666" stroke-width="2" fill="none"/>
+        <line x1="90" y1="340" x2="120" y2="340" stroke="#666" stroke-width="2"/>
+        <line x1="90" y1="460" x2="120" y2="460" stroke="#666" stroke-width="2"/>
+        <!-- 输入输出标签 -->
+        <text x="200" y="30" text-anchor="middle" class="text-lg font-bold">Outputs</text>
+        <text x="200" y="590" text-anchor="middle" class="text-lg font-bold">Inputs</text>
+        <!-- 箭头 -->
+        <polygon points="195,75 200,65 205,75" fill="#666"/>
+        <polygon points="195,485 200,475 205,485" fill="#666"/>
+      </svg>
+    </div>
+    <!-- 右侧：文字内容 -->
+    <div class="flex-1 flex flex-col items-center justify-center space-y-8">
+      <!-- Transformer文字 - 点击后向上移动 -->
+      <div v-motion
+        :initial="{ y: 0 }"
+        :click-1="{ y: -40, transition: { duration: 600 } }"
+        class="text-8xl font-bold text-gray-800 text-center">
+        Transformer
+      </div>
+      <!-- Attention文字 - 点击后出现 -->
+      <div v-motion
+        v-click="1"
+        :initial="{ opacity: 0, y: 40 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+        class="text-8xl font-bold text-gray-800 text-center">
+        Attention
+      </div>
+    </div>
+  </div>
 </div>
 
-<style>
-@keyframes fade-in-strong {
-from { opacity: 0; transform: scale(0.92); }
-to { opacity: 1; transform: scale(1); }
-}
-.animate-fade-in-strong {
-animation: fade-in-strong 0.8s cubic-bezier(.4,0,.2,1);
-}
-</style>
+---
+
+<!-- 36页 -->
