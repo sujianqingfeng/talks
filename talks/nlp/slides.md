@@ -1395,3 +1395,216 @@ clicks: 2
 # 词语相似度分析
 
 <div class="flex items-center justify-center h-full w-full"><div class="flex w-full max-w-6xl items-center"><div class="flex-shrink-0 w-1/2 flex flex-col justify-center space-y-8"><div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 香蕉</div><div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 高兴</div></div><div class="flex-1 flex flex-col justify-center space-y-8 ml-16"><div class="w-full"><div class="bg-gray-200 rounded-full h-8 relative overflow-hidden"><div v-motion :initial="{ width: '0%' }" :click-1="{ width: '85%', transition: { duration: 800 } }" class="bg-gradient-to-r from-orange-400 to-orange-600 h-full rounded-full transition-all duration-800 ease-out"></div><div v-click="1" class="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">85%</div></div></div><div class="w-full"><div class="bg-gray-200 rounded-full h-8 relative overflow-hidden"><div v-motion :initial="{ width: '0%' }" :click-2="{ width: '15%', transition: { duration: 800 } }" class="bg-gradient-to-r from-gray-500 to-gray-700 h-full rounded-full transition-all duration-800 ease-out"></div><div v-click="2" class="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">15%</div></div></div></div></div></div>
+
+
+---
+
+
+
+<div class="flex items-center justify-center h-full w-full">
+<div class="w-full max-w-4xl mx-auto flex flex-col items-center justify-center">
+<div
+v-motion
+:initial="{ opacity: 1, y: 0 }"
+:click-1="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center transition-all duration-500"
+>
+Word2Vec 理念
+</div>
+<div
+v-motion
+v-click="1"
+:initial="{ opacity: 0, y: 40 }"
+:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+:click-2="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+>
+了解一个人
+</div>
+<div
+v-motion
+v-click="2"
+:initial="{ opacity: 0, y: 40 }"
+:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+:click-3="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+>
+不听Ta说了什么
+</div>
+<div
+v-motion
+v-click="3"
+:initial="{ opacity: 0, y: 40 }"
+:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+:click-4="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+>
+周围有什么人
+</div>
+<div
+v-motion
+v-click="4"
+:initial="{ opacity: 0, y: 40 }"
+:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+>
+信息流
+</div>
+</div>
+</div>
+
+---
+
+<div class="flex items-center justify-center h-full w-full">
+<div class="w-full max-w-4xl mx-auto flex flex-col items-center justify-center">
+<div
+v-motion
+:initial="{ opacity: 1, y: 0 }"
+:click-1="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center transition-all duration-500"
+>
+问题
+</div>
+<div
+v-motion
+v-click="1"
+:initial="{ opacity: 0, y: 40 }"
+:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+:click-2="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+>
+词序
+</div>
+</div>
+</div>
+
+---
+clicks: 3
+---
+
+<div class="flex items-center justify-center h-full w-full relative">
+<!-- 第一步：左右分别展示句子 -->
+<div class="flex w-full max-w-3xl items-center justify-between">
+<!-- 左侧：我爱你 -->
+<div class="flex flex-col items-center mx-4">
+<div class="text-7xl font-bold text-black mb-8">我爱你</div>
+<div v-click="1" class="w-full flex justify-center">
+<table class="border-collapse border-2 border-green-200 text-lg bg-green-50 rounded-xl shadow-md">
+<tr>
+<td class="border border-green-200 p-4 font-mono italic">0.6</td>
+<td class="border border-green-200 p-4 font-mono italic">0.7</td>
+<td class="border border-green-200 p-4 font-mono italic">...</td>
+<td class="border border-green-200 p-4 font-mono italic">0.7</td>
+</tr>
+</table>
+</div>
+</div>
+<!-- 右侧：你爱我 -->
+<div class="flex flex-col items-center mx-4">
+<div class="text-7xl font-bold text-orange-600 mb-8">你爱我</div>
+<div v-click="1" class="w-full flex justify-center">
+<table class="border-collapse border-2 border-green-200 text-lg bg-green-50 rounded-xl shadow-md">
+<tr>
+<td class="border border-green-200 p-4 font-mono italic">0.7</td>
+<td class="border border-green-200 p-4 font-mono italic">0.7</td>
+<td class="border border-green-200 p-4 font-mono italic">...</td>
+<td class="border border-green-200 p-4 font-mono italic">0.6</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<!-- 等号，点击2时出现 -->
+<div v-click="2" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+<div class="text-8xl font-extrabold text-gray-600 select-none">=</div>
+</div>
+<!-- 叉号，点击3时出现，覆盖全局 -->
+<div v-click="3" class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+<div class="text-[12rem] font-extrabold text-red-500 drop-shadow-lg select-none">×</div>
+</div>
+</div>
+
+
+
+
+---
+clicks: 3
+---
+
+<div class="flex items-center justify-center h-full w-full gap-24 bg-white">
+<!-- 左侧内容 -->
+<div class="flex flex-col items-center justify-center min-w-[180px]">
+<div class="mb-12 flex flex-col items-center">
+<div class="text-[6rem]">🍎</div>
+<div class="text-3xl font-semibold tracking-widest mt-2 text-gray-800">苹果</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-[4.5rem] text-gray-500">📱</div>
+<div class="text-3xl font-semibold tracking-widest mt-2 text-gray-800">苹果</div>
+</div>
+</div>
+
+<!-- 右侧词表，点击后出现 -->
+<div v-click="1" class="transition-all duration-500">
+<table class="border border-gray-300 text-lg min-w-[420px]">
+<thead>
+<tr class="bg-gray-50">
+<th class="border border-gray-300 p-3 font-medium text-gray-700">梨子</th>
+<th class="border border-gray-300 p-3 font-medium text-gray-700">0.2</th>
+<th class="border border-gray-300 p-3 font-medium text-gray-700">0.1</th>
+<th class="border border-gray-300 p-3 font-medium text-gray-700">...</th>
+<th class="border border-gray-300 p-3 font-medium text-gray-700">0.4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="bg-white">
+<td class="border border-gray-300 p-3 font-medium text-gray-700">葡萄</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.5</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.7</td>
+<td class="border border-gray-300 p-3 text-gray-700">...</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.4</td>
+</tr>
+<tr class="bg-white">
+<td class="border border-gray-300 p-3 font-medium text-gray-700">......</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.4</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.3</td>
+<td class="border border-gray-300 p-3 text-gray-700">...</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.2</td>
+</tr>
+<tr :class="[$clicks === 2 ? 'bg-red-100' : 'bg-white']">
+<td class="border border-gray-300 p-3 font-semibold text-gray-800">
+苹果
+</td>
+<td class="border border-gray-300 p-3 font-semibold" :class="$clicks === 2 ? 'text-red-600' : 'text-gray-800'">0.4</td>
+<td class="border border-gray-300 p-3 font-semibold" :class="$clicks === 2 ? 'text-red-600' : 'text-gray-800'">0.2</td>
+<td class="border border-gray-300 p-3 font-semibold" :class="$clicks === 2 ? 'text-red-600' : 'text-gray-800'">...</td>
+<td class="border border-gray-300 p-3 font-semibold" :class="$clicks === 2 ? 'text-red-600' : 'text-gray-800'">0.1</td>
+</tr>
+<tr class="bg-white">
+<td class="border border-gray-300 p-3 font-medium text-gray-700">汽车</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.3</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.6</td>
+<td class="border border-gray-300 p-3 text-gray-700">...</td>
+<td class="border border-gray-300 p-3 text-gray-700">0.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- 第三次点击时，屏幕中央出现提示语 -->
+<div v-if="$clicks === 3" class="fixed inset-0 flex items-center justify-center pointer-events-none z-50">
+<div class="text-4xl md:text-6xl font-bold text-blue-600 bg-white/95 px-12 py-8 rounded-xl shadow-lg border-2 border-blue-200 animate-fade-in-strong tracking-wide text-center">
+根据语境动态计算词向量
+</div>
+</div>
+
+<style>
+@keyframes fade-in-strong {
+from { opacity: 0; transform: scale(0.92); }
+to { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in-strong {
+animation: fade-in-strong 0.8s cubic-bezier(.4,0,.2,1);
+}
+</style>
