@@ -1692,5 +1692,140 @@ clicks: 1
 </div>
 
 ---
+clicks: 2
+---
 
-<!-- 36页 -->
+<div class="flex items-center justify-center h-full w-full">
+  <div class="w-full max-w-7xl flex items-center justify-between px-8">
+    <!-- 左侧：两个苹果 -->
+    <div class="flex-1 flex flex-col items-center justify-center space-y-6">
+      <!-- 第一个苹果 -->
+      <div class="flex flex-col items-center">
+        <div class="text-[5rem]">🍎</div>
+        <div class="text-2xl font-semibold tracking-widest mt-2 text-gray-800">苹果</div>
+        <div class="text-sm text-gray-600 mt-1">水果</div>
+      </div>
+      <!-- 第二个苹果 -->
+      <div class="flex flex-col items-center">
+        <div class="text-[5rem] text-gray-500">📱</div>
+        <div class="text-2xl font-semibold tracking-widest mt-2 text-gray-800">苹果</div>
+        <div class="text-sm text-gray-600 mt-1">手机</div>
+      </div>
+    </div>
+    <!-- 左到中的箭头 -->
+    <div class="flex items-center justify-center px-4">
+      <div class="text-4xl text-blue-500 font-bold">→</div>
+    </div>
+    <!-- 中间：Embedding模型标识 + Transformer模型 -->
+    <div class="flex-1 flex flex-col items-center justify-center space-y-4">
+      <!-- Embedding模型标识 - 第二次点击后出现 -->
+      <div v-click="2" class="text-center">
+        <div class="bg-gradient-to-r from-orange-100 to-yellow-100 px-6 py-3 rounded-xl border-2 border-orange-300 shadow-lg">
+          <div class="text-xl font-bold text-orange-800">Embedding 模型</div>
+        </div>
+      </div>
+      <!-- Transformer模型 -->
+      <svg width="250" height="400" viewBox="0 0 350 550" class="border border-gray-200 rounded-lg bg-white shadow-lg">
+        <!-- 输入嵌入 -->
+        <rect x="40" y="470" width="100" height="35" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
+        <text x="90" y="492" text-anchor="middle" class="text-xs font-medium">Input Embedding</text>
+        <!-- 位置编码 -->
+        <rect x="210" y="470" width="100" height="35" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
+        <text x="260" y="485" text-anchor="middle" class="text-xs font-medium">Positional</text>
+        <text x="260" y="497" text-anchor="middle" class="text-xs font-medium">Encoding</text>
+        <!-- 加法符号 -->
+        <circle cx="175" cy="487" r="12" fill="#fff" stroke="#666" stroke-width="2"/>
+        <text x="175" y="492" text-anchor="middle" class="text-sm font-bold">+</text>
+        <!-- 连接线 -->
+        <line x1="140" y1="487" x2="163" y2="487" stroke="#666" stroke-width="2"/>
+        <line x1="187" y1="487" x2="210" y2="487" stroke="#666" stroke-width="2"/>
+        <line x1="175" y1="475" x2="175" y2="435" stroke="#666" stroke-width="2"/>
+        <!-- 多头注意力机制 -->
+        <rect x="100" y="400" width="150" height="35" fill="#ffd93d" stroke="#ffb300" stroke-width="2" rx="5"/>
+        <text x="175" y="415" text-anchor="middle" class="text-xs font-medium">Multi-Head</text>
+        <text x="175" y="427" text-anchor="middle" class="text-xs font-medium">Attention</text>
+        <!-- Add & Norm -->
+        <rect x="100" y="345" width="150" height="35" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="175" y="367" text-anchor="middle" class="text-xs font-medium">Add &amp; Norm</text>
+        <!-- 前馈网络 -->
+        <rect x="100" y="290" width="150" height="35" fill="#87ceeb" stroke="#4682b4" stroke-width="2" rx="5"/>
+        <text x="175" y="305" text-anchor="middle" class="text-xs font-medium">Feed</text>
+        <text x="175" y="317" text-anchor="middle" class="text-xs font-medium">Forward</text>
+        <!-- Add & Norm -->
+        <rect x="100" y="235" width="150" height="35" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="175" y="257" text-anchor="middle" class="text-xs font-medium">Add &amp; Norm</text>
+        <!-- 线性层 -->
+        <rect x="100" y="180" width="150" height="35" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="175" y="202" text-anchor="middle" class="text-xs font-medium">Linear</text>
+        <!-- Softmax -->
+        <rect x="100" y="125" width="150" height="35" fill="#90ee90" stroke="#32cd32" stroke-width="2" rx="5"/>
+        <text x="175" y="147" text-anchor="middle" class="text-xs font-medium">Softmax</text>
+        <!-- 输出概率 -->
+        <rect x="100" y="70" width="150" height="35" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
+        <text x="175" y="85" text-anchor="middle" class="text-xs font-medium">Output</text>
+        <text x="175" y="97" text-anchor="middle" class="text-xs font-medium">Probabilities</text>
+        <!-- 连接线 -->
+        <line x1="175" y1="400" x2="175" y2="380" stroke="#666" stroke-width="2"/>
+        <line x1="175" y1="345" x2="175" y2="325" stroke="#666" stroke-width="2"/>
+        <line x1="175" y1="290" x2="175" y2="270" stroke="#666" stroke-width="2"/>
+        <line x1="175" y1="235" x2="175" y2="215" stroke="#666" stroke-width="2"/>
+        <line x1="175" y1="180" x2="175" y2="160" stroke="#666" stroke-width="2"/>
+        <line x1="175" y1="125" x2="175" y2="105" stroke="#666" stroke-width="2"/>
+        <!-- 残差连接 -->
+        <path d="M 75 417 Q 55 417 55 362 Q 55 307 75 307" stroke="#666" stroke-width="2" fill="none"/>
+        <line x1="75" y1="307" x2="100" y2="307" stroke="#666" stroke-width="2"/>
+        <line x1="75" y1="417" x2="100" y2="417" stroke="#666" stroke-width="2"/>
+        <!-- 输入输出标签 -->
+        <text x="175" y="30" text-anchor="middle" class="text-sm font-bold">Outputs</text>
+        <text x="175" y="535" text-anchor="middle" class="text-sm font-bold">Inputs</text>
+        <!-- 箭头 -->
+        <polygon points="170,65 175,55 180,65" fill="#666"/>
+        <polygon points="170,440 175,430 180,440" fill="#666"/>
+      </svg>
+    </div>
+    <!-- 中到右的箭头 -->
+    <div class="flex items-center justify-center px-4">
+      <div class="text-4xl text-green-500 font-bold">→</div>
+    </div>
+    <!-- 右侧：两段向量输出结果 -->
+    <div class="flex-1 flex flex-col items-center justify-center space-y-6">
+      <!-- 第一个向量输出 -->
+      <div class="flex flex-col items-center">
+        <div class="text-lg font-bold text-gray-700 mb-2">苹果（水果）</div>
+        <table class="border-collapse border-2 border-red-300 text-sm bg-red-50 rounded-lg shadow-md">
+          <tr>
+            <td class="border border-red-300 p-2 font-mono text-red-700">0.6</td>
+            <td class="border border-red-300 p-2 font-mono text-red-700">0.7</td>
+            <td class="border border-red-300 p-2 font-mono text-red-700">0.2</td>
+            <td class="border border-red-300 p-2 font-mono text-red-700">...</td>
+            <td class="border border-red-300 p-2 font-mono text-red-700">0.4</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 说明文字 - 放在两个向量中间 -->
+      <div v-click="1" class="text-center py-4">
+        <div class="bg-gradient-to-r from-purple-100 to-pink-100 px-8 py-4 rounded-xl border-2 border-purple-300 shadow-lg">
+          <div class="text-2xl font-bold text-purple-800">根据上下文</div>
+          <div class="text-2xl font-bold text-purple-800">生成不同向量</div>
+        </div>
+      </div>
+      <!-- 第二个向量输出 -->
+      <div class="flex flex-col items-center">
+        <div class="text-lg font-bold text-gray-700 mb-2">苹果（手机）</div>
+        <table class="border-collapse border-2 border-blue-300 text-sm bg-blue-50 rounded-lg shadow-md">
+          <tr>
+            <td class="border border-blue-300 p-2 font-mono text-blue-700">0.1</td>
+            <td class="border border-blue-300 p-2 font-mono text-blue-700">0.3</td>
+            <td class="border border-blue-300 p-2 font-mono text-blue-700">0.8</td>
+            <td class="border border-blue-300 p-2 font-mono text-blue-700">...</td>
+            <td class="border border-blue-300 p-2 font-mono text-blue-700">0.9</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+<!-- 37页 -->
