@@ -1395,3 +1395,62 @@ clicks: 2
 # 词语相似度分析
 
 <div class="flex items-center justify-center h-full w-full"><div class="flex w-full max-w-6xl items-center"><div class="flex-shrink-0 w-1/2 flex flex-col justify-center space-y-8"><div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 香蕉</div><div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 高兴</div></div><div class="flex-1 flex flex-col justify-center space-y-8 ml-16"><div class="w-full"><div class="bg-gray-200 rounded-full h-8 relative overflow-hidden"><div v-motion :initial="{ width: '0%' }" :click-1="{ width: '85%', transition: { duration: 800 } }" class="bg-gradient-to-r from-orange-400 to-orange-600 h-full rounded-full transition-all duration-800 ease-out"></div><div v-click="1" class="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">85%</div></div></div><div class="w-full"><div class="bg-gray-200 rounded-full h-8 relative overflow-hidden"><div v-motion :initial="{ width: '0%' }" :click-2="{ width: '15%', transition: { duration: 800 } }" class="bg-gradient-to-r from-gray-500 to-gray-700 h-full rounded-full transition-all duration-800 ease-out"></div><div v-click="2" class="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">15%</div></div></div></div></div></div>
+
+---
+
+<div class="flex items-center justify-center h-full w-full">
+  <div class="w-full max-w-4xl mx-auto flex flex-col items-center justify-center">
+    <div
+      v-motion
+      :initial="{ opacity: 1, y: 0 }"
+      :click-1="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+      class="text-7xl font-bold text-black text-center transition-all duration-500"
+      style="min-height: 2.5em;"
+    >
+      Word2Vec 理念
+    </div>
+    <div
+      v-motion
+      v-click="1"
+      :initial="{ opacity: 0, y: 40 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+      :click-2="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+      class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+      style="min-height: 2.5em;"
+    >
+      了解一个人
+    </div>
+    <div
+      v-motion
+      v-click="2"
+      :initial="{ opacity: 0, y: 40 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+      :click-3="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+      class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+      style="min-height: 2.5em;"
+    >
+      不听Ta说了什么
+    </div>
+    <div
+      v-motion
+      v-click="3"
+      :initial="{ opacity: 0, y: 40 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+      :click-4="{ opacity: 0, y: -40, transition: { duration: 500 } }"
+      class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+      style="min-height: 2.5em;"
+    >
+      周围有什么人
+    </div>
+    <div
+      v-motion
+      v-click="4"
+      :initial="{ opacity: 0, y: 40 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+      class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+      style="min-height: 2.5em;"
+    >
+      信息流
+    </div>
+  </div>
+</div>
