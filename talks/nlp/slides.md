@@ -88,31 +88,40 @@ clicks: 5
 ---
 
 
-# 什么是文本向量化？
-
-将人类语言文本转换为计算机可以理解的数字向量的过程
-
-<div class="mt-6 p-4 bg-blue-50 rounded-lg">
-<h3 class="text-lg font-semibold mb-3">📧 实际应用场景</h3>
-
-**识别这是否垃圾邮件：**
-
-<div class="bg-gray-100 p-3 rounded mt-2 mb-3 font-mono text-sm">
-"我爷爷种了一片茶园，你愿意买茶么"
-</div>
-
-<div class="flex items-center justify-center my-4">
-<div class="text-2xl">⬇️</div>
-</div>
-
-<div class="bg-green-100 p-3 rounded font-mono text-sm">
-[0.2, 0.8, 0.1, 0.9, 0.3, 0.7, 0.4, ...]
-</div>
-
-</div>
-
-<div class="mt-4 text-sm text-gray-600">
-💡 向量化后，就可以处理和分析文本了
+<div class="flex items-center justify-center h-full">
+  <div class="text-center max-w-4xl">
+    <!-- 主标题 -->
+    <div class="text-6xl font-light text-black mb-12 tracking-tight">
+      文本向量化
+    </div>
+    <!-- 副标题 -->
+    <div class="text-2xl font-normal text-gray-600 mb-16 leading-relaxed">
+      将人类语言转换为计算机可理解的数字向量
+    </div>
+    <!-- 示例展示 -->
+    <div class="space-y-8">
+      <!-- 文本示例 -->
+      <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm">
+        <div class="text-lg font-normal text-black mb-4">
+          "我爷爷种了一片茶园，你愿意买茶么"
+        </div>
+        <!-- 转换箭头 -->
+        <div class="flex items-center justify-center my-6">
+          <div class="w-8 h-px bg-black"></div>
+          <div class="mx-4 text-black">转换</div>
+          <div class="w-8 h-px bg-black"></div>
+        </div>
+        <!-- 向量结果 -->
+        <div class="bg-black text-white px-4 py-2 rounded font-mono text-sm">
+          [0.2, 0.8, 0.1, 0.9, 0.3, 0.7, 0.4, ...]
+        </div>
+      </div>
+      <!-- 说明文字 -->
+      <div class="text-lg font-normal text-gray-600">
+        向量化后，计算机就能处理和分析文本了
+      </div>
+    </div>
+  </div>
 </div>
 
 
