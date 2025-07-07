@@ -1,28 +1,28 @@
 <template>
   <div class="flex flex-col items-center">
-    <div v-if="title" class="text-sm font-bold text-gray-700 mb-1 text-center">{{ title }}</div>
-    <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl border border-blue-200 shadow-lg" :class="containerClass">
+    <div v-if="title" class="text-lg font-normal text-black mb-2 text-center">{{ title }}</div>
+    <div class="bg-white border border-black rounded" :class="containerClass">
       <svg :width="width" :height="height" :viewBox="`0 0 ${viewBoxWidth} ${viewBoxHeight}`" class="mx-auto">
         <!-- 输入层 -->
         <circle v-for="(node, index) in inputNodes" :key="`input-${index}`"
                 :cx="node.x" :cy="node.y" :r="nodeRadius" 
-                fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+                fill="white" stroke="black" stroke-width="2"/>
         
         <!-- 隐藏层 -->
         <circle v-for="(node, index) in hiddenNodes" :key="`hidden-${index}`"
                 :cx="node.x" :cy="node.y" :r="nodeRadius" 
-                fill="#34d399" stroke="#059669" stroke-width="2"/>
+                fill="white" stroke="black" stroke-width="2"/>
         
         <!-- 输出层 -->
         <circle v-for="(node, index) in outputNodes" :key="`output-${index}`"
                 :cx="node.x" :cy="node.y" :r="nodeRadius" 
-                fill="#f87171" stroke="#dc2626" stroke-width="2"/>
+                fill="white" stroke="black" stroke-width="2"/>
         
         <!-- 连接线 -->
         <line v-for="connection in connections" :key="connection.id"
               :x1="connection.x1" :y1="connection.y1" 
               :x2="connection.x2" :y2="connection.y2" 
-              stroke="#6b7280" :stroke-width="strokeWidth" opacity="0.7"/>
+              stroke="#333333" :stroke-width="strokeWidth" opacity="0.6"/>
       </svg>
     </div>
   </div>
@@ -54,15 +54,15 @@ const props = defineProps({
   },
   nodeRadius: {
     type: Number,
-    default: 10
+    default: 8
   },
   strokeWidth: {
     type: Number,
-    default: 1.5
+    default: 1
   },
   containerClass: {
     type: String,
-    default: 'p-8'
+    default: 'p-4'
   },
   inputCount: {
     type: Number,

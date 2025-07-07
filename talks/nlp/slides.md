@@ -1002,39 +1002,39 @@ clicks: 1
 clicks: 1
 ---
 
+<!-- 26页 -->
+
 <div class="flex items-center justify-center h-full">
-  <div class="w-full max-w-6xl px-8">
+  <div class="w-full max-w-6xl">
     <!-- 标题 -->
-    <div v-click="1" class="text-center mb-12">
-      <div class="text-5xl font-bold text-gray-800 mb-3 tracking-wide">这视频很棒</div>
+    <div v-click="1" class="text-center mb-16">
+      <div class="text-6xl font-light text-black tracking-tight">这视频很棒</div>
     </div>
     <!-- 主要流程图 -->
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between px-8">
       <!-- 左侧：输入词语 -->
-      <div class="flex flex-col space-y-12">
-        <div class="space-y-12">
-          <div class="relative">
-            <div v-click="1" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-              视频
-            </div>
-            <div class="bg-gradient-to-r from-amber-100 to-yellow-100 px-6 py-3 rounded-xl border border-amber-200 shadow-md text-center font-medium text-lg hover:shadow-lg transition-shadow">
-              前一个词
-            </div>
+      <div class="flex flex-col space-y-16">
+        <div class="relative">
+          <div v-click="1" class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 rounded text-sm font-normal">
+            视频
           </div>
-          <div class="relative">
-            <div v-click="1" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-              棒
-            </div>
-            <div class="bg-gradient-to-r from-amber-100 to-yellow-100 px-6 py-3 rounded-xl border border-amber-200 shadow-md text-center font-medium text-lg hover:shadow-lg transition-shadow">
-              后一个词
-            </div>
+          <div class="bg-white border border-black px-8 py-4 text-center font-normal text-lg">
+            前一个词
+          </div>
+        </div>
+        <div class="relative">
+          <div v-click="1" class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 rounded text-sm font-normal">
+            棒
+          </div>
+          <div class="bg-white border border-black px-8 py-4 text-center font-normal text-lg">
+            后一个词
           </div>
         </div>
       </div>
       <!-- 箭头 -->
-      <div class="flex flex-col items-center mx-10">
-        <div class="text-lg font-semibold text-gray-600 mb-3">输入</div>
-        <div class="text-3xl text-blue-500">→</div>
+      <div class="flex flex-col items-center mx-12">
+        <div class="text-lg font-normal text-black mb-4">输入</div>
+        <div class="text-4xl text-black">→</div>
       </div>
       <!-- 中间：神经网络 -->
       <NeuralNetwork 
@@ -1044,17 +1044,17 @@ clicks: 1
         container-class="p-8"
       />
       <!-- 箭头 -->
-      <div class="flex flex-col items-center mx-10">
-        <div class="text-lg font-semibold text-gray-600 mb-3">输出</div>
-        <div class="text-3xl text-green-500">→</div>
+      <div class="flex flex-col items-center mx-12">
+        <div class="text-lg font-normal text-black mb-4">输出</div>
+        <div class="text-4xl text-black">→</div>
       </div>
       <!-- 右侧：输出 -->
       <div class="flex flex-col items-center">
         <div class="relative">
-          <div v-click="1" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+          <div v-click="1" class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 rounded text-sm font-normal">
             很
           </div>
-          <div class="bg-gradient-to-r from-rose-100 to-pink-100 px-8 py-4 rounded-xl border border-rose-200 shadow-md text-center font-medium text-lg hover:shadow-lg transition-shadow">
+          <div class="bg-white border border-black px-8 py-4 text-center font-normal text-lg">
             中间词
           </div>
         </div>
@@ -1068,47 +1068,47 @@ clicks: 1
 ---
 
 <div class="flex items-center justify-center h-full">
-  <table class="border-collapse border-2 border-gray-400 text-sm">
+  <table class="border-collapse border border-black bg-white text-lg">
     <tbody>
-      <!-- 第一行：原表头内容 -->
-      <tr class="bg-gradient-to-r from-pink-100 to-pink-200">
-        <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">这</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.2</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.1</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">......</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.4</td>
+      <!-- 第一行：这 -->
+      <tr class="bg-white">
+        <td class="border border-black p-4 w-20 h-16 text-center font-medium text-black">这</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.2</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.1</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-400">···</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.4</td>
       </tr>
       <!-- 第二行：很 -->
-      <tr class="bg-green-50">
-        <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">很</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.5</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.7</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">......</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.4</td>
+      <tr class="bg-white">
+        <td class="border border-black p-4 w-20 h-16 text-center font-medium text-black">很</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.5</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.7</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-400">···</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.4</td>
       </tr>
       <!-- 第三行：省略号 -->
-      <tr class="bg-yellow-50">
-        <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">......</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.4</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.3</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">......</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.2</td>
+      <tr class="bg-white">
+        <td class="border border-black p-4 w-20 h-16 text-center font-medium text-black">···</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.4</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.3</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-400">···</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.2</td>
       </tr>
       <!-- 第四行：视频 -->
-      <tr class="bg-green-50">
-        <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">视频</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.6</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.7</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">......</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.7</td>
+      <tr class="bg-white">
+        <td class="border border-black p-4 w-20 h-16 text-center font-medium text-black">视频</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.6</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.7</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-400">···</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.7</td>
       </tr>
       <!-- 第五行：棒 -->
-      <tr class="bg-yellow-50">
-        <td class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">棒</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.9</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.3</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">......</td>
-        <td v-click="1" class="border border-gray-400 p-2 w-16 h-12 text-center font-bold text-gray-800">0.1</td>
+      <tr class="bg-white">
+        <td class="border border-black p-4 w-20 h-16 text-center font-medium text-black">棒</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.9</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.3</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-400">···</td>
+        <td v-click="1" class="border border-black p-4 w-20 h-16 text-center font-normal text-gray-600">0.1</td>
       </tr>
     </tbody>
   </table>
@@ -1121,13 +1121,13 @@ clicks: 8
 <div class="relative flex flex-col h-full">
   <!-- 第7步：前向传播指示器 -->
   <div v-click="7" class="absolute left-1/2 top-8 transform -translate-x-1/2 z-20">
-    <div class="bg-blue-500 text-white px-16 py-6 rounded-3xl shadow-2xl text-3xl font-extrabold tracking-wider min-w-[320px] text-center">
+    <div class="bg-black text-white px-12 py-4 rounded text-2xl font-light tracking-tight">
       前向传播
     </div>
   </div>
   <!-- 第8步：反向传播指示器 -->
   <div v-click="8" class="absolute left-1/2 bottom-8 transform -translate-x-1/2 z-20">
-    <div class="bg-pink-500 text-white px-16 py-6 rounded-3xl shadow-2xl text-3xl font-extrabold tracking-wider min-w-[320px] text-center">
+    <div class="bg-black text-white px-12 py-4 rounded text-2xl font-light tracking-tight">
       反向传播
     </div>
   </div>
@@ -1138,131 +1138,97 @@ clicks: 8
       <div class="flex items-center justify-between mb-4">
         <!-- 左侧：输入数据 -->
         <div class="flex flex-col items-center">
-          <div v-click="1" class="mb-2">
-            <div class="text-sm font-bold mb-1 text-center" :class="$clicks >= 6 ? 'text-purple-600' : 'text-gray-700'">{{ $clicks >= 6 ? '更新后词表' : '输入数据' }}</div>
-            <table class="border-collapse border-2 border-gray-400 text-xs">
-              <tbody>
-                <tr class="bg-gradient-to-r from-yellow-100 to-yellow-200">
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold text-gray-800">这</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.1' : '0.2' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.2' : '0.1' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">...</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.3' : '0.4' }}</td>
-                </tr>
-                <tr class="bg-gradient-to-r from-green-100 to-green-200">
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold text-gray-800">很</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.4' : '0.5' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.8' : '0.7' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">...</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.3' : '0.4' }}</td>
-                </tr>
-                <tr class="bg-gradient-to-r from-yellow-100 to-yellow-200">
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold text-gray-800">...</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.3' : '0.4' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.4' : '0.3' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">...</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.3' : '0.2' }}</td>
-                </tr>
-                <tr class="bg-gradient-to-r from-green-100 to-green-200">
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold text-gray-800">视频</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.7' : '0.6' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.6' : '0.7' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">...</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.8' : '0.7' }}</td>
-                </tr>
-                <tr class="bg-gradient-to-r from-yellow-100 to-yellow-200">
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold text-gray-800">棒</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.8' : '0.9' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.4' : '0.3' }}</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">...</td>
-                  <td class="border border-gray-400 p-1 w-12 h-8 text-center font-bold" :class="$clicks >= 6 ? 'text-blue-600' : 'text-red-600'">{{ $clicks >= 6 ? '0.2' : '0.1' }}</td>
-                </tr>
+          <div v-click="1" class="mb-4">
+            <div class="text-lg font-normal mb-2 text-center text-black">{{ $clicks >= 6 ? '更新后词表' : '输入数据' }}</div>
+            <table class="border-collapse border border-black bg-white text-sm">
+                              <tbody>
+                  <tr class="bg-white">
+                    <td class="border border-black p-2 w-14 h-10 text-center font-medium text-black">这</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.1' : '0.2' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.2' : '0.1' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-400">···</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.3' : '0.4' }}</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="border border-black p-2 w-14 h-10 text-center font-medium text-black">很</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.4' : '0.5' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.8' : '0.7' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-400">···</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.3' : '0.4' }}</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="border border-black p-2 w-14 h-10 text-center font-medium text-black">···</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.3' : '0.4' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.4' : '0.3' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-400">···</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.3' : '0.2' }}</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="border border-black p-2 w-14 h-10 text-center font-medium text-black">视频</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.7' : '0.6' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.6' : '0.7' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-400">···</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.8' : '0.7' }}</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="border border-black p-2 w-14 h-10 text-center font-medium text-black">棒</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.8' : '0.9' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.4' : '0.3' }}</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-400">···</td>
+                    <td class="border border-black p-2 w-14 h-10 text-center font-normal text-gray-600">{{ $clicks >= 6 ? '0.2' : '0.1' }}</td>
+                  </tr>
               </tbody>
             </table>
           </div>
         </div>
         <!-- 箭头1 -->
-        <div v-click="2" class="flex flex-col items-center mx-3">
-          <div class="text-2xl text-blue-500">→</div>
+        <div v-click="2" class="flex flex-col items-center mx-6">
+          <div class="text-3xl text-black">→</div>
         </div>
         <!-- 神经网络模型 -->
-        <div class="flex flex-col items-center">
-          <div v-click="2" class="mb-2">
-            <div class="text-sm font-bold text-gray-700 mb-1 text-center">神经网络模型</div>
-            <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-3 rounded-xl border border-blue-200 shadow-lg">
-              <svg width="120" height="90" viewBox="0 0 160 120" class="mx-auto">
-                <!-- 输入层 -->
-                <circle cx="25" cy="25" r="8" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-                <circle cx="25" cy="45" r="8" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-                <circle cx="25" cy="65" r="8" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-                <circle cx="25" cy="85" r="8" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-                <circle cx="25" cy="105" r="8" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-                <!-- 隐藏层 -->
-                <circle cx="80" cy="35" r="8" fill="#34d399" stroke="#059669" stroke-width="2"/>
-                <circle cx="80" cy="55" r="8" fill="#34d399" stroke="#059669" stroke-width="2"/>
-                <circle cx="80" cy="75" r="8" fill="#34d399" stroke="#059669" stroke-width="2"/>
-                <!-- 输出层 -->
-                <circle cx="135" cy="45" r="8" fill="#f87171" stroke="#dc2626" stroke-width="2"/>
-                <circle cx="135" cy="65" r="8" fill="#f87171" stroke="#dc2626" stroke-width="2"/>
-                <circle cx="135" cy="85" r="8" fill="#f87171" stroke="#dc2626" stroke-width="2"/>
-                <!-- 连接线 -->
-                <line x1="33" y1="25" x2="72" y2="35" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="25" x2="72" y2="55" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="25" x2="72" y2="75" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="45" x2="72" y2="35" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="45" x2="72" y2="55" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="45" x2="72" y2="75" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="65" x2="72" y2="35" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="65" x2="72" y2="55" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="65" x2="72" y2="75" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="85" x2="72" y2="35" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="85" x2="72" y2="55" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="85" x2="72" y2="75" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="105" x2="72" y2="35" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="105" x2="72" y2="55" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="33" y1="105" x2="72" y2="75" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="35" x2="127" y2="45" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="35" x2="127" y2="65" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="35" x2="127" y2="85" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="55" x2="127" y2="45" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="55" x2="127" y2="65" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="55" x2="127" y2="85" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="75" x2="127" y2="45" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="75" x2="127" y2="65" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-                <line x1="88" y1="75" x2="127" y2="85" stroke="#6b7280" stroke-width="1" opacity="0.6"/>
-              </svg>
-            </div>
-          </div>
+        <div v-click="2">
+          <NeuralNetwork 
+            title="神经网络模型"
+            :width="120"
+            :height="90"
+            :viewBoxWidth="160"
+            :viewBoxHeight="120"
+            :inputCount="5"
+            :hiddenCount="3"
+            :outputCount="3"
+            :nodeRadius="7"
+            container-class="p-3"
+          />
         </div>
         <!-- 箭头2 -->
-        <div v-click="3" class="flex flex-col items-center mx-3">
-          <div class="text-2xl text-green-500">→</div>
+        <div v-click="3" class="flex flex-col items-center mx-6">
+          <div class="text-3xl text-black">→</div>
         </div>
         <!-- 输出结果 -->
         <div class="flex flex-col items-center">
-          <div v-click="3" class="mb-2">
-            <div class="text-sm font-bold text-gray-700 mb-1 text-center">输出</div>
-            <table class="border-collapse border-2 border-gray-400 text-xs">
+          <div v-click="3" class="mb-4">
+            <div class="text-lg font-normal text-black mb-2 text-center">输出</div>
+            <table class="border-collapse border border-black bg-white text-sm">
               <tbody>
-                <tr class="bg-gradient-to-r from-gray-100 to-gray-200">
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-800">这</td>
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-600">0.1</td>
+                <tr class="bg-white">
+                  <td class="border border-black p-2 w-12 h-8 text-center font-medium text-black">这</td>
+                  <td class="border border-black p-2 w-12 h-8 text-center font-normal text-gray-600">0.1</td>
                 </tr>
-                <tr class="bg-gradient-to-r from-red-100 to-red-200">
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-800">很</td>
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-red-600">0.5</td>
+                <tr class="bg-white">
+                  <td class="border border-black p-2 w-12 h-8 text-center font-medium text-black">很</td>
+                  <td class="border border-black p-2 w-12 h-8 text-center font-normal text-black">0.5</td>
                 </tr>
-                <tr class="bg-gradient-to-r from-gray-100 to-gray-200">
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-800">...</td>
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-600">0.1</td>
+                <tr class="bg-white">
+                  <td class="border border-black p-2 w-12 h-8 text-center font-medium text-black">···</td>
+                  <td class="border border-black p-2 w-12 h-8 text-center font-normal text-gray-600">0.1</td>
                 </tr>
-                <tr class="bg-gradient-to-r from-gray-100 to-gray-200">
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-800">视频</td>
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-600">0.1</td>
+                <tr class="bg-white">
+                  <td class="border border-black p-2 w-12 h-8 text-center font-medium text-black">视频</td>
+                  <td class="border border-black p-2 w-12 h-8 text-center font-normal text-gray-600">0.1</td>
                 </tr>
-                <tr class="bg-gradient-to-r from-gray-100 to-gray-200">
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-800">棒</td>
-                  <td class="border border-gray-400 p-1 w-10 h-6 text-center font-bold text-gray-600">0.2</td>
+                <tr class="bg-white">
+                  <td class="border border-black p-2 w-12 h-8 text-center font-medium text-black">棒</td>
+                  <td class="border border-black p-2 w-12 h-8 text-center font-normal text-gray-600">0.2</td>
                 </tr>
               </tbody>
             </table>
@@ -1270,26 +1236,26 @@ clicks: 8
         </div>
       </div>
       <!-- 损失计算部分 -->
-      <div class="flex items-center justify-center space-x-4">
+      <div class="flex items-center justify-center space-x-8 mt-8">
         <!-- 预测值 vs 真实值 -->
         <div v-click="4" class="flex flex-col items-center">
-          <div class="text-sm font-bold text-gray-700 mb-1">预测值</div>
-          <div class="bg-red-100 p-2 rounded-lg border border-red-200">
-            <div class="text-sm font-bold text-red-600">很: 0.5</div>
+          <div class="text-lg font-normal text-black mb-2">预测值</div>
+          <div class="bg-white border border-black p-3 rounded">
+            <div class="text-lg font-normal text-black">很: 0.5</div>
           </div>
         </div>
-        <div v-click="4" class="text-lg font-bold text-gray-600">vs</div>
+        <div v-click="4" class="text-2xl font-light text-black">vs</div>
         <div v-click="4" class="flex flex-col items-center">
-          <div class="text-sm font-bold text-gray-700 mb-1">真实值</div>
-          <div class="bg-green-100 p-2 rounded-lg border border-green-200">
-            <div class="text-sm font-bold text-green-600">很: 1.0</div>
+          <div class="text-lg font-normal text-black mb-2">真实值</div>
+          <div class="bg-white border border-black p-3 rounded">
+            <div class="text-lg font-normal text-black">很: 1.0</div>
           </div>
         </div>
         <!-- 损失计算 -->
-        <div v-click="5" class="flex flex-col items-center ml-4">
-          <div class="text-sm font-bold text-gray-700 mb-1">损失</div>
-          <div class="bg-red-50 p-2 rounded-lg border border-red-200">
-            <div class="text-sm font-bold text-red-600">-log(0.5)</div>
+        <div v-click="5" class="flex flex-col items-center ml-8">
+          <div class="text-lg font-normal text-black mb-2">损失</div>
+          <div class="bg-black text-white p-3 rounded">
+            <div class="text-lg font-normal">-log(0.5)</div>
           </div>
         </div>
       </div>
@@ -1300,6 +1266,7 @@ clicks: 8
 ---
 clicks: 2
 ---
+
 <div class="flex items-center justify-center h-full w-full relative">
   <!-- 词表矩阵，初始居中，点击后左移 -->
   <div v-motion
@@ -1367,14 +1334,14 @@ clicks: 2
 <div class="flex items-center justify-center h-full w-full">
   <div class="flex w-full max-w-6xl items-center justify-between px-12">
     <!-- 左侧：对比词组 -->
-    <div class="flex-1 flex flex-col justify-center space-y-12">
-      <div class="text-5xl font-light text-black leading-tight tracking-tight">葡萄 VS 香蕉</div>
-      <div class="text-5xl font-light text-black leading-tight tracking-tight">葡萄 VS 高兴</div>
+    <div class="flex-1 flex flex-col justify-center space-y-16">
+      <div class="text-6xl font-light text-black leading-tight tracking-tight">葡萄 VS 香蕉</div>
+      <div class="text-6xl font-light text-black leading-tight tracking-tight">葡萄 VS 高兴</div>
     </div>
     <!-- 右侧：相似度条 -->
-    <div class="flex-1 flex flex-col justify-center space-y-12 ml-20">
-      <div v-click="1" class="flex items-center space-x-6">
-        <div class="flex-1 bg-white border border-black h-4 rounded-sm overflow-hidden">
+    <div class="flex-1 flex flex-col justify-center space-y-16 ml-20">
+      <div v-click="1" class="flex items-center space-x-8">
+        <div class="flex-1 bg-white border border-black h-6 overflow-hidden">
           <div v-motion
             :initial="{ width: '0%' }"
             :enter="{ width: '85%', transition: { duration: 1200, delay: 300 } }"
@@ -1383,19 +1350,19 @@ clicks: 2
         <div v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { duration: 600, delay: 800 } }"
-          class="text-2xl font-light text-black min-w-[60px] text-right">85%</div>
+          class="text-3xl font-light text-black min-w-[80px] text-right">85%</div>
       </div>
-      <div v-click="2" class="flex items-center space-x-6">
-        <div class="flex-1 bg-white border border-black h-4 rounded-sm overflow-hidden">
+      <div v-click="2" class="flex items-center space-x-8">
+        <div class="flex-1 bg-white border border-black h-6 overflow-hidden">
           <div v-motion
             :initial="{ width: '0%' }"
             :enter="{ width: '15%', transition: { duration: 800, delay: 300 } }"
-            class="h-full bg-gray-400"></div>
+            class="h-full bg-gray-600"></div>
         </div>
         <div v-motion
           :initial="{ opacity: 0 }"
           :enter="{ opacity: 1, transition: { duration: 600, delay: 600 } }"
-          class="text-2xl font-light text-black min-w-[60px] text-right">15%</div>
+          class="text-3xl font-light text-black min-w-[80px] text-right">15%</div>
       </div>
     </div>
   </div>
