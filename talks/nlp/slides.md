@@ -549,24 +549,21 @@ clicks: 1
 ---
 
 # 稀有
-
-<div class="flex flex-col items-center justify-center h-full space-y-8">
+<div class="flex flex-col items-center justify-center h-full space-y-12">
   <!-- 第一段 -->
   <div class="text-center">
-    <div class="text-lg text-gray-600 mb-2">总文档数</div>
-    <div class="text-4xl font-bold text-gray-800">10,000</div>
+    <div class="text-lg font-normal text-gray-600 mb-4">总文档数</div>
+    <div class="text-6xl font-light text-black tracking-tight">10,000</div>
   </div>
-  
   <!-- 第二段 -->
   <div class="text-center">
-    <div class="text-lg text-gray-600 mb-2">含有这个词语的文档数</div>
-    <div class="text-4xl font-bold text-gray-800">1</div>
+    <div class="text-lg font-normal text-gray-600 mb-4">含有这个词语的文档数</div>
+    <div class="text-6xl font-light text-black tracking-tight">1</div>
   </div>
-  
-  <!-- 第三段 - 需要点击才显示，带背景颜色 -->
-  <div v-click="1" class="text-center bg-blue-50 p-4 rounded-lg">
-    <div class="text-lg text-gray-600 mb-2">稀有度</div>
-    <div class="text-3xl font-bold text-gray-800">10,000 ÷ 1 = 10,000</div>
+  <!-- 第三段 - 需要点击才显示 -->
+  <div v-click="1" class="text-center">
+    <div class="text-lg font-normal text-gray-600 mb-4">稀有度</div>
+    <div class="text-4xl font-light text-black tracking-tight">10,000 ÷ 1 = 10,000</div>
   </div>
 </div>
 
@@ -1303,51 +1300,50 @@ clicks: 8
 ---
 clicks: 2
 ---
-
 <div class="flex items-center justify-center h-full w-full relative">
   <!-- 词表矩阵，初始居中，点击后左移 -->
   <div v-motion
     :initial="{ x: 0, opacity: 1 }"
-    :click-1="{ x: -120, opacity: 1, transition: { duration: 700 } }"
-    class="transition-all duration-700">
+    :click-1="{ x: -80, opacity: 1, transition: { duration: 800 } }"
+    class="transition-all duration-800">
     <div class="flex flex-col items-center">
-      <div class="bg-red-400 text-white text-3xl font-bold px-8 py-2 rounded-lg mb-4 shadow-lg tracking-widest">词表矩阵</div>
-      <table class="border-collapse border-2 border-gray-400 text-lg shadow-xl">
+      <div class="bg-black text-white text-2xl font-light px-8 py-3 mb-8 tracking-tight">词表矩阵</div>
+      <table class="border-collapse border border-black bg-white shadow-sm">
         <tbody>
-          <tr class="bg-yellow-50">
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">这</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.2</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.1</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.4</td>
+          <tr class="bg-white">
+            <td class="border border-black p-6 w-24 h-16 text-center font-medium text-black">这</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.2</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.1</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-400">···</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.4</td>
           </tr>
-          <tr class="bg-green-50">
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">很</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.5</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.7</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.4</td>
+          <tr class="bg-white">
+            <td class="border border-black p-6 w-24 h-16 text-center font-medium text-black">很</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.5</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.7</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-400">···</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.4</td>
           </tr>
-          <tr class="bg-yellow-50">
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">......</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.4</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.3</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.2</td>
+          <tr class="bg-white">
+            <td class="border border-black p-6 w-24 h-16 text-center font-medium text-black">···</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.4</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.3</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-400">···</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.2</td>
           </tr>
-          <tr :class="[$clicks >= 1 ? 'bg-red-100 font-bold' : 'bg-green-50', 'transition-colors duration-500']">
-            <td :class="[$clicks >= 1 ? 'text-white bg-red-400' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-bold']">视频</td>
-            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">0.4</td>
-            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">0.2</td>
-            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">...</td>
-            <td :class="[$clicks >= 1 ? 'text-red-600 bg-red-100' : '', 'border border-gray-400 p-4 w-20 h-14 text-center font-mono italic']">0.1</td>
+          <tr :class="[$clicks >= 1 ? 'bg-black transition-colors duration-800' : 'bg-white']">
+            <td :class="[$clicks >= 1 ? 'text-white' : 'text-black', 'border border-black p-6 w-24 h-16 text-center font-medium transition-colors duration-800']">视频</td>
+            <td :class="[$clicks >= 1 ? 'text-white' : 'text-gray-600', 'border border-black p-6 w-24 h-16 text-center font-normal transition-colors duration-800']">0.4</td>
+            <td :class="[$clicks >= 1 ? 'text-white' : 'text-gray-600', 'border border-black p-6 w-24 h-16 text-center font-normal transition-colors duration-800']">0.2</td>
+            <td :class="[$clicks >= 1 ? 'text-gray-300' : 'text-gray-400', 'border border-black p-6 w-24 h-16 text-center font-normal transition-colors duration-800']">···</td>
+            <td :class="[$clicks >= 1 ? 'text-white' : 'text-gray-600', 'border border-black p-6 w-24 h-16 text-center font-normal transition-colors duration-800']">0.1</td>
           </tr>
-          <tr class="bg-yellow-50">
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-bold text-gray-800">棒</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.3</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.6</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">...</td>
-            <td class="border border-gray-400 p-4 w-20 h-14 text-center font-mono italic">0.1</td>
+          <tr class="bg-white">
+            <td class="border border-black p-6 w-24 h-16 text-center font-medium text-black">棒</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.3</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.6</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-400">···</td>
+            <td class="border border-black p-6 w-24 h-16 text-center font-normal text-gray-600">0.1</td>
           </tr>
         </tbody>
       </table>
@@ -1356,9 +1352,9 @@ clicks: 2
   <!-- 右侧：视频，点击后出现 -->
   <div v-motion
     :initial="{ opacity: 0, x: 100 }"
-    :click-1="{ opacity: 1, x: 0, transition: { duration: 700 } }"
-    class="absolute right-12 top-1/2 transform -translate-y-1/2 flex items-center">
-    <div class="text-7xl font-bold text-yellow-700 tracking-widest select-none">视频</div>
+    :click-1="{ opacity: 1, x: 0, transition: { duration: 800 } }"
+    class="absolute right-16 top-1/2 transform -translate-y-1/2 flex items-center">
+    <div class="text-6xl font-light text-black tracking-tight select-none">视频</div>
   </div>
 </div>
 
@@ -1369,17 +1365,37 @@ clicks: 2
 # 词语相似度分析
 
 <div class="flex items-center justify-center h-full w-full">
-  <div class="flex w-full max-w-6xl items-center">
-    <div class="flex-shrink-0 w-1/2 flex flex-col justify-center space-y-8">
-      <div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 香蕉</div>
-      <div class="text-6xl font-bold text-gray-800 leading-tight">葡萄 VS 高兴</div>
+  <div class="flex w-full max-w-6xl items-center justify-between px-12">
+    <!-- 左侧：对比词组 -->
+    <div class="flex-1 flex flex-col justify-center space-y-12">
+      <div class="text-5xl font-light text-black leading-tight tracking-tight">葡萄 VS 香蕉</div>
+      <div class="text-5xl font-light text-black leading-tight tracking-tight">葡萄 VS 高兴</div>
     </div>
-    <div class="flex-1 flex flex-col justify-center space-y-8 ml-16">
-      <div v-click="1">
-        <ProgressBar :percentage="85" variant="orange" />
+    <!-- 右侧：相似度条 -->
+    <div class="flex-1 flex flex-col justify-center space-y-12 ml-20">
+      <div v-click="1" class="flex items-center space-x-6">
+        <div class="flex-1 bg-white border border-black h-4 rounded-sm overflow-hidden">
+          <div v-motion
+            :initial="{ width: '0%' }"
+            :enter="{ width: '85%', transition: { duration: 1200, delay: 300 } }"
+            class="h-full bg-black"></div>
+        </div>
+        <div v-motion
+          :initial="{ opacity: 0 }"
+          :enter="{ opacity: 1, transition: { duration: 600, delay: 800 } }"
+          class="text-2xl font-light text-black min-w-[60px] text-right">85%</div>
       </div>
-      <div v-click="2">
-        <ProgressBar :percentage="15" variant="gray" />
+      <div v-click="2" class="flex items-center space-x-6">
+        <div class="flex-1 bg-white border border-black h-4 rounded-sm overflow-hidden">
+          <div v-motion
+            :initial="{ width: '0%' }"
+            :enter="{ width: '15%', transition: { duration: 800, delay: 300 } }"
+            class="h-full bg-gray-400"></div>
+        </div>
+        <div v-motion
+          :initial="{ opacity: 0 }"
+          :enter="{ opacity: 1, transition: { duration: 600, delay: 600 } }"
+          class="text-2xl font-light text-black min-w-[60px] text-right">15%</div>
       </div>
     </div>
   </div>
@@ -1612,82 +1628,82 @@ clicks: 1
 ---
 
 <div class="flex items-center justify-center h-full w-full">
-  <div class="w-full max-w-6xl flex items-center justify-center gap-16">
-    <!-- 左侧：Transformer架构图 -->
+  <div class="w-full max-w-6xl flex items-center justify-center gap-20">
+    <!-- 左侧：极简Transformer架构图 -->
     <div class="flex-1 flex justify-center">
-      <svg width="300" height="450" viewBox="0 0 400 600" class="border border-gray-200 rounded-lg bg-white shadow-lg">
+      <svg width="280" height="420" viewBox="0 0 360 560" class="bg-white">
         <!-- 输入嵌入 -->
-        <rect x="50" y="520" width="120" height="40" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
-        <text x="110" y="545" text-anchor="middle" class="text-sm font-medium">Input Embedding</text>
+        <rect x="40" y="480" width="110" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="95" y="502" text-anchor="middle" class="text-xs font-normal">Input Embedding</text>
         <!-- 位置编码 -->
-        <rect x="230" y="520" width="120" height="40" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
-        <text x="290" y="535" text-anchor="middle" class="text-sm font-medium">Positional</text>
-        <text x="290" y="550" text-anchor="middle" class="text-sm font-medium">Encoding</text>
+        <rect x="210" y="480" width="110" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="265" y="495" text-anchor="middle" class="text-xs font-normal">Positional</text>
+        <text x="265" y="507" text-anchor="middle" class="text-xs font-normal">Encoding</text>
         <!-- 加法符号 -->
-        <circle cx="200" cy="540" r="15" fill="#fff" stroke="#666" stroke-width="2"/>
-        <text x="200" y="546" text-anchor="middle" class="text-lg font-bold">+</text>
+        <circle cx="180" cy="497" r="12" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="502" text-anchor="middle" class="text-sm font-light">+</text>
         <!-- 连接线 -->
-        <line x1="170" y1="540" x2="185" y2="540" stroke="#666" stroke-width="2"/>
-        <line x1="215" y1="540" x2="230" y2="540" stroke="#666" stroke-width="2"/>
-        <line x1="200" y1="525" x2="200" y2="480" stroke="#666" stroke-width="2"/>
+        <line x1="150" y1="497" x2="168" y2="497" stroke="black" stroke-width="1"/>
+        <line x1="192" y1="497" x2="210" y2="497" stroke="black" stroke-width="1"/>
+        <line x1="180" y1="485" x2="180" y2="450" stroke="black" stroke-width="1"/>
         <!-- 多头注意力机制 -->
-        <rect x="120" y="440" width="160" height="40" fill="#ffd93d" stroke="#ffb300" stroke-width="2" rx="5"/>
-        <text x="200" y="455" text-anchor="middle" class="text-sm font-medium">Multi-Head</text>
-        <text x="200" y="470" text-anchor="middle" class="text-sm font-medium">Attention</text>
+        <rect x="110" y="415" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="430" text-anchor="middle" class="text-xs font-normal">Multi-Head</text>
+        <text x="180" y="442" text-anchor="middle" class="text-xs font-normal">Attention</text>
         <!-- Add & Norm -->
-        <rect x="120" y="380" width="160" height="40" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
-        <text x="200" y="405" text-anchor="middle" class="text-sm font-medium">Add &amp; Norm</text>
+        <rect x="110" y="365" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="387" text-anchor="middle" class="text-xs font-normal">Add & Norm</text>
         <!-- 前馈网络 -->
-        <rect x="120" y="320" width="160" height="40" fill="#87ceeb" stroke="#4682b4" stroke-width="2" rx="5"/>
-        <text x="200" y="335" text-anchor="middle" class="text-sm font-medium">Feed</text>
-        <text x="200" y="350" text-anchor="middle" class="text-sm font-medium">Forward</text>
+        <rect x="110" y="315" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="330" text-anchor="middle" class="text-xs font-normal">Feed</text>
+        <text x="180" y="342" text-anchor="middle" class="text-xs font-normal">Forward</text>
         <!-- Add & Norm -->
-        <rect x="120" y="260" width="160" height="40" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
-        <text x="200" y="285" text-anchor="middle" class="text-sm font-medium">Add &amp; Norm</text>
+        <rect x="110" y="265" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="287" text-anchor="middle" class="text-xs font-normal">Add & Norm</text>
         <!-- 线性层 -->
-        <rect x="120" y="200" width="160" height="40" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
-        <text x="200" y="225" text-anchor="middle" class="text-sm font-medium">Linear</text>
+        <rect x="110" y="215" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="237" text-anchor="middle" class="text-xs font-normal">Linear</text>
         <!-- Softmax -->
-        <rect x="120" y="140" width="160" height="40" fill="#90ee90" stroke="#32cd32" stroke-width="2" rx="5"/>
-        <text x="200" y="165" text-anchor="middle" class="text-sm font-medium">Softmax</text>
+        <rect x="110" y="165" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="187" text-anchor="middle" class="text-xs font-normal">Softmax</text>
         <!-- 输出概率 -->
-        <rect x="120" y="80" width="160" height="40" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
-        <text x="200" y="95" text-anchor="middle" class="text-sm font-medium">Output</text>
-        <text x="200" y="110" text-anchor="middle" class="text-sm font-medium">Probabilities</text>
+        <rect x="110" y="115" width="140" height="35" fill="white" stroke="black" stroke-width="1"/>
+        <text x="180" y="130" text-anchor="middle" class="text-xs font-normal">Output</text>
+        <text x="180" y="142" text-anchor="middle" class="text-xs font-normal">Probabilities</text>
         <!-- 连接线 -->
-        <line x1="200" y1="440" x2="200" y2="420" stroke="#666" stroke-width="2"/>
-        <line x1="200" y1="380" x2="200" y2="360" stroke="#666" stroke-width="2"/>
-        <line x1="200" y1="320" x2="200" y2="300" stroke="#666" stroke-width="2"/>
-        <line x1="200" y1="260" x2="200" y2="240" stroke="#666" stroke-width="2"/>
-        <line x1="200" y1="200" x2="200" y2="180" stroke="#666" stroke-width="2"/>
-        <line x1="200" y1="140" x2="200" y2="120" stroke="#666" stroke-width="2"/>
+        <line x1="180" y1="415" x2="180" y2="400" stroke="black" stroke-width="1"/>
+        <line x1="180" y1="365" x2="180" y2="350" stroke="black" stroke-width="1"/>
+        <line x1="180" y1="315" x2="180" y2="300" stroke="black" stroke-width="1"/>
+        <line x1="180" y1="265" x2="180" y2="250" stroke="black" stroke-width="1"/>
+        <line x1="180" y1="215" x2="180" y2="200" stroke="black" stroke-width="1"/>
+        <line x1="180" y1="165" x2="180" y2="150" stroke="black" stroke-width="1"/>
         <!-- 残差连接 -->
-        <path d="M 90 460 Q 70 460 70 400 Q 70 340 90 340" stroke="#666" stroke-width="2" fill="none"/>
-        <line x1="90" y1="340" x2="120" y2="340" stroke="#666" stroke-width="2"/>
-        <line x1="90" y1="460" x2="120" y2="460" stroke="#666" stroke-width="2"/>
+        <path d="M 85 432 Q 70 432 70 382 Q 70 332 85 332" stroke="black" stroke-width="1" fill="none"/>
+        <line x1="85" y1="332" x2="110" y2="332" stroke="black" stroke-width="1"/>
+        <line x1="85" y1="432" x2="110" y2="432" stroke="black" stroke-width="1"/>
         <!-- 输入输出标签 -->
-        <text x="200" y="30" text-anchor="middle" class="text-lg font-bold">Outputs</text>
-        <text x="200" y="590" text-anchor="middle" class="text-lg font-bold">Inputs</text>
+        <text x="180" y="85" text-anchor="middle" class="text-lg font-light">Outputs</text>
+        <text x="180" y="545" text-anchor="middle" class="text-lg font-light">Inputs</text>
         <!-- 箭头 -->
-        <polygon points="195,75 200,65 205,75" fill="#666"/>
-        <polygon points="195,485 200,475 205,485" fill="#666"/>
+        <polygon points="175,110 180,100 185,110" fill="black"/>
+        <polygon points="175,455 180,445 185,455" fill="black"/>
       </svg>
     </div>
     <!-- 右侧：文字内容 -->
-    <div class="flex-1 flex flex-col items-center justify-center space-y-8">
+    <div class="flex-1 flex flex-col items-center justify-center space-y-12">
       <!-- Transformer文字 - 点击后向上移动 -->
       <div v-motion
         :initial="{ y: 0 }"
-        :click-1="{ y: -40, transition: { duration: 600 } }"
-        class="text-8xl font-bold text-gray-800 text-center">
+        :click-1="{ y: -50, transition: { duration: 800 } }"
+        class="text-8xl font-light text-black text-center tracking-tight">
         Transformer
       </div>
       <!-- Attention文字 - 点击后出现 -->
       <div v-motion
         v-click="1"
-        :initial="{ opacity: 0, y: 40 }"
-        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-        class="text-8xl font-bold text-gray-800 text-center">
+        :initial="{ opacity: 0, y: 50 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
+        class="text-8xl font-light text-black text-center tracking-tight">
         Attention
       </div>
     </div>
@@ -1699,118 +1715,140 @@ clicks: 2
 ---
 
 <div class="flex items-center justify-center h-full w-full">
-  <div class="w-full max-w-7xl flex items-center justify-between px-8">
+  <div class="w-full max-w-7xl flex items-center justify-between px-12">
     <!-- 左侧：两个苹果 -->
-    <div class="flex-1 flex flex-col items-center justify-center space-y-6">
+    <div class="flex-1 flex flex-col items-center justify-center space-y-8">
       <!-- 第一个苹果 -->
       <div class="flex flex-col items-center">
         <div class="text-[5rem]">🍎</div>
-        <div class="text-2xl font-semibold tracking-widest mt-2 text-gray-800">苹果</div>
-        <div class="text-sm text-gray-600 mt-1">水果</div>
+        <div class="text-2xl font-medium tracking-tight mt-3 text-black">苹果</div>
+        <div class="text-lg font-normal text-gray-600 mt-2">水果</div>
       </div>
       <!-- 第二个苹果 -->
       <div class="flex flex-col items-center">
         <div class="text-[5rem] text-gray-500">📱</div>
-        <div class="text-2xl font-semibold tracking-widest mt-2 text-gray-800">苹果</div>
-        <div class="text-sm text-gray-600 mt-1">手机</div>
+        <div class="text-2xl font-medium tracking-tight mt-3 text-black">苹果</div>
+        <div class="text-lg font-normal text-gray-600 mt-2">手机</div>
       </div>
     </div>
     <!-- 左到中的箭头 -->
-    <div class="flex items-center justify-center px-4">
-      <div class="text-4xl text-blue-500 font-bold">→</div>
+    <div class="flex items-center justify-center px-6">
+      <div class="text-4xl text-black font-light">→</div>
     </div>
     <!-- 中间：Embedding模型标识 + Transformer模型 -->
-    <div class="flex-1 flex flex-col items-center justify-center space-y-4">
+    <div class="flex-1 flex flex-col items-center justify-center space-y-6">
       <!-- Embedding模型标识 - 第二次点击后出现 -->
       <div v-click="2" class="text-center">
-        <div class="bg-gradient-to-r from-orange-100 to-yellow-100 px-6 py-3 rounded-xl border-2 border-orange-300 shadow-lg">
-          <div class="text-xl font-bold text-orange-800">Embedding 模型</div>
+        <div class="bg-white border border-black px-8 py-4">
+          <div class="text-xl font-medium text-black">Embedding 模型</div>
         </div>
       </div>
       <!-- Transformer模型 -->
-      <svg width="250" height="400" viewBox="0 0 350 550" class="border border-gray-200 rounded-lg bg-white shadow-lg">
+      <svg width="220" height="360" viewBox="0 0 300 480" class="bg-white">
         <!-- 输入嵌入 -->
-        <rect x="40" y="470" width="100" height="35" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
-        <text x="90" y="492" text-anchor="middle" class="text-xs font-medium">Input Embedding</text>
+        <rect x="30" y="420" width="90" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="75" y="439" text-anchor="middle" class="text-xs font-normal">Input Embedding</text>
         <!-- 位置编码 -->
-        <rect x="210" y="470" width="100" height="35" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
-        <text x="260" y="485" text-anchor="middle" class="text-xs font-medium">Positional</text>
-        <text x="260" y="497" text-anchor="middle" class="text-xs font-medium">Encoding</text>
+        <rect x="180" y="420" width="90" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="225" y="433" text-anchor="middle" class="text-xs font-normal">Positional</text>
+        <text x="225" y="444" text-anchor="middle" class="text-xs font-normal">Encoding</text>
         <!-- 加法符号 -->
-        <circle cx="175" cy="487" r="12" fill="#fff" stroke="#666" stroke-width="2"/>
-        <text x="175" y="492" text-anchor="middle" class="text-sm font-bold">+</text>
+        <circle cx="150" cy="435" r="10" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="439" text-anchor="middle" class="text-sm font-light">+</text>
         <!-- 连接线 -->
-        <line x1="140" y1="487" x2="163" y2="487" stroke="#666" stroke-width="2"/>
-        <line x1="187" y1="487" x2="210" y2="487" stroke="#666" stroke-width="2"/>
-        <line x1="175" y1="475" x2="175" y2="435" stroke="#666" stroke-width="2"/>
+        <line x1="120" y1="435" x2="140" y2="435" stroke="black" stroke-width="1"/>
+        <line x1="160" y1="435" x2="180" y2="435" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="425" x2="150" y2="390" stroke="black" stroke-width="1"/>
         <!-- 多头注意力机制 -->
-        <rect x="100" y="400" width="150" height="35" fill="#ffd93d" stroke="#ffb300" stroke-width="2" rx="5"/>
-        <text x="175" y="415" text-anchor="middle" class="text-xs font-medium">Multi-Head</text>
-        <text x="175" y="427" text-anchor="middle" class="text-xs font-medium">Attention</text>
+        <rect x="90" y="360" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="373" text-anchor="middle" class="text-xs font-normal">Multi-Head</text>
+        <text x="150" y="383" text-anchor="middle" class="text-xs font-normal">Attention</text>
         <!-- Add & Norm -->
-        <rect x="100" y="345" width="150" height="35" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
-        <text x="175" y="367" text-anchor="middle" class="text-xs font-medium">Add &amp; Norm</text>
+        <rect x="90" y="315" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="333" text-anchor="middle" class="text-xs font-normal">Add & Norm</text>
         <!-- 前馈网络 -->
-        <rect x="100" y="290" width="150" height="35" fill="#87ceeb" stroke="#4682b4" stroke-width="2" rx="5"/>
-        <text x="175" y="305" text-anchor="middle" class="text-xs font-medium">Feed</text>
-        <text x="175" y="317" text-anchor="middle" class="text-xs font-medium">Forward</text>
+        <rect x="90" y="270" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="283" text-anchor="middle" class="text-xs font-normal">Feed</text>
+        <text x="150" y="293" text-anchor="middle" class="text-xs font-normal">Forward</text>
         <!-- Add & Norm -->
-        <rect x="100" y="235" width="150" height="35" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
-        <text x="175" y="257" text-anchor="middle" class="text-xs font-medium">Add &amp; Norm</text>
+        <rect x="90" y="225" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="243" text-anchor="middle" class="text-xs font-normal">Add & Norm</text>
         <!-- 线性层 -->
-        <rect x="100" y="180" width="150" height="35" fill="#d4b5ff" stroke="#9c27b0" stroke-width="2" rx="5"/>
-        <text x="175" y="202" text-anchor="middle" class="text-xs font-medium">Linear</text>
+        <rect x="90" y="180" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="198" text-anchor="middle" class="text-xs font-normal">Linear</text>
         <!-- Softmax -->
-        <rect x="100" y="125" width="150" height="35" fill="#90ee90" stroke="#32cd32" stroke-width="2" rx="5"/>
-        <text x="175" y="147" text-anchor="middle" class="text-xs font-medium">Softmax</text>
+        <rect x="90" y="135" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="153" text-anchor="middle" class="text-xs font-normal">Softmax</text>
         <!-- 输出概率 -->
-        <rect x="100" y="70" width="150" height="35" fill="#ffcccb" stroke="#ff6b6b" stroke-width="2" rx="5"/>
-        <text x="175" y="85" text-anchor="middle" class="text-xs font-medium">Output</text>
-        <text x="175" y="97" text-anchor="middle" class="text-xs font-medium">Probabilities</text>
+        <rect x="90" y="90" width="120" height="30" fill="white" stroke="black" stroke-width="1"/>
+        <text x="150" y="103" text-anchor="middle" class="text-xs font-normal">Output</text>
+        <text x="150" y="113" text-anchor="middle" class="text-xs font-normal">Probabilities</text>
         <!-- 连接线 -->
-        <line x1="175" y1="400" x2="175" y2="380" stroke="#666" stroke-width="2"/>
-        <line x1="175" y1="345" x2="175" y2="325" stroke="#666" stroke-width="2"/>
-        <line x1="175" y1="290" x2="175" y2="270" stroke="#666" stroke-width="2"/>
-        <line x1="175" y1="235" x2="175" y2="215" stroke="#666" stroke-width="2"/>
-        <line x1="175" y1="180" x2="175" y2="160" stroke="#666" stroke-width="2"/>
-        <line x1="175" y1="125" x2="175" y2="105" stroke="#666" stroke-width="2"/>
+        <line x1="150" y1="360" x2="150" y2="345" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="315" x2="150" y2="300" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="270" x2="150" y2="255" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="225" x2="150" y2="210" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="180" x2="150" y2="165" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="135" x2="150" y2="120" stroke="black" stroke-width="1"/>
         <!-- 残差连接 -->
-        <path d="M 75 417 Q 55 417 55 362 Q 55 307 75 307" stroke="#666" stroke-width="2" fill="none"/>
-        <line x1="75" y1="307" x2="100" y2="307" stroke="#666" stroke-width="2"/>
-        <line x1="75" y1="417" x2="100" y2="417" stroke="#666" stroke-width="2"/>
+        <path d="M 70 375 Q 55 375 55 330 Q 55 285 70 285" stroke="black" stroke-width="1" fill="none"/>
+        <line x1="70" y1="285" x2="90" y2="285" stroke="black" stroke-width="1"/>
+        <line x1="70" y1="375" x2="90" y2="375" stroke="black" stroke-width="1"/>
         <!-- 输入输出标签 -->
-        <text x="175" y="30" text-anchor="middle" class="text-sm font-bold">Outputs</text>
-        <text x="175" y="535" text-anchor="middle" class="text-sm font-bold">Inputs</text>
+        <text x="150" y="70" text-anchor="middle" class="text-sm font-light">Outputs</text>
+        <text x="150" y="470" text-anchor="middle" class="text-sm font-light">Inputs</text>
         <!-- 箭头 -->
-        <polygon points="170,65 175,55 180,65" fill="#666"/>
-        <polygon points="170,440 175,430 180,440" fill="#666"/>
+        <polygon points="145,85 150,75 155,85" fill="black"/>
+        <polygon points="145,395 150,385 155,395" fill="black"/>
       </svg>
     </div>
     <!-- 中到右的箭头 -->
-    <div class="flex items-center justify-center px-4">
-      <div class="text-4xl text-green-500 font-bold">→</div>
+    <div class="flex items-center justify-center px-6">
+      <div class="text-4xl text-black font-light">→</div>
     </div>
     <!-- 右侧：两段向量输出结果 -->
-    <div class="flex-1 flex flex-col items-center justify-center space-y-6">
+    <div class="flex-1 flex flex-col items-center justify-center space-y-8">
       <!-- 第一个向量输出 -->
-      <VectorTable 
-        title="苹果（水果）"
-        :values="['0.6', '0.7', '0.2', '...', '0.4']"
-        variant="red"
-      />
+      <table class="border-collapse border border-black bg-white">
+        <thead>
+          <tr class="bg-white">
+            <th class="border border-black p-3 text-sm font-medium text-black" colspan="5">苹果（水果）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.6</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.7</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.2</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-400">···</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.4</td>
+          </tr>
+        </tbody>
+      </table>
       <!-- 说明文字 - 放在两个向量中间 -->
-      <div v-click="1" class="text-center py-4">
-        <div class="bg-gradient-to-r from-purple-100 to-pink-100 px-8 py-4 rounded-xl border-2 border-purple-300 shadow-lg">
-          <div class="text-2xl font-bold text-purple-800">根据上下文</div>
-          <div class="text-2xl font-bold text-purple-800">生成不同向量</div>
+      <div v-click="1" class="text-center py-6">
+        <div class="bg-white border border-black px-8 py-4">
+          <div class="text-2xl font-light text-black">根据上下文</div>
+          <div class="text-2xl font-light text-black">生成不同向量</div>
         </div>
       </div>
       <!-- 第二个向量输出 -->
-      <VectorTable 
-        title="苹果（手机）"
-        :values="['0.1', '0.3', '0.8', '...', '0.9']"
-        variant="blue"
-      />
+      <table class="border-collapse border border-black bg-white">
+        <thead>
+          <tr class="bg-white">
+            <th class="border border-black p-3 text-sm font-medium text-black" colspan="5">苹果（手机）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.1</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.3</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.8</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-400">···</td>
+            <td class="border border-black p-2 w-12 h-10 text-center text-xs font-normal text-gray-600">0.9</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
