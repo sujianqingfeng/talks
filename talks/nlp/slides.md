@@ -13,7 +13,7 @@ layout: cover
 background: '#ffffff'
 ---
 
-<div class="flex items-center justify-center h-full w-full" style="background: white;">
+<div class="flex items-center justify-center h-full w-full">
   <div class="text-center">
     <div class="text-7xl font-light text-gray-900 mb-4 tracking-tight">
       词向量如何演进
@@ -27,6 +27,61 @@ background: '#ffffff'
 <style>
 .slidev-layout {
   background: white !important;
+}
+</style>
+
+---
+clicks: 5
+---
+
+<div class="flex items-center justify-center h-full">
+  <div class="text-center">
+    <!-- 第一步：默认展示 NLP -->
+    <div v-if="$clicks === 0" v-motion
+      :initial="{ opacity: 1, scale: 1 }"
+      class="text-8xl font-bold text-gray-800">
+      NLP
+    </div>
+    <!-- 第二步：点击后出现 自然语言处理 -->
+    <div v-if="$clicks === 1" v-motion
+      :initial="{ opacity: 0, y: 50 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+      class="text-8xl font-bold text-gray-800">
+      自然语言处理
+    </div>
+    <!-- 第三步：点击后出现具体应用 -->
+    <div v-if="$clicks >= 2" v-motion
+      :initial="{ opacity: 0, y: 50 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+      class="flex items-center justify-center text-6xl font-bold text-gray-800">
+      <!-- 可切换的应用名称 -->
+      <div class="mr-4 relative">
+        <transition name="fade" mode="out-in">
+          <span v-if="$clicks === 2" key="classify" class="text-blue-600 inline-block">文本分类</span>
+          <span v-else-if="$clicks === 3" key="translate" class="text-green-600 inline-block">文本翻译</span>
+          <span v-else-if="$clicks === 4" key="search" class="text-purple-600 inline-block">信息检索</span>
+          <span v-else-if="$clicks >= 5" key="semantic" class="text-orange-600 inline-block">语义搜索</span>
+        </transition>
+      </div>
+      <!-- 固定的后缀 -->
+      <div class="text-3xl text-gray-600">
+        等文字处理相关工作
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.3s ease;
+}
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
 }
 </style>
 
