@@ -401,30 +401,30 @@ clicks: 1
 clicks: 3
 ---
 
-<div class="flex flex-col items-center justify-center h-full space-y-8">
+<div class="flex flex-col items-center justify-center h-full space-y-12">
   <!-- 虚假的关键词 -->
   <div class="w-full max-w-4xl">
     <div :class="{ 
-      'bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-200 shadow-lg': $clicks >= 3 
-    }" class="rounded-xl p-6 transition-all duration-800">
+      'bg-gray-50 border border-black shadow-sm': $clicks >= 3 
+    }" class="rounded-lg p-6 transition-all duration-500">
       <div v-click="3" v-motion
         :initial="{ opacity: 0, y: -20 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-        class="bg-gradient-to-r from-gray-600 to-gray-700 text-white px-4 py-2 rounded-lg inline-block mb-4 font-bold text-lg shadow-md">
+        class="bg-gray-600 text-white px-4 py-2 rounded inline-block mb-6 font-medium text-lg tracking-tight">
         虚假的关键词
       </div>
       <div v-click="1" class="grid grid-cols-3 gap-6">
-        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="text-2xl font-bold text-gray-800 mb-2">常见</div>
-          <div class="text-sm text-gray-500">频繁出现</div>
+        <div class="text-center p-4 bg-white border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-sm">
+          <div class="text-2xl font-light text-black mb-2 tracking-tight">常见</div>
+          <div class="text-base font-normal text-gray-600">频繁出现</div>
         </div>
-        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="text-2xl font-bold text-gray-800 mb-2">像路人甲</div>
-          <div class="text-sm text-gray-500">缺乏特色</div>
+        <div class="text-center p-4 bg-white border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-sm">
+          <div class="text-2xl font-light text-black mb-2 tracking-tight">像路人甲</div>
+          <div class="text-base font-normal text-gray-600">缺乏特色</div>
         </div>
-        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="text-2xl font-bold text-gray-800 mb-2">不特别</div>
-          <div class="text-sm text-gray-500">无区分度</div>
+        <div class="text-center p-4 bg-white border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-sm">
+          <div class="text-2xl font-light text-black mb-2 tracking-tight">不特别</div>
+          <div class="text-base font-normal text-gray-600">无区分度</div>
         </div>
       </div>
     </div>
@@ -432,26 +432,26 @@ clicks: 3
   <!-- 真实的关键词 -->
   <div class="w-full max-w-4xl">
     <div :class="{ 
-      'bg-gradient-to-r from-emerald-50 to-emerald-100 border border-emerald-200 shadow-lg': $clicks >= 3 
-    }" class="rounded-xl p-6 transition-all duration-800">
+      'bg-white border border-black shadow-sm': $clicks >= 3 
+    }" class="rounded-lg p-6 transition-all duration-500">
       <div v-click="3" v-motion
         :initial="{ opacity: 0, y: -20 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-        class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 rounded-lg inline-block mb-4 font-bold text-lg shadow-md">
+        class="bg-black text-white px-4 py-2 rounded inline-block mb-6 font-medium text-lg tracking-tight">
         真实的关键词
       </div>
       <div v-click="2" class="grid grid-cols-3 gap-6">
-        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="text-2xl font-bold text-gray-800 mb-2">稀有</div>
-          <div class="text-sm text-gray-500">出现较少</div>
+        <div class="text-center p-4 bg-white border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-sm">
+          <div class="text-2xl font-light text-black mb-2 tracking-tight">稀有</div>
+          <div class="text-base font-normal text-gray-600">出现较少</div>
         </div>
-        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="text-2xl font-bold text-gray-800 mb-2">有区分度</div>
-          <div class="text-sm text-gray-500">独特性强</div>
+        <div class="text-center p-4 bg-white border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-sm">
+          <div class="text-2xl font-light text-black mb-2 tracking-tight">有区分度</div>
+          <div class="text-base font-normal text-gray-600">独特性强</div>
         </div>
-        <div class="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="text-2xl font-bold text-gray-800 mb-2">代表性</div>
-          <div class="text-sm text-gray-500">能够标识</div>
+        <div class="text-center p-4 bg-white border border-gray-100 rounded-lg transition-all duration-300 hover:shadow-sm">
+          <div class="text-2xl font-light text-black mb-2 tracking-tight">代表性</div>
+          <div class="text-base font-normal text-gray-600">能够标识</div>
         </div>
       </div>
     </div>
@@ -571,25 +571,24 @@ clicks: 1
 clicks: 1
 ---
 
-<div class="flex flex-col items-center justify-center h-full space-y-4">
+<div class="flex flex-col items-center justify-center h-full space-y-12">
   <!-- 公式展示 -->
-  <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl shadow-lg border border-blue-200">
+  <div class="bg-white border border-black p-8 rounded-lg shadow-sm">
     <div class="text-center">
-      <div class="flex items-center justify-center text-2xl font-mono">
-        <span class="text-blue-600 font-bold">稀有 = </span>
-        <span v-if="$clicks >= 1" class="text-green-600 font-bold mx-1">log(</span>
-        <div class="bg-white px-3 py-1 rounded-lg shadow-sm border mx-1">
-          <div class="text-sm text-gray-700 text-center">总文档数</div>
-          <div class="border-t border-gray-300 my-1"></div>
-          <div class="text-sm text-gray-700 text-center">含有这个词语的文档数</div>
+      <div class="flex items-center justify-center text-3xl font-light">
+        <span class="text-black font-medium tracking-tight">稀有度 = </span>
+        <span v-if="$clicks >= 1" class="text-black font-light mx-2">log(</span>
+        <div class="bg-gray-50 border border-gray-200 px-4 py-3 rounded mx-2">
+          <div class="text-lg font-normal text-black text-center">总文档数</div>
+          <div class="border-t border-gray-300 my-2"></div>
+          <div class="text-lg font-normal text-black text-center">含有词语的文档数</div>
         </div>
-        <span v-if="$clicks >= 1" class="text-green-600 font-bold mx-1">)</span>
+        <span v-if="$clicks >= 1" class="text-black font-light mx-2">)</span>
       </div>
     </div>
   </div>
-  
   <!-- 图表展示 -->
-  <div class="w-full max-w-3xl h-64">
+  <div class="w-full max-w-4xl h-72">
     <TfIdfChart />
   </div>
 </div>
@@ -782,32 +781,27 @@ clicks: 1
 ---
 
 <div class="flex flex-col items-center justify-center h-full">
-  <!-- 第一行文字 -->
-  <div v-motion
-    :initial="{ opacity: 0, y: 0 }"
-    :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-    :click-1="{ y: -20, transition: { duration: 500 } }"
-    class="text-6xl font-bold text-gray-800 text-center mb-8">
-    有多少这个词
-  </div>
-  
-  <!-- 箭头 -->
-  <div v-motion
-    v-click="1"
-    :initial="{ opacity: 0, scale: 0 }"
-    :enter="{ opacity: 1, scale: 1, transition: { duration: 500 } }"
-    class="text-5xl text-gray-600 mb-8">
-    +
-  </div>
-  
-  <!-- 第二行文字 -->
-  <div v-motion
-    v-click="1"
-    :initial="{ opacity: 0, y: 0 }"
-    :enter="{ opacity: 1, y: 20, transition: { delay: 200, duration: 600 } }"
-    class="text-6xl font-bold text-blue-600 text-center">
-    这个词有多稀缺
-  </div>
+<div v-motion
+:initial="{ opacity: 1, y: 0 }"
+:enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
+:click-1="{ y: -30, transition: { duration: 800 } }"
+class="text-6xl font-light text-black text-center mb-8 tracking-tight">
+有多少这个词
+</div>
+<div v-motion
+v-click="1"
+:initial="{ opacity: 0, scale: 0.8 }"
+:enter="{ opacity: 1, scale: 1, transition: { duration: 800 } }"
+class="text-5xl font-light text-black mb-8">
++
+</div>
+<div v-motion
+v-click="1"
+:initial="{ opacity: 0, y: 40 }"
+:enter="{ opacity: 1, y: 0, transition: { delay: 400, duration: 800 } }"
+class="text-6xl font-light text-black text-center tracking-tight">
+这个词有多稀缺
+</div>
 </div>
 
 
@@ -1370,7 +1364,8 @@ clicks: 2
 
 
 ---
-
+clicks: 4
+---
 
 
 <div class="flex items-center justify-center h-full w-full">
@@ -1378,8 +1373,8 @@ clicks: 2
 <div
 v-motion
 :initial="{ opacity: 1, y: 0 }"
-:click-1="{ opacity: 0, y: -40, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center transition-all duration-500"
+:click-1="{ opacity: 0, y: -30, transition: { duration: 600 } }"
+class="text-8xl font-light text-black text-center transition-all duration-600 tracking-tight"
 >
 Word2Vec 理念
 </div>
@@ -1387,9 +1382,9 @@ Word2Vec 理念
 v-motion
 v-click="1"
 :initial="{ opacity: 0, y: 40 }"
-:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-:click-2="{ opacity: 0, y: -40, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+:enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+:click-2="{ opacity: 0, y: -30, transition: { duration: 600 } }"
+class="text-8xl font-light text-black text-center absolute transition-all duration-600 tracking-tight"
 >
 了解一个人
 </div>
@@ -1397,9 +1392,9 @@ class="text-7xl font-bold text-black text-center absolute transition-all duratio
 v-motion
 v-click="2"
 :initial="{ opacity: 0, y: 40 }"
-:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-:click-3="{ opacity: 0, y: -40, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+:enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+:click-3="{ opacity: 0, y: -30, transition: { duration: 600 } }"
+class="text-8xl font-light text-black text-center absolute transition-all duration-600 tracking-tight"
 >
 不听Ta说了什么
 </div>
@@ -1407,18 +1402,18 @@ class="text-7xl font-bold text-black text-center absolute transition-all duratio
 v-motion
 v-click="3"
 :initial="{ opacity: 0, y: 40 }"
-:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-:click-4="{ opacity: 0, y: -40, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+:enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+:click-4="{ opacity: 0, y: -30, transition: { duration: 600 } }"
+class="text-8xl font-light text-black text-center absolute transition-all duration-600 tracking-tight"
 >
-周围有什么人
+看周围的朋友
 </div>
 <div
 v-motion
 v-click="4"
 :initial="{ opacity: 0, y: 40 }"
-:enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+:enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+class="text-8xl font-light text-black text-center absolute transition-all duration-600 tracking-tight"
 >
 信息流
 </div>
@@ -1469,32 +1464,32 @@ clicks: 3
 ---
 
 <div class="flex items-center justify-center h-full w-full relative">
-<!-- 第一步：左右分别展示句子 -->
-<div class="flex w-full max-w-3xl items-center justify-between">
+<!-- 主要内容区域 -->
+<div class="flex w-full max-w-5xl items-center justify-center gap-24">
 <!-- 左侧：我爱你 -->
-<div class="flex flex-col items-center mx-4">
-<div class="text-7xl font-bold text-black mb-8">我爱你</div>
+<div class="flex flex-col items-center">
+<div class="text-6xl font-light text-black mb-8 tracking-tight">我爱你</div>
 <div v-click="1" class="w-full flex justify-center">
-<table class="border-collapse border-2 border-green-200 text-lg bg-green-50 rounded-xl shadow-md">
+<table class="border-collapse border border-black text-lg bg-white shadow-sm">
 <tr>
-<td class="border border-green-200 p-4 font-mono italic">0.6</td>
-<td class="border border-green-200 p-4 font-mono italic">0.7</td>
-<td class="border border-green-200 p-4 font-mono italic">...</td>
-<td class="border border-green-200 p-4 font-mono italic">0.7</td>
+<td class="border border-black p-3 font-normal text-black">0.6</td>
+<td class="border border-black p-3 font-normal text-black">0.7</td>
+<td class="border border-black p-3 font-normal text-gray-600">···</td>
+<td class="border border-black p-3 font-normal text-black">0.7</td>
 </tr>
 </table>
 </div>
 </div>
 <!-- 右侧：你爱我 -->
-<div class="flex flex-col items-center mx-4">
-<div class="text-7xl font-bold text-orange-600 mb-8">你爱我</div>
+<div class="flex flex-col items-center">
+<div class="text-6xl font-light text-gray-600 mb-8 tracking-tight">你爱我</div>
 <div v-click="1" class="w-full flex justify-center">
-<table class="border-collapse border-2 border-green-200 text-lg bg-green-50 rounded-xl shadow-md">
+<table class="border-collapse border border-gray-400 text-lg bg-gray-50 shadow-sm">
 <tr>
-<td class="border border-green-200 p-4 font-mono italic">0.7</td>
-<td class="border border-green-200 p-4 font-mono italic">0.7</td>
-<td class="border border-green-200 p-4 font-mono italic">...</td>
-<td class="border border-green-200 p-4 font-mono italic">0.6</td>
+<td class="border border-gray-400 p-3 font-normal text-gray-700">0.7</td>
+<td class="border border-gray-400 p-3 font-normal text-gray-700">0.7</td>
+<td class="border border-gray-400 p-3 font-normal text-gray-500">···</td>
+<td class="border border-gray-400 p-3 font-normal text-gray-700">0.6</td>
 </tr>
 </table>
 </div>
@@ -1502,11 +1497,11 @@ clicks: 3
 </div>
 <!-- 等号，点击2时出现 -->
 <div v-click="2" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-<div class="text-8xl font-extrabold text-gray-600 select-none">=</div>
+<div class="text-5xl font-medium text-black select-none">=</div>
 </div>
 <!-- 叉号，点击3时出现，覆盖全局 -->
 <div v-click="3" class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-<div class="text-[12rem] font-extrabold text-red-500 drop-shadow-lg select-none">×</div>
+<div class="text-8xl font-medium text-black select-none">×</div>
 </div>
 </div>
 

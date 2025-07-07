@@ -1,0 +1,56 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+
+
+
+PPT 风格提示词 - 简洁苹果风
+
+## 设计理念
+
+- 简洁至上，留白充足
+- 苹果式极简美学
+- 黑色主色调，白色背景
+- 优雅的字体层级
+
+## 色彩方案
+
+- 主色：#000000 (纯黑)
+- 背景：#ffffff (纯白)
+- 辅助色：#333333 (深灰)
+- 强调色：#666666 (中灰)
+- 点缀色：#999999 (浅灰)
+
+## 字体规范
+
+- 主标题：text-6xl font-light tracking-tight
+- 副标题：text-2xl font-normal
+- 正文：text-lg font-normal
+- 强调：font-medium
+- 重点：font-bold
+
+## 布局原则
+
+- 大量留白，内容居中
+- 简洁的几何形状
+- 清晰的信息层级
+- 优雅的动画过渡
+
+## 组件样式
+
+- 按钮：rounded-lg border border-black
+- 卡片：bg-white shadow-sm border border-gray-100
+- 表格：border-collapse border-black
+- 强调框：bg-black text-white px-4 py-2 rounded
+
+## 动画效果
+
+- 淡入淡出：fade
+- 优雅滑动：slide
+- 缩放效果：scale
+- 避免过度动画
+
+使用时请保持一致性，让每一页都体现苹果式的简洁美学。
