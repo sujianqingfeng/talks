@@ -15,10 +15,10 @@ background: '#ffffff'
 
 <div class="flex items-center justify-center h-full w-full">
   <div class="text-center">
-    <div class="text-7xl font-light text-gray-900 mb-4 tracking-tight">
+    <div class="text-6xl font-light text-black mb-8 tracking-tight">
       词向量如何演进
     </div>
-    <div class="text-xl text-gray-600 font-normal">
+    <div class="text-2xl font-normal text-gray-600">
       从统计到语义的技术变革
     </div>
   </div>
@@ -39,32 +39,32 @@ clicks: 5
     <!-- 第一步：默认展示 NLP -->
     <div v-if="$clicks === 0" v-motion
       :initial="{ opacity: 1, scale: 1 }"
-      class="text-8xl font-bold text-gray-800">
+      class="text-6xl font-light text-black tracking-tight">
       NLP
     </div>
     <!-- 第二步：点击后出现 自然语言处理 -->
     <div v-if="$clicks === 1" v-motion
       :initial="{ opacity: 0, y: 50 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-      class="text-8xl font-bold text-gray-800">
+      class="text-6xl font-light text-black tracking-tight">
       自然语言处理
     </div>
     <!-- 第三步：点击后出现具体应用 -->
     <div v-if="$clicks >= 2" v-motion
       :initial="{ opacity: 0, y: 50 }"
       :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-      class="flex items-center justify-center text-6xl font-bold text-gray-800">
+      class="flex items-center justify-center text-4xl font-light text-black">
       <!-- 可切换的应用名称 -->
       <div class="mr-4 relative">
         <transition name="fade" mode="out-in">
-          <span v-if="$clicks === 2" key="classify" class="text-blue-600 inline-block">文本分类</span>
-          <span v-else-if="$clicks === 3" key="translate" class="text-green-600 inline-block">文本翻译</span>
-          <span v-else-if="$clicks === 4" key="search" class="text-purple-600 inline-block">信息检索</span>
-          <span v-else-if="$clicks >= 5" key="semantic" class="text-orange-600 inline-block">语义搜索</span>
+          <span v-if="$clicks === 2" key="classify" class="text-black inline-block">文本分类</span>
+          <span v-else-if="$clicks === 3" key="translate" class="text-black inline-block">文本翻译</span>
+          <span v-else-if="$clicks === 4" key="search" class="text-black inline-block">信息检索</span>
+          <span v-else-if="$clicks >= 5" key="semantic" class="text-black inline-block">语义搜索</span>
         </transition>
       </div>
       <!-- 固定的后缀 -->
-      <div class="text-3xl text-gray-600">
+      <div class="text-2xl font-normal text-gray-600">
         等文字处理相关工作
       </div>
     </div>
@@ -101,23 +101,23 @@ clicks: 5
     <!-- 示例展示 -->
     <div class="space-y-8">
       <!-- 文本示例 -->
-      <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm">
-        <div class="text-lg font-normal text-black mb-4">
+      <div class="bg-white border border-black rounded-lg p-8 shadow-sm">
+        <div class="text-lg font-normal text-black mb-6">
           "我爷爷种了一片茶园，你愿意买茶么"
         </div>
         <!-- 转换箭头 -->
-        <div class="flex items-center justify-center my-6">
-          <div class="w-8 h-px bg-black"></div>
-          <div class="mx-4 text-black">转换</div>
-          <div class="w-8 h-px bg-black"></div>
+        <div class="flex items-center justify-center my-8">
+          <div class="w-12 h-px bg-black"></div>
+          <div class="mx-6 text-black font-medium">转换</div>
+          <div class="w-12 h-px bg-black"></div>
         </div>
         <!-- 向量结果 -->
-        <div class="bg-black text-white px-4 py-2 rounded font-mono text-sm">
+        <div class="bg-black text-white px-6 py-3 rounded font-mono text-sm">
           [0.2, 0.8, 0.1, 0.9, 0.3, 0.7, 0.4, ...]
         </div>
       </div>
       <!-- 说明文字 -->
-      <div class="text-lg font-normal text-gray-600">
+      <div class="text-lg font-normal text-gray-600 mt-8">
         向量化后，计算机就能处理和分析文本了
       </div>
     </div>
@@ -133,37 +133,37 @@ clicks: 5
 
 <div class="relative w-full h-80 flex items-center">
   <!-- Timeline line -->
-  <div class="absolute left-10 right-10 top-1/2 h-1 bg-gradient-to-r from-pink-300 via-pink-400 to-pink-500 rounded-full shadow-lg"></div>
+  <div class="absolute left-10 right-10 top-1/2 h-1 bg-black rounded-full"></div>
   
   <!-- Timeline points -->
   <div class="absolute left-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
-    <div class="w-4 h-4 bg-pink-400 rounded-full border-2 border-white shadow-lg z-10"></div>
-    <div class="mt-4 text-center">
-      <div class="font-bold text-lg">词袋法</div>
+    <div class="w-4 h-4 bg-black rounded-full border-2 border-white shadow-lg z-10"></div>
+    <div class="mt-6 text-center">
+      <div class="font-medium text-lg text-black">词袋法</div>
       <div class="text-sm text-gray-600">1990年代</div>
     </div>
   </div>
   
   <div class="absolute left-1/4 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
-    <div class="w-4 h-4 bg-pink-400 rounded-full border-2 border-white shadow-lg z-10"></div>
-    <div class="mt-4 text-center">
-      <div class="font-bold text-lg">TF-IDF</div>
+    <div class="w-4 h-4 bg-black rounded-full border-2 border-white shadow-lg z-10"></div>
+    <div class="mt-6 text-center">
+      <div class="font-medium text-lg text-black">TF-IDF</div>
       <div class="text-sm text-gray-600">2000年代</div>
     </div>
   </div>
   
   <div class="absolute left-1/2 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
-    <div class="w-4 h-4 bg-pink-400 rounded-full border-2 border-white shadow-lg z-10"></div>
-    <div class="mt-4 text-center">
-      <div class="font-bold text-lg">WORD2VEC</div>
+    <div class="w-4 h-4 bg-black rounded-full border-2 border-white shadow-lg z-10"></div>
+    <div class="mt-6 text-center">
+      <div class="font-medium text-lg text-black">WORD2VEC</div>
       <div class="text-sm text-gray-600">2013年</div>
     </div>
   </div>
   
   <div class="absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
-    <div class="w-4 h-4 bg-pink-400 rounded-full border-2 border-white shadow-lg z-10"></div>
-    <div class="mt-4 text-center">
-      <div class="font-bold text-lg">BGE</div>
+    <div class="w-4 h-4 bg-black rounded-full border-2 border-white shadow-lg z-10"></div>
+    <div class="mt-6 text-center">
+      <div class="font-medium text-lg text-black">BGE</div>
       <div class="text-sm text-gray-600">2023年</div>
     </div>
   </div>
@@ -311,7 +311,7 @@ clicks: 1
     :initial="{ opacity: 0, y: 30 }"
     :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
     :click-1="{ y: -50, transition: { duration: 600 } }"
-    class="text-6xl font-bold text-center text-gray-800 leading-relaxed mb-8">
+    class="text-6xl font-light text-center text-black leading-relaxed mb-8 tracking-tight">
     有没有这个词
   </div>
   
@@ -320,7 +320,7 @@ clicks: 1
     v-click="1"
     :initial="{ opacity: 0, y: 100, scale: 0.8 }"
     :enter="{ opacity: 1, y: 50, scale: 1, transition: { duration: 800, delay: 200 } }"
-    class="text-3xl text-center text-blue-600 max-w-4xl leading-relaxed absolute">
+    class="text-2xl text-center text-gray-600 max-w-4xl leading-relaxed absolute font-normal">
     对于一些特定的场景，有没有这个词就可以鉴别了
   </div>
 </div>
@@ -330,7 +330,7 @@ clicks: 1
 ---
 
 <div class="flex items-center justify-center h-full">
-  <div class="text-6xl font-bold text-center text-gray-800">
+  <div class="text-6xl font-light text-center text-black tracking-tight">
     词频
   </div>
 </div>
@@ -357,7 +357,7 @@ clicks: 1
     :initial="{ opacity: 0, y: 0 }"
     :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
     :click-1="{ y: -20, transition: { duration: 500 } }"
-    class="text-6xl font-bold text-gray-800 text-center mb-8">
+    class="text-6xl font-light text-black text-center mb-8 tracking-tight">
     有没有这个词
   </div>
   
@@ -367,7 +367,7 @@ clicks: 1
     :initial="{ opacity: 0, scale: 0 }"
     :enter="{ opacity: 1, scale: 1, transition: { duration: 500 } }"
     class="text-5xl text-gray-600 mb-8">
-    ->
+    →
   </div>
   
   <!-- 第二行文字 -->
@@ -375,7 +375,7 @@ clicks: 1
     v-click="1"
     :initial="{ opacity: 0, y: 0 }"
     :enter="{ opacity: 1, y: 20, transition: { delay: 200, duration: 600 } }"
-    class="text-6xl font-bold text-blue-600 text-center">
+    class="text-6xl font-light text-black text-center tracking-tight">
       有多少这个词
   </div>
 </div>
@@ -469,7 +469,7 @@ clicks: 1
   <div v-motion
     :initial="{ opacity: 1, x: 0 }"
     :click-1="{ x: -100, transition: { duration: 800 } }"
-    class="text-8xl font-bold text-gray-700">
+    class="text-6xl font-light text-black tracking-tight">
     词频
   </div>
   
@@ -478,7 +478,7 @@ clicks: 1
     v-click="1"
     :initial="{ opacity: 0, x: -100 }"
     :enter="{ opacity: 1, x: 100, transition: { duration: 800 } }"
-    class="text-8xl font-bold text-gray-700">
+    class="text-6xl font-light text-black tracking-tight">
     稀有
   </div>
 </div>
@@ -820,7 +820,7 @@ clicks: 1
 
 
 <div class="flex items-center justify-center h-full">
-  <div class="text-6xl font-bold text-center text-gray-800">
+  <div class="text-6xl font-light text-center text-black tracking-tight">
     没有捕捉到语义
   </div>
 </div>
@@ -952,7 +952,7 @@ clicks: 1
 
 <div class="flex items-center justify-center h-full relative overflow-hidden">
   <!-- 背景模糊文字 -->
-  <div class="absolute inset-0 text-gray-400 text-sm leading-relaxed p-8 opacity-40 blur-xs select-none">
+  <div class="absolute inset-0 text-gray-400 text-sm leading-relaxed p-8 opacity-20 blur-xs select-none">
     <div class="grid grid-cols-2 gap-4 h-full">
       <div class="space-y-2">
         <p>人工智能技术的发展正在改变我们的生活方式，从智能手机到自动驾驶汽车，从语音助手到机器翻译</p>
@@ -992,10 +992,10 @@ clicks: 1
   </div>
   <!-- 前景标题 -->
   <div class="relative z-10 text-center">
-    <div class="text-8xl font-bold text-gray-800 mb-4">
+    <div class="text-6xl font-light text-black mb-6 tracking-tight">
       语料库
     </div>
-    <div class="text-2xl text-gray-600 font-medium">
+    <div class="text-2xl text-gray-600 font-normal">
       Corpus
     </div>
   </div>
@@ -1449,7 +1449,7 @@ class="text-7xl font-bold text-black text-center absolute transition-all duratio
 
 
 <div class="flex items-center justify-center h-full w-full">
-<div class="text-7xl font-bold text-gray-800 text-center leading-tight">
+<div class="text-6xl font-light text-black text-center leading-tight tracking-tight">
 新增维度：语义相似度
 </div>
 </div>
@@ -1821,44 +1821,44 @@ clicks: 2
 
 
 <div class="flex items-center justify-center h-full relative">
-  <table class="border-collapse border-4 border-gray-600 text-base bg-white shadow-2xl rounded-lg overflow-hidden">
+  <table class="border-collapse border-2 border-black text-base bg-white shadow-sm rounded-lg overflow-hidden">
     <thead>
-      <tr class="bg-gradient-to-r from-gray-500 to-gray-600 text-white">
-        <th class="border border-gray-600 p-4 w-32 font-bold text-lg">方法</th>
-        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">信息量表达</th>
-        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">优点</th>
-        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">缺点</th>
-        <th class="border border-gray-600 p-4 w-40 font-bold text-lg">适用场景</th>
+      <tr class="bg-black text-white">
+        <th class="border border-black p-4 w-32 font-medium text-lg">方法</th>
+        <th class="border border-black p-4 w-40 font-medium text-lg">信息量表达</th>
+        <th class="border border-black p-4 w-40 font-medium text-lg">优点</th>
+        <th class="border border-black p-4 w-40 font-medium text-lg">缺点</th>
+        <th class="border border-black p-4 w-40 font-medium text-lg">适用场景</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="bg-blue-50 hover:bg-blue-100 transition-colors">
-        <td class="border border-gray-600 p-4 font-bold text-blue-800 text-center">词袋法</td>
-        <td class="border border-gray-600 p-4 text-center">有多少这个词</td>
-        <td class="border border-gray-600 p-4 text-center">简单易实现</td>
-        <td class="border border-gray-600 p-4 text-center">忽略稀有性和语义</td>
-        <td class="border border-gray-600 p-4 text-center">垃圾邮件分类</td>
+      <tr class="bg-white hover:bg-gray-50 transition-colors">
+        <td class="border border-black p-4 font-medium text-black text-center">词袋法</td>
+        <td class="border border-black p-4 text-center">有多少这个词</td>
+        <td class="border border-black p-4 text-center">简单易实现</td>
+        <td class="border border-black p-4 text-center">忽略稀有性和语义</td>
+        <td class="border border-black p-4 text-center">垃圾邮件分类</td>
       </tr>
-      <tr class="bg-green-50 hover:bg-green-100 transition-colors">
-        <td class="border border-gray-600 p-4 font-bold text-green-800 text-center">TF-IDF</td>
-        <td class="border border-gray-600 p-4 text-center">有多稀缺</td>
-        <td class="border border-gray-600 p-4 text-center">考虑词频和稀有性</td>
-        <td class="border border-gray-600 p-4 text-center">无语义信息</td>
-        <td class="border border-gray-600 p-4 text-center">关键词提取</td>
+      <tr class="bg-white hover:bg-gray-50 transition-colors">
+        <td class="border border-black p-4 font-medium text-black text-center">TF-IDF</td>
+        <td class="border border-black p-4 text-center">有多稀缺</td>
+        <td class="border border-black p-4 text-center">考虑词频和稀有性</td>
+        <td class="border border-black p-4 text-center">无语义信息</td>
+        <td class="border border-black p-4 text-center">关键词提取</td>
       </tr>
-      <tr class="bg-yellow-50 hover:bg-yellow-100 transition-colors">
-        <td class="border border-gray-600 p-4 font-bold text-yellow-800 text-center">Word2Vec</td>
-        <td class="border border-gray-600 p-4 text-center">文本语义</td>
-        <td class="border border-gray-600 p-4 text-center">捕捉词间关系</td>
-        <td class="border border-gray-600 p-4 text-center">不考虑词序<br/>和一词多义</td>
-        <td class="border border-gray-600 p-4 text-center">语义搜索</td>
+      <tr class="bg-white hover:bg-gray-50 transition-colors">
+        <td class="border border-black p-4 font-medium text-black text-center">Word2Vec</td>
+        <td class="border border-black p-4 text-center">文本语义</td>
+        <td class="border border-black p-4 text-center">捕捉词间关系</td>
+        <td class="border border-black p-4 text-center">不考虑词序<br/>和一词多义</td>
+        <td class="border border-black p-4 text-center">语义搜索</td>
       </tr>
-      <tr class="bg-purple-50 hover:bg-purple-100 transition-colors">
-        <td class="border border-gray-600 p-4 font-bold text-purple-800 text-center">BGE</td>
-        <td class="border border-gray-600 p-4 text-center">语境化语义</td>
-        <td class="border border-gray-600 p-4 text-center">动态生成<br/>上下文向量</td>
-        <td class="border border-gray-600 p-4 text-center">训练复杂</td>
-        <td class="border border-gray-600 p-4 text-center">RAG等</td>
+      <tr class="bg-white hover:bg-gray-50 transition-colors">
+        <td class="border border-black p-4 font-medium text-black text-center">BGE</td>
+        <td class="border border-black p-4 text-center">语境化语义</td>
+        <td class="border border-black p-4 text-center">动态生成<br/>上下文向量</td>
+        <td class="border border-black p-4 text-center">训练复杂</td>
+        <td class="border border-black p-4 text-center">RAG等</td>
       </tr>
     </tbody>
   </table>
@@ -1867,7 +1867,7 @@ clicks: 2
     :initial="{ opacity: 0, scale: 0.5 }"
     :enter="{ opacity: 1, scale: 1, transition: { duration: 800 } }"
     class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90">
-    <div class="text-8xl font-bold text-gray-800 text-center leading-tight">
+    <div class="text-6xl font-light text-black text-center leading-tight tracking-tight">
       信息量的不断提升
     </div>
   </div>
