@@ -57,10 +57,10 @@ clicks: 5
       <!-- 可切换的应用名称 -->
       <div class="mr-4 relative">
         <transition name="fade" mode="out-in">
-          <span v-if="$clicks === 2" key="classify" class="text-black inline-block">文本分类</span>
-          <span v-else-if="$clicks === 3" key="translate" class="text-black inline-block">文本翻译</span>
-          <span v-else-if="$clicks === 4" key="search" class="text-black inline-block">信息检索</span>
-          <span v-else-if="$clicks >= 5" key="semantic" class="text-black inline-block">语义搜索</span>
+          <span v-if="$clicks === 2" key="classify" class="text-blue-600 inline-block">文本分类</span>
+          <span v-else-if="$clicks === 3" key="translate" class="text-green-600 inline-block">文本翻译</span>
+          <span v-else-if="$clicks === 4" key="search" class="text-purple-600 inline-block">信息检索</span>
+          <span v-else-if="$clicks >= 5" key="semantic" class="text-red-600 inline-block">语义搜索</span>
         </transition>
       </div>
       <!-- 固定的后缀 -->
@@ -387,7 +387,6 @@ clicks: 1
 clicks: 1
 ---
 
-# 分词演示
 
 <div class="flex flex-col items-center justify-center h-full">
   <div class="text-3xl leading-relaxed mb-8">
@@ -1790,8 +1789,7 @@ clicks: 2
       <!-- 说明文字 - 放在两个向量中间 -->
       <div v-click="1" class="text-center py-6">
         <div class="bg-white border border-black px-8 py-4">
-          <div class="text-2xl font-light text-black">根据上下文</div>
-          <div class="text-2xl font-light text-black">生成不同向量</div>
+          <div class="text-2xl font-light text-black">不同表达</div>
         </div>
       </div>
       <!-- 第二个向量输出 -->
@@ -1869,6 +1867,21 @@ clicks: 2
     class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-90">
     <div class="text-6xl font-light text-black text-center leading-tight tracking-tight">
       信息量的不断提升
+    </div>
+  </div>
+</div>
+
+
+
+---
+
+
+<div class="flex items-center justify-center h-full w-full">
+  <div class="w-full max-w-7xl flex items-center justify-between px-12">
+    <div class="flex-1 flex flex-col items-center justify-center space-y-8">
+      <div class="text-8xl font-light text-black text-center tracking-tight">
+       Thank you!
+      </div>
     </div>
   </div>
 </div>
