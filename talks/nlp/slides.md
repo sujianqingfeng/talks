@@ -1441,7 +1441,7 @@ class="text-8xl font-light text-black text-center absolute transition-all durati
 v-motion
 :initial="{ opacity: 1, y: 0 }"
 :click-1="{ opacity: 0, y: -40, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center transition-all duration-500"
+class="text-7xl text-black text-center transition-all duration-500"
 >
 问题
 </div>
@@ -1451,7 +1451,7 @@ v-click="1"
 :initial="{ opacity: 0, y: 40 }"
 :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
 :click-2="{ opacity: 0, y: -40, transition: { duration: 500 } }"
-class="text-7xl font-bold text-black text-center absolute transition-all duration-500"
+class="text-7xl text-black text-center absolute transition-all duration-500"
 >
 词序
 </div>
