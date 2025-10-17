@@ -22,6 +22,8 @@
     "dev:deepseek": "pnpm --filter deepseek run dev",
     "dev:mcp": "pnpm --filter mcp run dev",
     "dev:nlp": "pnpm --filter nlp run dev",
+    "dev:browser-fingerprinting": "pnpm --filter browser-fingerprinting run dev",
+    "build:browser-fingerprinting": "pnpm --filter browser-fingerprinting run build",
     "build:arc": "pnpm --filter arc run build",
     "build:deepseek": "pnpm --filter deepseek run build",
     "export:arc": "pnpm --filter arc run export",
