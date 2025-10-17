@@ -7,10 +7,12 @@ const props = withDefaults(defineProps<{
   size?: number
   caption?: string
   level?: 'L' | 'M' | 'Q' | 'H'
+  showText?: boolean
 }>(), {
   size: 148,
   level: 'M',
-  caption: '扫码在手机打开'
+  caption: '扫码在手机打开',
+  showText: true
 })
 
 const imgUrl = ref<string>('')
@@ -54,7 +56,7 @@ const shortUrl = computed(() => {
       <img :src="imgUrl" :alt="`QR: ${targetUrl}`" :width="size" :height="size" />
     </div>
     <div v-else class="text-red-600 text-sm">{{ error || '生成二维码中…' }}</div>
-    <div class="text-xs text-gray-600">
+    <div v-if="showText" class="text-xs text-gray-600">
       {{ caption }}
       <div class="font-mono text-[10px] text-gray-500 mt-1">{{ shortUrl }}</div>
     </div>

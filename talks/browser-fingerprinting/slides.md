@@ -196,19 +196,42 @@ clicks: 3
 layout: center
 ---
 
-<div class="relative flex items-center justify-center h-full">
-  <div class="text-center max-w-5xl">
-    <div class="text-5xl font-light text-black mb-6 tracking-tight">Canvas指纹示例：文本渲染</div>
-    <div class="bg-white border border-black/20 rounded-lg p-6 inline-block">
-      <CanvasFingerprint variant="text" :width="680" :height="230" text="Cwm fjordbank glyphs vext quiz 😃 速度与激情" :font-size="34" />
-    </div>
-    <div class="mt-4 text-gray-700">
-      <div class="text-base">不同系统/浏览器/显卡/字体库 → 渲染像素略有不同 → DataURL哈希不同</div>
-      <div class="text-sm text-gray-500 mt-1">包含阴影、渐变、字距、emoji 等细节以放大差异</div>
-    </div>
+<div class="flex flex-col items-center justify-center h-full px-8 py-4">
+  <!-- 二维码（页面右上角） -->
+  <div class="absolute top-8 right-8">
+    <QRCode :show-text="false" />
   </div>
-  <div class="absolute right-8 bottom-8">
-    <QRCode />
+  <div class="w-full max-w-6xl">
+    <!-- 标题区域 -->
+    <div class="mb-3">
+      <div class="text-3xl font-light text-black tracking-tight">Canvas指纹示例：文本渲染</div>
+      <div class="text-sm text-gray-600 mt-1.5">不同系统渲染同一文本会产生微小的像素差异</div>
+    </div>
+    <!-- Canvas展示区域 -->
+    <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-black/10 rounded-xl p-4 shadow-sm">
+      <div class="flex justify-center">
+        <CanvasFingerprint variant="text" :width="550" :height="150" text="Cwm fjordbank glyphs vext quiz 😃 速度与激情" :font-size="26" />
+      </div>
+    </div>
+    <!-- 技术说明区域 -->
+    <div class="mt-3 grid grid-cols-2 gap-3">
+      <div class="bg-white border border-gray-200 rounded-lg p-2.5">
+        <div class="text-xs font-medium text-gray-800 mb-1">渲染差异来源</div>
+        <div class="text-xs text-gray-600 leading-tight space-y-0.5">
+          <div>• 操作系统字体引擎差异</div>
+          <div>• 显卡硬件加速实现</div>
+          <div>• 抗锯齿算法不同</div>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-lg p-2.5">
+        <div class="text-xs font-medium text-gray-800 mb-1">指纹增强技术</div>
+        <div class="text-xs text-gray-600 leading-tight space-y-0.5">
+          <div>• 混合多种字体和语言</div>
+          <div>• 使用emoji放大差异</div>
+          <div>• 添加阴影、渐变效果</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -216,19 +239,42 @@ layout: center
 layout: center
 ---
 
-<div class="relative flex items-center justify-center h-full">
-  <div class="text-center max-w-5xl">
-    <div class="text-5xl font-light text-black mb-6 tracking-tight">Canvas指纹示例：几何与合成</div>
-    <div class="bg-white border border-black/20 rounded-lg p-6 inline-block">
-      <CanvasFingerprint variant="shapes" :width="720" :height="260" />
-    </div>
-    <div class="mt-4 text-gray-700">
-      <div class="text-base">曲线逼近、线帽/连接、混合模式、亚像素定位 → 光栅化实现差异</div>
-      <div class="text-sm text-gray-500 mt-1">这些细节很难被用户控制，适合用于区分设备</div>
-    </div>
+<div class="flex flex-col items-center justify-center h-full px-8 py-4">
+  <!-- 二维码（页面右上角） -->
+  <div class="absolute top-8 right-8">
+    <QRCode :show-text="false" />
   </div>
-  <div class="absolute right-8 bottom-8">
-    <QRCode />
+  <div class="w-full max-w-6xl">
+    <!-- 标题区域 -->
+    <div class="mb-3">
+      <div class="text-3xl font-light text-black tracking-tight">Canvas指纹示例：几何与合成</div>
+      <div class="text-sm text-gray-600 mt-1.5">图形渲染算法的实现差异产生独特指纹</div>
+    </div>
+    <!-- Canvas展示区域 -->
+    <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-black/10 rounded-xl p-4 shadow-sm">
+      <div class="flex justify-center">
+        <CanvasFingerprint variant="shapes" :width="580" :height="170" />
+      </div>
+    </div>
+    <!-- 技术说明区域 -->
+    <div class="mt-3 grid grid-cols-2 gap-3">
+      <div class="bg-white border border-gray-200 rounded-lg p-2.5">
+        <div class="text-xs font-medium text-gray-800 mb-1">光栅化差异点</div>
+        <div class="text-xs text-gray-600 leading-tight space-y-0.5">
+          <div>• 贝塞尔曲线逼近算法</div>
+          <div>• 线帽和线条连接处理</div>
+          <div>• 亚像素渲染定位</div>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-lg p-2.5">
+        <div class="text-xs font-medium text-gray-800 mb-1">合成模式特征</div>
+        <div class="text-xs text-gray-600 leading-tight space-y-0.5">
+          <div>• 混合模式实现差异</div>
+          <div>• 透明度计算精度</div>
+          <div>• 颜色空间转换方式</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -236,19 +282,42 @@ layout: center
 layout: center
 ---
 
-<div class="relative flex items-center justify-center h-full">
-  <div class="text-center max-w-5xl">
-    <div class="text-5xl font-light text-black mb-6 tracking-tight">Canvas指纹示例：Emoji / 字体</div>
-    <div class="bg-white border border-black/20 rounded-lg p-6 inline-block">
-      <CanvasFingerprint variant="emoji" :width="680" :height="200" />
-    </div>
-    <div class="mt-4 text-gray-700">
-      <div class="text-base">不同平台的彩色Emoji渲染与中文字体回退路径 → 像素级差异</div>
-      <div class="text-sm text-gray-500 mt-1">结合文本度量(width/ascent)与哈希，可得到较稳定指纹片段</div>
-    </div>
+<div class="flex flex-col items-center justify-center h-full px-8 py-4">
+  <!-- 二维码（页面右上角） -->
+  <div class="absolute top-8 right-8">
+    <QRCode :show-text="false" />
   </div>
-  <div class="absolute right-8 bottom-8">
-    <QRCode />
+  <div class="w-full max-w-6xl">
+    <!-- 标题区域 -->
+    <div class="mb-3">
+      <div class="text-3xl font-light text-black tracking-tight">Canvas指纹示例：Emoji / 字体</div>
+      <div class="text-sm text-gray-600 mt-1.5">彩色Emoji和字体回退机制揭示平台特征</div>
+    </div>
+    <!-- Canvas展示区域 -->
+    <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-black/10 rounded-xl p-4 shadow-sm">
+      <div class="flex justify-center">
+        <CanvasFingerprint variant="emoji" :width="550" :height="140" />
+      </div>
+    </div>
+    <!-- 技术说明区域 -->
+    <div class="mt-3 grid grid-cols-2 gap-3">
+      <div class="bg-white border border-gray-200 rounded-lg p-2.5">
+        <div class="text-xs font-medium text-gray-800 mb-1">平台Emoji差异</div>
+        <div class="text-xs text-gray-600 leading-tight space-y-0.5">
+          <div>• 不同操作系统emoji设计</div>
+          <div>• 彩色字体渲染技术</div>
+          <div>• 表情符号版本支持</div>
+        </div>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-lg p-2.5">
+        <div class="text-xs font-medium text-gray-800 mb-1">字体回退路径</div>
+        <div class="text-xs text-gray-600 leading-tight space-y-0.5">
+          <div>• 系统字体安装差异</div>
+          <div>• 中文字体优先级设置</div>
+          <div>• 文本度量值(width/ascent)</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
