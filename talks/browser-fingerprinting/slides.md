@@ -171,27 +171,23 @@ clicks: 3
 
 <div class="flex items-center justify-center h-full">
   <div class="text-center max-w-4xl">
-    <div class="text-6xl font-light text-black mb-12 tracking-tight">Canvas指纹原理</div>
-    <div class="space-y-8">
-      <div v-click="1" class="bg-white border border-black p-6">
-        <div class="text-xl font-normal text-black mb-2"><span class="font-medium">步骤 1：</span>用JavaScript在隐藏画布上绘制文本和图形</div>
+    <div class="text-5xl font-light text-black mb-8 tracking-tight">Canvas指纹原理</div>
+    <div class="space-y-4">
+      <div v-click="1" class="bg-white border border-black p-4">
+        <div class="text-lg font-normal text-black"><span class="font-medium">步骤 1：</span>用JavaScript在隐藏画布上绘制文本和图形</div>
       </div>
-      <div v-click="2" class="bg-white border border-black p-6">
-        <div class="text-xl font-normal text-black mb-4"><span class="font-medium">步骤 2：</span>不同设备渲染结果有细微差异(亚像素级)</div>
-        <div class="text-lg font-normal text-gray-600 space-y-2">
-          <div>• 操作系统的字体渲染引擎不同</div>
-          <div>• 显卡的抗锯齿算法不同</div>
-          <div>• 字体库版本差异</div>
+      <div v-click="2" class="bg-white border border-black p-4">
+        <div class="text-lg font-normal text-black mb-2"><span class="font-medium">步骤 2：</span>不同设备渲染结果有细微差异</div>
+        <div class="text-base font-normal text-gray-600">操作系统、显卡、字体库差异导致</div>
+      </div>
+      <div v-click="3" class="bg-white border border-black p-4">
+        <div class="text-lg font-normal text-black mb-3"><span class="font-medium">步骤 3：</span>将图像转换为hash值作为唯一标识</div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white border border-gray-300 p-3 font-mono text-sm">设备A → a3f7c9e2...</div>
+          <div class="bg-white border border-gray-300 p-3 font-mono text-sm">设备B → b8d4f1a6...</div>
         </div>
       </div>
-      <div v-click="3" class="bg-white border border-black p-6">
-        <div class="text-xl font-normal text-black mb-4"><span class="font-medium">步骤 3：</span>将图像转换为hash值作为唯一标识</div>
-        <div class="grid grid-cols-2 gap-6">
-          <div class="bg-white border border-gray-300 p-4 font-mono text-base">设备A → a3f7c9e2...</div>
-          <div class="bg-white border border-gray-300 p-4 font-mono text-base">设备B → b8d4f1a6...</div>
-        </div>
-      </div>
-      <div v-click="4" class="text-lg font-normal text-gray-600 italic mt-8">某电商平台使用Canvas指纹识别刷单账号，准确率达95%</div>
+      <div v-click="4" class="text-base font-normal text-gray-600 italic mt-6">某电商平台使用Canvas指纹识别刷单账号，准确率达95%</div>
     </div>
   </div>
 </div>
@@ -201,30 +197,36 @@ layout: center
 ---
 
 <div class="flex items-center justify-center h-full">
-  <div class="text-center max-w-3xl">
-    <div class="text-6xl font-light text-black mb-12 tracking-tight">浏览器指纹如何识别你？</div>
-    <div class="space-y-6">
-      <div class="bg-white border border-black p-5">
-        <div class="text-xl font-normal text-black">访问网站</div>
+  <div class="text-center max-w-5xl">
+    <div class="text-5xl font-light text-black mb-8 tracking-tight">浏览器指纹如何识别你？</div>
+    <!-- 横向流程 -->
+    <div class="flex items-center justify-center gap-4 mb-8">
+      <div class="bg-white border border-black p-4 flex-1">
+        <div class="text-base font-normal text-black">访问网站</div>
       </div>
-      <div class="text-4xl text-gray-400">↓</div>
-      <div class="bg-white border border-black p-5">
-        <div class="text-xl font-normal text-black">JS自动收集 → 20+ 项特征信息</div>
+      <div class="text-xl text-gray-400">→</div>
+      <div class="bg-white border border-black p-4 flex-1">
+        <div class="text-base font-normal text-black">JS收集<br/>20+特征</div>
       </div>
-      <div class="text-4xl text-gray-400">↓</div>
-      <div class="bg-white border border-black p-5">
-        <div class="text-xl font-normal text-black">组合计算 → 生成唯一Hash值</div>
-      </div>
-      <div class="text-4xl text-gray-400">↓</div>
-      <div class="bg-white border border-black p-5">
-        <div class="text-xl font-normal text-black">数据库比对 → 识别是否为同一用户</div>
-      </div>
-      <div class="text-4xl text-gray-400">↓</div>
-      <div class="bg-white border border-black p-5">
-        <div class="text-xl font-normal text-black">关联历史行为</div>
+      <div class="text-xl text-gray-400">→</div>
+      <div class="bg-white border border-black p-4 flex-1">
+        <div class="text-base font-normal text-black">生成<br/>Hash值</div>
       </div>
     </div>
-    <div class="mt-12 text-lg font-normal text-gray-600">一般浏览器的熵值达到18.1 bits，能从286,777人中识别出你</div>
+    <div class="flex items-center justify-center gap-4">
+      <div class="bg-white border border-black p-4 flex-1">
+        <div class="text-base font-normal text-black">数据库<br/>比对</div>
+      </div>
+      <div class="text-xl text-gray-400">→</div>
+      <div class="bg-white border border-black p-4 flex-1">
+        <div class="text-base font-normal text-black">识别<br/>用户</div>
+      </div>
+      <div class="text-xl text-gray-400">→</div>
+      <div class="bg-white border border-black p-4 flex-1">
+        <div class="text-base font-normal text-black">关联<br/>历史行为</div>
+      </div>
+    </div>
+    <div class="mt-8 text-base font-normal text-gray-600">浏览器熵值达18.1 bits，可从286,777人中识别出你</div>
   </div>
 </div>
 
@@ -233,33 +235,39 @@ layout: center
 ---
 
 <div class="flex items-center justify-center h-full">
-  <div class="text-center max-w-4xl">
-    <div class="text-6xl font-light text-black mb-12 tracking-tight">真实案例：电商价格歧视</div>
-    <div class="bg-white border border-black p-8 mb-12">
-      <div class="text-xl font-normal text-black mb-8">某用户发现用iPhone浏览酒店预订网站</div>
-      <div class="text-6xl font-light text-black mb-4">¥1200</div>
-      <div class="text-lg font-normal text-gray-600 mb-12">同一房间</div>
-      <div class="text-xl font-normal text-black mb-8">用安卓手机浏览</div>
-      <div class="text-6xl font-light text-black">¥980</div>
-    </div>
-    <div class="space-y-6">
-      <div class="text-xl font-medium text-black">网站识别：</div>
-      <div class="grid grid-cols-3 gap-6">
-        <div class="bg-white border border-gray-300 p-4">
-          <div class="text-lg font-medium text-black mb-2">设备类型</div>
-          <div class="text-base font-normal text-gray-600">iPhone(高端设备)</div>
+  <div class="text-center max-w-5xl">
+    <div class="text-4xl font-light text-black mb-6 tracking-tight">真实案例：电商价格歧视</div>
+    <!-- 价格对比：左右布局 -->
+    <div class="bg-white border border-black p-4 mb-6">
+      <div class="grid grid-cols-2 gap-8">
+        <div>
+          <div class="text-base font-normal text-black mb-2">iPhone浏览</div>
+          <div class="text-5xl font-light text-black">¥1200</div>
         </div>
-        <div class="bg-white border border-gray-300 p-4">
-          <div class="text-lg font-medium text-black mb-2">浏览历史</div>
-          <div class="text-base font-normal text-gray-600">经常浏览高价位商品</div>
-        </div>
-        <div class="bg-white border border-gray-300 p-4">
-          <div class="text-lg font-medium text-black mb-2">地理位置</div>
-          <div class="text-base font-normal text-gray-600">一线城市</div>
+        <div>
+          <div class="text-base font-normal text-black mb-2">安卓手机浏览</div>
+          <div class="text-5xl font-light text-black">¥980</div>
         </div>
       </div>
-      <div class="text-lg font-medium text-black mt-8">结论：系统判断该用户支付能力强，显示更高价格</div>
+      <div class="text-sm font-normal text-gray-600 mt-3">同一房间</div>
     </div>
+    <!-- 识别因素 -->
+    <div class="text-lg font-medium text-black mb-4">网站识别：</div>
+    <div class="grid grid-cols-3 gap-4 mb-4">
+      <div class="bg-white border border-gray-300 p-3">
+        <div class="text-base font-medium text-black mb-1">设备类型</div>
+        <div class="text-sm font-normal text-gray-600">iPhone(高端)</div>
+      </div>
+      <div class="bg-white border border-gray-300 p-3">
+        <div class="text-base font-medium text-black mb-1">浏览历史</div>
+        <div class="text-sm font-normal text-gray-600">高价位商品</div>
+      </div>
+      <div class="bg-white border border-gray-300 p-3">
+        <div class="text-base font-medium text-black mb-1">地理位置</div>
+        <div class="text-sm font-normal text-gray-600">一线城市</div>
+      </div>
+    </div>
+    <div class="text-base font-medium text-black">结论：判断用户支付能力强，显示更高价格</div>
   </div>
 </div>
 
@@ -269,36 +277,40 @@ clicks: 4
 ---
 
 <div class="flex items-center justify-center h-full">
-  <div class="text-center max-w-4xl">
-    <div class="text-6xl font-light text-black mb-12 tracking-tight">真实案例：广告追踪</div>
-    <div class="space-y-6">
-      <div v-click="1" class="bg-white border border-black p-5">
-        <div class="text-lg font-medium text-black mb-2">周一</div>
-        <div class="text-xl font-normal text-gray-600">在A网站搜索"跑步鞋"</div>
+  <div class="text-center max-w-5xl">
+    <div class="text-4xl font-light text-black mb-6 tracking-tight">真实案例：广告追踪</div>
+    <!-- 时间线：横向三列 -->
+    <div class="grid grid-cols-3 gap-4 mb-6">
+      <div v-click="1" class="bg-white border border-black p-3">
+        <div class="text-base font-medium text-black mb-2">周一</div>
+        <div class="text-base font-normal text-gray-600">在A网站搜索<br/>"跑步鞋"</div>
       </div>
-      <div v-click="2" class="bg-white border border-black p-5">
-        <div class="text-lg font-medium text-black mb-2">周二</div>
-        <div class="text-xl font-normal text-gray-600">在B网站(完全不相关)看到跑步鞋广告</div>
+      <div v-click="2" class="bg-white border border-black p-3">
+        <div class="text-base font-medium text-black mb-2">周二</div>
+        <div class="text-base font-normal text-gray-600">在B网站看到<br/>跑步鞋广告</div>
       </div>
-      <div v-click="3" class="bg-white border border-black p-5">
-        <div class="text-lg font-medium text-black mb-2">周三</div>
-        <div class="text-xl font-normal text-gray-600">在C新闻网站继续看到相同广告</div>
-      </div>
-      <div v-click="4" class="bg-white border border-black p-6 mt-8">
-        <div class="text-xl font-medium text-black mb-4">它怎么知道是我？</div>
-        <div class="text-lg font-normal text-gray-600 text-left space-y-3">
-          <div>• 三个网站都接入了同一个广告联盟</div>
-          <div>• 广告联盟通过浏览器指纹跨站识别</div>
-          <div>• 建立了你的兴趣画像</div>
-        </div>
+      <div v-click="3" class="bg-white border border-black p-3">
+        <div class="text-base font-medium text-black mb-2">周三</div>
+        <div class="text-base font-normal text-gray-600">在C网站继续<br/>看到广告</div>
       </div>
     </div>
-    <div v-click="5" class="mt-8 bg-white border border-black p-6 font-mono text-left text-base">
-      <div class="font-normal text-black mb-3">你的指纹ID: a3f7c9e2</div>
-      <div class="font-normal text-gray-600 space-y-2">
-        <div>├─ A网站：搜索了跑步鞋</div>
-        <div>├─ B网站：浏览了运动相关内容</div>
-        <div>└─ C网站：推送跑步鞋广告</div>
+    <!-- 解释和追踪信息：左右布局 -->
+    <div class="grid grid-cols-2 gap-4">
+      <div v-click="4" class="bg-white border border-black p-4 text-left">
+        <div class="text-lg font-medium text-black mb-2">它怎么知道是我？</div>
+        <div class="text-sm font-normal text-gray-600 space-y-1">
+          <div>• 接入同一广告联盟</div>
+          <div>• 浏览器指纹跨站识别</div>
+          <div>• 建立兴趣画像</div>
+        </div>
+      </div>
+      <div v-click="5" class="bg-white border border-black p-4 font-mono text-left text-sm">
+        <div class="font-normal text-black mb-2">指纹ID: a3f7c9e2</div>
+        <div class="font-normal text-gray-600 space-y-1">
+          <div>├─ A：搜索跑步鞋</div>
+          <div>├─ B：浏览运动内容</div>
+          <div>└─ C：推送广告</div>
+        </div>
       </div>
     </div>
   </div>
@@ -320,7 +332,66 @@ layout: center
 layout: center
 ---
 
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">普通用户面临的风险</div><div class="space-y-4"><div class="bg-white border border-black rounded-lg p-5"><div class="text-2xl font-medium text-black mb-3">🔴 高风险</div><div class="grid grid-cols-2 gap-4 text-left"><div><div class="text-lg font-medium text-gray-800 mb-1">经济损失</div><div class="text-sm font-normal text-gray-600">价格歧视、精准诈骗</div></div><div><div class="text-lg font-medium text-gray-800 mb-1">身份关联</div><div class="text-sm font-normal text-gray-600">匿名身份被识破</div></div></div></div><div class="bg-white border border-black rounded-lg p-5"><div class="text-2xl font-medium text-black mb-3">🟠 中风险</div><div class="grid grid-cols-2 gap-4 text-left"><div><div class="text-lg font-medium text-gray-800 mb-1">隐私泄露</div><div class="text-sm font-normal text-gray-600">浏览习惯被长期记录</div></div><div><div class="text-lg font-medium text-gray-800 mb-1">信息茧房</div><div class="text-sm font-normal text-gray-600">只看到算法想让你看的</div></div></div></div><div class="bg-white border border-black rounded-lg p-5"><div class="text-2xl font-medium text-black mb-3">🟡 低风险</div><div class="grid grid-cols-2 gap-4 text-left"><div><div class="text-lg font-medium text-gray-800 mb-1">广告骚扰</div><div class="text-sm font-normal text-gray-600">精准但烦人的广告</div></div><div><div class="text-lg font-medium text-gray-800 mb-1">心理不适</div><div class="text-sm font-normal text-gray-600">被监视的感觉</div></div></div></div></div><div class="mt-4 bg-white border border-black rounded-lg p-4"><div class="grid grid-cols-2 gap-4 text-center"><div><div class="text-3xl font-light text-black mb-1">73%</div><div class="text-sm font-normal text-gray-600">的用户遭遇过价格歧视</div></div><div><div class="text-3xl font-light text-black mb-1">20+</div><div class="text-sm font-normal text-gray-600">网站每天追踪你</div></div></div></div></div></div>
+<div class="flex items-center justify-center h-full">
+  <div class="text-center max-w-6xl">
+    <div class="text-4xl font-light text-black mb-6 tracking-tight">普通用户面临的风险</div>
+    <!-- 三个风险级别：横向布局 -->
+    <div class="grid grid-cols-3 gap-4 mb-4">
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">🔴 高风险</div>
+        <div class="space-y-2">
+          <div>
+            <div class="text-base font-medium text-gray-800">经济损失</div>
+            <div class="text-xs font-normal text-gray-600">价格歧视、精准诈骗</div>
+          </div>
+          <div>
+            <div class="text-base font-medium text-gray-800">身份关联</div>
+            <div class="text-xs font-normal text-gray-600">匿名身份被识破</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">🟠 中风险</div>
+        <div class="space-y-2">
+          <div>
+            <div class="text-base font-medium text-gray-800">隐私泄露</div>
+            <div class="text-xs font-normal text-gray-600">浏览习惯被记录</div>
+          </div>
+          <div>
+            <div class="text-base font-medium text-gray-800">信息茧房</div>
+            <div class="text-xs font-normal text-gray-600">算法推荐限制</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">🟡 低风险</div>
+        <div class="space-y-2">
+          <div>
+            <div class="text-base font-medium text-gray-800">广告骚扰</div>
+            <div class="text-xs font-normal text-gray-600">精准但烦人</div>
+          </div>
+          <div>
+            <div class="text-base font-medium text-gray-800">心理不适</div>
+            <div class="text-xs font-normal text-gray-600">被监视感觉</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 统计数据 -->
+    <div class="bg-white border border-black p-3">
+      <div class="grid grid-cols-2 gap-6 text-center">
+        <div>
+          <div class="text-3xl font-light text-black mb-1">73%</div>
+          <div class="text-sm font-normal text-gray-600">的用户遭遇过价格歧视</div>
+        </div>
+        <div>
+          <div class="text-3xl font-light text-black mb-1">20+</div>
+          <div class="text-sm font-normal text-gray-600">网站每天追踪你</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: center
@@ -376,7 +447,50 @@ layout: center
 layout: center
 ---
 
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">推荐的隐私保护工具</div><div class="space-y-4"><div class="bg-white border border-black rounded-lg p-4"><div class="text-xl font-medium text-black mb-3">浏览器扩展</div><div class="grid grid-cols-2 gap-3"><div class="bg-white rounded-lg p-3 text-left"><div class="text-base font-medium text-gray-800 mb-1">uBlock Origin</div><div class="text-xs font-light text-gray-600 mb-1">拦截广告和追踪器</div><div class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div></div><div class="bg-white rounded-lg p-3 text-left"><div class="text-base font-medium text-gray-800 mb-1">Privacy Badger</div><div class="text-xs font-light text-gray-600 mb-1">自动学习并阻止追踪器(EFF)</div><div class="text-yellow-500 text-sm">⭐⭐⭐⭐</div></div><div class="bg-white rounded-lg p-3 text-left"><div class="text-base font-medium text-gray-800 mb-1">Canvas Defender</div><div class="text-xs font-light text-gray-600 mb-1">专门防护Canvas指纹</div><div class="text-yellow-500 text-sm">⭐⭐⭐⭐</div></div><div class="bg-white rounded-lg p-3 text-left"><div class="text-base font-medium text-gray-800 mb-1">Trace</div><div class="text-xs font-light text-gray-600 mb-1">随机化浏览器指纹</div><div class="text-yellow-500 text-sm">⭐⭐⭐⭐</div></div></div></div><div class="bg-white border border-black rounded-lg p-4"><div class="text-xl font-medium text-black mb-3">独立工具</div><div class="grid grid-cols-3 gap-3 text-left text-sm"><div class="font-light text-gray-700"><span class="font-medium">VPN服务</span><br/>隐藏真实IP</div><div class="font-light text-gray-700"><span class="font-medium">DNS over HTTPS</span><br/>加密DNS查询</div><div class="font-light text-gray-700"><span class="font-medium">容器标签页</span><br/>隔离不同网站</div></div></div><div class="bg-white border border-black rounded-lg p-4"><div class="text-lg font-medium text-black mb-2">⚠️ 注意事项</div><div class="text-sm font-normal text-gray-700">扩展太多反而更独特 · 找到隐私和便利的平衡点</div></div></div></div></div>
+<div class="flex items-center justify-center h-full">
+  <div class="text-center max-w-6xl">
+    <div class="text-4xl font-light text-black mb-6 tracking-tight">推荐的隐私保护工具</div>
+    <!-- 浏览器扩展：4列横向紧凑布局 -->
+    <div class="bg-white border border-black p-3 mb-3">
+      <div class="text-lg font-medium text-black mb-2">浏览器扩展</div>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="text-left">
+          <div class="text-sm font-medium text-gray-800">uBlock Origin</div>
+          <div class="text-xs font-normal text-gray-600">拦截广告追踪器</div>
+        </div>
+        <div class="text-left">
+          <div class="text-sm font-medium text-gray-800">Privacy Badger</div>
+          <div class="text-xs font-normal text-gray-600">自动阻止追踪</div>
+        </div>
+        <div class="text-left">
+          <div class="text-sm font-medium text-gray-800">Canvas Defender</div>
+          <div class="text-xs font-normal text-gray-600">防护Canvas指纹</div>
+        </div>
+        <div class="text-left">
+          <div class="text-sm font-medium text-gray-800">Trace</div>
+          <div class="text-xs font-normal text-gray-600">随机化指纹</div>
+        </div>
+      </div>
+    </div>
+    <!-- 独立工具和注意事项：左右布局 -->
+    <div class="grid grid-cols-2 gap-3">
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">独立工具</div>
+        <div class="space-y-1 text-sm font-normal text-gray-700">
+          <div><span class="font-medium">VPN服务</span> - 隐藏真实IP</div>
+          <div><span class="font-medium">DNS over HTTPS</span> - 加密DNS查询</div>
+          <div><span class="font-medium">容器标签页</span> - 隔离不同网站</div>
+        </div>
+      </div>
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">⚠️ 注意事项</div>
+        <div class="text-sm font-normal text-gray-700">
+          扩展太多反而更独特<br/>找到隐私和便利的平衡点
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: center
@@ -388,31 +502,108 @@ layout: center
 layout: center
 ---
 
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">行业发展趋势</div><div class="space-y-4"><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">📈 指纹技术发展</div><div class="grid grid-cols-3 gap-3 text-sm font-normal text-gray-700"><div><div class="font-medium mb-1">更隐蔽</div><div class="text-xs">新型硬件指纹(传感器噪声)</div></div><div><div class="font-medium mb-1">更精准</div><div class="text-xs">AI增强识别算法</div></div><div><div class="font-medium mb-1">更持久</div><div class="text-xs">跨浏览器追踪技术</div></div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🛡️ 隐私保护发展</div><div class="grid grid-cols-3 gap-3 text-sm font-normal text-gray-700"><div><div class="font-medium mb-1">浏览器原生防护</div><div class="text-xs">成为标配功能</div></div><div><div class="font-medium mb-1">去中心化身份</div><div class="text-xs">Web3.0方向</div></div><div><div class="font-medium mb-1">隐私计算</div><div class="text-xs">联邦学习、差分隐私</div></div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">⚖️ 监管趋势</div><div class="grid grid-cols-3 gap-3 text-sm font-normal text-gray-700"><div>全球立法加速</div><div>执法力度加强</div><div>用户意识提升</div></div></div><div class="bg-white border border-black rounded-lg p-4"><div class="text-base font-normal text-gray-700 italic"><span class="font-medium">预测：</span>2026年,主流浏览器将默认启用强力指纹防护<br/>但同时,新的追踪技术也会出现</div></div></div></div></div>
+<div class="flex items-center justify-center h-full">
+  <div class="text-center max-w-6xl">
+    <div class="text-4xl font-light text-black mb-6 tracking-tight">行业发展趋势</div>
+    <!-- 三个趋势：横向布局 -->
+    <div class="grid grid-cols-3 gap-4 mb-4">
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">📈 指纹技术</div>
+        <div class="space-y-2 text-xs font-normal text-gray-700">
+          <div><span class="font-medium">更隐蔽</span> - 硬件指纹</div>
+          <div><span class="font-medium">更精准</span> - AI识别</div>
+          <div><span class="font-medium">更持久</span> - 跨浏览器</div>
+        </div>
+      </div>
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">🛡️ 隐私保护</div>
+        <div class="space-y-2 text-xs font-normal text-gray-700">
+          <div><span class="font-medium">原生防护</span> - 标配功能</div>
+          <div><span class="font-medium">去中心化</span> - Web3.0</div>
+          <div><span class="font-medium">隐私计算</span> - 联邦学习</div>
+        </div>
+      </div>
+      <div class="bg-white border border-black p-3 text-left">
+        <div class="text-lg font-medium text-black mb-2">⚖️ 监管趋势</div>
+        <div class="space-y-2 text-xs font-normal text-gray-700">
+          <div>全球立法加速</div>
+          <div>执法力度加强</div>
+          <div>用户意识提升</div>
+        </div>
+      </div>
+    </div>
+    <!-- 预测 -->
+    <div class="bg-white border border-black p-3">
+      <div class="text-sm font-normal text-gray-700"><span class="font-medium">预测：</span>2026年主流浏览器将默认启用强力指纹防护，但新的追踪技术也会出现</div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: center
 ---
 
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">给普通用户的建议</div><div class="space-y-4"><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🎯 今天就做</div><div class="grid grid-cols-2 gap-3 text-sm font-normal text-gray-700"><div>✓ 访问 amiunique.org 测试你的指纹</div><div>✓ 安装 uBlock Origin 扩展</div><div>✓ 开启浏览器的隐私保护功能</div><div>✓ 清理不必要的浏览器插件</div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">📅 本周完成</div><div class="space-y-2 text-sm font-normal text-gray-700"><div>✓ 评估并更换隐私友好的浏览器</div><div>✓ 设置不同浏览器用于不同目的<div class="ml-4 mt-1 space-y-1 text-xs text-gray-600"><div>• Chrome：工作学习</div><div>• Firefox：日常浏览</div><div>• Brave：敏感操作</div></div></div><div>✓ 检查并限制网站权限</div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🎓 长期培养</div><div class="grid grid-cols-3 gap-3 text-sm font-normal text-gray-700"><div>✓ 关注隐私保护资讯</div><div>✓ 定期更新防护措施</div><div>✓ 向身边人普及知识</div></div></div><div class="bg-white border border-black rounded-lg p-4"><div class="text-base font-normal text-gray-700 italic"><span class="font-medium">核心原则：</span><br/>不要追求100%匿名(不现实)<br/>要提高追踪成本(够用就好)</div></div></div></div></div>
-
----
-layout: center
----
-
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">常见误区澄清</div><div class="space-y-3"><div class="bg-white border border-black rounded-lg p-4 text-left"><div class="flex items-start"><div class="text-2xl mr-3 mt-1">❌</div><div class="flex-1"><div class="text-lg font-medium text-gray-800 mb-1">误区1：无痕模式完全安全</div><div class="text-sm font-normal text-gray-600"><span class="font-medium text-black">真相：</span>无痕模式只是不保存本地历史,网站仍能通过指纹追踪你</div></div></div></div><div class="bg-white border border-black rounded-lg p-4 text-left"><div class="flex items-start"><div class="text-2xl mr-3 mt-1">❌</div><div class="flex-1"><div class="text-lg font-medium text-gray-800 mb-1">误区2：换IP就能隐藏身份</div><div class="text-sm font-normal text-gray-600"><span class="font-medium text-black">真相：</span>浏览器指纹不依赖IP,换IP后仍能被识别</div></div></div></div><div class="bg-white border border-black rounded-lg p-4 text-left"><div class="flex items-start"><div class="text-2xl mr-3 mt-1">❌</div><div class="flex-1"><div class="text-lg font-medium text-gray-800 mb-1">误区3：只有大公司才会追踪</div><div class="text-sm font-normal text-gray-600"><span class="font-medium text-black">真相：</span>80%的网站都接入了第三方追踪服务</div></div></div></div><div class="bg-white border border-black rounded-lg p-4 text-left"><div class="flex items-start"><div class="text-2xl mr-3 mt-1">❌</div><div class="flex-1"><div class="text-lg font-medium text-gray-800 mb-1">误区4：我没做坏事,不怕被追踪</div><div class="text-sm font-normal text-gray-600"><span class="font-medium text-black">真相：</span><div class="space-y-1 mt-1 text-xs"><div>• 隐私是基本权利,不是因为有秘密才需要</div><div>• 今天合法的数据,明天可能被滥用</div><div>• 价格歧视等不公平对待与"好坏"无关</div></div></div></div></div></div><div class="bg-white border border-black rounded-lg p-4 text-left"><div class="flex items-start"><div class="text-2xl mr-3 mt-1">❌</div><div class="flex-1"><div class="text-lg font-medium text-gray-800 mb-1">误区5：完全禁用JavaScript就安全了</div><div class="text-sm font-normal text-gray-600"><span class="font-medium text-black">真相：</span>很多网站无法正常使用,而且行为本身就是独特的指纹特征</div></div></div></div></div></div></div>
-
----
-layout: center
----
-
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">思考与讨论</div><div class="space-y-4"><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🤔 伦理思考</div><div class="space-y-2 text-base font-normal text-gray-700"><div>• 在隐私保护和个性化服务之间,你会如何选择？</div><div>• 企业有权利追踪用户行为吗？界限在哪里？</div><div>• 匿名权利在数字时代还存在吗？</div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">💡 实践讨论</div><div class="space-y-2 text-base font-normal text-gray-700"><div>• 你曾经遭遇过价格歧视吗？</div><div>• 你愿意为隐私保护牺牲多少便利性？</div><div>• 如果让你设计隐私法规,会包含哪些内容？</div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🔮 未来展望</div><div class="space-y-2 text-base font-normal text-gray-700"><div>• 5年后,浏览器指纹技术会发展到什么程度？</div><div>• 量子计算会如何影响隐私保护？</div><div>• Web3.0能否真正实现隐私自主？</div></div></div></div></div></div>
-
----
-layout: center
----
-
-<div class="flex items-center justify-center h-full"><div class="text-center max-w-5xl px-6"><div class="text-4xl font-light text-black mb-6 tracking-tight">总结要点</div><div class="space-y-4"><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🔑 关键认知</div><div class="space-y-2 text-base font-normal text-gray-700"><div>✓ 浏览器指纹真实存在且难以消除</div><div>✓ 它是比Cookie更持久的追踪手段</div><div>✓ 83.6%的浏览器指纹是独一无二的</div><div>✓ 技术本身中性,关键在于如何使用</div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">🎯 行动建议</div><div class="space-y-2 text-base font-normal text-gray-700"><div>✓ 立即测试你的浏览器指纹</div><div>✓ 采用适合自己的防护措施</div><div>✓ 保持对隐私问题的关注</div><div>✓ 在隐私和便利间找到平衡</div></div></div><div class="bg-white border border-black rounded-lg p-5 text-left"><div class="text-xl font-medium text-black mb-3">💭 深层思考</div><div class="space-y-2 text-base font-normal text-gray-700"><div>• 隐私保护是一场持久战</div><div>• 技术进步不应以牺牲隐私为代价</div><div>• 每个人都有权掌控自己的数字身份</div></div></div><div class="bg-white border border-black rounded-lg p-4"><div class="text-lg font-normal text-gray-700 italic text-center">你的浏览器可能记得你是谁<br/>但只有你自己决定想成为谁</div></div></div></div></div>
+<div class="flex items-center justify-center h-full">
+  <div class="text-center max-w-6xl">
+    <div class="text-4xl font-light text-black mb-4 tracking-tight">常见误区澄清</div>
+    <!-- 左右两列布局 -->
+    <div class="grid grid-cols-2 gap-3">
+      <!-- 左列：误区1-3 -->
+      <div class="space-y-2">
+        <div class="bg-white border border-black p-3 text-left">
+          <div class="flex items-start">
+            <div class="text-lg mr-2">❌</div>
+            <div class="flex-1">
+              <div class="text-base font-medium text-gray-800 mb-1">无痕模式完全安全</div>
+              <div class="text-xs font-normal text-gray-600">只是不保存本地历史，网站仍能追踪</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border border-black p-3 text-left">
+          <div class="flex items-start">
+            <div class="text-lg mr-2">❌</div>
+            <div class="flex-1">
+              <div class="text-base font-medium text-gray-800 mb-1">换IP就能隐藏身份</div>
+              <div class="text-xs font-normal text-gray-600">指纹不依赖IP，换IP后仍能被识别</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border border-black p-3 text-left">
+          <div class="flex items-start">
+            <div class="text-lg mr-2">❌</div>
+            <div class="flex-1">
+              <div class="text-base font-medium text-gray-800 mb-1">只有大公司才会追踪</div>
+              <div class="text-xs font-normal text-gray-600">80%的网站接入第三方追踪服务</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右列：误区4-5 -->
+      <div class="space-y-2">
+        <div class="bg-white border border-black p-3 text-left">
+          <div class="flex items-start">
+            <div class="text-lg mr-2">❌</div>
+            <div class="flex-1">
+              <div class="text-base font-medium text-gray-800 mb-1">没做坏事不怕追踪</div>
+              <div class="text-xs font-normal text-gray-600">
+                隐私是基本权利 / 数据可能被滥用 / 价格歧视与"好坏"无关
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border border-black p-3 text-left">
+          <div class="flex items-start">
+            <div class="text-lg mr-2">❌</div>
+            <div class="flex-1">
+              <div class="text-base font-medium text-gray-800 mb-1">禁用JavaScript就安全</div>
+              <div class="text-xs font-normal text-gray-600">网站无法使用，行为本身是独特指纹</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: center
@@ -421,21 +612,4 @@ class: text-center
 
 <div class="flex flex-col items-center justify-center h-full">
   <div class="text-6xl font-light text-black mb-12 tracking-tight">谢谢聆听</div>
-  <div class="text-2xl font-normal text-gray-600 mb-16">Q & A</div>
-  <div class="grid grid-cols-2 gap-16 max-w-4xl">
-    <div class="text-center">
-      <div class="text-lg font-normal text-gray-600 mb-4">测试你的浏览器指纹</div>
-      <div class="bg-white border border-black p-8">
-        <div class="text-base font-normal text-black">扫码测试</div>
-        <div class="text-sm font-normal text-gray-600 mt-4">amiunique.org</div>
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="text-lg font-normal text-gray-600 mb-4">延伸阅读资源</div>
-      <div class="bg-white border border-black p-8">
-        <div class="text-base font-normal text-black">扫码获取</div>
-        <div class="text-sm font-normal text-gray-600 mt-4">演示文稿下载</div>
-      </div>
-    </div>
-  </div>
 </div>
