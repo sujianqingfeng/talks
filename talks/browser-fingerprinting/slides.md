@@ -196,6 +196,66 @@ clicks: 3
 layout: center
 ---
 
+<div class="relative flex items-center justify-center h-full">
+  <div class="text-center max-w-5xl">
+    <div class="text-5xl font-light text-black mb-6 tracking-tight">Canvas指纹示例：文本渲染</div>
+    <div class="bg-white border border-black/20 rounded-lg p-6 inline-block">
+      <CanvasFingerprint variant="text" :width="680" :height="230" text="Cwm fjordbank glyphs vext quiz 😃 速度与激情" :font-size="34" />
+    </div>
+    <div class="mt-4 text-gray-700">
+      <div class="text-base">不同系统/浏览器/显卡/字体库 → 渲染像素略有不同 → DataURL哈希不同</div>
+      <div class="text-sm text-gray-500 mt-1">包含阴影、渐变、字距、emoji 等细节以放大差异</div>
+    </div>
+  </div>
+  <div class="absolute right-8 bottom-8">
+    <QRCode />
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<div class="relative flex items-center justify-center h-full">
+  <div class="text-center max-w-5xl">
+    <div class="text-5xl font-light text-black mb-6 tracking-tight">Canvas指纹示例：几何与合成</div>
+    <div class="bg-white border border-black/20 rounded-lg p-6 inline-block">
+      <CanvasFingerprint variant="shapes" :width="720" :height="260" />
+    </div>
+    <div class="mt-4 text-gray-700">
+      <div class="text-base">曲线逼近、线帽/连接、混合模式、亚像素定位 → 光栅化实现差异</div>
+      <div class="text-sm text-gray-500 mt-1">这些细节很难被用户控制，适合用于区分设备</div>
+    </div>
+  </div>
+  <div class="absolute right-8 bottom-8">
+    <QRCode />
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<div class="relative flex items-center justify-center h-full">
+  <div class="text-center max-w-5xl">
+    <div class="text-5xl font-light text-black mb-6 tracking-tight">Canvas指纹示例：Emoji / 字体</div>
+    <div class="bg-white border border-black/20 rounded-lg p-6 inline-block">
+      <CanvasFingerprint variant="emoji" :width="680" :height="200" />
+    </div>
+    <div class="mt-4 text-gray-700">
+      <div class="text-base">不同平台的彩色Emoji渲染与中文字体回退路径 → 像素级差异</div>
+      <div class="text-sm text-gray-500 mt-1">结合文本度量(width/ascent)与哈希，可得到较稳定指纹片段</div>
+    </div>
+  </div>
+  <div class="absolute right-8 bottom-8">
+    <QRCode />
+  </div>
+</div>
+
+---
+layout: center
+---
+
 <div class="flex items-center justify-center h-full">
   <div class="text-center max-w-5xl">
     <div class="text-5xl font-light text-black mb-8 tracking-tight">浏览器指纹如何识别你？</div>
