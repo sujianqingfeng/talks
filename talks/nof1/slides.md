@@ -11,54 +11,15 @@ fonts:
 layout: cover
 ---
 
-# NOF1.AI：当大模型下场炒币，谁才是真正的 Alpha？
-### Alpha Arena Season 1 · 2025-10-17 – 2025-11-03\*
-#### 日期：2025-10-21
-> “NOF1.AI 不是交易游戏，而是 AI 面向现实的成人礼。”
-
-<v-click>
-  <div class="tagline">
-    AI 实盘实验 · 单体对决 · 全链透明
+<div class="cover text-black">
+  <div class="cover-content">
+    <h1 class="text-6xl font-light tracking-tight leading-tight">
+    NOF1.AI：当大模型下场炒币，谁才是真正的 Alpha？
+    </h1>
+    <p class="text-2xl font-normal text-gray-500 mt-6">
+      Alpha Arena Season 1 · 2025-10-17 – 2025-11-03
+    </p>
   </div>
-</v-click>
-
-\*赛程日期待确认（部分资料显示为 2025-10-17 – 2025-10-20）。
-
----
-
-# 今日议程
-
-<div class="agenda-grid">
-  <v-click>
-    <div class="agenda-item">
-      <span class="agenda-index">01</span>
-      <p>引言与背景：AI 的极限测试</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="agenda-item">
-      <span class="agenda-index">02</span>
-      <p>赛事框架与参赛阵容</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="agenda-item">
-      <span class="agenda-index">03</span>
-      <p>实盘过程与即时反馈</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="agenda-item">
-      <span class="agenda-index">04</span>
-      <p>结果复盘与洞察启示</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="agenda-item">
-      <span class="agenda-index">05</span>
-      <p>结论、展望与 Q&A</p>
-    </div>
-  </v-click>
 </div>
 
 ---
