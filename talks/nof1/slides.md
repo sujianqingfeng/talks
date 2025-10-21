@@ -426,74 +426,95 @@ layout: cover
 
 # 最终成绩单
 
-<div class="scoreboard">
-  <v-click>
-    <div class="score-row">
-    <div class="score-rank">1</div>
-    <div class="score-name">DeepSeek V3.1</div>
-    <div class="score-bar">
-      <div class="score-fill" style="width: 100%;"></div>
-    </div>
-    <div class="score-value">$13.4k</div>
-    <div class="score-change">+34%</div>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="score-row">
-    <div class="score-rank">2</div>
-    <div class="score-name">Grok-4</div>
-    <div class="score-bar">
-      <div class="score-fill" style="width: 96%;"></div>
-    </div>
-    <div class="score-value">$12.9k</div>
-    <div class="score-change">+29%</div>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="score-row">
-    <div class="score-rank">3</div>
-    <div class="score-name">Claude 4.5</div>
-    <div class="score-bar">
-      <div class="score-fill" style="width: 94%;"></div>
-    </div>
-    <div class="score-value">$12.6k</div>
-    <div class="score-change">+26%</div>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="score-row">
-    <div class="score-rank">4</div>
-    <div class="score-name">Qwen 3 Max</div>
-    <div class="score-bar">
-      <div class="score-fill" style="width: 80%;"></div>
-    </div>
-    <div class="score-value">$10.7k</div>
-    <div class="score-change">+7%</div>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="score-row">
-    <div class="score-rank">5</div>
-    <div class="score-name">GPT-5</div>
-    <div class="score-bar">
-      <div class="score-fill negative" style="width: 54%;"></div>
-    </div>
-    <div class="score-value">$7.2k</div>
-    <div class="score-change negative">-28%</div>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="score-row">
-    <div class="score-rank">6</div>
-    <div class="score-name">Gemini 2.5</div>
-    <div class="score-bar">
-      <div class="score-fill negative" style="width: 48%;"></div>
-    </div>
-    <div class="score-value">$6.5k</div>
-    <div class="score-change negative">-35%</div>
-    </div>
-  </v-click>
+<div class="scoreboard-grid">
+  <div class="score-column">
+    <v-click>
+      <div class="score-row">
+        <div class="score-rank">1</div>
+        <div class="score-info">
+          <p class="score-name">DeepSeek V3.1</p>
+          <p class="score-equity">$13.4k</p>
+        </div>
+        <div class="score-bar">
+          <div class="score-fill" style="width: 100%;"></div>
+        </div>
+        <div class="score-change">+34%</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div class="score-row">
+        <div class="score-rank">2</div>
+        <div class="score-info">
+          <p class="score-name">Grok-4</p>
+          <p class="score-equity">$12.9k</p>
+        </div>
+        <div class="score-bar">
+          <div class="score-fill" style="width: 96%;"></div>
+        </div>
+        <div class="score-change">+29%</div>
+      </div>
+    </v-click>
+  </div>
+  <div class="score-column">
+    <v-click>
+      <div class="score-row">
+        <div class="score-rank">3</div>
+        <div class="score-info">
+          <p class="score-name">Claude 4.5</p>
+          <p class="score-equity">$12.6k</p>
+        </div>
+        <div class="score-bar">
+          <div class="score-fill" style="width: 94%;"></div>
+        </div>
+        <div class="score-change">+26%</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div class="score-row">
+        <div class="score-rank">4</div>
+        <div class="score-info">
+          <p class="score-name">Qwen 3 Max</p>
+          <p class="score-equity">$10.7k</p>
+        </div>
+        <div class="score-bar">
+          <div class="score-fill" style="width: 80%;"></div>
+        </div>
+        <div class="score-change">+7%</div>
+      </div>
+    </v-click>
+  </div>
+  <div class="score-column">
+    <v-click>
+      <div class="score-row">
+        <div class="score-rank">5</div>
+        <div class="score-info">
+          <p class="score-name">GPT-5</p>
+          <p class="score-equity">$7.2k</p>
+        </div>
+        <div class="score-bar">
+          <div class="score-fill negative" style="width: 54%;"></div>
+        </div>
+        <div class="score-change negative">-28%</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div class="score-row">
+        <div class="score-rank">6</div>
+        <div class="score-info">
+          <p class="score-name">Gemini 2.5</p>
+          <p class="score-equity">$6.5k</p>
+        </div>
+        <div class="score-bar">
+          <div class="score-fill negative" style="width: 48%;"></div>
+        </div>
+        <div class="score-change negative">-35%</div>
+      </div>
+    </v-click>
+  </div>
 </div>
+<v-click>
+  <p class="score-footnote">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03</p>
+</v-click>
 
 ---
 

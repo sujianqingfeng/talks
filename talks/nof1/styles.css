@@ -387,23 +387,25 @@ table th {
 
 .flow-chart {
   display: grid;
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
 }
 
 .flow-step {
   display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  border-radius: 24px;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 22px;
   border: 1px solid var(--apple-border);
-  padding: 1.2rem 1.6rem;
+  padding: 1rem 1.3rem;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
 }
 
 .flow-index {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--apple-foreground);
   color: var(--apple-background);
@@ -411,6 +413,7 @@ table th {
   place-items: center;
   font-weight: 500;
   letter-spacing: 0.06em;
+  font-size: 0.95rem;
 }
 
 .model-grid {
@@ -716,39 +719,69 @@ table th {
   background: #f7f7f7;
 }
 
-.scoreboard {
+.scoreboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem 0.8rem;
+  margin-top: 0.1rem;
+  align-items: start;
+}
+
+.score-column {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 1.2rem;
+  gap: 0.35rem;
+}
+
+.scoreboard {
+  display: contents;
 }
 
 .score-row {
   display: grid;
-  grid-template-columns: 54px minmax(140px, 170px) 1fr 100px 80px;
+  grid-template-columns: 24px minmax(110px, 150px) 1fr 52px;
   align-items: center;
-  gap: 1rem;
-  padding: 0.9rem 1.2rem;
-  border: 1px solid var(--apple-border);
-  border-radius: 20px;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
-  background: rgba(255, 255, 255, 0.85);
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: none;
 }
 
 .score-rank {
-  font-size: 1.2rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--apple-foreground);
+  color: var(--apple-background);
+  display: grid;
+  place-items: center;
   font-weight: 500;
-  color: var(--apple-foreground);
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
 }
 
-.score-name {
-  font-weight: 400;
-  color: var(--apple-secondary);
+.score-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.score-info .score-name {
+  font-weight: 500;
+  color: var(--apple-foreground);
+  font-size: 0.9rem;
+}
+
+.score-equity {
+  color: var(--apple-muted);
+  font-size: 0.8rem;
 }
 
 .score-bar {
   position: relative;
-  height: 10px;
+  height: 6px;
   border-radius: 999px;
   background: rgba(0, 0, 0, 0.06);
   overflow: hidden;
@@ -756,31 +789,31 @@ table th {
 
 .score-fill {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  inset: 0;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--apple-foreground), rgba(0, 0, 0, 0.35));
+  background: linear-gradient(90deg, var(--apple-foreground), rgba(0, 0, 0, 0.3));
   transition: width 0.4s ease;
 }
 
 .score-fill.negative {
-  background: linear-gradient(90deg, #d92d20, rgba(217, 45, 32, 0.4));
-}
-
-.score-value {
-  font-weight: 400;
-  color: var(--apple-secondary);
+  background: linear-gradient(90deg, #d92d20, rgba(217, 45, 32, 0.45));
 }
 
 .score-change {
-  text-align: right;
   font-weight: 500;
+  text-align: right;
   color: var(--apple-secondary);
+  font-size: 0.85rem;
 }
 
 .score-change.negative {
   color: #d92d20;
+}
+
+.score-footnote {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--apple-muted);
 }
 
 [v-click] {
