@@ -23,6 +23,7 @@
     "dev:mcp": "pnpm --filter mcp run dev",
     "dev:nlp": "pnpm --filter nlp run dev",
     "dev:browser-fingerprinting": "pnpm --filter browser-fingerprinting run dev",
+    "dev:nof1": "pnpm --filter nof1 run build",
     "build:browser-fingerprinting": "pnpm --filter browser-fingerprinting run build",
     "build:arc": "pnpm --filter arc run build",
     "build:deepseek": "pnpm --filter deepseek run build",
