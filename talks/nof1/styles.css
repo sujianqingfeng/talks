@@ -1,0 +1,383 @@
+:root {
+  --apple-background: #ffffff;
+  --apple-foreground: #000000;
+  --apple-secondary: #333333;
+  --apple-muted: #666666;
+  --apple-soft: #999999;
+  --apple-border: rgba(0, 0, 0, 0.08);
+  --apple-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+html,
+body {
+  background: var(--apple-background);
+  color: var(--apple-foreground);
+  font-family: "SF Pro Display", "SF Pro Text", "PingFang SC", "Noto Sans Simplified Chinese", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout {
+  background: var(--apple-background);
+  color: var(--apple-foreground);
+  padding: 3.5rem 5.5rem;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+  color: var(--apple-foreground);
+}
+
+.slidev-layout h1 {
+  font-size: 3.4rem;
+}
+
+.slidev-layout h2 {
+  font-size: 2.4rem;
+}
+
+.slidev-layout h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.slidev-layout p {
+  color: var(--apple-secondary);
+  margin-bottom: 1rem;
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.slidev-layout ul > li,
+.slidev-layout ol > li {
+  color: var(--apple-secondary);
+  font-weight: 350;
+}
+
+.slidev-layout ul > li::marker,
+.slidev-layout ol > li::marker {
+  color: var(--apple-muted);
+}
+
+.slidev-layout strong {
+  font-weight: 500;
+  color: var(--apple-foreground);
+}
+
+blockquote {
+  margin: 1.8rem 0;
+  padding: 1.2rem 1.6rem;
+  border-radius: 18px;
+  background: var(--apple-foreground);
+  color: var(--apple-background);
+  box-shadow: var(--apple-shadow);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+blockquote p {
+  margin: 0;
+  color: inherit;
+}
+
+a {
+  color: var(--apple-foreground);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 0.1rem;
+}
+
+code {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--apple-foreground);
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.95em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--apple-shadow);
+}
+
+table th,
+table td {
+  border: 1px solid var(--apple-border);
+  padding: 1rem 1.4rem;
+  text-align: left;
+  color: var(--apple-secondary);
+}
+
+table th {
+  background: rgba(0, 0, 0, 0.04);
+  font-weight: 500;
+  color: var(--apple-foreground);
+}
+
+.slidev-layout ::selection {
+  background: rgba(0, 0, 0, 0.15);
+  color: var(--apple-background);
+}
+
+.slidev-layout.cover {
+  align-items: flex-start;
+  padding: 14vh 10vw;
+  gap: 2rem;
+  background: var(--apple-background);
+}
+
+.slidev-layout.cover h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  line-height: 1.05;
+}
+
+.slidev-layout.cover h3 {
+  font-size: 1.6rem;
+  color: var(--apple-muted);
+  font-weight: 300;
+}
+
+.slidev-layout.cover > blockquote {
+  max-width: 480px;
+  padding: 1.4rem 1.8rem;
+}
+
+.slidev-layout.cover > p {
+  color: var(--apple-muted);
+  font-size: 1rem;
+}
+
+.slidev-layout .note {
+  color: var(--apple-soft);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.slidev-layout .tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--apple-border);
+  color: var(--apple-muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.08);
+  padding-left: 2.4rem;
+}
+
+.timeline.timeline-compact {
+  gap: 1.2rem;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.4rem;
+  top: 0.15rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--apple-foreground);
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-time {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--apple-muted);
+  min-width: 4.5rem;
+}
+
+.timeline-time.tag {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: auto;
+  text-align: center;
+}
+
+.timeline-content {
+  max-width: 520px;
+  color: var(--apple-secondary);
+}
+
+.timeline-content p {
+  margin-bottom: 0.2rem;
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.scenario-card {
+  background: var(--apple-background);
+  border: 1px solid var(--apple-border);
+  border-radius: 26px;
+  padding: 1.6rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scenario-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.scenario-card.highlight {
+  background: var(--apple-foreground);
+  color: var(--apple-background);
+}
+
+.scenario-card.highlight .note {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.card-grid.three {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.info-card {
+  border: 1px solid var(--apple-border);
+  border-radius: 24px;
+  padding: 1.5rem;
+  background: var(--apple-background);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.08);
+}
+
+.info-card.muted {
+  background: #f7f7f7;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.score-row {
+  display: grid;
+  grid-template-columns: 54px minmax(140px, 170px) 1fr 100px 80px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--apple-border);
+  border-radius: 20px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.score-rank {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--apple-foreground);
+}
+
+.score-name {
+  font-weight: 400;
+  color: var(--apple-secondary);
+}
+
+.score-bar {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.score-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--apple-foreground), rgba(0, 0, 0, 0.35));
+  transition: width 0.4s ease;
+}
+
+.score-fill.negative {
+  background: linear-gradient(90deg, #d92d20, rgba(217, 45, 32, 0.4));
+}
+
+.score-value {
+  font-weight: 400;
+  color: var(--apple-secondary);
+}
+
+.score-change {
+  text-align: right;
+  font-weight: 500;
+  color: var(--apple-secondary);
+}
+
+.score-change.negative {
+  color: #d92d20;
+}
+
+[v-click] {
+  opacity: 0;
+}
+
+.slidev-vclick-target.is-active {
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(0px);
+}
+
+.slidev-vclick-target {
+  transform: translateY(10px);
+}
