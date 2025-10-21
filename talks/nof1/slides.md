@@ -4,23 +4,24 @@ css: styles.css
 highlighter: shiki
 drawings:
   persist: false
-transition: slide-left
+transition: fade
 mdc: true
-fonts:
-  sans: Noto Sans Simplified Chinese
 layout: cover
 ---
 
-<div class="cover text-black">
-  <div class="cover-content">
-    <h1 class="text-6xl font-light tracking-tight leading-tight">
-    NOF1.AI：当大模型下场炒币，谁才是真正的 Alpha？
-    </h1>
-    <p class="text-2xl font-normal text-gray-500 mt-6">
-      Alpha Arena Season 1 · 2025-10-17 – 2025-11-03
-    </p>
+  <div class="cover text-black">
+    <div class="cover-content">
+      <h1 class="text-6xl font-light tracking-tight leading-tight">
+    NOF1.AI
+      </h1>
+      <p class="text-2xl font-normal text-gray-500 mt-6">
+        当大模型下场交易，谁是 Alpha？
+      </p>
+      <p class="text-2xl font-normal text-gray-500 mt-2">
+        Alpha Arena Season 1 · 2025-10-17–2025-11-03
+      </p>
+    </div>
   </div>
-</div>
 
 ---
 
@@ -208,7 +209,7 @@ layout: cover
 
 <div class="chip-grid">
   <v-click>
-    <span class="chip"><strong>资产池</strong> BTC / ETH / SOL / BNB / DOGE / XRP 永续合约</span>
+    <span class="chip"><strong>资产池</strong> BTC/ETH/SOL/BNB/DOGE/XRP 永续合约</span>
   </v-click>
   <v-click>
     <span class="chip"><strong>杠杆自由</strong> 可自定义倍数，但需自行承担清算风险</span>
@@ -295,7 +296,7 @@ layout: cover
 
 ---
 
-# Day 2-3：波动与调仓
+# Day 2–3：波动与调仓
 
 <div class="timeline timeline-compact">
   <v-click>
@@ -343,7 +344,7 @@ layout: cover
     <div class="scenario-card highlight">
     <h3>应对</h3>
     <p>模型在 90 秒内反手开空，逐步回补亏损。</p>
-    <p class="note">次日回到 ±0 区间。</p>
+    <p class="note">次日回到盈亏平衡（±0%）。</p>
     </div>
   </v-click>
   <v-click>
@@ -377,7 +378,7 @@ layout: cover
   <v-click>
     <div class="info-card">
     <h3>数据接口</h3>
-    <p>开放 Rest/Websocket API，研究者可实时拉取权益曲线。</p>
+    <p>开放 REST/WebSocket API，研究者可实时拉取权益曲线。</p>
     <p class="note">方便做策略回放与偏差分析。</p>
     </div>
   </v-click>
@@ -385,7 +386,7 @@ layout: cover
 
 ---
 
-# 最终成绩单
+# 最终成绩单（Top 3）
 
 <div class="scoreboard-grid">
   <div class="score-column">
@@ -430,6 +431,18 @@ layout: cover
         <div class="score-change">+26%</div>
       </div>
     </v-click>
+  </div>
+</div>
+<v-click>
+  <p class="score-footnote">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03</p>
+</v-click>
+
+---
+
+# 最终成绩单（Bottom 3）
+
+<div class="scoreboard-grid">
+  <div class="score-column">
     <v-click>
       <div class="score-row">
         <div class="score-rank">4</div>
@@ -473,9 +486,6 @@ layout: cover
     </v-click>
   </div>
 </div>
-<v-click>
-  <p class="score-footnote">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03</p>
-</v-click>
 
 ---
 
@@ -527,7 +537,7 @@ layout: cover
   <v-click>
     <div class="info-card muted">
     <h3>Gemini 2.5</h3>
-    <p>杠杆 8x + 执行延迟，触发连锁亏损。</p>
+    <p>杠杆 8× + 执行延迟，触发连锁亏损。</p>
     <p class="note">风控模块需引入实时延迟监控。</p>
     </div>
   </v-click>
