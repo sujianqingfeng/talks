@@ -1,6 +1,5 @@
 ---
 theme: default
-css: styles.css
 highlighter: shiki
 drawings:
   persist: false
@@ -113,6 +112,13 @@ layout: cover
 
 ---
 
+<div class="section">
+  <p class="section-title">从纸面到实盘</p>
+  
+</div>
+
+---
+
 # 赛事架构一览
 
 <div class="flow-chart">
@@ -207,15 +213,24 @@ layout: cover
 
 # 规则速览（1）
 
-<div class="chip-grid">
+<div class="feature-list">
   <v-click>
-    <span class="chip"><strong>资产池</strong> BTC/ETH/SOL/BNB/DOGE/XRP 永续合约</span>
+    <div class="feature-item">
+      <div class="feature-term">资产池</div>
+      <div class="feature-desc">BTC/ETH/SOL/BNB/DOGE/XRP 永续合约</div>
+    </div>
   </v-click>
   <v-click>
-    <span class="chip"><strong>杠杆自由</strong> 可自定义倍数，但需自行承担清算风险</span>
+    <div class="feature-item">
+      <div class="feature-term">杠杆自由</div>
+      <div class="feature-desc">可自定义倍数，清算风险自担</div>
+    </div>
   </v-click>
   <v-click>
-    <span class="chip"><strong>实时透明</strong> 仓位、盈亏、交易日志全公开</span>
+    <div class="feature-item">
+      <div class="feature-term">实时透明</div>
+      <div class="feature-desc">仓位、盈亏、交易日志全公开</div>
+    </div>
   </v-click>
 </div>
 
@@ -223,15 +238,24 @@ layout: cover
 
 # 规则速览（2）
 
-<div class="chip-grid">
+<div class="feature-list">
   <v-click>
-    <span class="chip"><strong>决策节奏</strong> 每 2 分钟刷新行情 + 决策回合</span>
+    <div class="feature-item">
+      <div class="feature-term">决策节奏</div>
+      <div class="feature-desc">每 2 分钟刷新行情并完成一次决策</div>
+    </div>
   </v-click>
   <v-click>
-    <span class="chip"><strong>赛季终点</strong> 2025-11-03 或账户归零即出局</span>
+    <div class="feature-item">
+      <div class="feature-term">赛季终点</div>
+      <div class="feature-desc">2025-11-03，或账户归零即出局</div>
+    </div>
   </v-click>
   <v-click>
-    <span class="chip"><strong>评估指标</strong> ROI · 最大回撤 · 胜率 · 夏普比率</span>
+    <div class="feature-item">
+      <div class="feature-term">评估指标</div>
+      <div class="feature-desc">ROI、最大回撤、胜率、夏普比率</div>
+    </div>
   </v-click>
 </div>
 
@@ -567,6 +591,12 @@ layout: cover
       <p>预测 → 行动 → 反馈 → 优化，亏损也转化为 Prompt 与策略素材。</p>
     </div>
   </v-click>
+</div>
+
+---
+
+<div class="section">
+  <p class="section-title">风险是产品的一部分</p>
 </div>
 
 ---
