@@ -541,76 +541,37 @@ layout: center
 
 # 最终成绩单（Top 3）
 
-<div style="display: flex; flex-direction: column; gap: 1rem; max-width: 850px; margin: 0 auto;">
+<div style="display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 1.5rem; max-width: 1000px; margin: 2rem auto; align-items: end;">
   <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 1.5rem; background: linear-gradient(135deg, rgba(255, 215, 0, 0.06) 0%, rgba(255, 255, 255, 0.98) 50%);">
-      <div style="display: flex; align-items: center; gap: 1.5rem;">
-        <div style="flex-shrink: 0;">
-          <div style="font-size: 1.8rem; width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #FFD700, #FFA500); display: flex; align-items: center; justify-content: center;">🏆</div>
-        </div>
-        <div style="flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <h3 style="font-size: 1.5rem; margin: 0 0 0.2rem 0; font-weight: 500;">DeepSeek V3.1</h3>
-              <p style="margin: 0; color: var(--apple-muted); font-size: 0.85rem;">深度求索</p>
-            </div>
-            <div style="text-align: right;">
-              <div class="data-value" style="font-size: 2rem; line-height: 1;">+34%</div>
-              <p style="margin: 0.2rem 0 0; color: var(--apple-muted); font-size: 0.85rem;">$13,400</p>
-            </div>
-          </div>
-          <div style="height: 6px; background: rgba(0,0,0,0.06); border-radius: 999px; overflow: hidden; margin-top: 0.8rem;">
-            <div style="height: 100%; width: 100%; background: linear-gradient(90deg, #000 0%, #333 100%); border-radius: 999px;"></div>
-          </div>
-        </div>
+    <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(192,192,192,0.08) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
+      <div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); font-size: 3rem;">🥈</div>
+      <div style="margin-top: 2rem;">
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Grok-4</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">xAI</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+29<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$12,900</p>
       </div>
     </div>
   </v-click>
   <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-2" style="padding: 1.3rem;">
-      <div style="display: flex; align-items: center; gap: 1.5rem;">
-        <div style="flex-shrink: 0;">
-          <div style="font-size: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #C0C0C0, #A8A8A8); display: flex; align-items: center; justify-content: center;">🥈</div>
-        </div>
-        <div style="flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <h3 style="font-size: 1.4rem; margin: 0 0 0.2rem 0; font-weight: 500;">Grok-4</h3>
-              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">xAI</p>
-            </div>
-            <div style="text-align: right;">
-              <div class="data-value" style="font-size: 1.8rem; line-height: 1;">+29%</div>
-              <p style="margin: 0.2rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$12,900</p>
-            </div>
-          </div>
-          <div style="height: 5px; background: rgba(0,0,0,0.06); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
-            <div style="height: 100%; width: 96%; background: var(--apple-secondary); border-radius: 999px;"></div>
-          </div>
-        </div>
+    <div style="text-align: center; padding: 2.5rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(255,215,0,0.12) 0%, transparent 100%); border: 2px solid rgba(255,215,0,0.3); position: relative; padding-bottom: 3rem;">
+      <div style="position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%); font-size: 4rem;">🏆</div>
+      <div style="margin-top: 2.5rem;">
+        <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">深度求索</p>
+        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+34<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$13,400</p>
       </div>
     </div>
   </v-click>
   <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 1.3rem;">
-      <div style="display: flex; align-items: center; gap: 1.5rem;">
-        <div style="flex-shrink: 0;">
-          <div style="font-size: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #CD7F32, #B87333); display: flex; align-items: center; justify-content: center;">🥉</div>
-        </div>
-        <div style="flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <h3 style="font-size: 1.4rem; margin: 0 0 0.2rem 0; font-weight: 500;">Claude 4.5</h3>
-              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">Anthropic</p>
-            </div>
-            <div style="text-align: right;">
-              <div class="data-value" style="font-size: 1.8rem; line-height: 1;">+26%</div>
-              <p style="margin: 0.2rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$12,600</p>
-            </div>
-          </div>
-          <div style="height: 5px; background: rgba(0,0,0,0.06); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
-            <div style="height: 100%; width: 94%; background: var(--apple-secondary); border-radius: 999px;"></div>
-          </div>
-        </div>
+    <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(205,127,50,0.08) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
+      <div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); font-size: 3rem;">🥉</div>
+      <div style="margin-top: 2rem;">
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Claude 4.5</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Anthropic</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+26<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$12,600</p>
       </div>
     </div>
   </v-click>
@@ -622,76 +583,37 @@ layout: center
 
 # 最终成绩单（Bottom 3）
 
-<div style="display: flex; flex-direction: column; gap: 0.9rem; max-width: 850px; margin: 0 auto;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 2rem auto;">
   <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 1.2rem;">
-      <div style="display: flex; align-items: center; gap: 1.5rem;">
-        <div style="flex-shrink: 0;">
-          <div style="font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; background: var(--elevated-bg); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--apple-muted);">4</div>
-        </div>
-        <div style="flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <h3 style="font-size: 1.3rem; margin: 0 0 0.15rem 0; font-weight: 500;">Qwen 3 Max</h3>
-              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">阿里</p>
-            </div>
-            <div style="text-align: right;">
-              <div style="font-size: 1.5rem; line-height: 1; color: var(--apple-secondary); font-weight: 600;">+7%</div>
-              <p style="margin: 0.15rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$10,700</p>
-            </div>
-          </div>
-          <div style="height: 4px; background: rgba(0,0,0,0.05); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
-            <div style="height: 100%; width: 80%; background: var(--apple-muted); border-radius: 999px;"></div>
-          </div>
-        </div>
+    <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(0,0,0,0.03) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
+      <div style="position: absolute; top: -0.8rem; left: 50%; transform: translateX(-50%); font-size: 2.5rem; opacity: 0.5;">4️⃣</div>
+      <div style="margin-top: 2rem;">
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">阿里</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+7<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$10,700</p>
       </div>
     </div>
   </v-click>
   <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-2" style="padding: 1.2rem;">
-      <div style="display: flex; align-items: center; gap: 1.5rem;">
-        <div style="flex-shrink: 0;">
-          <div style="font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; background: var(--elevated-bg); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--apple-muted);">5</div>
-        </div>
-        <div style="flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <h3 style="font-size: 1.3rem; margin: 0 0 0.15rem 0; font-weight: 500;">GPT-5</h3>
-              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">OpenAI</p>
-            </div>
-            <div style="text-align: right;">
-              <div style="font-size: 1.5rem; line-height: 1; color: #dc2626; font-weight: 600;">-28%</div>
-              <p style="margin: 0.15rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$7,200</p>
-            </div>
-          </div>
-          <div style="height: 4px; background: rgba(0,0,0,0.05); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
-            <div style="height: 100%; width: 54%; background: #fca5a5; border-radius: 999px;"></div>
-          </div>
-        </div>
+    <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(220,38,38,0.04) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
+      <div style="position: absolute; top: -0.8rem; left: 50%; transform: translateX(-50%); font-size: 2.5rem; opacity: 0.5;">5️⃣</div>
+      <div style="margin-top: 2rem;">
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">GPT-5</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">OpenAI</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-28<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$7,200</p>
       </div>
     </div>
   </v-click>
   <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 1.2rem;">
-      <div style="display: flex; align-items: center; gap: 1.5rem;">
-        <div style="flex-shrink: 0;">
-          <div style="font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; background: var(--elevated-bg); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--apple-muted);">6</div>
-        </div>
-        <div style="flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <h3 style="font-size: 1.3rem; margin: 0 0 0.15rem 0; font-weight: 500;">Gemini 2.5</h3>
-              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">Google</p>
-            </div>
-            <div style="text-align: right;">
-              <div style="font-size: 1.5rem; line-height: 1; color: #dc2626; font-weight: 600;">-35%</div>
-              <p style="margin: 0.15rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$6,500</p>
-            </div>
-          </div>
-          <div style="height: 4px; background: rgba(0,0,0,0.05); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
-            <div style="height: 100%; width: 48%; background: #dc2626; border-radius: 999px;"></div>
-          </div>
-        </div>
+    <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(220,38,38,0.06) 0%, transparent 100%); border: 2px solid rgba(220,38,38,0.15); position: relative; padding-bottom: 2.5rem;">
+      <div style="position: absolute; top: -0.8rem; left: 50%; transform: translateX(-50%); font-size: 2.5rem; opacity: 0.5;">6️⃣</div>
+      <div style="margin-top: 2rem;">
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Gemini 2.5</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Google</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-35<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$6,500</p>
       </div>
     </div>
   </v-click>
@@ -756,26 +678,40 @@ layout: center
 
 # 智能潜力：我们学到什么？
 
-<div class="insight-grid">
+<div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: center; max-width: 1100px; margin: 2rem auto;">
   <v-click>
-    <div class="insight-card">
-      <h3>Alpha 捕获力</h3>
-      <p>多模型在高波动中跑赢基准，证明 AI 能主动识别结构性机会。</p>
+    <div style="text-align: center;">
+      <div class="data-highlight">
+        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">62<span style="font-size: 0.6em;">%</span></span>
+        <span class="data-unit" style="font-size: 1.2rem; font-weight: 300; letter-spacing: 0.05em;">平均胜率</span>
+      </div>
+      <div style="margin-top: 2.5rem;">
+        <div class="data-value" style="font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 0.3rem;">90<span style="font-size: 0.7em;">秒</span></div>
+        <span style="font-size: 0.95rem; color: var(--apple-muted);">决策响应</span>
+      </div>
     </div>
   </v-click>
+  <div style="display: flex; flex-direction: column; gap: 2rem;">
+    <v-click>
+      <div style="border-left: 2px solid #000; padding-left: 1.5rem;">
+        <h3 style="font-size: 1.5rem; margin: 0 0 0.6rem 0; font-weight: 500;">Alpha 捕获力</h3>
+        <p style="margin: 0; line-height: 1.65; color: var(--apple-secondary);">多模型在高波动中跑赢基准，证明 AI 能主动识别结构性机会。</p>
+      </div>
+    </v-click>
   <v-click>
-    <div class="insight-card">
-      <h3>极速响应</h3>
-      <p>毫秒级监听行情，策略回合远快于人工节奏。</p>
-      <p class="note">实时指标驱动仓位调整。</p>
-    </div>
-  </v-click>
+      <div style="border-left: 2px solid #000; padding-left: 1.5rem;">
+        <h3 style="font-size: 1.5rem; margin: 0 0 0.6rem 0; font-weight: 500;">极速响应</h3>
+        <p style="margin: 0; line-height: 1.65; color: var(--apple-secondary);">毫秒级监听行情，策略回合远快于人工节奏。</p>
+        <p style="margin: 0.4rem 0 0; font-size: 0.9rem; color: var(--apple-muted);">实时指标驱动仓位调整</p>
+      </div>
+    </v-click>
   <v-click>
-    <div class="insight-card">
-      <h3>学习闭环</h3>
-      <p>预测 → 行动 → 反馈 → 优化，亏损也转化为 Prompt 与策略素材。</p>
-    </div>
-  </v-click>
+      <div style="border-left: 2px solid #000; padding-left: 1.5rem;">
+        <h3 style="font-size: 1.5rem; margin: 0 0 0.6rem 0; font-weight: 500;">学习闭环</h3>
+        <p style="margin: 0; line-height: 1.65; color: var(--apple-secondary);">预测 → 行动 → 反馈 → 优化，亏损也转化为 Prompt 与策略素材。</p>
+      </div>
+    </v-click>
+  </div>
 </div>
 
 ---
@@ -834,74 +770,102 @@ layout: center
 
 # 风险与伦理边界
 
-<div class="risk-grid">
+<div style="display: flex; align-items: flex-start; gap: 3rem; max-width: 1000px; margin: 2rem auto;">
   <v-click>
-    <div class="risk-card caution">
-      <h3>杠杆与扰动</h3>
-      <p>高倍杠杆放大黑天鹅风险，需要实时限额与熔断机制。</p>
+    <div style="flex-shrink: 0; text-align: center;">
+      <div style="font-size: 5rem; line-height: 1; margin-bottom: 0.5rem;">⚠️</div>
+      <p style="margin: 0; font-size: 0.85rem; color: var(--apple-muted); letter-spacing: 0.05em;">RISK AWARE</p>
     </div>
   </v-click>
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 2.5rem; position: relative;">
+    <v-click>
+      <div style="position: relative; padding-left: 2rem;">
+        <div style="position: absolute; left: 0; top: 0.4rem; width: 8px; height: 8px; background: #dc2626; border-radius: 50%;"></div>
+        <h3 style="font-size: 1.5rem; margin: 0 0 0.6rem 0; font-weight: 500;">杠杆与扰动</h3>
+        <p style="margin: 0; line-height: 1.65; color: var(--apple-secondary);">高倍杠杆放大黑天鹅风险，需要实时限额与熔断机制。</p>
+        <div style="margin-top: 0.8rem; display: inline-block; padding: 0.3rem 0.8rem; background: rgba(220, 38, 38, 0.08); border-radius: 4px; font-size: 0.85rem;">需要熔断机制</div>
+      </div>
+    </v-click>
   <v-click>
-    <div class="risk-card">
-      <h3>透明 vs. 泄露</h3>
-      <p>链上公开保障公平，但也让高价值策略暴露于抄袭。</p>
-    </div>
-  </v-click>
+      <div style="position: relative; padding-left: 2rem; margin-left: 3rem;">
+        <div style="position: absolute; left: 0; top: 0.4rem; width: 8px; height: 8px; background: #f59e0b; border-radius: 50%;"></div>
+        <div style="position: absolute; left: -3rem; top: 0.8rem; width: 3rem; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.15));"></div>
+        <h3 style="font-size: 1.5rem; margin: 0 0 0.6rem 0; font-weight: 500;">透明 vs. 泄露</h3>
+        <p style="margin: 0; line-height: 1.65; color: var(--apple-secondary);">链上公开保障公平，但也让高价值策略暴露于抄袭。</p>
+      </div>
+    </v-click>
   <v-click>
-    <div class="risk-card">
-      <h3>人类新角色</h3>
-      <p>AI 策略审计师成为刚需，负责合规、风控与偏差追踪。</p>
-    </div>
-  </v-click>
+      <div style="position: relative; padding-left: 2rem;">
+        <div style="position: absolute; left: 0; top: 0.4rem; width: 8px; height: 8px; background: #000; border-radius: 50%;"></div>
+        <div style="position: absolute; left: 0; top: -2rem; width: 1px; height: 2rem; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.15));"></div>
+        <h3 style="font-size: 1.5rem; margin: 0 0 0.6rem 0; font-weight: 500;">人类新角色</h3>
+        <p style="margin: 0; line-height: 1.65; color: var(--apple-secondary);">AI 策略审计师成为刚需，负责合规、风控与偏差追踪。</p>
+      </div>
+    </v-click>
+  </div>
 </div>
 
 ---
 
 # 社区与行业反响
 
-<div class="community-grid">
+<div style="max-width: 900px; margin: 2rem auto; display: flex; flex-direction: column; gap: 2rem;">
   <v-click>
-    <div class="community-card">
-      <h3>社群热度</h3>
-      <p>X 热帖刷屏：“This is the World Cup for LLMs.”</p>
-      <p class="note">话题阅读量 1200 万 +</p>
+    <div style="position: relative; padding: 2rem 2.5rem; background: linear-gradient(135deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.005) 100%); border-left: 3px solid #000; border-radius: 8px;">
+      <div style="position: absolute; top: 1.5rem; right: 2rem; font-size: 3rem; opacity: 0.4;">🐦</div>
+      <p style="font-size: 1.8rem; line-height: 1.4; font-weight: 300; margin: 0 0 1.2rem 0; font-style: italic;">"This is the World Cup for LLMs."</p>
+      <div style="height: 1px; background: linear-gradient(90deg, rgba(0,0,0,0.15), transparent); margin-bottom: 1rem;"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.9rem; color: var(--apple-muted);">X 社区 · #NOF1</span>
+        <div class="data-highlight">
+          <span class="data-value" style="font-size: 1.8rem;">12M</span>
+          <span class="data-unit" style="font-size: 0.85rem;">+ 阅读量</span>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="community-card">
-      <h3>媒体视角</h3>
-      <p>财经媒体称其为 “AI 智能的成人礼”，市场成为新 benchmark。</p>
+    <div style="position: relative; padding: 2rem 2.5rem; background: linear-gradient(135deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.005) 100%); border-left: 3px solid #666; border-radius: 8px;">
+      <div style="position: absolute; top: 1.5rem; right: 2rem; font-size: 3rem; opacity: 0.4;">📰</div>
+      <p style="font-size: 1.8rem; line-height: 1.4; font-weight: 300; margin: 0 0 1.2rem 0; font-style: italic;">"AI 智能的成人礼"</p>
+      <div style="height: 1px; background: linear-gradient(90deg, rgba(0,0,0,0.15), transparent); margin-bottom: 1rem;"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.9rem; color: var(--apple-muted);">财经媒体</span>
+        <span style="font-size: 0.85rem; color: var(--apple-muted);">2025-11</span>
+      </div>
+      <p style="margin: 1rem 0 0; line-height: 1.6; color: var(--apple-secondary); font-size: 0.95rem;">市场成为新 benchmark，检验大模型在真实环境中的决策能力。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="community-card">
-      <h3>产业效应</h3>
-      <p>催生更多 AI 实盘基金与赛事，推动标准化评测需求。</p>
+    <div style="padding: 1.5rem 0; border-top: 1px solid rgba(0,0,0,0.08);">
+      <h3 style="font-size: 1.3rem; margin: 0 0 1rem 0; font-weight: 500;">产业效应</h3>
+      <p style="margin: 0; line-height: 1.7; color: var(--apple-secondary); font-size: 1.05rem;">催生更多 AI 实盘基金与赛事，推动金融领域标准化评测需求，多家机构已开始筹备类似竞技场。</p>
     </div>
   </v-click>
 </div>
-
----
-
 # 展望未来赛季
 
-<div class="roadmap">
+<div style="max-width: 700px; margin: 3rem auto; position: relative;">
+  <div style="position: absolute; left: 2rem; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, #000 0%, rgba(0,0,0,0.3) 70%, transparent 100%);"></div>
   <v-click>
-    <div class="roadmap-step">
-      <span class="roadmap-time">Season 2</span>
-      <p>赛期延长至 3 个月，引入更多资产类别。</p>
+    <div style="position: relative; padding-left: 5rem; margin-bottom: 3rem;">
+      <div style="position: absolute; left: 1.4rem; top: 0.3rem; width: 14px; height: 14px; background: #000; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.1);"></div>
+      <div style="display: inline-block; padding: 0.3rem 0.9rem; background: #000; color: #fff; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.05em; border-radius: 4px; margin-bottom: 0.8rem;">SEASON 2</div>
+      <p style="margin: 0; font-size: 1.1rem; line-height: 1.65; color: var(--apple-secondary);">赛期延长至 3 个月，引入更多资产类别。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="roadmap-step">
-      <span class="roadmap-time">人机对照</span>
-      <p>加入专业交易员队伍，检验 AI / 人类协同收益。</p>
+    <div style="position: relative; padding-left: 5rem; margin-bottom: 3rem;">
+      <div style="position: absolute; left: 1.4rem; top: 0.3rem; width: 14px; height: 14px; background: #666; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.1);"></div>
+      <div style="display: inline-block; padding: 0.3rem 0.9rem; background: rgba(0,0,0,0.08); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.05em; border-radius: 4px; margin-bottom: 0.8rem;">人机对照</div>
+      <p style="margin: 0; font-size: 1.1rem; line-height: 1.65; color: var(--apple-secondary);">加入专业交易员队伍，检验 AI / 人类协同收益。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="roadmap-step">
-      <span class="roadmap-time">Agent Economy</span>
-      <p>构建金融推理通用 benchmark，迈向智能体经济生态。</p>
+    <div style="position: relative; padding-left: 5rem;">
+      <div style="position: absolute; left: 1.55rem; top: 0.3rem; width: 10px; height: 10px; background: #fff; border: 2px solid #999; border-radius: 50%;"></div>
+      <div style="display: inline-block; padding: 0.3rem 0.9rem; background: rgba(0,0,0,0.04); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.05em; border-radius: 4px; margin-bottom: 0.8rem; color: var(--apple-muted);">Agent Economy</div>
+      <p style="margin: 0; font-size: 1.1rem; line-height: 1.65; color: var(--apple-muted);">构建金融推理通用 benchmark，迈向智能体经济生态。</p>
     </div>
   </v-click>
 </div>
@@ -910,19 +874,27 @@ layout: center
 
 # 总结与思考
 
-<div class="summary-wrap">
-  <div class="summary-main">
-    <v-clicks>
-      <ul class="bullet-list">
-        <li>智能 ≠ 分数；智能 = 在不确定中持续优化的行为。</li>
-        <li>NOF1.AI 将市场作为 AI 的新试炼场。</li>
-        <li>人类角色升级为复盘者，与智能体共演。</li>
-      </ul>
-    </v-clicks>
-  </div>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; max-width: 900px; margin: 0 auto; text-align: center;">
   <v-click>
-    <div class="summary-quote">
-      <p>“市场，是智能演化的镜像。”</p>
+    <div style="margin-bottom: 3rem;">
+      <p style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.3; font-weight: 200; margin: 0; font-style: italic; letter-spacing: -0.01em;">"市场，是智能演化的镜像。"</p>
+      <div style="width: 60px; height: 2px; background: #000; margin: 2rem auto;"></div>
+    </div>
+  </v-click>
+  <v-click>
+    <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 700px;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="width: 6px; height: 6px; background: #000; border-radius: 50%; flex-shrink: 0;"></div>
+        <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; text-align: left; color: var(--apple-secondary);">智能 ≠ 分数；智能 = 在不确定中持续优化的行为</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="width: 6px; height: 6px; background: #000; border-radius: 50%; flex-shrink: 0;"></div>
+        <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; text-align: left; color: var(--apple-secondary);">NOF1.AI 将市场作为 AI 的新试炼场</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="width: 6px; height: 6px; background: #000; border-radius: 50%; flex-shrink: 0;"></div>
+        <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; text-align: left; color: var(--apple-secondary);">人类角色升级为复盘者，与智能体共演</p>
+      </div>
     </div>
   </v-click>
 </div>
@@ -931,8 +903,23 @@ layout: center
 
 # Q&A · 参考资源
 
-<div class="qa-card">
-  <p><strong>更多赛况</strong>：nof1.ai · X #NOF1 #AlphaArena #AITrader</p>
-  <p><strong>数据来源</strong>：Hyperliquid 实盘 · Polymarket · 市场 API · 社区舆情</p>
-  <p><strong>联系你</strong>：\<你的邮箱或链接\></p>
+<div style="max-width: 750px; margin: 4rem auto; text-align: center;">
+  <v-click>
+    <div style="padding-bottom: 2.5rem; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <p style="font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--apple-muted); margin: 0 0 1rem 0;">更多赛况</p>
+      <p style="font-size: 1.3rem; margin: 0; line-height: 1.6; color: var(--apple-foreground);">nof1.ai · X #NOF1 #AlphaArena #AITrader</p>
+    </div>
+  </v-click>
+  <v-click>
+    <div style="padding: 2.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <p style="font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--apple-muted); margin: 0 0 1rem 0;">数据来源</p>
+      <p style="font-size: 1.1rem; margin: 0; line-height: 1.7; color: var(--apple-secondary);">Hyperliquid 实盘 · Polymarket<br/>市场 API · 社区舆情</p>
+    </div>
+  </v-click>
+  <v-click>
+    <div style="padding-top: 2.5rem;">
+      <p style="font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--apple-muted); margin: 0 0 1rem 0;">联系方式</p>
+      <p style="font-size: 1.1rem; margin: 0; color: var(--apple-secondary);">\<你的邮箱或链接\></p>
+    </div>
+  </v-click>
 </div>
