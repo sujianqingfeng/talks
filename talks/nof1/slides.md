@@ -622,26 +622,58 @@ layout: center
 
 # Top 3 模型拆解
 
-<div class="card-grid three">
+<div style="max-width: 900px; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1.8rem;">
   <v-click>
-    <div class="info-card">
-    <h3>DeepSeek</h3>
-    <p>高频执行 + 动态风控，单笔盈利 0.3%～0.8% 滚动累积。</p>
-    <p class="note">胜率 62%，回撤控制在 5% 以内。</p>
+    <div style="border-left: 4px solid #000; padding-left: 1.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">DeepSeek V3.1</h3>
+        <div style="padding: 0.25rem 0.7rem; background: #000; color: #fff; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">高频交易</div>
+      </div>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">高频执行 + 动态风控，单笔盈利 0.3%～0.8% 滚动累积。</p>
+      <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
+        <div>
+          <span style="color: var(--apple-muted);">胜率</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">62%</strong>
+        </div>
+        <div>
+          <span style="color: var(--apple-muted);">回撤</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">&lt;5%</strong>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="info-card">
-    <h3>Grok-4</h3>
-    <p>“先攻后守” 策略，放大趋势单同时设硬性止损。</p>
-    <p class="note">收益驱动来源于少数大单贡献。</p>
+    <div style="border-left: 4px solid #666; padding-left: 1.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Grok-4</h3>
+        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">激进进攻</div>
+      </div>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">"先攻后守" 策略，放大趋势单同时设硬性止损。</p>
+      <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
+        <div>
+          <span style="color: var(--apple-muted);">收益驱动</span>
+          <strong style="margin-left: 0.5rem;">少数大单贡献</strong>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="info-card">
-    <h3>Claude 4.5</h3>
-    <p>宏观 + on-chain 结合，低频判断方向。</p>
-    <p class="note">夏普比率最高，资金利用率 68%。</p>
+    <div style="border-left: 4px solid #999; padding-left: 1.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Claude 4.5</h3>
+        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.06); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">稳健防守</div>
+      </div>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">宏观 + on-chain 结合，低频判断方向。</p>
+      <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
+        <div>
+          <span style="color: var(--apple-muted);">夏普比率</span>
+          <strong style="margin-left: 0.5rem;">最高</strong>
+        </div>
+        <div>
+          <span style="color: var(--apple-muted);">资金利用率</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">68%</strong>
+        </div>
+      </div>
     </div>
   </v-click>
 </div>
@@ -650,26 +682,35 @@ layout: center
 
 # Bottom 3 模型反思
 
-<div class="card-grid three">
+<div style="max-width: 900px; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1.6rem;">
   <v-click>
-    <div class="info-card muted">
-    <h3>Qwen 3 Max</h3>
-    <p>跨币种套利链路长，滑点侵蚀利润。</p>
-    <p class="note">建议引入做市深度过滤。</p>
+    <div style="position: relative; padding-left: 2.5rem;">
+      <div style="position: absolute; left: 0; top: 0.2rem; width: 20px; height: 20px; border-radius: 50%; background: rgba(245,158,11,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">⚠️</div>
+      <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">Qwen 3 Max</h3>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>跨币种套利链路长，滑点侵蚀利润。</p>
+      <div style="padding: 0.6rem 1rem; background: rgba(0,0,0,0.03); border-left: 3px solid #f59e0b; border-radius: 4px;">
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>引入做市深度过滤</p>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="info-card muted">
-    <h3>GPT-5</h3>
-    <p>策略集中于 BTC，黑天鹅时出现 <strong>-28%</strong> 回撤。</p>
-    <p class="note">需要多资产分散与仓位分层。</p>
+    <div style="position: relative; padding-left: 2.5rem;">
+      <div style="position: absolute; left: 0; top: 0.2rem; width: 20px; height: 20px; border-radius: 50%; background: rgba(220,38,38,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">❌</div>
+      <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">GPT-5</h3>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>策略集中于 BTC，黑天鹅时出现 <strong style="color: #dc2626;">-28%</strong> 回撤。</p>
+      <div style="padding: 0.6rem 1rem; background: rgba(220,38,38,0.04); border-left: 3px solid #dc2626; border-radius: 4px;">
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>多资产分散与仓位分层</p>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="info-card muted">
-    <h3>Gemini 2.5</h3>
-    <p>杠杆 8× + 执行延迟，触发连锁亏损。</p>
-    <p class="note">风控模块需引入实时延迟监控。</p>
+    <div style="position: relative; padding-left: 2.5rem;">
+      <div style="position: absolute; left: 0; top: 0.2rem; width: 20px; height: 20px; border-radius: 50%; background: rgba(220,38,38,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">💥</div>
+      <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">Gemini 2.5</h3>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>杠杆 8× + 执行延迟，触发连锁亏损。</p>
+      <div style="padding: 0.6rem 1rem; background: rgba(220,38,38,0.04); border-left: 3px solid #dc2626; border-radius: 4px;">
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>风控模块需引入实时延迟监控</p>
+      </div>
     </div>
   </v-click>
 </div>
