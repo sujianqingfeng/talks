@@ -22,6 +22,11 @@ layout: cover
     </div>
   </div>
 
+<style>
+/* Ensure project CSS is bundled on build */
+@import url('./style.css');
+</style>
+
 ---
 
 # 引子：AI 的极限测试
@@ -111,11 +116,56 @@ layout: cover
 </div>
 
 ---
+layout: center
+---
 
 <div class="section">
-  <p class="section-title">从纸面到实盘</p>
-  
+  <div class="section-inner">
+    <p class="display-title">从纸面到实盘</p>
+  </div>
 </div>
+
+<style scoped>
+/* 仅本页：移除上下内边距，保证严格居中 */
+.slidev-layout, .slidev-layout.cover { padding-top: 0 !important; padding-bottom: 0 !important; }
+.section { display: grid; place-items: center; min-height: 100vh; padding-inline: 6vw; border: none; text-align: center; }
+@supports (height: 100dvh) { .section { min-height: 100dvh; } }
+.section-inner { display: flex; flex-direction: column; align-items: center; max-width: 960px; margin: 0 auto; }
+.display-title {
+  font-size: clamp(2.4rem, 7.2vw, 4.8rem);
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 200;
+  margin: 0;
+  color: var(--apple-foreground);
+  text-wrap: balance;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: inline-block;
+}
+@supports not (text-wrap: balance) { .display-title { word-break: keep-all; } }
+.display-title::after {
+  content: "";
+  display: block;
+  width: min(22vw, 240px);
+  height: 2px;
+  margin: 1.2rem auto 0;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.25), transparent);
+}
+.display-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0) 60%);
+  filter: blur(18px);
+  z-index: -1;
+  pointer-events: none;
+}
+</style>
 
 ---
 
@@ -594,10 +644,56 @@ layout: cover
 </div>
 
 ---
+layout: center
+---
 
 <div class="section">
-  <p class="section-title">风险是产品的一部分</p>
+  <div class="section-inner">
+    <p class="display-title">风险是产品的一部分</p>
+  </div>
 </div>
+
+<style scoped>
+/* 仅本页：移除上下内边距，保证严格居中 */
+.slidev-layout, .slidev-layout.cover { padding-top: 0 !important; padding-bottom: 0 !important; }
+.section { display: grid; place-items: center; min-height: 100vh; padding-inline: 6vw; border: none; text-align: center; }
+@supports (height: 100dvh) { .section { min-height: 100dvh; } }
+.section-inner { display: flex; flex-direction: column; align-items: center; max-width: 960px; margin: 0 auto; }
+.display-title {
+  font-size: clamp(2.4rem, 7.2vw, 4.8rem);
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 200;
+  margin: 0;
+  color: var(--apple-foreground);
+  text-wrap: balance;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: inline-block;
+}
+@supports not (text-wrap: balance) { .display-title { word-break: keep-all; } }
+.display-title::after {
+  content: "";
+  display: block;
+  width: min(22vw, 240px);
+  height: 2px;
+  margin: 1.2rem auto 0;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.25), transparent);
+}
+.display-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0) 60%);
+  filter: blur(18px);
+  z-index: -1;
+  pointer-events: none;
+}
+</style>
 
 ---
 

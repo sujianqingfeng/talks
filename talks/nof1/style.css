@@ -634,20 +634,72 @@ table th {
 .section {
   display: grid;
   place-items: center;
-  min-height: 62vh;
-  background: var(--elevated-bg);
-  border: 1px solid var(--apple-border);
-  border-radius: var(--radius-card);
-  box-shadow: var(--apple-shadow);
+  min-height: calc(100vh - 7rem);
+  padding-block: 0;
+  padding-inline: 6vw;
+  background: var(--apple-background);
+  border: none;
+  border-top: 1px solid var(--apple-border);
+  border-bottom: 1px solid var(--apple-border);
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   text-align: center;
+  animation: section-fade 0.48s ease-out both;
+}
+
+/* Use dynamic viewport on modern browsers for truly centered layout */
+@supports (height: 100dvh) {
+  .section {
+    min-height: calc(100dvh - 7rem);
+  }
+}
+
+.section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  color: var(--apple-muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section-desc {
+  color: var(--apple-secondary);
+  font-size: 1.1rem;
+  max-width: 36em;
 }
 
 .section-title {
-  font-size: 2.6rem;
+  font-size: clamp(2.6rem, 8.5vw, 5.2rem);
+  line-height: 1.18;
+  letter-spacing: 0;
   font-weight: 200;
-  letter-spacing: -0.02em;
-  color: var(--apple-foreground);
   margin: 0;
+  color: var(--apple-foreground);
+  text-wrap: balance;
+  -webkit-font-smoothing: antialiased;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  display: block;
+}
+
+@supports not (text-wrap: balance) {
+  .section-title { word-break: keep-all; }
+}
+
+@keyframes section-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .timeline {
