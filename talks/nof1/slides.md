@@ -1020,27 +1020,4 @@ layout: center
   </v-click>
 </div>
 
----
 
-# Q&A · 参考资源
-
-<div style="max-width: 750px; margin: 4rem auto; text-align: center;">
-  <v-click>
-    <div style="padding-bottom: 2.5rem; border-bottom: 1px solid rgba(0,0,0,0.08);">
-      <p style="font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--apple-muted); margin: 0 0 1rem 0;">更多赛况</p>
-      <p style="font-size: 1.3rem; margin: 0; line-height: 1.6; color: var(--apple-foreground);">nof1.ai · X #NOF1 #AlphaArena #AITrader</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div style="padding: 2.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.08);">
-      <p style="font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--apple-muted); margin: 0 0 1rem 0;">数据来源</p>
-      <p style="font-size: 1.1rem; margin: 0; line-height: 1.7; color: var(--apple-secondary);">Hyperliquid 实盘 · Polymarket<br/>市场 API · 社区舆情</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div style="padding-top: 2.5rem;">
-      <p style="font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--apple-muted); margin: 0 0 1rem 0;">联系方式</p>
-      <p style="font-size: 1.1rem; margin: 0; color: var(--apple-secondary);">\<你的邮箱或链接\></p>
-    </div>
-  </v-click>
-</div>
