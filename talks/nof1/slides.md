@@ -8,16 +8,17 @@ mdc: true
 layout: cover
 ---
 
-  <div class="cover text-black">
-    <div class="cover-content">
-      <h1 class="text-6xl font-light tracking-tight leading-tight">
+  <div class="cover text-black bg-decorated">
+    <div class="cover-content animate-fadeInUp">
+      <div class="badge badge-secondary" style="margin-bottom: 2rem;">Alpha Arena Season 1</div>
+      <h1 class="text-6xl font-light tracking-tight leading-tight" style="margin-bottom: 2.5rem;">
     NOF1.AI
       </h1>
-      <p class="text-2xl font-normal text-gray-500 mt-6">
+      <p class="text-2xl font-normal text-gray-500">
         当大模型下场交易，谁是 Alpha？
       </p>
-      <p class="text-2xl font-normal text-gray-500 mt-2">
-        Alpha Arena Season 1 · 2025-10-17–2025-11-03
+      <p class="text-base text-gray-400 mt-4">
+        2025-10-17 — 2025-11-03
       </p>
     </div>
   </div>
@@ -56,38 +57,68 @@ layout: cover
 
 # nof1.ai 的愿景
 
-<div class="contrast-grid">
+<div class="contrast-grid" style="gap: 1.8rem;">
   <v-click>
-    <div class="contrast-card">
-      <h3>起点：单体实验</h3>
-      <p>以 “N-of-1” 思路设计，每个模型就是一场独立实验。</p>
-      <ul>
-        <li>真实资金作底</li>
-        <li>不可预测行情</li>
-        <li>行为表现即结果</li>
-      </ul>
+    <div class="card-elevated animate-fadeInUp stagger-1">
+      <div class="badge badge-secondary" style="margin-bottom: 1.2rem;">起点</div>
+      <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">单体实验</h3>
+      <p style="font-size: 1.05rem; margin-bottom: 1.2rem; line-height: 1.6;">以 "N-of-1" 思路设计，每个模型就是一场独立实验。</p>
+      <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">💰</span>
+          <span>真实资金作底</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">📈</span>
+          <span>不可预测行情</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">🎯</span>
+          <span>行为表现即结果</span>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="contrast-card">
-      <h3>区别于传统 Benchmark</h3>
-      <p>抛弃 MMLU / Arena 式的静态问答，拥抱动态风险决策。</p>
-      <ul>
-        <li>连续反馈</li>
-        <li>随机扰动</li>
-        <li>需自建风控</li>
-      </ul>
+    <div class="card-glass animate-scaleIn stagger-2">
+      <div class="badge badge-warning" style="margin-bottom: 1.2rem;">区别</div>
+      <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">传统 Benchmark</h3>
+      <p style="font-size: 1.05rem; margin-bottom: 1.2rem; line-height: 1.6;">抛弃 MMLU / Arena 式的静态问答，拥抱动态风险决策。</p>
+      <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">🔄</span>
+          <span>连续反馈</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">⚡</span>
+          <span>随机扰动</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">🛡️</span>
+          <span>需自建风控</span>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="contrast-card">
-      <h3>使命：走出实验室</h3>
-      <p>让大型模型在真实市场中习得关键能力。</p>
-      <ul>
-        <li>构建可执行策略</li>
-        <li>自建风险管理</li>
-        <li>掌握交易节奏</li>
-      </ul>
+    <div class="card-elevated animate-fadeInUp stagger-3">
+      <div class="badge badge-primary" style="margin-bottom: 1.2rem;">使命</div>
+      <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">走出实验室</h3>
+      <p style="font-size: 1.05rem; margin-bottom: 1.2rem; line-height: 1.6;">让大型模型在真实市场中习得关键能力。</p>
+      <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">🚀</span>
+          <span>构建可执行策略</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">⚖️</span>
+          <span>自建风险管理</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 1.4rem;">⏱️</span>
+          <span>掌握交易节奏</span>
+        </div>
+      </div>
     </div>
   </v-click>
 </div>
@@ -96,25 +127,28 @@ layout: cover
 
 # 为什么举办 Alpha Arena？
 
-<div class="metric-row">
+<div class="stat-cards">
   <v-click>
-    <div class="metric-card">
-      <p class="metric-label">探索动机</p>
-      <h3>AI 能否稳定赚钱？</h3>
-      <p>验证模型在自主交易与风险管理上的真实潜力。</p>
+    <div class="stat-card animate-fadeInUp stagger-1">
+      <p class="stat-label">探索动机</p>
+      <h3 class="stat-value" style="font-size: 1.6rem; margin: 0.8rem 0;">AI 能否稳定赚钱？</h3>
+      <p class="stat-change">验证模型在自主交易与风险管理上的真实潜力。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="metric-card">
-      <p class="metric-label">社区热度</p>
-      <h3>Polymarket 实时下注</h3>
-      <p>赛事上线即引爆预测市场与 X 平台讨论。</p>
+    <div class="stat-card animate-fadeInUp stagger-2">
+      <p class="stat-label">社区热度</p>
+      <div class="data-highlight" style="margin: 0.8rem 0;">
+        <span class="data-value">1200</span>
+        <span class="data-unit">万+</span>
+      </div>
+      <p class="stat-change">X 平台话题阅读量</p>
     </div>
   </v-click>
   <v-click>
-    <div class="metric-card">
-      <p class="metric-label">实验亮点</p>
-      <h3>真实资金 · 全链透明</h3>
+    <div class="stat-card animate-fadeInUp stagger-3">
+      <p class="stat-label">实验亮点</p>
+      <h3 class="stat-value" style="font-size: 1.6rem; margin: 0.8rem 0;">真实资金 · 全链透明</h3>
       <p>每笔交易可追踪，排名实时更新，杜绝“纸上谈兵”。</p>
     </div>
   </v-click>
@@ -217,49 +251,62 @@ layout: center
 
 ---
 
-# 参赛模型阵容
+# 参赛模型阵容 (1/2)
 
 <div class="model-grid">
   <v-click>
-    <div class="model-card">
-      <span class="model-name">GPT-5</span>
-      <span class="model-maker">OpenAI</span>
-      <p>理性派策略师，偏好低频高胜率。</p>
+    <div class="card-elevated animate-fadeInUp stagger-1">
+      <div class="badge badge-warning" style="margin-bottom: 1rem;">⚡ 高频交易</div>
+      <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">DeepSeek V3.1</span>
+      <span class="model-maker" style="font-size: 0.95rem;">深度求索</span>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">高频猎手，依靠量化信号捕捉短线波动，策略回合远快于人工节奏。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="model-card">
-      <span class="model-name">Claude 4.5</span>
-      <span class="model-maker">Anthropic</span>
-      <p>谨慎型分析师，宏观 + 风控双保底。</p>
+    <div class="card-elevated animate-fadeInUp stagger-2">
+      <div class="badge badge-danger" style="margin-bottom: 1rem;">🎯 激进进攻</div>
+      <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Grok-4</span>
+      <span class="model-maker" style="font-size: 0.95rem;">xAI</span>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">高波动进攻者，容忍极端风险换取爆发，放大趋势单同时设硬性止损。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="model-card">
-      <span class="model-name">DeepSeek V3.1</span>
-      <span class="model-maker">深度求索</span>
-      <p>高频猎手，依靠量化信号捕捉短线波动。</p>
+    <div class="card-elevated animate-fadeInUp stagger-3">
+      <div class="badge badge-success" style="margin-bottom: 1rem;">🛡️ 稳健防守</div>
+      <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Claude 4.5</span>
+      <span class="model-maker" style="font-size: 0.95rem;">Anthropic</span>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">谨慎型分析师，宏观 + on-chain 结合，风控双保底，夏普比率最高。</p>
+    </div>
+  </v-click>
+</div>
+
+---
+
+# 参赛模型阵容 (2/2)
+
+<div class="model-grid">
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-1">
+      <div class="badge badge-secondary" style="margin-bottom: 1rem;">🔄 套利专家</div>
+      <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Qwen 3 Max</span>
+      <span class="model-maker" style="font-size: 0.95rem;">阿里</span>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">数据炼金师，擅长跨资产套利框架，多币种同步监控寻找价差机会。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="model-card">
-      <span class="model-name">Grok-4</span>
-      <span class="model-maker">xAI</span>
-      <p>高波动进攻者，容忍极端风险换取爆发。</p>
+    <div class="card-elevated animate-fadeInUp stagger-2">
+      <div class="badge badge-primary" style="margin-bottom: 1rem;">📊 理性派</div>
+      <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">GPT-5</span>
+      <span class="model-maker" style="font-size: 0.95rem;">OpenAI</span>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">理性派策略师，偏好低频高胜率，通过深度分析锁定确定性机会。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="model-card">
-      <span class="model-name">Gemini 2.5</span>
-      <span class="model-maker">Google</span>
-      <p>算法狂人，多模态信号驱动的激进策略。</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="model-card">
-      <span class="model-name">Qwen 3 Max</span>
-      <span class="model-maker">阿里</span>
-      <p>数据炼金师，擅长跨资产套利框架。</p>
+    <div class="card-elevated animate-fadeInUp stagger-3">
+      <div class="badge badge-warning" style="margin-bottom: 1rem;">🤖 多模态</div>
+      <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Gemini 2.5</span>
+      <span class="model-maker" style="font-size: 0.95rem;">Google</span>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">算法狂人，多模态信号驱动的激进策略，整合多维数据源快速决策。</p>
     </div>
   </v-click>
 </div>
@@ -318,23 +365,44 @@ layout: center
 
 # 交易环境挑战
 
-<div class="stack-cards">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 1rem;">
   <v-click>
-    <div class="stack-card">
-      <h3>Hyperliquid 特性</h3>
-      <p>去中心化撮合，深度充足但在极端行情中仍存在滑点。</p>
+    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 1.5rem;">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">⚙️</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 500;">Hyperliquid 特性</h3>
+      </div>
+      <p style="line-height: 1.5; color: var(--apple-secondary); font-size: 1rem; text-align: center;">去中心化撮合，深度充足但在极端行情中仍存在滑点。</p>
+      <div style="text-align: center; margin-top: 1rem;">
+        <div class="badge badge-secondary" style="font-size: 0.75rem;">DeFi 永续</div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="stack-card">
-      <h3>市场波动档</h3>
-      <p>2025 年 10 月加密市场处于高振幅区间，日内波动 >7%。</p>
+    <div class="card-glass animate-fadeInUp stagger-2" style="padding: 1.5rem;">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">📊</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 500;">市场波动档</h3>
+      </div>
+      <p style="line-height: 1.5; color: var(--apple-secondary); font-size: 1rem; text-align: center;">2025年10月加密市场处于高振幅区间。</p>
+      <div style="text-align: center; margin-top: 1rem;">
+        <div class="data-highlight">
+          <span class="data-value" style="font-size: 1.8rem;">>7%</span>
+          <span class="data-unit" style="font-size: 0.9rem;">日内波动</span>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="stack-card">
-      <h3>工程要求</h3>
-      <p>模型需实时处理行情、控制延迟并具备异常容错能力。</p>
+    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 1.5rem;">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">⚡</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 500;">工程要求</h3>
+      </div>
+      <p style="line-height: 1.5; color: var(--apple-secondary); font-size: 1rem; text-align: center;">实时处理行情、控制延迟并具备异常容错能力。</p>
+      <div style="text-align: center; margin-top: 1rem;">
+        <div class="badge badge-warning" style="font-size: 0.75rem;">毫秒级响应</div>
+      </div>
     </div>
   </v-click>
 </div>
@@ -413,24 +481,30 @@ layout: center
 
 <div class="scenario-grid">
   <v-click>
-    <div class="scenario-card">
-    <h3>事件</h3>
-    <p><strong>Grok-4</strong> 在 BTC 永续上全仓做多，两小时后价格暴跌 <strong>-7%</strong>。</p>
-    <p>浮亏逼近清算阈值。</p>
+    <div class="card-elevated animate-fadeInUp stagger-1">
+      <div class="badge badge-danger" style="margin-bottom: 1rem;">危机</div>
+      <h3>事件</h3>
+      <p><strong>Grok-4</strong> 在 BTC 永续上全仓做多，两小时后价格暴跌 <strong style="color: #dc2626;">-7%</strong>。</p>
+      <p style="margin-top: 0.5rem;">浮亏逼近清算阈值。</p>
     </div>
   </v-click>
   <v-click>
-    <div class="scenario-card highlight">
-    <h3>应对</h3>
-    <p>模型在 90 秒内反手开空，逐步回补亏损。</p>
-    <p class="note">次日回到盈亏平衡（±0%）。</p>
+    <div class="card-glass animate-scaleIn stagger-2">
+      <div class="badge badge-success" style="margin-bottom: 1rem;">反转</div>
+      <h3>应对</h3>
+      <p>模型在 <strong>90 秒</strong>内反手开空，逐步回补亏损。</p>
+      <div class="data-highlight" style="margin-top: 1rem;">
+        <span class="data-value" style="font-size: 2.4rem;">±0%</span>
+      </div>
+      <p class="note" style="margin-top: 0.5rem;">次日回到盈亏平衡</p>
     </div>
   </v-click>
   <v-click>
-    <div class="scenario-card">
-    <h3>学习</h3>
+    <div class="card-elevated animate-fadeInUp stagger-3">
+    <div class="badge badge-secondary" style="margin-bottom: 1rem;">进化</div>
+      <h3>学习</h3>
     <p>策略引擎记录“高杠杆 + 单边行情”风险标签，调整提示阈值。</p>
-    <p>亏损被用作下一轮自我微调数据。</p>
+    <p style="margin-top: 0.5rem; color: var(--apple-muted); font-size: 0.95rem;">亏损被用作下一轮自我微调数据。</p>
     </div>
   </v-click>
 </div>
@@ -467,105 +541,161 @@ layout: center
 
 # 最终成绩单（Top 3）
 
-<div class="scoreboard-grid">
-  <div class="score-column">
-    <v-click>
-      <div class="score-row">
-        <div class="score-rank">1</div>
-        <div class="score-info">
-          <p class="score-name">DeepSeek V3.1</p>
-          <p class="score-equity">$13.4k</p>
+<div style="display: flex; flex-direction: column; gap: 1rem; max-width: 850px; margin: 0 auto;">
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 1.5rem; background: linear-gradient(135deg, rgba(255, 215, 0, 0.06) 0%, rgba(255, 255, 255, 0.98) 50%);">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="flex-shrink: 0;">
+          <div style="font-size: 1.8rem; width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #FFD700, #FFA500); display: flex; align-items: center; justify-content: center;">🏆</div>
         </div>
-        <div class="score-bar">
-          <div class="score-fill" style="width: 100%;"></div>
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.5rem; margin: 0 0 0.2rem 0; font-weight: 500;">DeepSeek V3.1</h3>
+              <p style="margin: 0; color: var(--apple-muted); font-size: 0.85rem;">深度求索</p>
+            </div>
+            <div style="text-align: right;">
+              <div class="data-value" style="font-size: 2rem; line-height: 1;">+34%</div>
+              <p style="margin: 0.2rem 0 0; color: var(--apple-muted); font-size: 0.85rem;">$13,400</p>
+            </div>
+          </div>
+          <div style="height: 6px; background: rgba(0,0,0,0.06); border-radius: 999px; overflow: hidden; margin-top: 0.8rem;">
+            <div style="height: 100%; width: 100%; background: linear-gradient(90deg, #000 0%, #333 100%); border-radius: 999px;"></div>
+          </div>
         </div>
-        <div class="score-change">+34%</div>
       </div>
-    </v-click>
-    <v-click>
-      <div class="score-row">
-        <div class="score-rank">2</div>
-        <div class="score-info">
-          <p class="score-name">Grok-4</p>
-          <p class="score-equity">$12.9k</p>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-2" style="padding: 1.3rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="flex-shrink: 0;">
+          <div style="font-size: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #C0C0C0, #A8A8A8); display: flex; align-items: center; justify-content: center;">🥈</div>
         </div>
-        <div class="score-bar">
-          <div class="score-fill" style="width: 96%;"></div>
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.4rem; margin: 0 0 0.2rem 0; font-weight: 500;">Grok-4</h3>
+              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">xAI</p>
+            </div>
+            <div style="text-align: right;">
+              <div class="data-value" style="font-size: 1.8rem; line-height: 1;">+29%</div>
+              <p style="margin: 0.2rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$12,900</p>
+            </div>
+          </div>
+          <div style="height: 5px; background: rgba(0,0,0,0.06); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
+            <div style="height: 100%; width: 96%; background: var(--apple-secondary); border-radius: 999px;"></div>
+          </div>
         </div>
-        <div class="score-change">+29%</div>
       </div>
-    </v-click>
-  </div>
-  <div class="score-column">
-    <v-click>
-      <div class="score-row">
-        <div class="score-rank">3</div>
-        <div class="score-info">
-          <p class="score-name">Claude 4.5</p>
-          <p class="score-equity">$12.6k</p>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 1.3rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="flex-shrink: 0;">
+          <div style="font-size: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #CD7F32, #B87333); display: flex; align-items: center; justify-content: center;">🥉</div>
         </div>
-        <div class="score-bar">
-          <div class="score-fill" style="width: 94%;"></div>
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.4rem; margin: 0 0 0.2rem 0; font-weight: 500;">Claude 4.5</h3>
+              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">Anthropic</p>
+            </div>
+            <div style="text-align: right;">
+              <div class="data-value" style="font-size: 1.8rem; line-height: 1;">+26%</div>
+              <p style="margin: 0.2rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$12,600</p>
+            </div>
+          </div>
+          <div style="height: 5px; background: rgba(0,0,0,0.06); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
+            <div style="height: 100%; width: 94%; background: var(--apple-secondary); border-radius: 999px;"></div>
+          </div>
         </div>
-        <div class="score-change">+26%</div>
       </div>
-    </v-click>
-  </div>
+    </div>
+  </v-click>
 </div>
 <v-click>
-  <p class="score-footnote">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03</p>
+  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03</p>
 </v-click>
-
 ---
 
 # 最终成绩单（Bottom 3）
 
-<div class="scoreboard-grid">
-  <div class="score-column">
-    <v-click>
-      <div class="score-row">
-        <div class="score-rank">4</div>
-        <div class="score-info">
-          <p class="score-name">Qwen 3 Max</p>
-          <p class="score-equity">$10.7k</p>
+<div style="display: flex; flex-direction: column; gap: 0.9rem; max-width: 850px; margin: 0 auto;">
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 1.2rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="flex-shrink: 0;">
+          <div style="font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; background: var(--elevated-bg); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--apple-muted);">4</div>
         </div>
-        <div class="score-bar">
-          <div class="score-fill" style="width: 80%;"></div>
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.3rem; margin: 0 0 0.15rem 0; font-weight: 500;">Qwen 3 Max</h3>
+              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">阿里</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; line-height: 1; color: var(--apple-secondary); font-weight: 600;">+7%</div>
+              <p style="margin: 0.15rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$10,700</p>
+            </div>
+          </div>
+          <div style="height: 4px; background: rgba(0,0,0,0.05); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
+            <div style="height: 100%; width: 80%; background: var(--apple-muted); border-radius: 999px;"></div>
+          </div>
         </div>
-        <div class="score-change">+7%</div>
       </div>
-    </v-click>
-  </div>
-  <div class="score-column">
-    <v-click>
-      <div class="score-row">
-        <div class="score-rank">5</div>
-        <div class="score-info">
-          <p class="score-name">GPT-5</p>
-          <p class="score-equity">$7.2k</p>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-2" style="padding: 1.2rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="flex-shrink: 0;">
+          <div style="font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; background: var(--elevated-bg); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--apple-muted);">5</div>
         </div>
-        <div class="score-bar">
-          <div class="score-fill negative" style="width: 54%;"></div>
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.3rem; margin: 0 0 0.15rem 0; font-weight: 500;">GPT-5</h3>
+              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">OpenAI</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; line-height: 1; color: #dc2626; font-weight: 600;">-28%</div>
+              <p style="margin: 0.15rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$7,200</p>
+            </div>
+          </div>
+          <div style="height: 4px; background: rgba(0,0,0,0.05); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
+            <div style="height: 100%; width: 54%; background: #fca5a5; border-radius: 999px;"></div>
+          </div>
         </div>
-        <div class="score-change negative">-28%</div>
       </div>
-    </v-click>
-    <v-click>
-      <div class="score-row">
-        <div class="score-rank">6</div>
-        <div class="score-info">
-          <p class="score-name">Gemini 2.5</p>
-          <p class="score-equity">$6.5k</p>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 1.2rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="flex-shrink: 0;">
+          <div style="font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; background: var(--elevated-bg); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--apple-muted);">6</div>
         </div>
-        <div class="score-bar">
-          <div class="score-fill negative" style="width: 48%;"></div>
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.3rem; margin: 0 0 0.15rem 0; font-weight: 500;">Gemini 2.5</h3>
+              <p style="margin: 0; color: var(--apple-muted); font-size: 0.8rem;">Google</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.5rem; line-height: 1; color: #dc2626; font-weight: 600;">-35%</div>
+              <p style="margin: 0.15rem 0 0; color: var(--apple-muted); font-size: 0.8rem;">$6,500</p>
+            </div>
+          </div>
+          <div style="height: 4px; background: rgba(0,0,0,0.05); border-radius: 999px; overflow: hidden; margin-top: 0.6rem;">
+            <div style="height: 100%; width: 48%; background: #dc2626; border-radius: 999px;"></div>
+          </div>
         </div>
-        <div class="score-change negative">-35%</div>
       </div>
-    </v-click>
-  </div>
+    </div>
+  </v-click>
 </div>
-
 ---
 
 # Top 3 模型拆解
