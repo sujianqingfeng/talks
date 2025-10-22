@@ -315,23 +315,60 @@ layout: center
 
 # 规则速览（1）
 
-<div class="feature-list">
+<div style="max-width: 950px; margin: 2rem 0; display: flex; flex-direction: column; gap: 2.5rem;">
   <v-click>
-    <div class="feature-item">
-      <div class="feature-term">资产池</div>
-      <div class="feature-desc">BTC/ETH/SOL/BNB/DOGE/XRP 永续合约</div>
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex-shrink: 0; width: 80px; text-align: center;">
+        <div style="font-size: 3rem; line-height: 1;">💰</div>
+      </div>
+      <div style="flex: 1; border-left: 3px solid #000; padding-left: 2rem;">
+        <h3 style="font-size: 1.4rem; margin: 0 0 0.8rem 0; font-weight: 500;">资产池</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.5rem;">
+          <div style="padding: 0.4rem 0.8rem; background: rgba(0,0,0,0.06); border-radius: 6px; font-size: 0.95rem; font-weight: 500;">BTC</div>
+          <div style="padding: 0.4rem 0.8rem; background: rgba(0,0,0,0.06); border-radius: 6px; font-size: 0.95rem; font-weight: 500;">ETH</div>
+          <div style="padding: 0.4rem 0.8rem; background: rgba(0,0,0,0.06); border-radius: 6px; font-size: 0.95rem; font-weight: 500;">SOL</div>
+          <div style="padding: 0.4rem 0.8rem; background: rgba(0,0,0,0.06); border-radius: 6px; font-size: 0.95rem; font-weight: 500;">BNB</div>
+          <div style="padding: 0.4rem 0.8rem; background: rgba(0,0,0,0.06); border-radius: 6px; font-size: 0.95rem; font-weight: 500;">DOGE</div>
+          <div style="padding: 0.4rem 0.8rem; background: rgba(0,0,0,0.06); border-radius: 6px; font-size: 0.95rem; font-weight: 500;">XRP</div>
+        </div>
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-muted);">永续合约</p>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="feature-item">
-      <div class="feature-term">杠杆自由</div>
-      <div class="feature-desc">可自定义倍数，清算风险自担</div>
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex-shrink: 0; width: 80px; text-align: center;">
+        <div style="font-size: 3rem; line-height: 1;">⚡</div>
+      </div>
+      <div style="flex: 1; border-left: 3px solid #666; padding-left: 2rem;">
+        <h3 style="font-size: 1.4rem; margin: 0 0 0.5rem 0; font-weight: 500;">杠杆自由</h3>
+        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.5rem;">
+          <div>
+            <span style="font-size: 2.5rem; font-weight: 200; line-height: 1;">1-20</span>
+            <span style="font-size: 1.2rem; color: var(--apple-muted); margin-left: 0.3rem;">×</span>
+          </div>
+          <div>
+            <p style="margin: 0; font-size: 1rem; color: var(--apple-secondary);">可自定义倍数</p>
+            <p style="margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--apple-muted);">清算风险自担</p>
+          </div>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="feature-item">
-      <div class="feature-term">实时透明</div>
-      <div class="feature-desc">仓位、盈亏、交易日志全公开</div>
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex-shrink: 0; width: 80px; text-align: center;">
+        <div style="font-size: 3rem; line-height: 1;">🔍</div>
+      </div>
+      <div style="flex: 1; border-left: 3px solid #999; padding-left: 2rem;">
+        <h3 style="font-size: 1.4rem; margin: 0 0 0.5rem 0; font-weight: 500;">实时透明</h3>
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+          <div style="width: 10px; height: 10px; background: #00d084; border-radius: 50%;"></div>
+          <span style="font-size: 1rem; color: #00d084; font-weight: 500;">LIVE</span>
+          <span style="color: var(--apple-muted);">·</span>
+          <span style="font-size: 0.95rem; color: var(--apple-secondary);">仓位 · 盈亏 · 交易日志全公开</span>
+        </div>
+      </div>
     </div>
   </v-click>
 </div>
@@ -340,23 +377,66 @@ layout: center
 
 # 规则速览（2）
 
-<div class="feature-list">
+<div style="max-width: 950px; margin: 2rem 0; display: flex; flex-direction: column; gap: 2.5rem;">
   <v-click>
-    <div class="feature-item">
-      <div class="feature-term">决策节奏</div>
-      <div class="feature-desc">每 2 分钟刷新行情并完成一次决策</div>
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex-shrink: 0; width: 80px; text-align: center;">
+        <div style="font-size: 3rem; line-height: 1;">⏱️</div>
+      </div>
+      <div style="flex: 1; border-left: 3px solid #000; padding-left: 2rem;">
+        <h3 style="font-size: 1.4rem; margin: 0 0 0.5rem 0; font-weight: 500;">决策节奏</h3>
+        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.5rem;">
+          <div>
+            <span style="font-size: 2.5rem; font-weight: 200; line-height: 1;">2</span>
+            <span style="font-size: 1rem; color: var(--apple-muted); margin-left: 0.3rem;">分钟</span>
+          </div>
+          <div style="font-size: 1.5rem; color: var(--apple-muted);">→</div>
+          <p style="margin: 0; font-size: 1rem; color: var(--apple-secondary);">刷新行情并完成决策</p>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="feature-item">
-      <div class="feature-term">赛季终点</div>
-      <div class="feature-desc">2025-11-03，或账户归零即出局</div>
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex-shrink: 0; width: 80px; text-align: center;">
+        <div style="font-size: 3rem; line-height: 1;">🏁</div>
+      </div>
+      <div style="flex: 1; border-left: 3px solid #666; padding-left: 2rem;">
+        <h3 style="font-size: 1.4rem; margin: 0 0 0.5rem 0; font-weight: 500;">赛季终点</h3>
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+          <div style="padding: 0.4rem 0.9rem; background: #000; color: #fff; border-radius: 6px; font-size: 1.1rem; font-weight: 500;">2025-11-03</div>
+          <span style="color: var(--apple-muted);">或</span>
+          <div style="padding: 0.4rem 0.9rem; background: rgba(220,38,38,0.08); color: #dc2626; border-radius: 6px; font-size: 1rem; font-weight: 500;">账户归零出局</div>
+        </div>
+      </div>
     </div>
   </v-click>
   <v-click>
-    <div class="feature-item">
-      <div class="feature-term">评估指标</div>
-      <div class="feature-desc">ROI、最大回撤、胜率、夏普比率</div>
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex-shrink: 0; width: 80px; text-align: center;">
+        <div style="font-size: 3rem; line-height: 1;">📊</div>
+      </div>
+      <div style="flex: 1; border-left: 3px solid #999; padding-left: 2rem;">
+        <h3 style="font-size: 1.4rem; margin: 0 0 0.8rem 0; font-weight: 500;">评估指标</h3>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+          <div style="text-align: center; padding: 0.8rem; background: rgba(0,0,0,0.02); border-radius: 6px;">
+            <div style="font-size: 0.75rem; color: var(--apple-muted); margin-bottom: 0.3rem;">ROI</div>
+            <div style="font-size: 1.1rem; font-weight: 500;">收益率</div>
+          </div>
+          <div style="text-align: center; padding: 0.8rem; background: rgba(0,0,0,0.02); border-radius: 6px;">
+            <div style="font-size: 0.75rem; color: var(--apple-muted); margin-bottom: 0.3rem;">回撤</div>
+            <div style="font-size: 1.1rem; font-weight: 500;">Max DD</div>
+          </div>
+          <div style="text-align: center; padding: 0.8rem; background: rgba(0,0,0,0.02); border-radius: 6px;">
+            <div style="font-size: 0.75rem; color: var(--apple-muted); margin-bottom: 0.3rem;">胜率</div>
+            <div style="font-size: 1.1rem; font-weight: 500;">Win Rate</div>
+          </div>
+          <div style="text-align: center; padding: 0.8rem; background: rgba(0,0,0,0.02); border-radius: 6px;">
+            <div style="font-size: 0.75rem; color: var(--apple-muted); margin-bottom: 0.3rem;">夏普</div>
+            <div style="font-size: 1.1rem; font-weight: 500;">Sharpe</div>
+          </div>
+        </div>
+      </div>
     </div>
   </v-click>
 </div>
