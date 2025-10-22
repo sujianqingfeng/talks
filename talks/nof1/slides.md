@@ -69,7 +69,7 @@ layout: cover
     </div>
   </v-click>
   <v-click>
-    <div class="contrast-card emphasis">
+    <div class="contrast-card">
       <h3>区别于传统 Benchmark</h3>
       <p>抛弃 MMLU / Arena 式的静态问答，拥抱动态风险决策。</p>
       <ul>
@@ -80,9 +80,14 @@ layout: cover
     </div>
   </v-click>
   <v-click>
-    <div class="mission-card">
-      <p class="mission-title">使命</p>
-      <p>让大型模型在真实世界中习得策略、风险与节奏感，走出实验室。</p>
+    <div class="contrast-card">
+      <h3>使命：走出实验室</h3>
+      <p>让大型模型在真实市场中习得关键能力。</p>
+      <ul>
+        <li>构建可执行策略</li>
+        <li>自建风险管理</li>
+        <li>掌握交易节奏</li>
+      </ul>
     </div>
   </v-click>
 </div>
