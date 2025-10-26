@@ -741,34 +741,34 @@ layout: center
 
 ---
 
-# 决策瞬间：爆仓与反手
+# 决策瞬间：重仓与守仓
 
 <div class="scenario-grid">
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-1">
       <div class="badge badge-danger" style="margin-bottom: 1rem;">危机</div>
-      <h3>事件</h3>
-      <p><strong>Grok-4</strong> 在 BTC 永续上全仓做多，两小时后价格暴跌 <strong style="color: #dc2626;">-7%</strong>。</p>
-      <p style="margin-top: 0.5rem;">浮亏逼近清算阈值。</p>
+      <h3>Day 6 · 05:27 UTC</h3>
+      <p><strong>Qwen 3 Max</strong> 前一晚连续两次 BTC 止损 <strong>- $799</strong>，权益跌至 <strong>$9.49k</strong>（-5%）。</p>
+      <p style="margin-top: 0.5rem;">仍在 107,993 建立 <strong>1.96 BTC</strong> 重仓多头，保证金几乎吃满账户（&gt;99%）。</p>
     </div>
   </v-click>
   <v-click>
     <div class="card-glass animate-scaleIn stagger-2">
-      <div class="badge badge-success" style="margin-bottom: 1rem;">反转</div>
-      <h3>应对</h3>
-      <p>模型在 <strong>90 秒</strong>内反手开空，逐步回补亏损。</p>
+      <div class="badge badge-success" style="margin-bottom: 1rem;">守仓</div>
+      <h3>Day 10 · 09:24 UTC</h3>
+      <p>持仓 <strong>89 小时</strong> 未做减仓，跟随 BTC 拉升至 <strong>112,250</strong>。</p>
       <div class="data-highlight" style="margin-top: 1rem;">
-        <span class="data-value" style="font-size: 2.4rem;">±0%</span>
+        <span class="data-value" style="font-size: 2.4rem;">+$8,176</span>
       </div>
-      <p class="note" style="margin-top: 0.5rem;">次日回到盈亏平衡</p>
+      <p class="note" style="margin-top: 0.5rem;">权益跃升至 <strong>$18.54k</strong>（+85.4%）。</p>
     </div>
   </v-click>
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-3">
     <div class="badge badge-secondary" style="margin-bottom: 1rem;">进化</div>
       <h3>学习</h3>
-    <p>策略引擎记录“高杠杆 + 单边行情”风险标签，调整提示阈值。</p>
-    <p style="margin-top: 0.5rem; color: var(--apple-muted); font-size: 0.95rem;">亏损被用作下一轮自我微调数据。</p>
+    <p>策略标签更新为“趋势持仓”，风险模块将多日持仓阈值从 <strong>24h</strong> 放宽至 <strong>96h</strong>，并对回撤 <strong>-3%</strong> 自动降杠杆。</p>
+    <p style="margin-top: 0.5rem; color: var(--apple-muted); font-size: 0.95rem;">胜利样本被写入自监督语料，用于强化“分段加仓 + 严格止损”策略。</p>
     </div>
   </v-click>
 </div>
@@ -812,8 +812,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">深度求索</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+43.84<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$14,384.00</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+50.29<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$15,028.54</p>
       </div>
     </div>
   </v-click>
@@ -823,8 +823,8 @@ layout: center
       <div style="margin-top: 2.5rem;">
         <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">阿里</p>
-        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+78.45<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$17,845.00</p>
+        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+85.43<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$18,543.36</p>
       </div>
     </div>
   </v-click>
@@ -834,14 +834,14 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Claude 4.5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Anthropic</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-3.87<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$9,613.36</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+0.34<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$10,034.05</p>
       </div>
     </div>
   </v-click>
 </div>
 <v-click>
-  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03 · 数据更新至 2025-10-26 08:58 UTC</p>
+  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03 · 数据更新至 2025-10-26 10:00 UTC</p>
 </v-click>
 ---
 
@@ -854,8 +854,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Grok 4</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">xAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-6.57<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$9,342.52</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-3.71<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$9,629.52</p>
       </div>
     </div>
   </v-click>
@@ -865,8 +865,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Gemini 2.5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Google</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-65.55<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,445.00</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-64.85<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,515.06</p>
       </div>
     </div>
   </v-click>
@@ -876,8 +876,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">GPT-5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">OpenAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-69.09<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,091.00</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-68.15<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,185.19</p>
       </div>
     </div>
   </v-click>
@@ -890,18 +890,18 @@ layout: center
   <v-click>
     <div style="border-left: 4px solid #000; padding-left: 1.5rem;">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">DeepSeek V3.1</h3>
-        <div style="padding: 0.25rem 0.7rem; background: #000; color: #fff; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">高频交易</div>
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Qwen 3 Max</h3>
+        <div style="padding: 0.25rem 0.7rem; background: #000; color: #fff; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">趋势捕手</div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">高频执行 + 动态风控，单笔盈利 0.3%～0.8% 滚动累积。</p>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">23 笔交易，34.8% 胜率但平均持仓 <strong>28.3 小时</strong>，依靠长周期趋势吃掉大部分利润。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
-          <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">28.6%</strong>
+          <span style="color: var(--apple-muted);">最大单笔</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">+$8,176</strong>
         </div>
         <div>
-          <span style="color: var(--apple-muted);">回撤</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">&lt;5%</strong>
+          <span style="color: var(--apple-muted);">代表操作</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">1.96 BTC 长线</strong>
         </div>
       </div>
     </div>
@@ -909,18 +909,18 @@ layout: center
   <v-click>
     <div style="border-left: 4px solid #666; padding-left: 1.5rem;">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Claude 4.5</h3>
-        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">稳健防守</div>
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">DeepSeek V3.1</h3>
+        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">高频交易</div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">谨慎型分析师，宏观 + on-chain 结合，双重风控护栏。</p>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">14 笔操作覆盖 BTC/XRP/BNB，动态风控让回撤控制在 <strong>&lt;6%</strong>。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.6%</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">28.6%</strong>
         </div>
         <div>
-          <span style="color: var(--apple-muted);">交易数</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">19</strong>
+          <span style="color: var(--apple-muted);">最大单笔</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">XRP +$1.49k</strong>
         </div>
       </div>
     </div>
@@ -928,18 +928,18 @@ layout: center
   <v-click>
     <div style="border-left: 4px solid #999; padding-left: 1.5rem;">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Qwen 3 Max</h3>
-        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.06); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">套利专家</div>
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Claude 4.5</h3>
+        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.06); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">稳健防守</div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">跨资产套利框架，多币种同步监控寻找价差机会。</p>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">宏观 + on-chain 结合，Day 5 曾遭遇 <strong>- $3.7k</strong> 回撤，但 48 小时削减杠杆后重回正收益。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.8%</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.6%</strong>
         </div>
         <div>
-          <span style="color: var(--apple-muted);">平均持仓</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">345m</strong>
+          <span style="color: var(--apple-muted);">最大盈亏</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">+ $1.81k / - $1.58k</strong>
         </div>
       </div>
     </div>
@@ -954,10 +954,10 @@ layout: center
   <v-click>
     <div style="position: relative; padding-left: 2.5rem;">
       <div style="position: absolute; left: 0; top: 0.2rem; width: 20px; height: 20px; border-radius: 50%; background: rgba(245,158,11,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">⚠️</div>
-      <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">Qwen 3 Max</h3>
-      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>跨币种套利链路长，滑点侵蚀利润。</p>
+      <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">Grok 4</h3>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>20% 胜率的高频策略，开仓频率高于风控评估，Day 8 之后几乎停滞。</p>
       <div style="padding: 0.6rem 1rem; background: rgba(0,0,0,0.03); border-left: 3px solid #f59e0b; border-radius: 4px;">
-        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>引入做市深度过滤</p>
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>加入波动过滤与自适应冷却时间，避免密集反向单。</p>
       </div>
     </div>
   </v-click>
@@ -965,9 +965,9 @@ layout: center
     <div style="position: relative; padding-left: 2.5rem;">
       <div style="position: absolute; left: 0; top: 0.2rem; width: 20px; height: 20px; border-radius: 50%; background: rgba(220,38,38,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">❌</div>
       <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">GPT-5</h3>
-      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>策略集中于 BTC，黑天鹅时出现 <strong style="color: #dc2626;">-28%</strong> 回撤。</p>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>55 笔交易仅 11% 胜率，BTC/ETH 集中曝险在 Day 5 单笔亏损 <strong style="color: #dc2626;">- $1.58k</strong> 后迅速放大。</p>
       <div style="padding: 0.6rem 1rem; background: rgba(220,38,38,0.04); border-left: 3px solid #dc2626; border-radius: 4px;">
-        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>多资产分散与仓位分层</p>
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>多资产分散与仓位分层；动态调整方向一致时的杠杆上限。</p>
       </div>
     </div>
   </v-click>
@@ -975,9 +975,9 @@ layout: center
     <div style="position: relative; padding-left: 2.5rem;">
       <div style="position: absolute; left: 0; top: 0.2rem; width: 20px; height: 20px; border-radius: 50%; background: rgba(220,38,38,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">💥</div>
       <h3 style="font-size: 1.5rem; margin: 0 0 0.4rem 0; font-weight: 500;">Gemini 2.5</h3>
-      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>杠杆 8× + 执行延迟，触发连锁亏损。</p>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--apple-secondary); margin: 0 0 0.7rem 0;"><strong style="color: var(--apple-foreground);">问题：</strong>100 笔交易仅 24% 胜率，频繁切换方向导致 <strong>-64.9%</strong> 回撤。</p>
       <div style="padding: 0.6rem 1rem; background: rgba(220,38,38,0.04); border-left: 3px solid #dc2626; border-radius: 4px;">
-        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>风控模块需引入实时延迟监控</p>
+        <p style="margin: 0; font-size: 0.9rem; color: var(--apple-secondary);"><strong style="color: var(--apple-foreground);">建议：</strong>风控模块需引入实时延迟监控并限制单日交易次数。</p>
       </div>
     </div>
   </v-click>
