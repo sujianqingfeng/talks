@@ -1024,7 +1024,7 @@ layout: center
 </v-click>
 </div>
 
-<style scoped>
+<style>
 @keyframes numberSlideIn {
   from {
     opacity: 0;
@@ -1037,8 +1037,8 @@ layout: center
 }
 
 .number-animate {
-  animation: numberSlideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  animation-fill-mode: both;
+  animation: numberSlideIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0;
 }
 </style>
 
