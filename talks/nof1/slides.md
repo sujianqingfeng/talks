@@ -977,7 +977,7 @@ layout: center
 <v-click>
 <div style="margin-bottom: 1.5rem; position: relative;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">20<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">20<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Grok 4</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
@@ -993,7 +993,7 @@ layout: center
 <v-click>
 <div style="margin-bottom: 1.5rem; position: relative; padding-left: 8%;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">11<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.1s;">11<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">GPT-5</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
@@ -1009,7 +1009,7 @@ layout: center
 <v-click>
 <div style="margin-bottom: 0.5rem; position: relative;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">24<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.2s;">24<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Gemini 2.5</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
@@ -1023,6 +1023,24 @@ layout: center
 </div>
 </v-click>
 </div>
+
+<style scoped>
+@keyframes numberSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.number-animate {
+  animation: numberSlideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-fill-mode: both;
+}
+</style>
 
 ---
 
