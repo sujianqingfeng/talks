@@ -490,6 +490,82 @@ layout: center
 
 ---
 
+# 模型提示词里有哪些数据？
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-top: 0.6rem;">
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <div style="font-size: 1.6rem;">🧭</div>
+        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">全局上下文</h3>
+      </div>
+      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">时间</dt>
+        <dd style="margin: 0;"><strong>2025-10-26 09:13 UTC</strong></dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">运行</dt>
+        <dd style="margin: 0;">交易 <strong>5522 分钟</strong> · 调用 <strong>3437</strong> 次</dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">说明</dt>
+        <dd style="margin: 0;">序列按「最早→最新」，默认 <strong>3 分钟</strong> 粒度</dd>
+      </dl>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-glass animate-fadeInUp stagger-2" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <div style="font-size: 1.6rem;">📊</div>
+        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">单币因子</h3>
+      </div>
+      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">资产</dt>
+        <dd style="margin: 0;">BTC · ETH · SOL · BNB · XRP · DOGE</dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">指标</dt>
+        <dd style="margin: 0;"><strong>价格</strong>、EMA(20)、MACD、RSI(7)</dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">衍生</dt>
+        <dd style="margin: 0;"><strong>OI 最新/均值</strong> + <strong>资金费率</strong></dd>
+      </dl>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <div style="font-size: 1.6rem;">🪜</div>
+        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">多尺度序列</h3>
+      </div>
+      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">3′ 序列</dt>
+        <dd style="margin: 0;">最近 <strong>10 个 mid/EMA/MACD/RSI</strong> 数据点</dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">4h 视角</dt>
+        <dd style="margin: 0;">EMA(20/50)、ATR(3/14)、成交量对比</dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">趋势</dt>
+        <dd style="margin: 0;"><strong>MACD</strong> / <strong>RSI(14)</strong> 观测趋势与超买</dd>
+      </dl>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="card-glass animate-fadeInUp stagger-4" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <div style="font-size: 1.6rem;">🧾</div>
+        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">账户与决策</h3>
+      </div>
+      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">绩效</dt>
+        <dd style="margin: 0;">收益 <strong>+77.08%</strong> · 权益 <strong>$17,707.87</strong> · 现金 <strong>$97.8</strong> · Sharpe <strong>0.323</strong></dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">仓位</dt>
+        <dd style="margin: 0;">BTC 20x 多头，入场 <strong>$107,993</strong>，止盈 <strong>112,253.96</strong>，止损 <strong>105,877.7</strong></dd>
+        <dt style="color: var(--apple-muted); font-size: 0.75rem;">结构</dt>
+        <dd style="margin: 0;"><strong>CHAIN_OF_THOUGHT</strong> + <strong>TRADING_DECISIONS</strong> 描述操作</dd>
+      </dl>
+    </div>
+  </v-click>
+</div>
+<v-click>
+  <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: var(--apple-muted);">
+    数据来源：nof1.ai 模型控制台 · Qwen3 Max · 2025-10-26 09:13 UTC
+  </p>
+</v-click>
+
+---
+
 # Day 1：点火时刻
 
 <div class="timeline">
