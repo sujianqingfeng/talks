@@ -627,10 +627,10 @@ layout: center
     <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(192,192,192,0.08) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
       <div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); font-size: 3rem;">🥈</div>
       <div style="margin-top: 2rem;">
-        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
-        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">阿里</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+6.25<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$10,625.12</p>
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">深度求索</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+43.84<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$14,384.00</p>
       </div>
     </div>
   </v-click>
@@ -638,10 +638,10 @@ layout: center
     <div style="text-align: center; padding: 2.5rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(255,215,0,0.12) 0%, transparent 100%); border: 2px solid rgba(255,215,0,0.3); position: relative; padding-bottom: 3rem;">
       <div style="position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%); font-size: 4rem;">🏆</div>
       <div style="margin-top: 2.5rem;">
-        <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
-        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">深度求索</p>
-        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+9.01<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$10,900.67</p>
+        <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">阿里</p>
+        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+78.45<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$17,845.00</p>
       </div>
     </div>
   </v-click>
@@ -649,16 +649,16 @@ layout: center
     <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(205,127,50,0.08) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
       <div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); font-size: 3rem;">🥉</div>
       <div style="margin-top: 2rem;">
-        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Grok-4</h3>
-        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">xAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-10.86<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$8,913.74</p>
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Claude 4.5</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Anthropic</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-3.87<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$9,613.36</p>
       </div>
     </div>
   </v-click>
 </div>
 <v-click>
-  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03 · 数据更新至 2025-10-26 07:40 UTC</p>
+  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03 · 数据更新至 2025-10-26 08:58 UTC</p>
 </v-click>
 ---
 
@@ -669,10 +669,10 @@ layout: center
     <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(0,0,0,0.03) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
       <div style="position: absolute; top: -0.8rem; left: 50%; transform: translateX(-50%); font-size: 2.5rem; opacity: 0.5;">4️⃣</div>
       <div style="margin-top: 2rem;">
-        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Claude 4.5</h3>
-        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Anthropic</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-14.47<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$8,552.70</p>
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Grok 4</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">xAI</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-6.57<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$9,342.52</p>
       </div>
     </div>
   </v-click>
@@ -682,8 +682,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Gemini 2.5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Google</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-66.20<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,379.62</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-65.55<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,445.00</p>
       </div>
     </div>
   </v-click>
@@ -693,8 +693,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">GPT-5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">OpenAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-69.36<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,063.56</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-69.09<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,091.00</p>
       </div>
     </div>
   </v-click>
@@ -714,7 +714,7 @@ layout: center
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">28.57%</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">28.6%</strong>
         </div>
         <div>
           <span style="color: var(--apple-muted);">回撤</span>
@@ -726,14 +726,18 @@ layout: center
   <v-click>
     <div style="border-left: 4px solid #666; padding-left: 1.5rem;">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Grok-4</h3>
-        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">激进进攻</div>
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Claude 4.5</h3>
+        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">稳健防守</div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">"先攻后守" 策略，放大趋势单同时设硬性止损。</p>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">谨慎型分析师，宏观 + on-chain 结合，双重风控护栏。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
-          <span style="color: var(--apple-muted);">收益驱动</span>
-          <strong style="margin-left: 0.5rem;">少数大单贡献</strong>
+          <span style="color: var(--apple-muted);">胜率</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.6%</strong>
+        </div>
+        <div>
+          <span style="color: var(--apple-muted);">交易数</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">19</strong>
         </div>
       </div>
     </div>
@@ -748,7 +752,7 @@ layout: center
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.82%</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.8%</strong>
         </div>
         <div>
           <span style="color: var(--apple-muted);">平均持仓</span>
@@ -804,11 +808,11 @@ layout: center
   <v-click>
     <div style="text-align: center;">
       <div class="data-highlight">
-        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">62<span style="font-size: 0.6em;">%</span></span>
+        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">24.44<span style="font-size: 0.6em;">%</span></span>
         <span class="data-unit" style="font-size: 1.2rem; font-weight: 300; letter-spacing: 0.05em;">平均胜率</span>
       </div>
       <div style="margin-top: 2.5rem;">
-        <div class="data-value" style="font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 0.3rem;">90<span style="font-size: 0.7em;">秒</span></div>
+        <div class="data-value" style="font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 0.3rem;">134<span style="font-size: 0.7em;">秒</span></div>
         <span style="font-size: 0.95rem; color: var(--apple-muted);">决策响应</span>
       </div>
     </div>
