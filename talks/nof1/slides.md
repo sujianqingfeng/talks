@@ -634,6 +634,113 @@ layout: center
 
 ---
 
+# Day 4–5：攻守转换
+
+<div class="timeline timeline-compact">
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 4</div>
+    <div class="timeline-content">
+      <strong>Claude 迅速回弹</strong>
+      <p>日内修复 <strong>$1.7k</strong> 回撤，收于 <strong>$12.46k</strong>（+24%）；DeepSeek 继续拉升至 <strong>$13.39k</strong>（+34%）。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 5</div>
+    <div class="timeline-content">
+      <strong>高杠杆翻车</strong>
+      <p>Claude 追多 BTC 当日亏损 <strong>$3.7k</strong> 跌至 <strong>$8.72k</strong>（-13%）；GPT-5 最低探至 <strong>$3.66k</strong>（-63%）。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time tag">榜首</div>
+    <div class="timeline-content">
+      <strong>DeepSeek 稳住领先</strong>
+      <p>以 <strong>$11.95k</strong>（+19%）守住第一，Gemini 仍在 <strong>-55%</strong> 区间挣扎。</p>
+    </div>
+    </div>
+  </v-click>
+</div>
+
+---
+
+# Day 6–7：新龙头诞生
+
+<div class="timeline timeline-compact">
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 6</div>
+    <div class="timeline-content">
+      <strong>全场降速</strong>
+      <p>买入持有基准以 <strong>$10.08k</strong> 首次登顶；Qwen 在 <strong>$107,993</strong> 建立 1.96 BTC 长仓，等待反弹。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 7</div>
+    <div class="timeline-content">
+      <strong>Qwen 爆发</strong>
+      <p>BTC 夜间强势拉升，浮盈 <strong>$4.68k</strong>，权益跳至 <strong>$14.17k</strong>（+42%）重新领跑。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time tag">追赶</div>
+    <div class="timeline-content">
+      <strong>DeepSeek</strong>
+      <p>维持 <strong>$12.26k</strong>（+23%）的稳健节奏，两强格局开始形成。</p>
+    </div>
+    </div>
+  </v-click>
+</div>
+
+---
+
+# Day 8–10：冲刺阶段
+
+<div class="timeline timeline-compact">
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 8</div>
+    <div class="timeline-content">
+      <strong>多头继续累积</strong>
+      <p>Qwen 靠 BTC 长仓将权益推至 <strong>$16.28k</strong>（+63%），DeepSeek 稳守 <strong>$13.02k</strong>（+30%）。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 9</div>
+    <div class="timeline-content">
+      <strong>双雄争霸</strong>
+      <p>Qwen 升至 <strong>$17.45k</strong>，DeepSeek 达 <strong>$14.21k</strong>（+42%），其他模型低波动静待机会。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 10</div>
+    <div class="timeline-content">
+      <strong>Qwen 锁定阶段胜利</strong>
+      <p>09:24 UTC 平掉 1.96 BTC 多头，净赚 <strong>$8.18k</strong>，权益收于 <strong>$18.62k</strong>（+86%）；DeepSeek 逼近 <strong>+55%</strong>，Claude 重回正收益。</p>
+    </div>
+    </div>
+  </v-click>
+</div>
+<v-click>
+  <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: var(--apple-muted);">
+    数据来源：nof1.ai Leaderboard / Trades API（更新至 2025-10-26 10:00 UTC）
+  </p>
+</v-click>
+
+---
+
 # 决策瞬间：爆仓与反手
 
 <div class="scenario-grid">
