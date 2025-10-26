@@ -971,36 +971,36 @@ layout: center
 
 ---
 
-<div style="position: relative; max-width: 1100px; margin: 0 auto; padding-top: 2rem;">
-<div style="position: absolute; left: -5%; top: 35%; width: 250px; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent); transform: rotate(-15deg);"></div>
-<div style="position: absolute; right: -3%; bottom: 10%; width: 2px; height: 100px; background: linear-gradient(180deg, rgba(0,0,0,0.08), transparent);"></div>
+<div style="position: relative; max-width: 1100px; margin: 0 auto; padding-top: 1rem;">
+<div style="position: absolute; left: -5%; top: 30%; width: 250px; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent); transform: rotate(-15deg);"></div>
+<div style="position: absolute; right: -3%; bottom: 5%; width: 2px; height: 80px; background: linear-gradient(180deg, rgba(0,0,0,0.08), transparent);"></div>
 <v-click>
-<div style="margin-bottom: 2rem; position: relative;">
-<div style="display: flex; align-items: baseline; gap: 1.8rem;">
-<div style="font-size: clamp(3rem, 6vw, 4rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">20<span style="font-size: 0.5em; color: #999;">%</span></div>
-<div style="flex: 1; padding-top: 0.5rem;">
-<h3 style="font-size: 1.4rem; margin: 0 0 0.4rem 0; font-weight: 300; letter-spacing: -0.01em;">Grok 4</h3>
-<div style="width: 60px; height: 1px; background: #000; margin-bottom: 0.6rem;"></div>
-<p style="margin: 0 0 0.6rem 0; font-size: 0.85rem; line-height: 1.5; color: #666; max-width: 450px;">高频策略胜率过低，Day 8 后几乎停滞，开仓频率超出风控评估能力。</p>
-<div style="display: flex; align-items: center; gap: 0.6rem;">
-<div style="width: 4px; height: 4px; background: #000; border-radius: 50%;"></div>
-<p style="margin: 0; font-size: 0.8rem; color: #333;">波动过滤 + 自适应冷却时间</p>
+<div style="margin-bottom: 1.5rem; position: relative;">
+<div style="display: flex; align-items: baseline; gap: 1.5rem;">
+<div style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">20<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div style="flex: 1; padding-top: 0.3rem;">
+<h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Grok 4</h3>
+<div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">高频策略胜率过低，Day 8 后几乎停滞，开仓频率超出风控评估能力。</p>
+<div style="display: flex; align-items: center; gap: 0.5rem;">
+<div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
+<p style="margin: 0; font-size: 0.75rem; color: #333;">波动过滤 + 自适应冷却时间</p>
 </div>
 </div>
 </div>
 </div>
 </v-click>
 <v-click>
-<div style="margin-bottom: 2rem; position: relative; padding-left: 10%;">
-<div style="display: flex; align-items: baseline; gap: 1.8rem;">
-<div style="font-size: clamp(3rem, 6vw, 4rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">11<span style="font-size: 0.5em; color: #999;">%</span></div>
-<div style="flex: 1; padding-top: 0.5rem;">
-<h3 style="font-size: 1.4rem; margin: 0 0 0.4rem 0; font-weight: 300; letter-spacing: -0.01em;">GPT-5</h3>
-<div style="width: 60px; height: 1px; background: #000; margin-bottom: 0.6rem;"></div>
-<p style="margin: 0 0 0.6rem 0; font-size: 0.85rem; line-height: 1.5; color: #666; max-width: 450px;">55 笔交易胜率极低，BTC/ETH 集中曝险，单笔 -$1.58k 亏损后迅速放大。</p>
-<div style="display: flex; align-items: center; gap: 0.6rem;">
-<div style="width: 4px; height: 4px; background: #000; border-radius: 50%;"></div>
-<p style="margin: 0; font-size: 0.8rem; color: #333;">多资产分散 + 动态杠杆上限</p>
+<div style="margin-bottom: 1.5rem; position: relative; padding-left: 8%;">
+<div style="display: flex; align-items: baseline; gap: 1.5rem;">
+<div style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">11<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div style="flex: 1; padding-top: 0.3rem;">
+<h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">GPT-5</h3>
+<div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">55 笔交易胜率极低，BTC/ETH 集中曝险，单笔 -$1.58k 亏损后迅速放大。</p>
+<div style="display: flex; align-items: center; gap: 0.5rem;">
+<div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
+<p style="margin: 0; font-size: 0.75rem; color: #333;">多资产分散 + 动态杠杆上限</p>
 </div>
 </div>
 </div>
@@ -1008,15 +1008,15 @@ layout: center
 </v-click>
 <v-click>
 <div style="margin-bottom: 0.5rem; position: relative;">
-<div style="display: flex; align-items: baseline; gap: 1.8rem;">
-<div style="font-size: clamp(3rem, 6vw, 4rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">24<span style="font-size: 0.5em; color: #999;">%</span></div>
-<div style="flex: 1; padding-top: 0.5rem;">
-<h3 style="font-size: 1.4rem; margin: 0 0 0.4rem 0; font-weight: 300; letter-spacing: -0.01em;">Gemini 2.5</h3>
-<div style="width: 60px; height: 1px; background: #000; margin-bottom: 0.6rem;"></div>
-<p style="margin: 0 0 0.6rem 0; font-size: 0.85rem; line-height: 1.5; color: #666; max-width: 450px;">100 笔交易频繁切换方向，导致 -64.9% 严重回撤，缺乏策略一致性。</p>
-<div style="display: flex; align-items: center; gap: 0.6rem;">
-<div style="width: 4px; height: 4px; background: #000; border-radius: 50%;"></div>
-<p style="margin: 0; font-size: 0.8rem; color: #333;">延迟监控 + 单日交易次数限制</p>
+<div style="display: flex; align-items: baseline; gap: 1.5rem;">
+<div style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">24<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div style="flex: 1; padding-top: 0.3rem;">
+<h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Gemini 2.5</h3>
+<div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">100 笔交易频繁切换方向，导致 -64.9% 严重回撤，缺乏策略一致性。</p>
+<div style="display: flex; align-items: center; gap: 0.5rem;">
+<div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
+<p style="margin: 0; font-size: 0.75rem; color: #333;">延迟监控 + 单日交易次数限制</p>
 </div>
 </div>
 </div>
