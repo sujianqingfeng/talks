@@ -491,77 +491,131 @@ layout: center
 ---
 
 # 模型提示词里有哪些数据？
-
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-top: 0.6rem;">
-  <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
-      <div style="display: flex; align-items: center; gap: 0.6rem;">
-        <div style="font-size: 1.6rem;">🧭</div>
-        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">全局上下文</h3>
-      </div>
-      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">时间</dt>
-        <dd style="margin: 0;"><strong>2025-10-26 09:13 UTC</strong></dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">运行</dt>
-        <dd style="margin: 0;">交易 <strong>5522 分钟</strong> · 调用 <strong>3437</strong> 次</dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">说明</dt>
-        <dd style="margin: 0;">序列按「最早→最新」，默认 <strong>3 分钟</strong> 粒度</dd>
-      </dl>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-glass animate-fadeInUp stagger-2" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
-      <div style="display: flex; align-items: center; gap: 0.6rem;">
-        <div style="font-size: 1.6rem;">📊</div>
-        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">单币因子</h3>
-      </div>
-      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">资产</dt>
-        <dd style="margin: 0;">BTC · ETH · SOL · BNB · XRP · DOGE</dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">指标</dt>
-        <dd style="margin: 0;"><strong>价格</strong>、EMA(20)、MACD、RSI(7)</dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">衍生</dt>
-        <dd style="margin: 0;"><strong>OI 最新/均值</strong> + <strong>资金费率</strong></dd>
-      </dl>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
-      <div style="display: flex; align-items: center; gap: 0.6rem;">
-        <div style="font-size: 1.6rem;">🪜</div>
-        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">多尺度序列</h3>
-      </div>
-      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">3′ 序列</dt>
-        <dd style="margin: 0;">最近 <strong>10 个 mid/EMA/MACD/RSI</strong> 数据点</dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">4h 视角</dt>
-        <dd style="margin: 0;">EMA(20/50)、ATR(3/14)、成交量对比</dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">趋势</dt>
-        <dd style="margin: 0;"><strong>MACD</strong> / <strong>RSI(14)</strong> 观测趋势与超买</dd>
-      </dl>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-glass animate-fadeInUp stagger-4" style="padding: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem;">
-      <div style="display: flex; align-items: center; gap: 0.6rem;">
-        <div style="font-size: 1.6rem;">🧾</div>
-        <h3 style="font-size: 1.1rem; margin: 0; font-weight: 500;">账户与决策</h3>
-      </div>
-      <dl style="display: grid; grid-template-columns: auto 1fr; column-gap: 0.45rem; row-gap: 0.3rem; margin: 0; font-size: 0.85rem; color: var(--apple-secondary);">
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">绩效</dt>
-        <dd style="margin: 0;">收益 <strong>+77.08%</strong> · 权益 <strong>$17,707.87</strong> · 现金 <strong>$97.8</strong> · Sharpe <strong>0.323</strong></dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">仓位</dt>
-        <dd style="margin: 0;">BTC 20x 多头，入场 <strong>$107,993</strong>，止盈 <strong>112,253.96</strong>，止损 <strong>105,877.7</strong></dd>
-        <dt style="color: var(--apple-muted); font-size: 0.75rem;">结构</dt>
-        <dd style="margin: 0;"><strong>CHAIN_OF_THOUGHT</strong> + <strong>TRADING_DECISIONS</strong> 描述操作</dd>
-      </dl>
-    </div>
-  </v-click>
+<div style="max-width: 1000px; margin: 0.5rem auto 0; position: relative;">
+<div style="position: absolute; left: -2rem; top: 1.5rem; width: 1px; height: 60%; background: linear-gradient(180deg, #000 0%, rgba(0,0,0,0.3) 50%, transparent 100%);"></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+<v-click>
+<div style="position: relative; padding-left: 1rem;">
+<div style="position: absolute; left: 0; top: 0.3rem; width: 3px; height: 1.2rem; background: #000;"></div>
+<div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.6rem;">
+<h3 style="font-size: 1.1rem; margin: 0; font-weight: 400; letter-spacing: -0.02em;">全局上下文</h3>
+<span style="font-size: 0.6rem; color: #ccc; letter-spacing: 0.1em; text-transform: uppercase;">Context</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">当前时间</span>
+<span style="font-weight: 300; letter-spacing: 0.02em;">2025-10-26 09:13 UTC</span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">运行时长</span>
+<div style="display: flex; align-items: baseline; gap: 0.5rem;">
+<span style="font-size: 1.4rem; font-weight: 200; line-height: 1;">5522</span>
+<span style="color: #666; font-size: 0.75rem;">分钟 ·</span>
+<span style="font-size: 1.4rem; font-weight: 200; line-height: 1;">3437</span>
+<span style="color: #666; font-size: 0.75rem;">次调用</span>
+</div>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">数据粒度</span>
+<span style="font-weight: 300;">时间正序 · <strong style="font-weight: 500;">3 分钟</strong> 间隔</span>
+</div>
+</div>
+</div>
+</v-click>
+<v-click>
+<div style="position: relative; padding-left: 1rem;">
+<div style="position: absolute; left: 0; top: 0.3rem; width: 3px; height: 1.2rem; background: #000;"></div>
+<div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.6rem;">
+<h3 style="font-size: 1.1rem; margin: 0; font-weight: 400; letter-spacing: -0.02em;">单币技术因子</h3>
+<span style="font-size: 0.6rem; color: #ccc; letter-spacing: 0.1em; text-transform: uppercase;">Per Asset</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">覆盖资产</span>
+<div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+<span style="padding: 0.1rem 0.5rem; background: rgba(0,0,0,0.04); border-radius: 3px; font-size: 0.75rem; font-weight: 500;">BTC</span>
+<span style="padding: 0.1rem 0.5rem; background: rgba(0,0,0,0.04); border-radius: 3px; font-size: 0.75rem; font-weight: 500;">ETH</span>
+<span style="padding: 0.1rem 0.5rem; background: rgba(0,0,0,0.04); border-radius: 3px; font-size: 0.75rem; font-weight: 500;">SOL</span>
+<span style="padding: 0.1rem 0.5rem; background: rgba(0,0,0,0.04); border-radius: 3px; font-size: 0.75rem; font-weight: 500;">BNB</span>
+<span style="padding: 0.1rem 0.5rem; background: rgba(0,0,0,0.04); border-radius: 3px; font-size: 0.75rem; font-weight: 500;">XRP</span>
+<span style="padding: 0.1rem 0.5rem; background: rgba(0,0,0,0.04); border-radius: 3px; font-size: 0.75rem; font-weight: 500;">DOGE</span>
+</div>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">基础指标</span>
+<span style="font-weight: 300;"><strong style="font-weight: 500;">价格</strong> · EMA(20) · MACD · RSI(7)</span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">衍生数据</span>
+<span style="font-weight: 300;"><strong style="font-weight: 500;">持仓量</strong> · <strong style="font-weight: 500;">资金费率</strong></span>
+</div>
+</div>
+</div>
+</v-click>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+<v-click>
+<div style="position: relative; padding-left: 1rem;">
+<div style="position: absolute; left: 0; top: 0.3rem; width: 3px; height: 1.2rem; background: #000;"></div>
+<div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.6rem;">
+<h3 style="font-size: 1.1rem; margin: 0; font-weight: 400; letter-spacing: -0.02em;">多尺度时序</h3>
+<span style="font-size: 0.6rem; color: #ccc; letter-spacing: 0.1em; text-transform: uppercase;">Multi-Scale</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">3 分钟级</span>
+<span style="font-weight: 300;">最近 <strong style="font-weight: 500;">10 个</strong> mid/EMA/MACD/RSI 点</span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">4 小时级</span>
+<span style="font-weight: 300;">EMA(20/50) · ATR(3/14) · 成交量</span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">趋势判断</span>
+<span style="font-weight: 300;"><strong style="font-weight: 500;">MACD</strong> 金叉死叉 · <strong style="font-weight: 500;">RSI(14)</strong> 超买卖</span>
+</div>
+</div>
+</div>
+</v-click>
+<v-click>
+<div style="position: relative; padding-left: 1rem;">
+<div style="position: absolute; left: 0; top: 0.3rem; width: 3px; height: 1.2rem; background: #000;"></div>
+<div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.6rem;">
+<h3 style="font-size: 1.1rem; margin: 0; font-weight: 400; letter-spacing: -0.02em;">账户与仓位</h3>
+<span style="font-size: 0.6rem; color: #ccc; letter-spacing: 0.1em; text-transform: uppercase;">Portfolio</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">当前绩效</span>
+<div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: baseline;">
+<span style="font-size: 1.3rem; font-weight: 300; line-height: 1; color: #000;">+77.08<span style="font-size: 0.7em;">%</span></span>
+<span style="color: #ccc;">·</span>
+<span style="font-weight: 300;">$17,707.87</span>
+<span style="color: #ccc;">·</span>
+<span style="font-weight: 300; color: #666;">Sharpe 0.323</span>
+</div>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">持仓详情</span>
+<span style="font-weight: 300;">BTC <strong style="font-weight: 500;">20×</strong> 多 · 入场 <strong style="font-weight: 500;">$107,993</strong></span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 1.2rem;">
+<span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">输出结构</span>
+<span style="font-weight: 300; font-family: monospace; font-size: 0.8rem; letter-spacing: -0.02em;">CHAIN_OF_THOUGHT + DECISIONS</span>
+</div>
+</div>
+</div>
+</v-click>
+</div>
+</div>
 </div>
 <v-click>
-  <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: var(--apple-muted);">
-    数据来源：nof1.ai 模型控制台 · Qwen3 Max · 2025-10-26 09:13 UTC
-  </p>
+<div style="text-align: center; margin-top: 1rem;">
+<div style="display: inline-block; padding: 0.4rem 1.2rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; background: rgba(0,0,0,0.02);">
+<span style="font-size: 0.7rem; color: #999; letter-spacing: 0.05em;">数据来源：nof1.ai 模型控制台 · Qwen3 Max · 2025-10-26 09:13 UTC</span>
+</div>
+</div>
 </v-click>
 
 ---
