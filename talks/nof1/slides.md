@@ -256,26 +256,26 @@ layout: center
 <div class="model-grid">
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-1">
-      <div class="badge badge-warning" style="margin-bottom: 1rem;">⚡ 高频交易</div>
+      <div class="badge badge-warning" style="margin-bottom: 1rem;">🧠 工程推理</div>
       <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">DeepSeek V3.1</span>
       <span class="model-maker" style="font-size: 0.95rem;">深度求索</span>
-      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">高频猎手，依靠量化信号捕捉短线波动，策略回合远快于人工节奏。</p>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">MoE 架构、128k context 的中文/英文双栈模型，擅长工具调用与长链路推理。</p>
     </div>
   </v-click>
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-2">
-      <div class="badge badge-danger" style="margin-bottom: 1rem;">🎯 激进进攻</div>
+      <div class="badge badge-danger" style="margin-bottom: 1rem;">🛰️ 实时情报</div>
       <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Grok-4</span>
       <span class="model-maker" style="font-size: 0.95rem;">xAI</span>
-      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">高波动进攻者，容忍极端风险换取爆发，放大趋势单同时设硬性止损。</p>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">依托 X 平台实时语料训练，强调快速检索热点与轻量化生成。</p>
     </div>
   </v-click>
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-3">
-      <div class="badge badge-success" style="margin-bottom: 1rem;">🛡️ 稳健防守</div>
+      <div class="badge badge-success" style="margin-bottom: 1rem;">🛡️ 安全稳健</div>
       <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Claude 4.5</span>
       <span class="model-maker" style="font-size: 0.95rem;">Anthropic</span>
-      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">谨慎型分析师，宏观 + on-chain 结合，风控双保底，夏普比率最高。</p>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">强调宪法式安全与 200k+ 上下文，逻辑推理与语言审慎度兼顾。</p>
     </div>
   </v-click>
 </div>
@@ -287,26 +287,26 @@ layout: center
 <div class="model-grid">
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-1">
-      <div class="badge badge-secondary" style="margin-bottom: 1rem;">🔄 套利专家</div>
+      <div class="badge badge-secondary" style="margin-bottom: 1rem;">🌏 多语多模</div>
       <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Qwen 3 Max</span>
       <span class="model-maker" style="font-size: 0.95rem;">阿里</span>
-      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">数据炼金师，擅长跨资产套利框架，多币种同步监控寻找价差机会。</p>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">大规模 MoE 体系，覆盖多语言与多模态输入，擅长结构化信息整合。</p>
     </div>
   </v-click>
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-2">
-      <div class="badge badge-primary" style="margin-bottom: 1rem;">📊 理性派</div>
+      <div class="badge badge-primary" style="margin-bottom: 1rem;">🧩 通用智能</div>
       <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">GPT-5</span>
       <span class="model-maker" style="font-size: 0.95rem;">OpenAI</span>
-      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">理性派策略师，偏好低频高胜率，通过深度分析锁定确定性机会。</p>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">最新 Frontier 系列，强化推理、规划与 Agent 框架，具备全栈工具协作能力。</p>
     </div>
   </v-click>
   <v-click>
     <div class="card-elevated animate-fadeInUp stagger-3">
-      <div class="badge badge-warning" style="margin-bottom: 1rem;">🤖 多模态</div>
+      <div class="badge badge-warning" style="margin-bottom: 1rem;">🎥 多模态</div>
       <span class="model-name" style="font-size: 1.6rem; display: block; margin-bottom: 0.5rem;">Gemini 2.5</span>
       <span class="model-maker" style="font-size: 0.95rem;">Google</span>
-      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">算法狂人，多模态信号驱动的激进策略，整合多维数据源快速决策。</p>
+      <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.05rem;">Google DeepMind 的统一感知模型，原生支持文本、图像、音频的联合理解。</p>
     </div>
   </v-click>
 </div>
