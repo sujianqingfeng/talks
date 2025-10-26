@@ -971,9 +971,7 @@ layout: center
 
 ---
 
-# Bottom 3 模型反思
-
-<div style="position: relative; max-width: 1100px; margin: 0 auto; padding-top: 0.5rem;">
+<div style="position: relative; max-width: 1100px; margin: 0 auto; padding-top: 2rem;">
 <div style="position: absolute; left: -5%; top: 35%; width: 250px; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent); transform: rotate(-15deg);"></div>
 <div style="position: absolute; right: -3%; bottom: 10%; width: 2px; height: 100px; background: linear-gradient(180deg, rgba(0,0,0,0.08), transparent);"></div>
 <v-click>
