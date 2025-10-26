@@ -1238,27 +1238,43 @@ layout: center
 
 # 总结与思考
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; max-width: 900px; margin: 0 auto; text-align: center;">
-  <v-click>
-    <div style="margin-bottom: 3rem;">
-      <p style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.3; font-weight: 200; margin: 0; font-style: italic; letter-spacing: -0.01em;">"市场，是智能演化的镜像。"</p>
-      <div style="width: 60px; height: 2px; background: #000; margin: 2rem auto;"></div>
+<div style="position: relative; display: flex; align-items: center; justify-content: center; padding: 2rem 2rem 3rem;">
+  <!-- 背景装饰圆环 -->
+  <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; border: 1px solid rgba(0,0,0,0.02); border-radius: 50%; pointer-events: none;"></div>
+  <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 450px; height: 450px; border: 1px solid rgba(0,0,0,0.04); border-radius: 50%; pointer-events: none;"></div>
+  <div style="position: relative; max-width: 900px; width: 100%; text-align: center;">
+    <!-- 三个核心洞察 -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5rem;">
+      <v-click>
+        <div style="text-align: center; padding: 2rem 1rem;">
+          <div style="width: 90px; height: 90px; margin: 0 auto 2rem; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: transform 0.3s ease;">
+            <div style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.04), transparent);"></div>
+            <span style="font-size: 2.2rem; font-weight: 200; position: relative; letter-spacing: -0.02em;">01</span>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 500; letter-spacing: 0.08em; margin: 0 0 1.2rem 0; text-transform: uppercase;">行为 > 分数</h3>
+          <p style="font-size: 1rem; line-height: 1.7; color: #666; margin: 0;">智能在不确定性中<br/>持续优化的能力</p>
+        </div>
+      </v-click>
+      <v-click>
+        <div style="text-align: center; padding: 2rem 1rem;">
+          <div style="width: 90px; height: 90px; margin: 0 auto 2rem; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: transform 0.3s ease;">
+            <div style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.04), transparent);"></div>
+            <span style="font-size: 2.2rem; font-weight: 200; position: relative; letter-spacing: -0.02em;">02</span>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 500; letter-spacing: 0.08em; margin: 0 0 1.2rem 0; text-transform: uppercase;">真实试炼</h3>
+          <p style="font-size: 1rem; line-height: 1.7; color: #666; margin: 0;">市场成为 AI<br/>能力验证的新基准</p>
+        </div>
+      </v-click>
+      <v-click>
+        <div style="text-align: center; padding: 2rem 1rem;">
+          <div style="width: 90px; height: 90px; margin: 0 auto 2rem; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: transform 0.3s ease;">
+            <div style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.04), transparent);"></div>
+            <span style="font-size: 2.2rem; font-weight: 200; position: relative; letter-spacing: -0.02em;">03</span>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 500; letter-spacing: 0.08em; margin: 0 0 1.2rem 0; text-transform: uppercase;">人机共演</h3>
+          <p style="font-size: 1rem; line-height: 1.7; color: #666; margin: 0;">从操作者到复盘者<br/>的角色升级</p>
+        </div>
+      </v-click>
     </div>
-  </v-click>
-  <v-click>
-    <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 700px;">
-      <div style="display: flex; align-items: center; gap: 1rem;">
-        <div style="width: 6px; height: 6px; background: #000; border-radius: 50%; flex-shrink: 0;"></div>
-        <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; text-align: left; color: var(--apple-secondary);">智能 ≠ 分数；智能 = 在不确定中持续优化的行为</p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 1rem;">
-        <div style="width: 6px; height: 6px; background: #000; border-radius: 50%; flex-shrink: 0;"></div>
-        <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; text-align: left; color: var(--apple-secondary);">NOF1.AI 将市场作为 AI 的新试炼场</p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 1rem;">
-        <div style="width: 6px; height: 6px; background: #000; border-radius: 50%; flex-shrink: 0;"></div>
-        <p style="margin: 0; font-size: 1.15rem; line-height: 1.6; text-align: left; color: var(--apple-secondary);">人类角色升级为复盘者，与智能体共演</p>
-      </div>
-    </div>
-  </v-click>
+  </div>
 </div>
