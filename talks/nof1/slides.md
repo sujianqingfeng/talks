@@ -444,48 +444,49 @@ layout: center
 ---
 
 # 交易环境挑战
-
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 1rem;">
-  <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-1" style="padding: 1.5rem;">
-      <div style="text-align: center; margin-bottom: 1rem;">
-        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">⚙️</div>
-        <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 500;">Hyperliquid 特性</h3>
-      </div>
-      <p style="line-height: 1.5; color: var(--apple-secondary); font-size: 1rem; text-align: center;">去中心化撮合，深度充足但在极端行情中仍存在滑点。</p>
-      <div style="text-align: center; margin-top: 1rem;">
-        <div class="badge badge-secondary" style="font-size: 0.75rem;">DeFi 永续</div>
-      </div>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-glass animate-fadeInUp stagger-2" style="padding: 1.5rem;">
-      <div style="text-align: center; margin-bottom: 1rem;">
-        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">📊</div>
-        <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 500;">市场波动档</h3>
-      </div>
-      <p style="line-height: 1.5; color: var(--apple-secondary); font-size: 1rem; text-align: center;">近 7 日 BTC 日内平均振幅约 2.8%（UTC）。</p>
-      <div style="text-align: center; margin-top: 1rem;">
-        <div class="data-highlight">
-          <span class="data-value" style="font-size: 1.8rem;">≈2.8%</span>
-          <span class="data-unit" style="font-size: 0.9rem;">近7日平均日内振幅</span>
-        </div>
-      </div>
-      <p class="note" style="text-align: center; margin-top: 0.6rem;">数据源：CryptoCompare（截至 2025-10-26）</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-3" style="padding: 1.5rem;">
-      <div style="text-align: center; margin-bottom: 1rem;">
-        <div style="font-size: 2.5rem; margin-bottom: 0.8rem;">⚡</div>
-        <h3 style="font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 500;">工程要求</h3>
-      </div>
-      <p style="line-height: 1.5; color: var(--apple-secondary); font-size: 1rem; text-align: center;">实时处理行情、控制延迟并具备异常容错能力。</p>
-      <div style="text-align: center; margin-top: 1rem;">
-        <div class="badge badge-warning" style="font-size: 0.75rem;">毫秒级响应</div>
-      </div>
-    </div>
-  </v-click>
+<div style="max-width: 950px; margin: 1.5rem auto 0;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem;">
+<v-click>
+<div style="position: relative;">
+<div style="text-align: center; padding-top: 1rem;">
+<h3 style="font-size: 1.2rem; margin: 0 0 1.2rem 0; font-weight: 300; letter-spacing: -0.01em;">Hyperliquid 特性</h3>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+<div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #000, transparent);"></div>
+<p style="line-height: 1.7; color: #666; font-size: 0.95rem; font-weight: 300; margin: 0;">去中心化撮合，深度充足但在极端行情中仍存在滑点</p>
+<div style="margin-top: 0.5rem; padding: 0.3rem 0.9rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 12px; font-size: 0.7rem; letter-spacing: 0.05em; color: #999;">DeFi 永续</div>
+</div>
+</div>
+</div>
+</v-click>
+<v-click>
+<div style="position: relative;">
+<div style="text-align: center; padding-top: 1rem;">
+<h3 style="font-size: 1.2rem; margin: 0 0 1.2rem 0; font-weight: 300; letter-spacing: -0.01em;">市场波动档</h3>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+<div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #000, transparent);"></div>
+<p style="line-height: 1.7; color: #666; font-size: 0.95rem; font-weight: 300; margin: 0 0 1rem 0;">近 7 日 BTC 日内平均振幅约</p>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.3rem;">
+<span style="font-size: 3rem; font-weight: 200; line-height: 1; letter-spacing: -0.02em;">2.8<span style="font-size: 0.6em;">%</span></span>
+<span style="font-size: 0.75rem; color: #999; letter-spacing: 0.05em;">近7日平均日内振幅</span>
+</div>
+<p style="font-size: 0.7rem; color: #ccc; margin: 0.8rem 0 0 0; letter-spacing: 0.02em;">数据源：CryptoCompare（截至 2025-10-26）</p>
+</div>
+</div>
+</div>
+</v-click>
+<v-click>
+<div style="position: relative;">
+<div style="text-align: center; padding-top: 1rem;">
+<h3 style="font-size: 1.2rem; margin: 0 0 1.2rem 0; font-weight: 300; letter-spacing: -0.01em;">工程要求</h3>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+<div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #000, transparent);"></div>
+<p style="line-height: 1.7; color: #666; font-size: 0.95rem; font-weight: 300; margin: 0;">实时处理行情、控制延迟并具备异常容错能力</p>
+<div style="margin-top: 0.5rem; padding: 0.3rem 0.9rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 12px; font-size: 0.7rem; letter-spacing: 0.05em; color: #999;">毫秒级响应</div>
+</div>
+</div>
+</div>
+</v-click>
+</div>
 </div>
 
 ---
