@@ -158,52 +158,20 @@ layout: cover
 layout: center
 ---
 
-<div class="section">
-  <div class="section-inner">
-    <p class="display-title">从纸面到实盘</p>
-  </div>
+<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden;">
+<div style="position: absolute; left: 15%; top: 20%; width: 200px; height: 200px; border: 1px solid rgba(0,0,0,0.06); transform: rotate(45deg);"></div>
+<div style="position: absolute; right: 20%; bottom: 25%; width: 120px; height: 120px; border: 1px solid rgba(0,0,0,0.04); transform: rotate(30deg);"></div>
+<div style="text-align: center; position: relative; z-index: 1;">
+<div style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: #999; margin-bottom: 3rem;">Chapter II</div>
+<h1 style="font-size: clamp(3rem, 8vw, 6rem); line-height: 1.1; font-weight: 200; letter-spacing: -0.02em; margin: 0; color: #000;">
+从纸面<br/>到实盘
+</h1>
+<div style="width: 60px; height: 1px; background: #000; margin: 4rem auto 0;"></div>
+</div>
 </div>
 
 <style scoped>
-/* 仅本页：移除上下内边距，保证严格居中 */
-.slidev-layout, .slidev-layout.cover { padding-top: 0 !important; padding-bottom: 0 !important; }
-.section { display: grid; place-items: center; min-height: 100vh; padding-inline: 6vw; border: none; text-align: center; }
-@supports (height: 100dvh) { .section { min-height: 100dvh; } }
-.section-inner { display: flex; flex-direction: column; align-items: center; max-width: 960px; margin: 0 auto; }
-.display-title {
-  font-size: clamp(2.4rem, 7.2vw, 4.8rem);
-  line-height: 1.1;
-  letter-spacing: 0;
-  font-weight: 200;
-  margin: 0;
-  color: var(--apple-foreground);
-  text-wrap: balance;
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  display: inline-block;
-}
-@supports not (text-wrap: balance) { .display-title { word-break: keep-all; } }
-.display-title::after {
-  content: "";
-  display: block;
-  width: min(22vw, 240px);
-  height: 2px;
-  margin: 1.2rem auto 0;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.25), transparent);
-}
-.display-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0) 60%);
-  filter: blur(18px);
-  z-index: -1;
-  pointer-events: none;
-}
+.slidev-layout { padding: 0 !important; }
 </style>
 
 ---
@@ -1082,52 +1050,25 @@ layout: center
 layout: center
 ---
 
-<div class="section">
-  <div class="section-inner">
-    <p class="display-title">风险是产品的一部分</p>
-  </div>
+<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden;">
+<div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(135deg, transparent 0%, rgba(0,0,0,0.015) 50%, transparent 100%);"></div>
+<div style="position: absolute; right: 12%; top: 18%; width: 320px; height: 320px; border: 1px solid rgba(0,0,0,0.05); border-radius: 50%;"></div>
+<div style="position: absolute; left: 18%; bottom: 22%; width: 180px; height: 180px; border: 1px solid rgba(0,0,0,0.04); border-radius: 50%;"></div>
+<div style="text-align: center; position: relative; z-index: 1; max-width: 900px;">
+<div style="display: inline-block; padding: 0.4rem 1.2rem; border: 1px solid rgba(0,0,0,0.15); border-radius: 20px; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: #666; margin-bottom: 3rem;">Risk Awareness</div>
+<h1 style="font-size: clamp(2.8rem, 7vw, 5.5rem); line-height: 1.2; font-weight: 200; letter-spacing: -0.01em; margin: 0; color: #000;">
+风险是产品的<br/>一部分
+</h1>
+<div style="margin-top: 3.5rem; display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
+<div style="width: 40px; height: 1px; background: linear-gradient(90deg, transparent, #000);"></div>
+<div style="width: 6px; height: 6px; background: #000; border-radius: 50%;"></div>
+<div style="width: 40px; height: 1px; background: linear-gradient(90deg, #000, transparent);"></div>
+</div>
+</div>
 </div>
 
 <style scoped>
-/* 仅本页：移除上下内边距，保证严格居中 */
-.slidev-layout, .slidev-layout.cover { padding-top: 0 !important; padding-bottom: 0 !important; }
-.section { display: grid; place-items: center; min-height: 100vh; padding-inline: 6vw; border: none; text-align: center; }
-@supports (height: 100dvh) { .section { min-height: 100dvh; } }
-.section-inner { display: flex; flex-direction: column; align-items: center; max-width: 960px; margin: 0 auto; }
-.display-title {
-  font-size: clamp(2.4rem, 7.2vw, 4.8rem);
-  line-height: 1.1;
-  letter-spacing: 0;
-  font-weight: 200;
-  margin: 0;
-  color: var(--apple-foreground);
-  text-wrap: balance;
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  display: inline-block;
-}
-@supports not (text-wrap: balance) { .display-title { word-break: keep-all; } }
-.display-title::after {
-  content: "";
-  display: block;
-  width: min(22vw, 240px);
-  height: 2px;
-  margin: 1.2rem auto 0;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.25), transparent);
-}
-.display-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0) 60%);
-  filter: blur(18px);
-  z-index: -1;
-  pointer-events: none;
-}
+.slidev-layout { padding: 0 !important; }
 </style>
 
 ---
