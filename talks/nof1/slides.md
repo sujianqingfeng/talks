@@ -580,9 +580,9 @@ layout: center
 <div style="display: flex; align-items: baseline; gap: 1.2rem;">
 <span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">当前绩效</span>
 <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: baseline;">
-<span style="font-size: 1.3rem; font-weight: 300; line-height: 1; color: #000;">+103.23<span style="font-size: 0.7em;">%</span></span>
+<span style="font-size: 1.3rem; font-weight: 300; line-height: 1; color: #000;">+86.17<span style="font-size: 0.7em;">%</span></span>
 <span style="color: #ccc;">·</span>
-<span style="font-weight: 300;">$20,323</span>
+<span style="font-weight: 300;">$18,617</span>
 <span style="color: #ccc;">·</span>
 <span style="font-weight: 300; color: #666;">Sharpe 0.332</span>
 </div>
@@ -868,8 +868,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">阿里</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+103.23<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$20,323</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+86.92<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$18,692</p>
       </div>
     </div>
   </v-click>
@@ -879,8 +879,8 @@ layout: center
       <div style="margin-top: 2.5rem;">
         <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">深度求索</p>
-        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+127.43<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$22,743</p>
+        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+123.39<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$22,339</p>
       </div>
     </div>
   </v-click>
@@ -890,8 +890,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Claude 4.5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Anthropic</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+26.65<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$12,665</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+22.46<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$12,246</p>
       </div>
     </div>
   </v-click>
@@ -910,8 +910,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Grok 4</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">xAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+15.19<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$11,519</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+11.95<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$11,195</p>
       </div>
     </div>
   </v-click>
@@ -921,8 +921,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Gemini 2.5 Pro</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Google</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-56.21<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$4,379</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-57.97<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$4,203</p>
       </div>
     </div>
   </v-click>
@@ -932,41 +932,22 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">GPT-5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">OpenAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-58.79<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$4,121</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-60.44<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,956</p>
       </div>
     </div>
   </v-click>
 </div>
 ---
 
-# Top 3 模型拆解
+# 模型拆解
 
 <div style="max-width: 900px; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1.8rem;">
   <v-click>
     <div style="border-left: 4px solid #000; padding-left: 1.5rem;">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Qwen 3 Max</h3>
-        <div style="padding: 0.25rem 0.7rem; background: #000; color: #fff; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">趋势捕手</div>
-      </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">25 笔交易，40.0% 胜率，平均持仓 <strong>9 小时 51 分</strong>，依靠长周期趋势吃掉大部分利润。</p>
-      <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
-        <div>
-          <span style="color: var(--apple-muted);">最大单笔</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">+$8,176</strong>
-        </div>
-        <div>
-          <span style="color: var(--apple-muted);">代表操作</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">1.96 BTC 长线</strong>
-        </div>
-      </div>
-    </div>
-  </v-click>
-  <v-click>
-    <div style="border-left: 4px solid #666; padding-left: 1.5rem;">
-      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
         <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">DeepSeek V3.1</h3>
-        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">高频交易</div>
+        <div style="padding: 0.25rem 0.7rem; background: #000; color: #fff; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">高频交易</div>
       </div>
       <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">17 笔操作覆盖 BTC/ETH/XRP/BNB，节奏稳健，阶段性跑赢基准。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
@@ -977,6 +958,25 @@ layout: center
         <div>
           <span style="color: var(--apple-muted);">最大单笔</span>
           <strong style="margin-left: 0.5rem; font-size: 1.2rem;">ETH +$7.38k</strong>
+        </div>
+      </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div style="border-left: 4px solid #666; padding-left: 1.5rem;">
+      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+        <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Qwen 3 Max</h3>
+        <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">趋势捕手</div>
+      </div>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">27 笔交易，37% 胜率，平均持仓 <strong>9 小时 15 分</strong>，依靠长周期趋势吃掉大部分利润。</p>
+      <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
+        <div>
+          <span style="color: var(--apple-muted);">最大单笔</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">+$8,176</strong>
+        </div>
+        <div>
+          <span style="color: var(--apple-muted);">代表操作</span>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">1.96 BTC 长线</strong>
         </div>
       </div>
     </div>
@@ -1026,11 +1026,11 @@ layout: center
 <v-click>
 <div style="margin-bottom: 1.5rem; position: relative; padding-left: 8%;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.1s;">19.7<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.1s;">19.4<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">GPT-5</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
-<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">61 笔交易胜率极低，BTC/ETH 集中曝险，单笔 -$1.58k 亏损后迅速放大。</p>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">62 笔交易胜率极低，BTC/ETH 集中曝险，单笔 -$1.58k 亏损后迅速放大。</p>
 <div style="display: flex; align-items: center; gap: 0.5rem;">
 <div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
 <p style="margin: 0; font-size: 0.75rem; color: #333;">多资产分散 + 动态杠杆上限</p>
@@ -1046,7 +1046,7 @@ layout: center
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Gemini 2.5 Pro</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
-<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">165 笔交易频繁切换方向，导致 -56.2% 严重回撤，缺乏策略一致性。</p>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">165 笔交易频繁切换方向，导致 -57.97% 严重回撤，缺乏策略一致性。</p>
 <div style="display: flex; align-items: center; gap: 0.5rem;">
 <div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
 <p style="margin: 0; font-size: 0.75rem; color: #333;">延迟监控 + 单日交易次数限制</p>
@@ -1083,7 +1083,7 @@ layout: center
   <v-click>
     <div style="text-align: center;">
       <div class="data-highlight">
-        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">30.75<span style="font-size: 0.6em;">%</span></span>
+        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">30.2<span style="font-size: 0.6em;">%</span></span>
         <span class="data-unit" style="font-size: 1.2rem; font-weight: 300; letter-spacing: 0.05em;">平均胜率</span>
       </div>
       <div style="margin-top: 2.5rem;">
