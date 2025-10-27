@@ -30,6 +30,22 @@ layout: cover
 
 ---
 
+<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+<iframe src="https://nof1.ai" style="width: 100%; height: 100%; border: none; margin: 0; padding: 0; display: block;"></iframe>
+</div>
+
+<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 10;">
+<v-click>
+<div style="background: rgba(0,0,0,0.8); width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center;">
+<div style="background: white; padding: 1.5rem; border-radius: 1rem; text-align: center;">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://nof1.ai" />
+</div>
+</div>
+</v-click>
+</div>
+
+---
+
 # 引子：AI 的极限测试
 
 <div class="split">
