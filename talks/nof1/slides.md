@@ -456,10 +456,10 @@ layout: center
 <div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #000, transparent);"></div>
 <p style="line-height: 1.7; color: #666; font-size: 0.95rem; font-weight: 300; margin: 0 0 1rem 0;">近 7 日 BTC 日内平均振幅约</p>
 <div style="display: flex; flex-direction: column; align-items: center; gap: 0.3rem;">
-<span style="font-size: 3rem; font-weight: 200; line-height: 1; letter-spacing: -0.02em;">2.8<span style="font-size: 0.6em;">%</span></span>
+<span style="font-size: 3rem; font-weight: 200; line-height: 1; letter-spacing: -0.02em;">2.9<span style="font-size: 0.6em;">%</span></span>
 <span style="font-size: 0.75rem; color: #999; letter-spacing: 0.05em;">近7日平均日内振幅</span>
 </div>
-<p style="font-size: 0.7rem; color: #ccc; margin: 0.8rem 0 0 0; letter-spacing: 0.02em;">数据源：CryptoCompare（截至 2025-10-26）</p>
+<p style="font-size: 0.7rem; color: #ccc; margin: 0.8rem 0 0 0; letter-spacing: 0.02em;">数据源：CryptoCompare（截至 2025-10-27）</p>
 </div>
 </div>
 </div>
@@ -496,7 +496,7 @@ layout: center
 <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
 <div style="display: flex; align-items: baseline; gap: 1.2rem;">
 <span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">当前时间</span>
-<span style="font-weight: 300; letter-spacing: 0.02em;">2025-10-26 09:13 UTC</span>
+<span style="font-weight: 300; letter-spacing: 0.02em;">2025-10-27 15:38 UTC</span>
 </div>
 <div style="display: flex; align-items: baseline; gap: 1.2rem;">
 <span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">运行时长</span>
@@ -580,11 +580,11 @@ layout: center
 <div style="display: flex; align-items: baseline; gap: 1.2rem;">
 <span style="color: #999; min-width: 4.5rem; font-size: 0.75rem;">当前绩效</span>
 <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: baseline;">
-<span style="font-size: 1.3rem; font-weight: 300; line-height: 1; color: #000;">+77.08<span style="font-size: 0.7em;">%</span></span>
+<span style="font-size: 1.3rem; font-weight: 300; line-height: 1; color: #000;">+103.23<span style="font-size: 0.7em;">%</span></span>
 <span style="color: #ccc;">·</span>
-<span style="font-weight: 300;">$17,707.87</span>
+<span style="font-weight: 300;">$20,323</span>
 <span style="color: #ccc;">·</span>
-<span style="font-weight: 300; color: #666;">Sharpe 0.323</span>
+<span style="font-weight: 300; color: #666;">Sharpe 0.332</span>
 </div>
 </div>
 <div style="display: flex; align-items: baseline; gap: 1.2rem;">
@@ -604,7 +604,7 @@ layout: center
 <v-click>
 <div style="text-align: center; margin-top: 1rem;">
 <div style="display: inline-block; padding: 0.4rem 1.2rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; background: rgba(0,0,0,0.02);">
-<span style="font-size: 0.7rem; color: #999; letter-spacing: 0.05em;">数据来源：nof1.ai 模型控制台 · Qwen3 Max · 2025-10-26 09:13 UTC</span>
+<span style="font-size: 0.7rem; color: #999; letter-spacing: 0.05em;">数据来源：nof1.ai Leaderboard/Advanced Analytics · Qwen3 Max · 2025-10-27 15:38 UTC</span>
 </div>
 </div>
 </v-click>
@@ -780,7 +780,46 @@ layout: center
 </div>
 <v-click>
   <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: var(--apple-muted);">
-    数据来源：nof1.ai Leaderboard / Trades API（更新至 2025-10-26 10:00 UTC）
+    数据来源：nof1.ai Leaderboard / Trades API（更新至 2025-10-27 15:38 UTC）
+  </p>
+</v-click>
+
+---
+
+# Day 11：回马枪
+
+<div class="timeline timeline-compact">
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 11</div>
+    <div class="timeline-content">
+      <strong>DeepSeek 扩大战果</strong>
+      <p>ETH 多单净赚 <strong>$7,378</strong>（$3,929.6 → $4,216；26.05 ETH），稳居榜首。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time">Day 11</div>
+    <div class="timeline-content">
+      <strong>Qwen 双线增益</strong>
+      <p>ETH 多单净赚 <strong>$1,017</strong>；BTC 多单净赚 <strong>$1,573</strong>，权益短线回升。</p>
+    </div>
+    </div>
+  </v-click>
+  <v-click>
+    <div class="timeline-item">
+    <div class="timeline-time tag">回稳</div>
+    <div class="timeline-content">
+      <strong>Claude</strong>
+      <p>BTC 多单净赚 <strong>$2,112</strong>，阶段回撤有所修复。</p>
+    </div>
+    </div>
+  </v-click>
+</div>
+<v-click>
+  <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: var(--apple-muted);">
+    数据来源：nof1.ai Completed Trades（更新至 2025-10-27 15:54 UTC）
   </p>
 </v-click>
 
@@ -801,7 +840,7 @@ layout: center
     <div class="card-glass animate-scaleIn stagger-2">
       <div class="badge badge-success" style="margin-bottom: 1rem;">守仓</div>
       <h3>Day 10 · 09:24 UTC</h3>
-      <p>持仓 <strong>89 小时</strong> 未做减仓，跟随 BTC 拉升至 <strong>112,250</strong>。</p>
+      <p>持仓 <strong>99 小时 56 分</strong> 未做减仓，跟随 BTC 拉升至 <strong>112,250</strong>。</p>
       <div class="data-highlight" style="margin-top: 1rem;">
         <span class="data-value" style="font-size: 2.4rem;">+$8,176</span>
       </div>
@@ -820,34 +859,6 @@ layout: center
 
 ---
 
-# 实时互动与透明度
-
-<div class="card-grid">
-  <v-click>
-    <div class="info-card">
-    <h3>链上可视</h3>
-    <p>Leaderboard 实时 · Analytics 每 30 秒，公开每笔订单与持仓。</p>
-    <p class="note">可追溯的 Tx Hash 保障公平。</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="info-card">
-    <h3>社区热度</h3>
-    <p>X 上 #NOF1、#AlphaArena 话题热度（截至 2025-10-26）。</p>
-    <p class="note">“This is the World Cup for LLMs.”</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="info-card">
-    <h3>数据接口</h3>
-    <p>开放 REST/WebSocket API，研究者可实时拉取权益曲线。</p>
-    <p class="note">方便做策略回放与偏差分析。</p>
-    </div>
-  </v-click>
-</div>
-
----
-
 # 最终成绩单（Top 3）
 
 <div style="display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 1.5rem; max-width: 1000px; margin: 2rem auto; align-items: end;">
@@ -855,10 +866,10 @@ layout: center
     <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(192,192,192,0.08) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
       <div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); font-size: 3rem;">🥈</div>
       <div style="margin-top: 2rem;">
-        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
-        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">深度求索</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+50.29<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$15,028.54</p>
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">阿里</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+103.23<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$20,323</p>
       </div>
     </div>
   </v-click>
@@ -866,10 +877,10 @@ layout: center
     <div style="text-align: center; padding: 2.5rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(255,215,0,0.12) 0%, transparent 100%); border: 2px solid rgba(255,215,0,0.3); position: relative; padding-bottom: 3rem;">
       <div style="position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%); font-size: 4rem;">🏆</div>
       <div style="margin-top: 2.5rem;">
-        <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">Qwen 3 Max</h3>
-        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">阿里</p>
-        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+85.43<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$18,543.36</p>
+        <h3 style="font-size: 1.8rem; margin: 0 0 0.3rem 0; font-weight: 500;">DeepSeek V3.1</h3>
+        <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.9rem;">深度求索</p>
+        <div style="font-size: 4rem; font-weight: 200; line-height: 1; margin-bottom: 0.4rem;">+127.43<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1.1rem; color: var(--apple-muted);">$22,743</p>
       </div>
     </div>
   </v-click>
@@ -879,14 +890,14 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Claude 4.5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Anthropic</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+0.34<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$10,034.05</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+26.65<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$12,665</p>
       </div>
     </div>
   </v-click>
 </div>
 <v-click>
-  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03 · 数据更新至 2025-10-26 10:00 UTC</p>
+  <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--apple-muted);">统计口径：初始资金 $10k · 赛季时段 2025-10-17 至 2025-11-03 · 数据更新至 2025-10-27 15:38 UTC</p>
 </v-click>
 ---
 
@@ -899,8 +910,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Grok 4</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">xAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">-3.71<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$9,629.52</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem;">+15.19<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$11,519</p>
       </div>
     </div>
   </v-click>
@@ -908,10 +919,10 @@ layout: center
     <div style="text-align: center; padding: 2rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(220,38,38,0.04) 0%, transparent 100%); position: relative; padding-bottom: 2.5rem;">
       <div style="position: absolute; top: -0.8rem; left: 50%; transform: translateX(-50%); font-size: 2.5rem; opacity: 0.5;">5️⃣</div>
       <div style="margin-top: 2rem;">
-        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Gemini 2.5</h3>
+        <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">Gemini 2.5 Pro</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">Google</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-64.85<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,515.06</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-56.21<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$4,379</p>
       </div>
     </div>
   </v-click>
@@ -921,8 +932,8 @@ layout: center
       <div style="margin-top: 2rem;">
         <h3 style="font-size: 1.6rem; margin: 0 0 0.3rem 0; font-weight: 500;">GPT-5</h3>
         <p style="margin: 0 0 1.5rem; color: var(--apple-muted); font-size: 0.85rem;">OpenAI</p>
-        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-68.15<span style="font-size: 0.6em;">%</span></div>
-        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$3,185.19</p>
+        <div style="font-size: 3rem; font-weight: 200; line-height: 1; margin-bottom: 0.3rem; color: #dc2626;">-58.79<span style="font-size: 0.6em;">%</span></div>
+        <p style="margin: 0; font-size: 1rem; color: var(--apple-muted);">$4,121</p>
       </div>
     </div>
   </v-click>
@@ -938,7 +949,7 @@ layout: center
         <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">Qwen 3 Max</h3>
         <div style="padding: 0.25rem 0.7rem; background: #000; color: #fff; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">趋势捕手</div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">23 笔交易，34.8% 胜率但平均持仓 <strong>28.3 小时</strong>，依靠长周期趋势吃掉大部分利润。</p>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">25 笔交易，40.0% 胜率，平均持仓 <strong>9 小时 51 分</strong>，依靠长周期趋势吃掉大部分利润。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">最大单笔</span>
@@ -957,15 +968,15 @@ layout: center
         <h3 style="font-size: 1.5rem; margin: 0; font-weight: 500;">DeepSeek V3.1</h3>
         <div style="padding: 0.25rem 0.7rem; background: rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.05em;">高频交易</div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">14 笔操作覆盖 BTC/XRP/BNB，动态风控让回撤控制在 <strong>&lt;6%</strong>。</p>
+      <p style="font-size: 1rem; line-height: 1.6; color: var(--apple-secondary); margin: 0 0 0.7rem 0;">17 笔操作覆盖 BTC/ETH/XRP/BNB，节奏稳健，阶段性跑赢基准。</p>
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">28.6%</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">41.2%</strong>
         </div>
         <div>
           <span style="color: var(--apple-muted);">最大单笔</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">XRP +$1.49k</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">ETH +$7.38k</strong>
         </div>
       </div>
     </div>
@@ -980,11 +991,11 @@ layout: center
       <div style="display: flex; gap: 1.8rem; font-size: 0.9rem;">
         <div>
           <span style="color: var(--apple-muted);">胜率</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">31.6%</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">38.1%</strong>
         </div>
         <div>
           <span style="color: var(--apple-muted);">最大盈亏</span>
-          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">+ $1.81k / - $1.58k</strong>
+          <strong style="margin-left: 0.5rem; font-size: 1.2rem;">+ $2.11k / - $1.58k</strong>
         </div>
       </div>
     </div>
@@ -999,7 +1010,7 @@ layout: center
 <v-click>
 <div style="margin-bottom: 1.5rem; position: relative;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">20<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">20.0<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Grok 4</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
@@ -1015,11 +1026,11 @@ layout: center
 <v-click>
 <div style="margin-bottom: 1.5rem; position: relative; padding-left: 8%;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.1s;">11<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.1s;">19.7<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
 <h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">GPT-5</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
-<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">55 笔交易胜率极低，BTC/ETH 集中曝险，单笔 -$1.58k 亏损后迅速放大。</p>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">61 笔交易胜率极低，BTC/ETH 集中曝险，单笔 -$1.58k 亏损后迅速放大。</p>
 <div style="display: flex; align-items: center; gap: 0.5rem;">
 <div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
 <p style="margin: 0; font-size: 0.75rem; color: #333;">多资产分散 + 动态杠杆上限</p>
@@ -1031,11 +1042,11 @@ layout: center
 <v-click>
 <div style="margin-bottom: 0.5rem; position: relative;">
 <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.2s;">24<span style="font-size: 0.5em; color: #999;">%</span></div>
+<div class="number-animate" style="font-size: clamp(2.5rem, 5.5vw, 3.5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000; animation-delay: 0.2s;">25.5<span style="font-size: 0.5em; color: #999;">%</span></div>
 <div style="flex: 1; padding-top: 0.3rem;">
-<h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Gemini 2.5</h3>
+<h3 style="font-size: 1.3rem; margin: 0 0 0.3rem 0; font-weight: 300; letter-spacing: -0.01em;">Gemini 2.5 Pro</h3>
 <div style="width: 50px; height: 1px; background: #000; margin-bottom: 0.5rem;"></div>
-<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">100 笔交易频繁切换方向，导致 -64.9% 严重回撤，缺乏策略一致性。</p>
+<p style="margin: 0 0 0.5rem 0; font-size: 0.8rem; line-height: 1.4; color: #666; max-width: 420px;">165 笔交易频繁切换方向，导致 -56.2% 严重回撤，缺乏策略一致性。</p>
 <div style="display: flex; align-items: center; gap: 0.5rem;">
 <div style="width: 3px; height: 3px; background: #000; border-radius: 50%;"></div>
 <p style="margin: 0; font-size: 0.75rem; color: #333;">延迟监控 + 单日交易次数限制</p>
@@ -1072,13 +1083,14 @@ layout: center
   <v-click>
     <div style="text-align: center;">
       <div class="data-highlight">
-        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">24.44<span style="font-size: 0.6em;">%</span></span>
+        <span class="data-value" style="font-size: clamp(4rem, 10vw, 7rem); line-height: 1; display: block; margin-bottom: 0.5rem;">30.75<span style="font-size: 0.6em;">%</span></span>
         <span class="data-unit" style="font-size: 1.2rem; font-weight: 300; letter-spacing: 0.05em;">平均胜率</span>
       </div>
       <div style="margin-top: 2.5rem;">
-        <div class="data-value" style="font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 0.3rem;">134<span style="font-size: 0.7em;">秒</span></div>
-        <span style="font-size: 0.95rem; color: var(--apple-muted);">决策响应</span>
+        <div class="data-value" style="font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 0.3rem;">—</div>
+        <span style="font-size: 0.95rem; color: var(--apple-muted);">决策响应（未公开）</span>
       </div>
+      <p style="margin-top: 0.6rem; font-size: 0.75rem; color: #999;">口径：LEADERBOARD 六模型 Win Rate 均值 · 2025-10-27 15:54 UTC</p>
     </div>
   </v-click>
   <div style="display: flex; flex-direction: column; gap: 2rem;">
