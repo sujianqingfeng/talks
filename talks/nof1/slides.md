@@ -1169,16 +1169,16 @@ layout: center
 </div>
 
 ---
+layout: center
+---
 
-# 社区与行业反响
-
-<div style="position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+<div style="position: relative; display: flex; align-items: center; justify-content: center; width: 100%; min-height: 60vh;">
 <div style="position: absolute; right: 8%; top: 15%; width: 280px; height: 280px; border: 1px solid rgba(0,0,0,0.04); border-radius: 50%; pointer-events: none;"></div>
 <div style="position: absolute; left: 10%; bottom: 20%; width: 140px; height: 140px; border: 1px solid rgba(0,0,0,0.03); border-radius: 50%; pointer-events: none;"></div>
-<div style="max-width: 1100px; width: 100%; padding: 0 4rem;">
+<div style="max-width: 800px; width: 100%; padding: 0 2rem; text-align: center;">
 <v-click>
-<div style="text-align: center; margin-bottom: 6rem; position: relative;">
-<p style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.25; font-weight: 200; margin: 0 0 2.5rem 0; letter-spacing: -0.02em; color: #000;">
+<div style="margin-bottom: 4rem;">
+<p style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.25; font-weight: 200; margin: 0 0 2rem 0; letter-spacing: -0.02em; color: #000;">
 "This is the World Cup<br/>for LLMs."
 </p>
 <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: #666;">
@@ -1186,40 +1186,60 @@ layout: center
 <div style="width: 4px; height: 4px; background: #999; border-radius: 50%;"></div>
 <span>#NOF1</span>
 </div>
-<div style="margin-top: 3rem;">
-<div style="font-size: 5rem; font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">12M<span style="font-size: 0.4em; color: #999;">+</span></div>
-<div style="margin-top: 0.8rem; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999;">Total Impressions</div>
-</div>
-</div>
-</v-click>
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; margin-top: 4rem;">
-<v-click>
-<div style="text-align: center; position: relative;">
-<div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); width: 1px; height: 0.6rem; background: linear-gradient(180deg, transparent, #000);"></div>
-<div style="font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-bottom: 1.2rem;">Media Echo</div>
-<p style="font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin: 0 0 1rem 0; color: #000;">"AI 智能的<br/>成人礼"</p>
-<p style="font-size: 0.8rem; line-height: 1.7; color: #666; margin: 0;">财经媒体 · 2025-11</p>
 </div>
 </v-click>
 <v-click>
-<div style="text-align: center; position: relative;">
-<div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); width: 1px; height: 0.6rem; background: linear-gradient(180deg, transparent, #000);"></div>
-<div style="font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-bottom: 1.2rem;">Benchmark</div>
-<p style="font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin: 0 0 1rem 0; color: #000;">市场即<br/>新基准</p>
-<p style="font-size: 0.8rem; line-height: 1.7; color: #666; margin: 0;">真实环境的决策能力验证</p>
+<div style="margin-top: 4rem;">
+<div style="font-size: clamp(4rem, 10vw, 6rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">12M<span style="font-size: 0.4em; color: #999;">+</span></div>
+<div style="margin-top: 1rem; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999;">Total Impressions</div>
+<p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666; line-height: 1.6;">截至 2025-10-26，#NOF1 话题在 X 平台累计曝光量</p>
+</div>
+</v-click>
+</div>
+</div>
+
+---
+layout: center
+---
+
+<div style="position: relative; display: flex; align-items: center; justify-content: center; width: 100%; min-height: 60vh;">
+<div style="position: absolute; left: 5%; top: 12%; width: 220px; height: 220px; border: 1px solid rgba(0,0,0,0.03); border-radius: 50%; pointer-events: none;"></div>
+<div style="position: absolute; right: 8%; bottom: 18%; width: 160px; height: 160px; border: 1px solid rgba(0,0,0,0.04); border-radius: 50%; pointer-events: none;"></div>
+<div style="max-width: 1000px; width: 100%; padding: 0 2rem;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem;">
+<v-click>
+<div style="text-align: center; padding: 2rem 1.5rem; position: relative;">
+<div style="width: 80px; height: 2px; background: linear-gradient(90deg, transparent, #000, transparent); margin: 0 auto 2rem;"></div>
+<div style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999; margin-bottom: 1.5rem;">Media Echo</div>
+<p style="font-size: 1.6rem; line-height: 1.4; font-weight: 300; margin: 0 0 1.5rem 0; color: #000; letter-spacing: -0.01em;">"AI 智能的<br/>成人礼"</p>
+<p style="font-size: 0.85rem; line-height: 1.7; color: #666; margin: 0;">财经媒体将此称为 AI 从实验室走向真实市场的里程碑事件。</p>
+<p style="margin-top: 1rem; font-size: 0.75rem; color: #999;">— 财经媒体 · 2025-11</p>
 </div>
 </v-click>
 <v-click>
-<div style="text-align: center; position: relative;">
-<div style="position: absolute; top: -1rem; left: 50%; transform: translateX(-50%); width: 1px; height: 0.6rem; background: linear-gradient(180deg, transparent, #000);"></div>
-<div style="font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-bottom: 1.2rem;">Industry Impact</div>
-<p style="font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin: 0 0 1rem 0; color: #000;">催生新<br/>竞技生态</p>
-<p style="font-size: 0.8rem; line-height: 1.7; color: #666; margin: 0;">AI 实盘基金与评测标准化</p>
+<div style="text-align: center; padding: 2rem 1.5rem; position: relative;">
+<div style="width: 80px; height: 2px; background: linear-gradient(90deg, transparent, #000, transparent); margin: 0 auto 2rem;"></div>
+<div style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999; margin-bottom: 1.5rem;">New Benchmark</div>
+<p style="font-size: 1.6rem; line-height: 1.4; font-weight: 300; margin: 0 0 1.5rem 0; color: #000; letter-spacing: -0.01em;">市场即<br/>新基准</p>
+<p style="font-size: 0.85rem; line-height: 1.7; color: #666; margin: 0;">超越传统静态评测，在真实市场环境中验证 AI 的决策能力与风险管理水平。</p>
+</div>
+</v-click>
+<v-click>
+<div style="text-align: center; padding: 2rem 1.5rem; position: relative;">
+<div style="width: 80px; height: 2px; background: linear-gradient(90deg, transparent, #000, transparent); margin: 0 auto 2rem;"></div>
+<div style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999; margin-bottom: 1.5rem;">Industry Impact</div>
+<p style="font-size: 1.6rem; line-height: 1.4; font-weight: 300; margin: 0 0 1.5rem 0; color: #000; letter-spacing: -0.01em;">催生新<br/>竞技生态</p>
+<p style="font-size: 0.85rem; line-height: 1.7; color: #666; margin: 0;">推动 AI 实盘基金、模型评测标准化等新兴领域快速发展。</p>
 </div>
 </v-click>
 </div>
 </div>
 </div>
+
+
+---
+
+
 # 展望未来赛季
 
 <div style="max-width: 700px; margin: 3rem auto; position: relative;">
