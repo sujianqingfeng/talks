@@ -36,13 +36,19 @@ layout: cover
 
 <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 10;">
 <v-click>
-<div style="background: rgba(0,0,0,0.8); width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center;">
+<div style="background: rgba(0,0,0,0.8); width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center; transform: translateY(0) !important;">
 <div style="background: white; padding: 1.5rem; border-radius: 1rem; text-align: center;">
 <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://nof1.ai" />
 </div>
 </div>
 </v-click>
 </div>
+
+<style>
+.slidev-vclick-target {
+  transform: translateY(0) !important;
+}
+</style>
 
 ---
 
