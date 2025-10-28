@@ -377,7 +377,7 @@ layout: center
         <h3 style="font-size: 1.4rem; margin: 0 0 0.5rem 0; font-weight: 500;">决策节奏</h3>
         <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 0.5rem;">
           <div>
-            <span style="font-size: 2.5rem; font-weight: 200; line-height: 1;">2</span>
+            <span style="font-size: 2.5rem; font-weight: 200; line-height: 1;">3</span>
             <span style="font-size: 1rem; color: var(--apple-muted); margin-left: 0.3rem;">分钟</span>
           </div>
           <div style="font-size: 1.5rem; color: var(--apple-muted);">→</div>
