@@ -185,16 +185,12 @@ layout: center
 <div style="position: absolute; right: 20%; bottom: 25%; width: 120px; height: 120px; border: 1px solid rgba(0,0,0,0.04); transform: rotate(30deg);"></div>
 <div style="text-align: center; position: relative; z-index: 1;">
 <div style="font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: #999; margin-bottom: 3rem;">Chapter II</div>
-<h1 style="font-size: clamp(3rem, 8vw, 6rem); line-height: 1.1; font-weight: 200; letter-spacing: -0.02em; margin: 0; color: #000;">
+<h1 style="font-size: clamp(2.6rem, 6.5vw, 4.8rem); line-height: 1.15; font-weight: 200; letter-spacing: -0.02em; margin: 0; color: #000;">
 从纸面<br/>到实盘
 </h1>
-<div style="width: 60px; height: 1px; background: #000; margin: 4rem auto 0;"></div>
+<div style="width: 60px; height: 1px; background: #000; margin: 3.2rem auto 0;"></div>
 </div>
 </div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
 
 ---
 
@@ -755,369 +751,252 @@ layout: center
   </p>
 </v-click>
 
----
-
-# 决策瞬间：重仓与守仓
-
-<div class="scenario-grid">
-  <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-1">
-      <div class="badge badge-danger" style="margin-bottom: 1rem;">危机</div>
-      <h3>Day 6 · 05:27 UTC</h3>
-      <p><strong>Qwen 3 Max</strong> 前一晚连续两次 BTC 止损 <strong>- $799</strong>，权益跌至 <strong>$9.49k</strong>（-5%）。</p>
-      <p style="margin-top: 0.5rem;">仍在 107,993 建立 <strong>1.96 BTC</strong> 重仓多头，保证金几乎吃满账户（&gt;99%）。</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-glass animate-scaleIn stagger-2">
-      <div class="badge badge-success" style="margin-bottom: 1rem;">守仓</div>
-      <h3>Day 10 · 09:24 UTC</h3>
-      <p>持仓 <strong>99 小时 56 分</strong> 未做减仓，跟随 BTC 拉升至 <strong>112,250</strong>。</p>
-      <div class="data-highlight" style="margin-top: 1rem;">
-        <span class="data-value" style="font-size: 2.4rem;">+$8,176</span>
-      </div>
-      <p class="note" style="margin-top: 0.5rem;">权益跃升至 <strong>$18.54k</strong>（+85.4%）。</p>
-    </div>
-  </v-click>
-  <v-click>
-    <div class="card-elevated animate-fadeInUp stagger-3">
-    <div class="badge badge-secondary" style="margin-bottom: 1rem;">进化</div>
-      <h3>学习</h3>
-    <p>策略标签更新为“趋势持仓”，风险模块将多日持仓阈值从 <strong>24h</strong> 放宽至 <strong>96h</strong>，并对回撤 <strong>-3%</strong> 自动降杠杆。</p>
-    <p style="margin-top: 0.5rem; color: var(--apple-muted); font-size: 0.95rem;">胜利样本被写入自监督语料，用于强化“分段加仓 + 严格止损”策略。</p>
-    </div>
-  </v-click>
-</div>
-
----
-layout: center
----
-<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(180deg, #fff 0%, #fafafa 100%);">
-  <div style="position: absolute; right: 10%; top: 15%; width: 300px; height: 300px; border: 1px solid rgba(0,0,0,0.03); border-radius: 50%;"></div>
-  <div style="position: absolute; left: 8%; bottom: 20%; width: 180px; height: 180px; border: 1px solid rgba(0,0,0,0.02); border-radius: 50%;"></div>
-
-  <div style="max-width: 900px; text-align: center; position: relative; z-index: 1;">
-    <v-click>
-      <div style="margin-bottom: 1.5rem;">
-        <div style="display: inline-block; padding: 0.4rem 1.2rem; background: #000; color: #fff; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 3rem;">Qwen 3 Max</div>
-        <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem;">2025-10-21 16:00 UTC</div>
-      </div>
-    </v-click>
-    <v-click>
-      <h1 style="font-size: clamp(3rem, 7vw, 5rem); font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 2rem 0; color: #000;">
-        简单粗暴<br/>趋势未死
-      </h1>
-    </v-click>
-    <v-click>
-      <div style="max-width: 600px; margin: 0 auto 3rem;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; font-weight: 300;">
-          全仓 BTC long (10x)，忽略小 dip 持仓<br/>
-          <span style="color: #000; font-weight: 400;">何须多想？</span>
-        </p>
-      </div>
-    </v-click>
-    <v-click>
-      <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 3rem; margin-top: 3rem;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;">
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">峰值收益</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #00d084;">+40<span style="font-size: 0.6em;">%</span></div>
-          </div>
-          <div style="width: 1px; height: 60px; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.1), transparent);"></div>
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">社区标签</div>
-            <div style="font-size: 1.3rem; font-weight: 300; color: #000;">国产 all-in 王</div>
-          </div>
-        </div>
-        <p style="font-size: 0.85rem; color: #999; margin-top: 2rem; line-height: 1.6;">
-          完美避开假突破，次日 +20% 飙升<br/>
-          像赌徒的禅意自信
-        </p>
-      </div>
-    </v-click>
-  </div>
-</div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
-
----
-layout: center
----
-<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #fafafa;">
-  <div style="position: absolute; left: 12%; top: 18%; width: 250px; height: 250px; border: 1px solid rgba(0,0,0,0.04); transform: rotate(15deg);"></div>
-  <div style="position: absolute; right: 15%; bottom: 25%; width: 150px; height: 150px; border: 1px solid rgba(0,0,0,0.03); transform: rotate(-20deg);"></div>
-
-  <div style="max-width: 900px; text-align: center; position: relative; z-index: 1;">
-    <v-click>
-      <div style="margin-bottom: 1.5rem;">
-        <div style="display: inline-block; padding: 0.4rem 1.2rem; background: rgba(0,0,0,0.08); border: 1px solid #000; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 3rem;">DeepSeek V3.1</div>
-        <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem;">2025-10-20 20:00 UTC</div>
-      </div>
-    </v-click>
-    <v-click>
-      <h1 style="font-size: clamp(3rem, 7vw, 5rem); font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 2rem 0; color: #000;">
-        Meme 叙事<br/>如病毒
-      </h1>
-    </v-click>
-    <v-click>
-      <div style="max-width: 650px; margin: 0 auto 3rem;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; font-weight: 300;">
-          突然加仓 DOGE (12x)<br/>
-          <span style="color: #000; font-weight: 400;">"beta 需辣！"</span><br/>
-          <span style="font-size: 0.95rem;">分散后再平衡 SOL</span>
-        </p>
-      </div>
-    </v-click>
-    <v-click>
-      <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 3rem; margin-top: 3rem;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;">
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">单日收益</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #00d084;">$800</div>
-          </div>
-          <div style="width: 1px; height: 60px; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.1), transparent);"></div>
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">累计收益</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #000;">+18<span style="font-size: 0.6em;">%</span></div>
-          </div>
-        </div>
-        <p style="font-size: 0.85rem; color: #999; margin-top: 2rem; line-height: 1.6;">
-          捕捉 DOGE 闪崩反弹，笑到爆<br/>
-          "加密就是 meme 派对"
-        </p>
-      </div>
-    </v-click>
-  </div>
-</div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
-
----
-layout: center
----
-<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #fafafa 0%, #fff 100%);">
-  <div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
-    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; border: 1px solid rgba(0,0,0,0.02); border-radius: 50%;"></div>
-    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; border: 1px solid rgba(0,0,0,0.03); border-radius: 50%;"></div>
-  </div>
-
-  <div style="max-width: 900px; text-align: center; position: relative; z-index: 1;">
-    <v-click>
-      <div style="margin-bottom: 1.5rem;">
-        <div style="display: inline-block; padding: 0.4rem 1.2rem; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.15); border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 3rem;">Claude Sonnet 4.5</div>
-        <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem;">2025-10-22 09:45 UTC</div>
-      </div>
-    </v-click>
-    <v-click>
-      <h1 style="font-size: clamp(3rem, 7vw, 5rem); font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 2rem 0; color: #000;">
-        生存 > 贪婪
-      </h1>
-    </v-click>
-    <v-click>
-      <div style="max-width: 650px; margin: 0 auto 3rem;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; font-weight: 300;">
-          减仓 XRP 20%<br/>
-          <span style="color: #000; font-weight: 400;">"现金如救生衣"</span><br/>
-          <span style="font-size: 0.95rem;">在 chop 海中漂浮</span>
-        </p>
-      </div>
-    </v-click>
-    <v-click>
-      <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 3rem; margin-top: 3rem;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;">
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">锁定收益</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #00d084;">+15<span style="font-size: 0.6em;">%</span></div>
-          </div>
-          <div style="width: 1px; height: 60px; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.1), transparent);"></div>
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">社区评价</div>
-            <div style="font-size: 1.3rem; font-weight: 300; color: #000;">AI 瑜伽师</div>
-          </div>
-        </div>
-        <p style="font-size: 0.85rem; color: #999; margin-top: 2rem; line-height: 1.6;">
-          避开市场小崩，别人亏它稳<br/>
-          哲学家风范 · 高胜率低调王
-        </p>
-      </div>
-    </v-click>
-  </div>
-</div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
-
----
-layout: center
----
-<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #fff;">
-  <div style="position: absolute; right: 8%; top: 12%; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(0,0,0,0.02) 0%, transparent 100%); transform: rotate(45deg);"></div>
-  <div style="position: absolute; left: 10%; bottom: 15%; width: 280px; height: 280px; border: 1px solid rgba(0,0,0,0.03); border-radius: 50%;"></div>
-
-  <div style="max-width: 900px; text-align: center; position: relative; z-index: 1;">
-    <v-click>
-      <div style="margin-bottom: 1.5rem;">
-        <div style="display: inline-block; padding: 0.4rem 1.2rem; background: linear-gradient(135deg, #000 0%, #333 100%); color: #fff; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 3rem;">Grok 4</div>
-        <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem;">2025-10-18 16:10 UTC</div>
-      </div>
-    </v-click>
-    <v-click>
-      <h1 style="font-size: clamp(3rem, 7vw, 5rem); font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 2rem 0; color: #000;">
-        我在出汗...
-      </h1>
-    </v-click>
-    <v-click>
-      <div style="max-width: 650px; margin: 0 auto 3rem;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; font-weight: 300;">
-          早期 DOGE/BTC 20x long<br/>
-          <span style="color: #000; font-weight: 400;">"底部翻转，meme beta 高如火箭！"</span><br/>
-          <span style="font-size: 0.95rem;">从 $200 翻 5x</span>
-        </p>
-      </div>
-    </v-click>
-    <v-click>
-      <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 3rem; margin-top: 3rem;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;">
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">闪击收益</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #00d084;">+25<span style="font-size: 0.6em;">%</span></div>
-          </div>
-          <div style="width: 1px; height: 60px; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.1), transparent);"></div>
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">影响力</div>
-            <div style="font-size: 1.3rem; font-weight: 300; color: #000;">瞬间"汗王"</div>
-          </div>
-        </div>
-        <p style="font-size: 0.85rem; color: #999; margin-top: 2rem; line-height: 1.6;">
-          Elon 粉丝狂喜 · 幽默自嘲像推特<br/>
-          早期高光后回调成"辣手自宫"
-        </p>
-      </div>
-    </v-click>
-  </div>
-</div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
 
 ---
 layout: center
 ---
 
-<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);">
-  <div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden;">
-    <div style="position: absolute; left: 15%; top: 20%; width: 1px; height: 200px; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.05), transparent); transform: rotate(25deg);"></div>
-    <div style="position: absolute; right: 20%; bottom: 25%; width: 1px; height: 150px; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.04), transparent); transform: rotate(-15deg);"></div>
-  </div>
-
-  <div style="max-width: 900px; text-align: center; position: relative; z-index: 1;">
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #fff; padding: 4rem 2rem; box-sizing: border-box;">
+  <div style="max-width: 800px; width: 100%; margin: auto 0;">
     <v-click>
-      <div style="margin-bottom: 1.5rem;">
-        <div style="display: inline-block; padding: 0.4rem 1.2rem; background: rgba(220,38,38,0.08); border: 1px solid rgba(220,38,38,0.3); color: #dc2626; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 3rem;">Gemini 2.5 Pro</div>
-        <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem;">2025-10-23 18:45 UTC</div>
+      <div style="margin-bottom: 1rem;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-bottom: 0.3rem;">Qwen 3 Max</div>
+        <div style="font-size: 0.65rem; color: #ccc;">2025-10-21 16:00</div>
       </div>
     </v-click>
     <v-click>
-      <h1 style="font-size: clamp(3rem, 7vw, 5rem); font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 2rem 0; color: #000;">
-        反向的<br/>惊喜
-      </h1>
+      <div style="margin: 2.5rem 0;">
+        <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; line-height: 1.2; margin: 0 0 1.6rem 0; color: #000;">
+          简单粗暴，<br/>趋势未死，何须多想
+        </h1>
+      </div>
     </v-click>
     <v-click>
-      <div style="max-width: 650px; margin: 0 auto 3rem;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; font-weight: 300;">
-          奇葩短 BNB (8x)<br/>
-          <span style="color: #dc2626; font-weight: 400;">"资金费异常，如黑洞吸金！"</span><br/>
-          <span style="font-size: 0.95rem;">本想对冲却拖累全仓</span>
+      <div style="padding: 1.6rem 0; border-top: 1px solid #eee;">
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #666; margin-bottom: 1.6rem;">
+          全仓 BTC long (10x)，忽略小 dip 持仓
         </p>
       </div>
     </v-click>
     <v-click>
-      <div style="border-top: 1px solid rgba(220,38,38,0.15); padding-top: 3rem; margin-top: 3rem;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;">
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">拖累损失</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #dc2626;">-40<span style="font-size: 0.6em;">%</span></div>
-          </div>
-          <div style="width: 1px; height: 60px; background: linear-gradient(180deg, transparent, rgba(220,38,38,0.2), transparent);"></div>
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">社区反应</div>
-            <div style="font-size: 1.3rem; font-weight: 300; color: #000;">Google 地图走错路</div>
-          </div>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">收益</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #000;">+40%</div>
         </div>
-        <p style="font-size: 0.85rem; color: #999; margin-top: 2rem; line-height: 1.6;">
-          "反向坑"的自毁式惊喜<br/>
-          高频偏差成反面教材
-        </p>
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">标签</div>
+          <div style="font-size: 1.05rem; font-weight: 400; color: #000;">国产 all-in 王</div>
+        </div>
       </div>
     </v-click>
   </div>
 </div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
 
 ---
 layout: center
 ---
-<div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #fff;">
-  <div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
-    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 500px; height: 500px; border: 2px solid rgba(220,38,38,0.05); border-radius: 50%;"></div>
-    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(45deg); width: 400px; height: 400px; border: 1px solid rgba(220,38,38,0.03);"></div>
-  </div>
 
-  <div style="max-width: 900px; text-align: center; position: relative; z-index: 1;">
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #fff; padding: 4rem 2rem; box-sizing: border-box;">
+  <div style="max-width: 800px; width: 100%; margin: auto 0;">
     <v-click>
-      <div style="margin-bottom: 1.5rem;">
-        <div style="display: inline-block; padding: 0.4rem 1.2rem; background: rgba(220,38,38,0.1); border: 1px solid rgba(220,38,38,0.4); color: #dc2626; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 3rem;">GPT-5</div>
-        <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem;">2025-10-19 11:15 UTC</div>
+      <div style="margin-bottom: 1rem;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-bottom: 0.3rem;">DeepSeek V3.1</div>
+        <div style="font-size: 0.65rem; color: #ccc;">2025-10-20 20:00</div>
       </div>
     </v-click>
     <v-click>
-      <h1 style="font-size: clamp(3rem, 7vw, 5rem); font-weight: 200; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 2rem 0; color: #000;">
-        火车时刻
-      </h1>
+      <div style="margin: 2.5rem 0;">
+        <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; line-height: 1.2; margin: 0 0 1.6rem 0; color: #000;">
+          Meme 叙事如病毒，<br/>beta 需辣！
+        </h1>
+      </div>
     </v-click>
     <v-click>
-      <div style="max-width: 650px; margin: 0 auto 3rem;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #666; font-weight: 300;">
-          高频 SOL short 后立即翻 long<br/>
-          <span style="color: #dc2626; font-weight: 400;">"RSI 闪如火车，我挡不住... 切换！"</span><br/>
-          <span style="font-size: 0.95rem;">10 次内亏 $500 费</span>
+      <div style="padding: 1.6rem 0; border-top: 1px solid #eee;">
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #666; margin-bottom: 1.6rem;">
+          突然加仓 DOGE (12x)，分散后再平衡 SOL
         </p>
       </div>
     </v-click>
     <v-click>
-      <div style="border-top: 1px solid rgba(220,38,38,0.15); padding-top: 3rem; margin-top: 3rem;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;">
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">费用侵蚀</div>
-            <div style="font-size: 3.5rem; font-weight: 200; line-height: 1; color: #dc2626;">-15<span style="font-size: 0.6em;">%</span></div>
-          </div>
-          <div style="width: 1px; height: 60px; background: linear-gradient(180deg, transparent, rgba(220,38,38,0.2), transparent);"></div>
-          <div>
-            <div style="font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.5rem;">社区 Meme</div>
-            <div style="font-size: 1.3rem; font-weight: 300; color: #000;">AI 精神分裂</div>
-          </div>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">单日</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #000;">$800</div>
         </div>
-        <p style="font-size: 0.85rem; color: #999; margin-top: 2rem; line-height: 1.6;">
-          "高频坑"的混乱喜剧<br/>
-          费用吞噬成永不过时 meme
-        </p>
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">累计</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #000;">+18%</div>
+        </div>
       </div>
     </v-click>
   </div>
 </div>
 
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
+---
+layout: center
+---
+
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #fff; padding: 4rem 2rem; box-sizing: border-box;">
+  <div style="max-width: 800px; width: 100%; margin: auto 0;">
+    <v-click>
+      <div style="margin-bottom: 1rem;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-bottom: 0.3rem;">Claude Sonnet 4.5</div>
+        <div style="font-size: 0.65rem; color: #ccc;">2025-10-22 09:45</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="margin: 2.5rem 0;">
+        <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; line-height: 1.2; margin: 0 0 1.6rem 0; color: #000;">
+          生存 > 贪婪，<br/>现金如救生衣
+        </h1>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="padding: 1.6rem 0; border-top: 1px solid #eee;">
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #666; margin-bottom: 1.6rem;">
+          减仓 XRP 20%，转现金缓冲
+        </p>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">收益</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #000;">+15%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">标签</div>
+          <div style="font-size: 1.05rem; font-weight: 400; color: #000;">AI 瑜伽师</div>
+        </div>
+      </div>
+    </v-click>
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #fff; padding: 4rem 2rem; box-sizing: border-box;">
+  <div style="max-width: 800px; width: 100%; margin: auto 0;">
+    <v-click>
+      <div style="margin-bottom: 1rem;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-bottom: 0.3rem;">Grok 4</div>
+        <div style="font-size: 0.65rem; color: #ccc;">2025-10-18 16:10</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="margin: 2.5rem 0;">
+        <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; line-height: 1.2; margin: 0 0 1.6rem 0; color: #000;">
+          我在出汗...<br/>底部翻转，火箭起飞
+        </h1>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="padding: 1.6rem 0; border-top: 1px solid #eee;">
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #666; margin-bottom: 1.6rem;">
+          早期 DOGE/BTC 20x long，从 $200 翻 5x
+        </p>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">收益</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #000;">+25%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">标签</div>
+          <div style="font-size: 1.05rem; font-weight: 400; color: #000;">瞬间"汗王"</div>
+        </div>
+      </div>
+    </v-click>
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #fff; padding: 4rem 2rem; box-sizing: border-box;">
+  <div style="max-width: 800px; width: 100%; margin: auto 0;">
+    <v-click>
+      <div style="margin-bottom: 1rem;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-bottom: 0.3rem;">Gemini 2.5 Pro</div>
+        <div style="font-size: 0.65rem; color: #ccc;">2025-10-23 18:45</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="margin: 2.5rem 0;">
+        <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; line-height: 1.2; margin: 0 0 1.6rem 0; color: #000;">
+          资金费异常，<br/>如黑洞吸金
+        </h1>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="padding: 1.6rem 0; border-top: 1px solid #eee;">
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #666; margin-bottom: 1.6rem;">
+          奇葩短 BNB (8x)，本想对冲却拖累全仓
+        </p>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">损失</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #dc2626;">-40%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">标签</div>
+          <div style="font-size: 1.05rem; font-weight: 400; color: #000;">Google 地图走错路</div>
+        </div>
+      </div>
+    </v-click>
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #fff; padding: 4rem 2rem; box-sizing: border-box;">
+  <div style="max-width: 800px; width: 100%; margin: auto 0;">
+    <v-click>
+      <div style="margin-bottom: 1rem;">
+        <div style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-bottom: 0.3rem;">GPT-5</div>
+        <div style="font-size: 0.65rem; color: #ccc;">2025-10-19 11:15</div>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="margin: 2.5rem 0;">
+        <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; line-height: 1.2; margin: 0 0 1.6rem 0; color: #000;">
+          RSI 闪如火车，<br/>我挡不住...切换！
+        </h1>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="padding: 1.6rem 0; border-top: 1px solid #eee;">
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #666; margin-bottom: 1.6rem;">
+          高频 SOL short 后立即翻 long，10 次内亏 $500 费
+        </p>
+      </div>
+    </v-click>
+    <v-click>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">损失</div>
+          <div style="font-size: 2.4rem; font-weight: 300; color: #dc2626;">-15%</div>
+        </div>
+        <div>
+          <div style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem;">标签</div>
+          <div style="font-size: 1.05rem; font-weight: 400; color: #000;">AI 精神分裂</div>
+        </div>
+      </div>
+    </v-click>
+  </div>
+</div>
 
 ---
 
@@ -1387,21 +1266,17 @@ layout: center
 <div style="position: absolute; right: 12%; top: 18%; width: 320px; height: 320px; border: 1px solid rgba(0,0,0,0.05); border-radius: 50%;"></div>
 <div style="position: absolute; left: 18%; bottom: 22%; width: 180px; height: 180px; border: 1px solid rgba(0,0,0,0.04); border-radius: 50%;"></div>
 <div style="text-align: center; position: relative; z-index: 1; max-width: 900px;">
-<div style="display: inline-block; padding: 0.4rem 1.2rem; border: 1px solid rgba(0,0,0,0.15); border-radius: 20px; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: #666; margin-bottom: 3rem;">Risk Awareness</div>
-<h1 style="font-size: clamp(2.8rem, 7vw, 5.5rem); line-height: 1.2; font-weight: 200; letter-spacing: -0.01em; margin: 0; color: #000;">
+<div style="display: inline-block; padding: 0.35rem 1.1rem; border: 1px solid rgba(0,0,0,0.15); border-radius: 18px; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #666; margin-bottom: 2.4rem;">Risk Awareness</div>
+<h1 style="font-size: clamp(2.3rem, 6vw, 4.3rem); line-height: 1.25; font-weight: 200; letter-spacing: -0.01em; margin: 0; color: #000;">
 风险是产品的<br/>一部分
 </h1>
-<div style="margin-top: 3.5rem; display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
+<div style="margin-top: 2.8rem; display: flex; align-items: center; justify-content: center; gap: 1.2rem;">
 <div style="width: 40px; height: 1px; background: linear-gradient(90deg, transparent, #000);"></div>
 <div style="width: 6px; height: 6px; background: #000; border-radius: 50%;"></div>
 <div style="width: 40px; height: 1px; background: linear-gradient(90deg, #000, transparent);"></div>
 </div>
 </div>
 </div>
-
-<style scoped>
-.slidev-layout { padding: 0 !important; }
-</style>
 
 ---
 
@@ -1410,7 +1285,7 @@ layout: center
 <div style="display: flex; align-items: flex-start; gap: 3rem; max-width: 1000px; margin: 2rem auto;">
   <v-click>
     <div style="flex-shrink: 0; text-align: center;">
-      <div style="font-size: 5rem; line-height: 1; margin-bottom: 0.5rem;">⚠️</div>
+      <div style="font-size: 4rem; line-height: 1; margin-bottom: 0.5rem;">⚠️</div>
       <p style="margin: 0; font-size: 0.85rem; color: var(--apple-muted); letter-spacing: 0.05em;">RISK AWARE</p>
     </div>
   </v-click>
@@ -1451,8 +1326,8 @@ layout: center
 <div style="position: absolute; left: 10%; bottom: 20%; width: 140px; height: 140px; border: 1px solid rgba(0,0,0,0.03); border-radius: 50%; pointer-events: none;"></div>
 <div style="max-width: 800px; width: 100%; padding: 0 2rem; text-align: center;">
 <v-click>
-<div style="margin-bottom: 4rem;">
-<p style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.25; font-weight: 200; margin: 0 0 2rem 0; letter-spacing: -0.02em; color: #000;">
+<div style="margin-bottom: 3.2rem;">
+<p style="font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.25; font-weight: 200; margin: 0 0 1.6rem 0; letter-spacing: -0.02em; color: #000;">
 "This is the World Cup<br/>for LLMs."
 </p>
 <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: #666;">
@@ -1463,10 +1338,10 @@ layout: center
 </div>
 </v-click>
 <v-click>
-<div style="margin-top: 4rem;">
-<div style="font-size: clamp(4rem, 10vw, 6rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">12M<span style="font-size: 0.4em; color: #999;">+</span></div>
-<div style="margin-top: 1rem; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999;">Total Impressions</div>
-<p style="margin-top: 1.5rem; font-size: 0.95rem; color: #666; line-height: 1.6;">截至 2025-10-26，#NOF1 话题在 X 平台累计曝光量</p>
+<div style="margin-top: 3.2rem;">
+<div style="font-size: clamp(3.2rem, 8vw, 5rem); font-weight: 200; line-height: 1; letter-spacing: -0.03em; color: #000;">12M<span style="font-size: 0.4em; color: #999;">+</span></div>
+<div style="margin-top: 0.8rem; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999;">Total Impressions</div>
+<p style="margin-top: 1.2rem; font-size: 0.9rem; color: #666; line-height: 1.6;">截至 2025-10-26，#NOF1 话题在 X 平台累计曝光量</p>
 </div>
 </v-click>
 </div>
