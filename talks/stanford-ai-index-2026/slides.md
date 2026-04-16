@@ -41,41 +41,87 @@ class: cover-page
 
 ---
 layout: default
-class: deck-page
+class: deck-page intro-page intro-agenda-page
 ---
 
-# 先给结论：今年 AI 同时发生四个变化
+# 为什么先看这份报告
 
-<div class="two-panel">
-  <div class="paper-card">
-    <div class="kicker">2026 In One Slide</div>
-    <div class="section-heading">这不是“某个模型更强”那么简单，而是 AI 已经同时变成能力层、工作流和基础设施。</div>
-    <div class="chart-caption mt-5">
-      所以这场分享不打算带大家追模型榜，而是看清楚 AI 正在怎样进入你每天会碰到的规则、系统和专业流程。
+<div class="intro-briefing">
+  <div class="intro-lead-block">
+    <div class="kicker">Why AI Index</div>
+    <div class="intro-leadline">斯坦福 AI 指数更像一份年度体检，而不是一场产品发布会。</div>
+    <div class="intro-support-copy">
+      它不给情绪化结论，更重要的是把 AI 的能力、普及和代价，放进同一张时间轴里看。
     </div>
+    <ul class="intro-proof-list">
+      <li>Stanford HAI 自 2017 年起持续发布年度报告</li>
+      <li>它的价值不在观点，而在用数据看长期趋势</li>
+      <li>比热搜和发布会更适合判断 AI 真实走到了哪一步</li>
+    </ul>
+  </div>
+  <div class="intro-side-sheet">
+    <div class="micro-label">Today's Lens</div>
+    <div class="intro-sheet-title">今天只用 4 个问题，把这份报告读成一张现实地图。</div>
+    <ul class="intro-question-list intro-question-list-native">
+      <li class="intro-question-row intro-question-row-native">
+        <span class="intro-question-index">01</span>
+        <span class="intro-question-copy">AI 到底强了多少</span>
+      </li>
+      <li class="intro-question-row intro-question-row-native">
+        <span class="intro-question-index">02</span>
+        <span class="intro-question-copy">它正在改变谁的生活和工作</span>
+      </li>
+      <li class="intro-question-row intro-question-row-native">
+        <span class="intro-question-index">03</span>
+        <span class="intro-question-copy">它带来了哪些新的代价和风险</span>
+      </li>
+      <li class="intro-question-row intro-question-row-native">
+        <span class="intro-question-index">04</span>
+        <span class="intro-question-copy">普通人最该关心什么变化</span>
+      </li>
+    </ul>
+    <div class="intro-sheet-note">这一页先定观察框架，下一页不再铺背景，直接给今年最重要的四个判断。</div>
+  </div>
+</div>
+
+---
+layout: default
+class: deck-page intro-page intro-verdict-page
+---
+
+# 先给结论
+
+<div class="intro-verdict-band">
+  <div class="kicker">2026 In One Slide</div>
+  <div class="intro-verdict-line">今年最重要的不是单个模型刷新了哪条榜单，而是能力、扩散、成本和透明度一起变化。</div>
+  <div class="chart-caption mt-5">
+    所以这场分享不打算带大家追模型榜，而是看清楚 AI 正在怎样进入你每天会碰到的规则、系统和专业流程。
+  </div>
+</div>
+
+<div class="intro-pillar-grid mt-6">
+  <div class="intro-pillar">
+    <div class="intro-pillar-index">01</div>
+    <div class="intro-pillar-title">更强</div>
+    <div class="intro-pillar-copy">推理、多模态和 agent 继续上升。</div>
   </div>
 
-  <div class="route-grid">
-    <div class="route-card">
-      <div class="route-index">01</div>
-      <div class="route-title">能力继续上升</div>
-      <div class="route-copy">前沿模型更会推理、多模态理解更强，也更像能执行任务的 agent。</div>
-    </div>
-    <div class="route-card">
-      <div class="route-index">02</div>
-      <div class="route-title">扩散速度极快</div>
-      <div class="route-copy">它已经不是科技圈工具，而是快速进入大众日常的通用能力。</div>
-    </div>
-    <div class="route-card">
-      <div class="route-index">03</div>
-      <div class="route-title">专业流程先被改写</div>
-      <div class="route-copy">工作、教育、科研、医疗都开始把 AI 嵌进原本由人完成的环节。</div>
-    </div>
-    <div class="route-card route-card-dark">
-      <div class="route-index">04</div>
-      <div class="route-title">代价和责任一起放大</div>
-      <div class="route-copy">资源消耗、治理边界和公众信任，已经成了不能绕开的新问题。</div>
-    </div>
+  <div class="intro-pillar">
+    <div class="intro-pillar-index">02</div>
+    <div class="intro-pillar-title">更普及</div>
+    <div class="intro-pillar-copy">它正在以主流社会的速度扩散，而不是科技圈速度。</div>
+  </div>
+
+  <div class="intro-pillar">
+    <div class="intro-pillar-index">03</div>
+    <div class="intro-pillar-title">更贵</div>
+    <div class="intro-pillar-copy">资金、算力、电力和用水，都在一起变成成本。</div>
+  </div>
+
+  <div class="intro-pillar intro-pillar-dark">
+    <div class="intro-pillar-index">04</div>
+    <div class="intro-pillar-title">更不透明</div>
+    <div class="intro-pillar-copy">治理边界、责任归属和公众信任，已经不能再靠乐观带过。</div>
   </div>
 </div>
 
@@ -93,7 +139,7 @@ class: chapter-page
 
 ---
 layout: default
-class: deck-page
+class: deck-page ending-cost-page
 ---
 
 # AI 扩散速度，已经超过个人电脑和互联网
@@ -329,8 +375,37 @@ class: deck-page
       <div class="small-copy">标准化、可拆分、可审计、可模板化复用的初级工作。</div>
     </div>
     <div class="essay-item">
-      <div class="micro-label">对普通白领意味着什么</div>
-      <div class="small-copy">先被分走的通常是资料整理、信息汇总、初稿生成和重复沟通。</div>
+      <div class="micro-label">为什么先是年轻人</div>
+      <div class="small-copy">入门岗位往往承担的正是最容易被 AI 接管的一段工作流。</div>
+    </div>
+    <div class="margin-remark">这不是“整份工作立刻消失”，而是岗位内部的任务分工先被重写。</div>
+  </div>
+</div>
+
+---
+layout: default
+class: deck-page
+---
+
+# 对普通白领意味着什么
+
+<div class="two-panel">
+  <div class="paper-card">
+    <div class="micro-label">Task Shift</div>
+    <div class="section-heading">AI 不是先取代所有人，而是先分走一部分基础任务。</div>
+    <div class="chart-caption mt-5">
+      更常见的变化不是岗位突然消失，而是原本由实习生、新人或初级员工完成的工作，被 AI 拿走了一截。
+    </div>
+  </div>
+
+  <div class="essay-stack">
+    <div class="essay-item">
+      <div class="micro-label">先被分走的工作</div>
+      <div class="small-copy">资料整理、信息汇总、初稿生成和重复沟通，最容易先被自动化。</div>
+    </div>
+    <div class="essay-item">
+      <div class="micro-label">团队结构怎么变</div>
+      <div class="small-copy">组织会更少为基础产出买单，更看重能统筹上下文和压住质量的人。</div>
     </div>
     <div class="essay-item">
       <div class="micro-label">更值钱的能力</div>
@@ -617,28 +692,34 @@ class: deck-page
     </div>
   </div>
 
-  <div class="paper-card">
-    <div class="ledger-note-block">
-      <div class="micro-label">电力</div>
-      <div class="ledger-mini">29.6GW</div>
-      <div class="small-copy">AI 数据中心电力容量，大致相当于纽约州峰值用电水平。</div>
+  <div class="paper-card infra-stack-card">
+    <div class="infra-stack-row">
+      <div class="infra-stack-number">29.6GW</div>
+      <div class="infra-stack-meta">
+        <div class="micro-label">电力</div>
+        <div class="infra-stack-copy">AI 数据中心电力容量，约等于纽约州峰值用电。</div>
+      </div>
     </div>
-    <div class="ledger-note-block">
-      <div class="micro-label">用水</div>
-      <div class="ledger-mini">1200 万人</div>
-      <div class="small-copy">GPT-4o 一年的推理用水，估算可能超过这么多人的饮水需求。</div>
+    <div class="infra-stack-row">
+      <div class="infra-stack-number">1200 万人</div>
+      <div class="infra-stack-meta">
+        <div class="micro-label">用水</div>
+        <div class="infra-stack-copy">GPT-4o 一年推理用水，估算可超过这么多人的饮水需求。</div>
+      </div>
     </div>
-    <div class="ledger-note-block">
-      <div class="micro-label">碳排放</div>
-      <div class="ledger-mini">72,816 吨</div>
-      <div class="small-copy">Grok 4 的估算训练排放，已经是非常具体的基础设施成本。</div>
+    <div class="infra-stack-row">
+      <div class="infra-stack-number">72,816 吨</div>
+      <div class="infra-stack-meta">
+        <div class="micro-label">碳排放</div>
+        <div class="infra-stack-copy">Grok 4 的估算训练排放，已经是具体的基础设施成本。</div>
+      </div>
     </div>
   </div>
 </div>
 
 ---
 layout: center
-class: closing-page
+class: closing-page ending-summary-page
 ---
 
 <div class="closing-shell">
@@ -666,7 +747,7 @@ class: closing-page
     <div class="route-card">
       <div class="route-index">04</div>
       <div class="route-title">看 AI 要看系统变化</div>
-      <div class="route-copy">它替代了哪段流程、进入了哪个系统、消耗了哪些资源，这比追单次发布更重要。</div>
+      <div class="route-copy">看它替代了哪段流程、进入了哪个系统，比追单次发布更重要。</div>
     </div>
   </div>
 </div>
