@@ -320,7 +320,7 @@ class: deck-page
   <div class="paper-card">
     <div class="micro-label">Task Shift</div>
     <div class="section-heading">AI 先分走的是基础任务，不是整份工作</div>
-    <div class="chart-caption mt-5">更常见的变化不是岗位突然消失，而是原本由实习生、新人或初级员工完成的工作，被 AI 拿走了一截。</div>
+    <div class="chart-caption mt-5">更常见的变化不是岗位突然消失，而是原本由实习生、新人或初级员工完成的工作，被 AI 拿走了一截。这意味着"怎么从新手成长为专家"的传统路径，也在被改写。</div>
   </div>
 
   <div class="essay-stack">
@@ -451,6 +451,12 @@ class: deck-page
     <span class="micro-label">Milestone</span>
     AI 不再只是"给出建议"，而是开始压缩一整段原本由复杂建模支撑的中间流程。这类变化一旦发生在高价值场景里，影响通常会非常深。
   </div>
+  <div class="weather-implication">
+    <div class="weather-implication-item">
+      <span class="weather-implication-label">这意味着什么</span>
+      <span class="weather-implication-copy">过去需要一整支气象团队和数小时建模才能完成的工作，AI 可以在更短时间内端到端跑通。</span>
+    </div>
+  </div>
 </div>
 
 ---
@@ -518,6 +524,7 @@ class: deck-page
     <div class="micro-label">Lead Margin</div>
     <div class="mega-number">2.7%</div>
     <div class="hero-stat-copy">截至 2026 年 3 月，Anthropic 顶级模型领先幅度</div>
+    <div class="hero-stat-note">这个数字本身就说明，曾经一边倒的格局已经不再成立。</div>
   </div>
 
   <div class="stack-panel">
@@ -527,7 +534,7 @@ class: deck-page
     </div>
     <div class="paper-card paper-card-small">
       <div class="micro-label">Still True</div>
-      <div class="small-copy">美国仍在顶级模型和私人投资上占优。</div>
+      <div class="small-copy">美国仍在顶级模型和私人投资上占优，但差距在缩小。</div>
     </div>
     <div class="paper-card paper-card-small">
       <div class="micro-label">Why It Matters</div>

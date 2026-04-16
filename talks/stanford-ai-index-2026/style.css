@@ -44,6 +44,8 @@ html, body {
   color: var(--deck-ink);
   padding: 2.5rem 3.2rem;
   font-family: Inter, 'Noto Sans SC', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Subtle paper texture */
@@ -137,8 +139,11 @@ html, body {
 
 .slidev-layout.statement-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .statement-shell {
@@ -146,6 +151,21 @@ html, body {
   z-index: 2;
   max-width: 42rem;
   padding: 0 1rem;
+  width: 100%;
+}
+
+/* Decorative rule above statement content — adds visual weight and anchors the top */
+.statement-shell::before {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: var(--deck-line-strong);
+  margin-bottom: 2rem;
+}
+
+.statement-page-dark .statement-shell::before {
+  background: rgba(255, 253, 249, 0.25);
 }
 
 .statement-kicker {
@@ -159,7 +179,7 @@ html, body {
 
 .statement-text {
   font-family: 'Source Serif 4', 'Noto Serif SC', serif;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   line-height: 1.18;
   letter-spacing: -0.02em;
   color: var(--deck-ink);
@@ -168,34 +188,34 @@ html, body {
 
 .statement-number {
   font-family: 'Source Serif 4', 'Noto Serif SC', serif;
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   line-height: 0.92;
   letter-spacing: -0.04em;
   color: var(--deck-accent);
   font-weight: 400;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .statement-support {
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   color: var(--deck-muted);
-  font-size: 1rem;
+  font-size: 1.02rem;
   line-height: 1.75;
   max-width: 36rem;
 }
 
 .statement-detail {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .infra-line {
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  padding-top: 0.8rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--deck-line);
 }
 
@@ -203,7 +223,7 @@ html, body {
 
 .infra-number {
   font-family: 'Source Serif 4', 'Noto Serif SC', serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1;
   color: var(--deck-accent);
   font-weight: 500;
@@ -257,13 +277,14 @@ html, body {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 1.5rem;
+  flex: 1;
 }
 
 .question-card {
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
-  padding: 1.8rem 1.6rem;
+  padding: 2rem 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -326,7 +347,7 @@ html, body {
   background: var(--deck-accent);
   color: var(--deck-white);
   border-radius: var(--deck-radius-lg);
-  padding: 2.4rem 1.8rem;
+  padding: 2.8rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,11 +383,16 @@ html, body {
   flex-direction: column;
   gap: 0;
   justify-content: space-between;
+  flex: 1;
 }
 
 .impact-item {
   border-top: 1px solid var(--deck-line);
-  padding: 1.2rem 0 1.2rem 0;
+  padding: 1.4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .impact-item:first-child {
@@ -409,7 +435,7 @@ html, body {
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
-  padding: 1.6rem 1.5rem;
+  padding: 2rem 1.8rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -457,6 +483,7 @@ html, body {
   flex-direction: column;
   gap: 0;
   margin-top: 1.5rem;
+  flex: 1;
 }
 
 .keyword-block {
@@ -464,20 +491,25 @@ html, body {
   grid-template-columns: 3rem 6rem 1fr;
   gap: 1.2rem;
   align-items: baseline;
-  padding: 1.4rem 0;
+  padding: 1.6rem 0;
   border-top: 1px solid var(--deck-line);
 }
 
 .keyword-block:last-child {
   border-bottom: 1px solid var(--deck-line);
+  flex: 1;
 }
 
 .keyword-block-dark {
   background: var(--deck-accent);
   margin: 0 -3.2rem;
-  padding: 1.4rem 3.2rem;
+  padding: 1.6rem 3.2rem;
   border: none;
   color: var(--deck-white);
+  display: grid;
+  grid-template-columns: 3rem 6rem 1fr;
+  gap: 1.2rem;
+  align-items: center;
 }
 
 .keyword-number {
@@ -527,6 +559,7 @@ html, body {
 .slidev-layout h1 {
   font-size: 2.6rem;
   line-height: 1.12;
+  letter-spacing: -0.02em;
 }
 
 .slidev-layout p, .slidev-layout li {
@@ -571,7 +604,14 @@ html, body {
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
   box-shadow: none;
-  padding: 1.4rem;
+  padding: 1.6rem;
+}
+
+.two-panel .paper-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
 .hero-card-dark, .pillar-card-dark, .hero-stat-dark {
@@ -595,6 +635,7 @@ html, body {
   gap: 1.6rem;
   align-items: stretch;
   flex: 1;
+  min-height: 0;
 }
 
 .two-panel, .data-split {
@@ -620,7 +661,7 @@ html, body {
   margin-top: 0.8rem;
   max-width: 12em;
   font-family: 'Source Serif 4', 'Noto Serif SC', serif;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   line-height: 1.16;
   letter-spacing: -0.025em;
   color: var(--deck-ink);
@@ -647,7 +688,10 @@ html, body {
   border-radius: var(--deck-radius-lg);
   background: var(--deck-elevated);
   box-shadow: none;
-  padding: 1.4rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .comparison-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
@@ -750,7 +794,7 @@ html, body {
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
-  padding: 2rem 1.8rem;
+  padding: 2.4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -760,7 +804,7 @@ html, body {
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-accent);
-  padding: 2rem 1.8rem;
+  padding: 2.4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -834,8 +878,8 @@ html, body {
   grid-template-columns: auto 1fr;
   gap: 1.8rem;
   align-items: baseline;
-  margin-top: 1.2rem;
-  padding-top: 1rem;
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
   border-top: 1px solid var(--deck-line);
 }
 
@@ -873,6 +917,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   gap: 0.9rem;
+  flex: 1;
 }
 
 /* ── Mood split ───────────────────────────────── */
@@ -893,9 +938,10 @@ html, body {
 }
 
 .mood-item {
-  padding: 1.5rem;
+  padding: 2rem 1.6rem;
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
+  flex: 1;
 }
 
 .mood-item:first-child {
@@ -1036,6 +1082,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex: 1;
 }
 
 .hero-stat, .chart-panel {
@@ -1078,7 +1125,7 @@ html, body {
 
 .hero-stat-dark .hero-stat-note, .hero-stat-dark .hero-stat-copy { color: rgba(255, 255, 255, 0.7); }
 
-.paper-card-small { min-height: 0; }
+.paper-card-small { min-height: 0; flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
 /* ── Note band ─────────────────────────────────── */
 
@@ -1120,7 +1167,7 @@ html, body {
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
-  padding: 2rem 1.6rem;
+  padding: 2.4rem 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1174,8 +1221,11 @@ html, body {
 
 .closing-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .closing-shell {
@@ -1183,6 +1233,7 @@ html, body {
   z-index: 2;
   max-width: 44rem;
   padding: 0 1rem;
+  width: 100%;
 }
 
 .closing-rule {
@@ -1310,7 +1361,7 @@ html, body {
 
 .cover-year {
   font-family: 'Source Serif 4', 'Noto Serif SC', serif;
-  font-size: 9.5rem;
+  font-size: 10rem;
   line-height: 0.82;
   letter-spacing: -0.05em;
   color: var(--deck-line);
@@ -1420,6 +1471,13 @@ html, body {
   flex: 1;
 }
 
+.cascade-layout .paper-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
 .cascade-stats {
   display: flex;
   flex-direction: column;
@@ -1431,10 +1489,11 @@ html, body {
   grid-template-columns: auto 1fr;
   gap: 1.2rem;
   align-items: baseline;
-  padding: 1.6rem 1.4rem;
+  padding: 2rem 1.6rem;
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
+  flex: 1;
 }
 
 .cascade-row-highlight {
@@ -1490,6 +1549,7 @@ html, body {
   gap: 0;
   flex: 1;
   margin-top: 1rem;
+  justify-content: space-between;
 }
 
 .weather-flow {
@@ -1503,7 +1563,7 @@ html, body {
   border-radius: var(--deck-radius-lg);
   border: 1px solid var(--deck-line);
   background: var(--deck-elevated);
-  padding: 2rem 1.2rem;
+  padding: 3rem 1.4rem;
   text-align: center;
 }
 
@@ -1542,18 +1602,49 @@ html, body {
 }
 
 .weather-note {
-  margin-top: 1.5rem;
-  padding-top: 1.2rem;
+  margin-top: 1.8rem;
+  padding-top: 1.4rem;
   border-top: 1px solid var(--deck-line);
   color: var(--deck-muted);
   font-size: 0.95rem;
   line-height: 1.7;
   max-width: 48rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .weather-note .micro-label {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+.weather-implication {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--deck-line);
+}
+
+.weather-implication-item {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 1.2rem;
+  align-items: baseline;
+}
+
+.weather-implication-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--deck-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.weather-implication-copy {
+  color: var(--deck-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 /* ── Closing: final item emphasis ─────────────── */
