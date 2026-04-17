@@ -155,21 +155,21 @@ class: deck-page mood-page
           <span>生成式 AI</span>
           <span>3 年 → 53%</span>
         </div>
-        <div class="comparison-track"><div class="comparison-fill comparison-fill-strong" style="width: 88%"></div></div>
+        <AnimatedBar :value="88" fill-class="comparison-fill comparison-fill-strong" />
       </div>
       <div v-click class="comparison-item">
         <div class="comparison-head">
           <span>个人电脑</span>
           <span>8 年仍在扩散</span>
         </div>
-        <div class="comparison-track"><div class="comparison-fill comparison-fill-soft" style="width: 54%"></div></div>
+        <AnimatedBar :value="54" fill-class="comparison-fill comparison-fill-soft" :delay="80" />
       </div>
       <div v-click class="comparison-item">
         <div class="comparison-head">
           <span>互联网</span>
           <span>5 年仍在扩散</span>
         </div>
-        <div class="comparison-track"><div class="comparison-fill comparison-fill-muted" style="width: 61%"></div></div>
+        <AnimatedBar :value="61" fill-class="comparison-fill comparison-fill-muted" :delay="140" />
       </div>
     </div>
     <div v-click class="comparison-caption">AI 已经不是科技爱好者的玩具，而是以主流社会的速度快速进入日常。</div>
@@ -183,7 +183,7 @@ class: statement-page
 
 <div class="statement-shell">
   <div class="statement-kicker">Consumer Value</div>
-  <div class="statement-number">$172B</div>
+  <div class="statement-number"><AnimatedNumber :value="172" prefix="$" suffix="B" :duration="1200" :delay="120" /></div>
   <div class="statement-text">到 2026 年初，生成式 AI 给美国消费者带来的估算年价值</div>
   <div class="statement-support">用户中位价值在一年间增长了 3 倍。很多人以为自己"没为 AI 花钱"，其实已经在从 AI 里获得价值。</div>
 </div>
@@ -198,11 +198,11 @@ class: deck-page
 <div class="mood-stage">
   <div class="mood-pair">
     <div v-click class="mood-item mood-item-positive">
-      <div class="mood-number mood-number-positive">59%</div>
+      <div class="mood-number mood-number-positive"><AnimatedNumber :value="59" suffix="%" :duration="900" :delay="80" /></div>
       <div class="mood-label">对 AI 的好处持乐观态度</div>
     </div>
     <div v-click class="mood-item mood-item-alert">
-      <div class="mood-number mood-number-alert">52%</div>
+      <div class="mood-number mood-number-alert"><AnimatedNumber :value="52" suffix="%" :duration="900" :delay="160" /></div>
       <div class="mood-label">同时也对 AI 感到紧张</div>
     </div>
   </div>
@@ -264,7 +264,7 @@ class: deck-page
 <div class="shift-layout">
   <div v-click class="shift-before">
     <div class="micro-label">2025</div>
-    <div class="shift-number">20%</div>
+    <div class="shift-number"><AnimatedNumber :value="20" suffix="%" :duration="900" :delay="60" /></div>
     <div class="shift-desc">真实任务中的<br>agent 成功率</div>
   </div>
   <div v-click class="shift-bridge">
@@ -274,14 +274,14 @@ class: deck-page
   </div>
   <div v-click class="shift-after">
     <div class="micro-label">2026</div>
-    <div class="shift-number shift-number-accent">77.3%</div>
+    <div class="shift-number shift-number-accent"><AnimatedNumber :value="77.3" suffix="%" :decimals="1" :duration="1000" :delay="160" /></div>
     <div class="shift-desc">同样的任务，<br>成功率大幅跃升</div>
   </div>
 </div>
 
 <div class="shift-footer">
   <div v-click class="shift-footer-stat">
-    <div class="shift-footer-number">93%</div>
+    <div class="shift-footer-number"><AnimatedNumber :value="93" suffix="%" :duration="900" :delay="220" /></div>
     <div class="shift-footer-copy">处理网络安全问题的 AI agent 成功率</div>
   </div>
   <div v-click class="shift-footer-note">过去更多是"我问 AI 一个问题"，现在越来越像"我把一段任务交给 AI"。</div>
@@ -297,7 +297,7 @@ class: statement-page
 
 <div class="statement-shell">
   <div class="statement-kicker">Reality Check</div>
-  <div class="statement-number">12%</div>
+  <div class="statement-number"><AnimatedNumber :value="12" suffix="%" :duration="900" :delay="100" /></div>
   <div class="statement-text">机器人在真实家庭任务中的成功率</div>
   <div class="statement-support">AI 很强，但"现实世界的最后一公里"仍然非常难。它仍然会在看时间、多步规划、金融分析和部分专家级考试中出错。</div>
 </div>
@@ -324,7 +324,7 @@ class: deck-page
 <div class="impact-layout">
   <div v-click class="impact-hero">
     <div class="impact-hero-label">Employment Impact</div>
-    <div class="impact-hero-number">-20%</div>
+    <div class="impact-hero-number"><AnimatedNumber :value="-20" suffix="%" :duration="950" :delay="120" /></div>
     <div class="impact-hero-copy">22-25 岁开发者就业下降幅度</div>
   </div>
   <div class="impact-details">
@@ -380,7 +380,7 @@ class: statement-page
 
 <div class="statement-shell">
   <div class="statement-kicker">Student Adoption</div>
-  <div class="statement-number">4 / 5</div>
+  <div class="statement-number"><AnimatedNumber :value="4" suffix=" / 5" :duration="900" :delay="100" /></div>
   <div class="statement-text">美国高中生和大学生中，五分之四已在学校相关任务中使用 AI</div>
   <div class="statement-support">学生的采用速度，往往比学校制度更新的速度更快。</div>
 </div>
@@ -395,14 +395,14 @@ class: deck-page
 <div class="cascade-layout">
   <div class="cascade-stats">
     <div v-click class="cascade-row">
-      <div class="cascade-number cascade-number-amber">50%</div>
+      <div class="cascade-number cascade-number-amber"><AnimatedNumber :value="50" suffix="%" :duration="900" :delay="80" /></div>
       <div class="cascade-desc">只有一半中学和高中有 AI 政策</div>
     </div>
     <div v-click class="cascade-arrow-area">
       <div class="cascade-arrow-down"></div>
     </div>
     <div v-click class="cascade-row cascade-row-highlight">
-      <div class="cascade-number cascade-number-alert">6%</div>
+      <div class="cascade-number cascade-number-alert"><AnimatedNumber :value="6" suffix="%" :duration="900" :delay="160" /></div>
       <div class="cascade-desc">只有 6% 教师认为这些政策足够清晰</div>
     </div>
     <div v-click class="cascade-tension-note">学生已经往前走了，制度还在追。</div>
@@ -438,21 +438,21 @@ class: deck-page
           <span>自然科学</span>
           <span>+26%</span>
         </div>
-        <div class="comparison-track"><div class="comparison-fill comparison-fill-strong" style="width: 76%"></div></div>
+        <AnimatedBar :value="76" fill-class="comparison-fill comparison-fill-strong" />
       </div>
       <div v-click class="comparison-item">
         <div class="comparison-head">
           <span>物理科学</span>
           <span>+28%</span>
         </div>
-        <div class="comparison-track"><div class="comparison-fill comparison-fill-soft" style="width: 82%"></div></div>
+        <AnimatedBar :value="82" fill-class="comparison-fill comparison-fill-soft" :delay="80" />
       </div>
       <div v-click class="comparison-item">
         <div class="comparison-head">
           <span>生命科学</span>
           <span>+26%</span>
         </div>
-        <div class="comparison-track"><div class="comparison-fill comparison-fill-muted" style="width: 76%"></div></div>
+        <AnimatedBar :value="76" fill-class="comparison-fill comparison-fill-muted" :delay="140" />
       </div>
     </div>
     <div v-click class="comparison-caption">AI 正在从科研工具，逐渐变成科研参与者。</div>
@@ -502,7 +502,7 @@ class: statement-page
 
 <div class="statement-shell">
   <div class="statement-kicker">Clinical Notes</div>
-  <div class="statement-number">83%</div>
+  <div class="statement-number"><AnimatedNumber :value="83" suffix="%" :duration="1000" :delay="100" /></div>
   <div class="statement-text">医生写病历时间最高减少</div>
   <div class="statement-support">AI 最现实的价值之一，不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去。</div>
 </div>
@@ -535,13 +535,13 @@ class: deck-page
   <div class="funding-pair">
     <div v-click class="funding-card">
       <div class="funding-card-label">Enterprise AI</div>
-      <div class="funding-card-number">$581.7B</div>
+      <div class="funding-card-number"><AnimatedNumber :value="581.7" prefix="$" suffix="B" :decimals="1" :duration="1100" :delay="90" /></div>
       <div class="funding-card-change">+130% YoY</div>
       <div class="funding-card-copy">2025 年全球企业 AI 投资</div>
     </div>
     <div v-click class="funding-card">
       <div class="funding-card-label">Private AI</div>
-      <div class="funding-card-number">$344.7B</div>
+      <div class="funding-card-number"><AnimatedNumber :value="344.7" prefix="$" suffix="B" :decimals="1" :duration="1100" :delay="170" /></div>
       <div class="funding-card-change">+127.5% YoY</div>
       <div class="funding-card-copy">2025 年全球私人 AI 投资</div>
     </div>
@@ -564,7 +564,7 @@ class: deck-page
 <div class="two-panel competition-panel">
   <div v-click class="hero-stat hero-stat-dark competition-hero">
     <div class="micro-label">Lead Margin</div>
-    <div class="mega-number">2.7%</div>
+    <div class="mega-number"><AnimatedNumber :value="2.7" suffix="%" :decimals="1" :duration="1000" :delay="120" /></div>
     <div class="hero-stat-copy">截至 2026 年 3 月，Anthropic 顶级模型领先幅度</div>
     <div class="hero-stat-note">这个数字本身就说明，曾经一边倒的格局已经不再成立。</div>
   </div>
@@ -596,7 +596,7 @@ class: deck-page
 <div class="editorial-split">
   <div v-click class="hero-stat hero-stat-dark">
     <div class="micro-label">Talent Flow</div>
-    <div class="mega-number text-amber">-89%</div>
+    <div class="mega-number text-amber"><AnimatedNumber :value="-89" suffix="%" :duration="1000" :delay="120" /></div>
     <div class="hero-stat-copy">流入美国的 AI 学者数量，自 2017 年以来的下降幅度</div>
   </div>
 
@@ -625,18 +625,18 @@ class: statement-page statement-page-dark
   <div class="statement-kicker">Infrastructure Cost</div>
   <div class="infra-topline">
     <div class="infra-power-block">
-      <div class="statement-number">29.6GW</div>
+      <div class="statement-number"><AnimatedNumber :value="29.6" suffix="GW" :decimals="1" :duration="1100" :delay="100" /></div>
       <div class="statement-text">AI 数据中心电力容量，约等于纽约州峰值用电</div>
     </div>
     <div v-click class="infra-verdict">AI 不只是软件升级，它已经越来越像一场基础设施扩张。</div>
   </div>
   <div class="statement-detail infra-detail-grid">
     <div v-click class="infra-line infra-line-card">
-      <span class="infra-number">1200 万人</span>
+      <span class="infra-number"><AnimatedNumber :value="1200" suffix=" 万人" :duration="1000" :delay="160" /></span>
       <span class="infra-desc">GPT-4o 一年推理用水，估算可超过这么多人的饮水需求</span>
     </div>
     <div v-click class="infra-line infra-line-card">
-      <span class="infra-number">72,816 吨</span>
+      <span class="infra-number"><AnimatedNumber :value="72816" suffix=" 吨" :duration="1100" :delay="220" :use-grouping="true" /></span>
       <span class="infra-desc">Grok 4 的估算训练排放，已经是具体的基础设施成本</span>
     </div>
   </div>
