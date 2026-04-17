@@ -49,34 +49,41 @@ layout: default
 class: deck-page question-page
 ---
 
-# 今天只回答 4 个问题
+# 4 个问题
 
 <div class="question-stage">
   <div class="question-lead">
     <div class="micro-label">Agenda</div>
-    <div class="question-manifesto">不看模型看现实</div>
+    <div class="question-manifesto">不追模型更新，<br>先看现实变化</div>
   </div>
-
-  <div class="question-grid question-grid-stagger">
-    <div v-click class="question-card">
-      <div class="question-num">01</div>
-      <div class="question-title">能力边界</div>
-      <div class="question-sub">AI 现在多强了</div>
+  <div class="question-column">
+    <div v-click class="question-item">
+      <div class="question-index">01</div>
+      <div class="question-body">
+        <div class="question-title">强到哪了</div>
+        <div class="question-sub">能力边界</div>
+      </div>
     </div>
-    <div v-click class="question-card">
-      <div class="question-num">02</div>
-      <div class="question-title">渗透图景</div>
-      <div class="question-sub">谁在改变</div>
+    <div v-click class="question-item question-item-shift">
+      <div class="question-index">02</div>
+      <div class="question-body">
+        <div class="question-title">改变了谁</div>
+        <div class="question-sub">渗透图景</div>
+      </div>
     </div>
-    <div v-click class="question-card">
-      <div class="question-num">03</div>
-      <div class="question-title">隐性成本</div>
-      <div class="question-sub">代价是什么</div>
+    <div v-click class="question-item question-item-tight">
+      <div class="question-index">03</div>
+      <div class="question-body">
+        <div class="question-title">代价在哪</div>
+        <div class="question-sub">隐性成本</div>
+      </div>
     </div>
-    <div v-click class="question-card question-card-accent">
-      <div class="question-num">04</div>
-      <div class="question-title">个人应对</div>
-      <div class="question-sub">你该关注什么</div>
+    <div v-click class="question-item question-item-accent">
+      <div class="question-index">04</div>
+      <div class="question-body">
+        <div class="question-title">怎么判断</div>
+        <div class="question-sub">个人应对</div>
+      </div>
     </div>
   </div>
 </div>
