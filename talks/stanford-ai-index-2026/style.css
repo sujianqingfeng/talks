@@ -319,7 +319,8 @@ html, body {
 .question-lead {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.9rem;
   padding: 0.35rem 0 0.35rem 0.2rem;
 }
 
@@ -570,7 +571,8 @@ html, body {
 .keyword-lead {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.7rem;
   padding: 0.1rem 0 0.25rem 0.1rem;
 }
 
@@ -1059,13 +1061,7 @@ html, body {
 }
 
 .shift-callout {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--deck-line);
-  color: var(--deck-accent);
-  font-size: 1rem;
-  line-height: 1.7;
-  max-width: 38rem;
+  display: none;
 }
 
 /* ── Essay stack ──────────────────────────────── */
@@ -1491,7 +1487,7 @@ html, body {
 }
 
 .closing-body {
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -1816,10 +1812,10 @@ html, body {
 .weather-layout {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 1.4rem;
   flex: 1;
   margin-top: 1rem;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .weather-flow {
@@ -1872,17 +1868,13 @@ html, body {
 }
 
 .weather-note {
-  margin-top: 1.8rem;
+  margin-top: 0;
   padding-top: 1.4rem;
   border-top: 1px solid var(--deck-line);
   color: var(--deck-muted);
   font-size: 0.95rem;
   line-height: 1.7;
   max-width: 48rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .weather-note .micro-label {

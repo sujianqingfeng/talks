@@ -2,7 +2,6 @@
 theme: seriph
 title: 从斯坦福 AI 指数 2026 看，AI 到底改变了什么？
 info: |
-  面向大众的 AI 趋势分享
   基于 Stanford HAI《AI Index 2026》
 transition: slide-left
 layout: default
@@ -23,7 +22,6 @@ class: cover-page
     <h1 class="cover-title">
       从斯坦福 AI 指数看，<br>AI 到底改变了什么？
     </h1>
-    <div class="cover-sub">面向大众的 AI 趋势分享</div>
   </div>
   <div class="cover-right">
     <div class="cover-year">20<br>26</div>
@@ -57,7 +55,6 @@ class: deck-page question-page
   <div class="question-lead">
     <div class="micro-label">Agenda</div>
     <div class="question-manifesto">这不是一场模型巡礼，<br>而是一次现实检查</div>
-    <div class="question-footnote">后面所有数据都只服务于 4 个问题：能力、影响、代价、判断</div>
   </div>
 
   <div class="question-grid question-grid-stagger">
@@ -95,7 +92,6 @@ class: deck-page keyword-page
   <div class="keyword-lead">
     <div class="micro-label">Verdict</div>
     <div class="keyword-thesis">AI 不是单向进步<br>它正在同时放大能力、普及、成本与治理压力</div>
-    <div class="keyword-footnote">后面 20 页，其实都在解释为什么这四个词必须一起看</div>
   </div>
 
   <div class="keyword-column">
@@ -131,7 +127,6 @@ class: chapter-page
   <div class="chapter-rule"></div>
   <div class="chapter-index">I</div>
   <h1 class="chapter-title">AI 变强与普及</h1>
-  <p class="chapter-copy">能力在变强，扩散在加速，但真正重要的是它开始进入大众日常</p>
 </div>
 
 ---
@@ -172,7 +167,6 @@ class: deck-page mood-page
         <AnimatedBar :value="61" fill-class="comparison-fill comparison-fill-muted" :delay="140" />
       </div>
     </div>
-    <div v-click class="comparison-caption">AI 已经不是科技爱好者的玩具，而是以主流社会的速度快速进入日常</div>
   </div>
 </div>
 
@@ -287,7 +281,6 @@ class: deck-page
   <div v-click class="shift-footer-note">过去更多是"我问 AI 一个问题"，现在越来越像"我把一段任务交给 AI"</div>
 </div>
 
-<div v-click class="shift-callout">Agent 的变化，不是"会不会聊天更像人"，而是开始能把一段任务真正办完</div>
 </div>
 
 ---
@@ -311,7 +304,6 @@ class: chapter-page
   <div class="chapter-rule"></div>
   <div class="chapter-index">II</div>
   <h1 class="chapter-title">工作、教育与专业流程</h1>
-  <p class="chapter-copy">变化最先出现在那些可拆解、可计量、可重复的专业流程里</p>
 </div>
 
 ---
@@ -412,7 +404,6 @@ class: deck-page
     <div class="micro-label">The Real Question</div>
     <div class="section-heading">当"像样的答案"可以一键生成，学校到底应该评估什么？</div>
     <div v-click class="policy-question-emphasis">未来更重要的，可能不是会不会做题，而是会不会提问、会不会验证、会不会独立思考</div>
-    <div v-click class="policy-question-meta">教育真正落后的，不是学生，而是规则更新速度</div>
   </div>
 </div>
 
@@ -455,7 +446,6 @@ class: deck-page
         <AnimatedBar :value="76" fill-class="comparison-fill comparison-fill-muted" :delay="140" />
       </div>
     </div>
-    <div v-click class="comparison-caption">AI 正在从科研工具，逐渐变成科研参与者</div>
   </div>
 </div>
 
@@ -487,12 +477,6 @@ class: deck-page
     <span class="micro-label">Milestone</span>
     AI 不再只是"给出建议"，而是开始压缩一整段原本由复杂建模支撑的中间流程，这类变化一旦发生在高价值场景里，影响通常会非常深
   </div>
-  <div v-click class="weather-implication">
-    <div class="weather-implication-item">
-      <span class="weather-implication-label">这意味着什么</span>
-      <span class="weather-implication-copy">过去需要一整支气象团队和数小时建模才能完成的工作，AI 可以在更短时间内端到端跑通</span>
-    </div>
-  </div>
 </div>
 
 ---
@@ -516,7 +500,6 @@ class: chapter-page
   <div class="chapter-rule"></div>
   <div class="chapter-index">III</div>
   <h1 class="chapter-title">资本、竞争与代价</h1>
-  <p class="chapter-copy">最后看资本、全球竞争和基础设施成本，它们决定 AI 会走到哪里</p>
 </div>
 
 ---
@@ -566,7 +549,6 @@ class: deck-page
     <div class="micro-label">Lead Margin</div>
     <div class="mega-number"><AnimatedNumber :value="2.7" suffix="%" :decimals="1" :duration="1000" :delay="120" /></div>
     <div class="hero-stat-copy">截至 2026 年 3 月，Anthropic 顶级模型领先幅度</div>
-    <div class="hero-stat-note">这个数字本身就说明，曾经一边倒的格局已经不再成立</div>
   </div>
 
   <div class="stack-panel">
@@ -654,7 +636,6 @@ class: closing-page
   <h1 class="closing-title">
     普通人最该关心 AI 的，<br>不是最新模型，而是它正在怎样改写生活
   </h1>
-  <div class="closing-summary">如果只记住一句话：AI 变得更强、更快、更普及了，但它也更贵、更耗资源、更不透明了</div>
   <div class="closing-body">
     <div v-click class="closing-item">
       <span class="closing-index">01</span>
