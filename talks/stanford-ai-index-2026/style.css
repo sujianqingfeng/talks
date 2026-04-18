@@ -2455,7 +2455,7 @@ html, body {
 
   .cover-right { display: none; }
 
-  .editorial-split, .two-panel, .data-split, .mood-stage, .cascade-layout, .capability-layout, .impact-layout, .funding-layout, .shift-layout, .question-stage, .keyword-stage, .keyword-v2-grid, .infra-topline, .system-competition-layout, .reality-layout, .saving-layout, .adoption-stage, .evolution-stage, .leap-pair, .chasm-layout, .milestone-flow {
+  .editorial-split, .two-panel, .data-split, .mood-stage, .cascade-layout, .capability-layout, .impact-layout, .funding-layout, .shift-layout, .question-stage, .keyword-stage, .keyword-v2-grid, .infra-topline, .system-competition-layout, .reality-layout, .saving-layout, .adoption-stage, .evolution-stage, .leap-pair, .chasm-layout, .milestone-flow, .gap-stage, .syscomp-layout, .clinical-stage {
     grid-template-columns: 1fr;
   }
 
@@ -3154,10 +3154,430 @@ html, body {
   .evolution-stage,
   .leap-pair,
   .chasm-layout,
-  .milestone-flow {
+  .milestone-flow,
+  .gap-stage,
+  .syscomp-layout,
+  .clinical-stage {
     grid-template-columns: 1fr;
   }
 
   .leap-bridge { display: none; }
   .milestone-center-ring { display: none; }
+}
+
+/* ── Reality checks (slide 11: caveat redesign) ─── */
+
+.reality-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+}
+
+.reality-check-row {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--deck-line);
+}
+
+.reality-check-row:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.reality-check-num {
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 0.88rem;
+  line-height: 1;
+  color: var(--deck-accent-soft);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.reality-check-title {
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--deck-ink);
+  line-height: 1.35;
+}
+
+.reality-check-copy {
+  margin-top: 0.2rem;
+  color: var(--deck-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.reality-verdict-block {
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.4rem;
+  background: color-mix(in oklab, var(--deck-surface) 60%, var(--deck-white) 40%);
+  border-radius: var(--deck-radius-lg);
+  border: 1px solid var(--deck-line);
+}
+
+.reality-verdict-lead {
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--deck-accent-soft);
+}
+
+.reality-verdict-text {
+  margin-top: 0.4rem;
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--deck-ink);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* ── Clinical stage (slide 17: medical redesign) ── */
+
+.clinical-stage {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.4rem;
+  align-items: stretch;
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.clinical-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.8rem 0;
+}
+
+.clinical-hero-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--deck-accent-soft);
+}
+
+.clinical-hero-sentence {
+  margin-top: 0.8rem;
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 2rem;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  color: var(--deck-ink);
+  font-weight: 500;
+}
+
+.clinical-hero-number {
+  margin-top: 0.6rem;
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 4.5rem;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--deck-accent);
+  font-weight: 500;
+}
+
+.clinical-hero-bar {
+  margin-top: 1.2rem;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(214, 206, 196, 0.4);
+}
+
+.clinical-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--deck-accent);
+}
+
+.clinical-hero-caption {
+  margin-top: 0.6rem;
+  color: var(--deck-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.clinical-side {
+  border: 1px solid var(--deck-line);
+  border-radius: var(--deck-radius-lg);
+  background: var(--deck-elevated);
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.clinical-insight {
+  border-top: 1px solid var(--deck-line);
+  padding-top: 1rem;
+}
+
+.clinical-insight:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.clinical-insight-final {
+  border-top-color: var(--deck-line-strong);
+}
+
+.clinical-insight-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--deck-accent-soft);
+}
+
+.clinical-insight-copy {
+  margin-top: 0.4rem;
+  color: var(--deck-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ── Gap stage (slide 19: competition redesign) ─── */
+
+.gap-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: stretch;
+  flex: 1;
+}
+
+.gap-hero {
+  background: var(--deck-accent);
+  color: var(--deck-white);
+  border-radius: var(--deck-radius-lg);
+  padding: 2.8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(255, 253, 249, 0.08);
+}
+
+.gap-hero-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: rgba(255, 253, 249, 0.4);
+}
+
+.gap-hero-number {
+  margin-top: 1rem;
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 5rem;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--deck-white);
+  font-weight: 400;
+}
+
+.gap-hero-copy {
+  margin-top: 0.8rem;
+  color: rgba(255, 253, 249, 0.6);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.gap-hero-thesis {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 253, 249, 0.12);
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 1.3rem;
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  color: rgba(255, 253, 249, 0.85);
+  font-weight: 500;
+}
+
+.gap-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  justify-content: center;
+}
+
+.gap-card {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  border-radius: var(--deck-radius-lg);
+  border: 1px solid var(--deck-line);
+  background: var(--deck-elevated);
+  padding: 1.3rem 1.2rem;
+}
+
+.gap-card-index {
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: var(--deck-accent-soft);
+  font-weight: 500;
+}
+
+.gap-card-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--deck-accent-soft);
+}
+
+.gap-card-copy {
+  margin-top: 0.35rem;
+  color: var(--deck-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.gap-card-conclusion {
+  border-color: var(--deck-line-strong);
+  background: color-mix(in oklab, var(--deck-surface) 50%, var(--deck-white) 50%);
+}
+
+.gap-card-conclusion .gap-card-index {
+  color: var(--deck-accent);
+}
+
+.gap-card-conclusion .gap-card-copy {
+  color: var(--deck-ink);
+  font-weight: 500;
+}
+
+/* ── Syscomp layout (slide 20: system competition) */
+
+.syscomp-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  align-items: stretch;
+  flex: 1;
+}
+
+.syscomp-hero {
+  background: var(--deck-accent);
+  color: var(--deck-white);
+  border-radius: var(--deck-radius-lg);
+  padding: 2.8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(255, 253, 249, 0.08);
+}
+
+.syscomp-hero-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: rgba(255, 253, 249, 0.4);
+}
+
+.syscomp-hero-number {
+  margin-top: 1rem;
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+  font-size: 4.5rem;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--deck-warning);
+  font-weight: 500;
+}
+
+.syscomp-hero-copy {
+  margin-top: 0.8rem;
+  color: rgba(255, 253, 249, 0.65);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.syscomp-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+}
+
+.syscomp-layer {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--deck-line);
+}
+
+.syscomp-layer:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.syscomp-layer-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: var(--deck-radius-md);
+  background: var(--deck-surface);
+  border: 1px solid var(--deck-line);
+  color: var(--deck-accent-soft);
+}
+
+.syscomp-layer-body {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.15rem;
+}
+
+.syscomp-layer-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--deck-accent-soft);
+}
+
+.syscomp-layer-copy {
+  margin-top: 0.3rem;
+  color: var(--deck-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.syscomp-layer-culmination {
+  background: color-mix(in oklab, var(--deck-surface) 55%, var(--deck-white) 45%);
+  margin: 0 -1.4rem;
+  padding: 1.6rem 1.4rem;
+  border-radius: var(--deck-radius-lg);
+  border-top-color: transparent;
+  border-left: 1px solid var(--deck-line-strong);
+  border-right: 1px solid var(--deck-line-strong);
+  border-bottom: 1px solid var(--deck-line-strong);
+}
+
+.syscomp-layer-culmination .syscomp-layer-icon {
+  background: var(--deck-accent);
+  border-color: transparent;
+  color: var(--deck-white);
+}
+
+.syscomp-layer-culmination .syscomp-layer-title {
+  color: var(--deck-accent);
+}
+
+.syscomp-layer-culmination .syscomp-layer-copy {
+  color: var(--deck-ink);
+  font-weight: 500;
 }

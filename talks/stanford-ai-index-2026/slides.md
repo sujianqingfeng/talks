@@ -301,21 +301,33 @@ class: deck-page
 <div class="reality-hero-number"><AnimatedNumber :value="12" suffix="%" :duration="900" :delay="100" /></div>
 <div class="reality-hero-copy">机器人在真实家庭任务中的成功率</div>
 </div>
-<div class="reality-caveats">
+<div class="reality-checks">
 <div class="micro-label">仍会出错的领域</div>
-<div v-click class="reality-caveat-item">
-<div class="reality-caveat-title">看时间、多步规划</div>
-<div class="reality-caveat-copy">日常推理仍有盲区</div>
+<div v-click class="reality-check-row">
+<div class="reality-check-num">01</div>
+<div class="reality-check-body">
+<div class="reality-check-title">看时间、多步规划</div>
+<div class="reality-check-copy">日常推理仍有盲区</div>
 </div>
-<div v-click class="reality-caveat-item">
-<div class="reality-caveat-title">金融分析</div>
-<div class="reality-caveat-copy">专家级判断尚未可靠</div>
 </div>
-<div v-click class="reality-caveat-item">
-<div class="reality-caveat-title">真实物理世界</div>
-<div class="reality-caveat-copy">机器人离通用还有很远的路</div>
+<div v-click class="reality-check-row">
+<div class="reality-check-num">02</div>
+<div class="reality-check-body">
+<div class="reality-check-title">金融分析</div>
+<div class="reality-check-copy">专家级判断尚未可靠</div>
 </div>
-<div class="reality-verdict">合理的态度不是盲信，而是学会协作、保留判断</div>
+</div>
+<div v-click class="reality-check-row">
+<div class="reality-check-num">03</div>
+<div class="reality-check-body">
+<div class="reality-check-title">真实物理世界</div>
+<div class="reality-check-copy">机器人离通用还有很远的路</div>
+</div>
+</div>
+<div v-click class="reality-verdict-block">
+<div class="reality-verdict-lead">合理的态度</div>
+<div class="reality-verdict-text">不是盲信，而是学会协作、保留判断</div>
+</div>
 </div>
 </div>
 
@@ -510,26 +522,24 @@ class: deck-page
 
 # 不只是辅助判断
 
-<div class="saving-layout">
-<div class="saving-main">
-<div class="micro-label">医疗场景</div>
-<div class="saving-sentence">病历书写时间<br>最高减少</div>
-<div class="saving-number"><AnimatedNumber :value="83" suffix="%" :duration="1000" :delay="100" /></div>
-<div class="saving-bar-area">
-<div class="saving-bar-track">
-<AnimatedBar :value="83" fill-class="saving-bar-fill" :duration="1100" :delay="160" />
+<div class="clinical-stage">
+<div class="clinical-hero">
+<div class="clinical-hero-label">医疗场景</div>
+<div class="clinical-hero-sentence">病历书写时间最高减少</div>
+<div class="clinical-hero-number"><AnimatedNumber :value="83" suffix="%" :duration="1000" :delay="100" /></div>
+<div class="clinical-hero-bar">
+<AnimatedBar :value="83" fill-class="clinical-bar-fill" :duration="1100" :delay="160" />
 </div>
-<div class="saving-bar-label">2025 年自动生成临床笔记工具开始进入医院</div>
+<div class="clinical-hero-caption">2025 年自动生成临床笔记工具开始进入医院</div>
 </div>
+<div class="clinical-side">
+<div v-click class="clinical-insight">
+<div class="clinical-insight-label">AI 的角色</div>
+<div class="clinical-insight-copy">不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去</div>
 </div>
-<div class="saving-insight">
-<div v-click class="saving-insight-item">
-<div class="micro-label">AI 的角色</div>
-<div class="saving-insight-copy">不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去</div>
-</div>
-<div v-click class="saving-insight-item">
-<div class="micro-label">更大的画面</div>
-<div class="saving-insight-copy">当 AI 进入医疗、科研、天气这些高价值领域，它才真正开始改变专业工作流</div>
+<div v-click class="clinical-insight clinical-insight-final">
+<div class="clinical-insight-label">更大的画面</div>
+<div class="clinical-insight-copy">当 AI 进入医疗、科研、天气这些高价值领域，它才真正开始改变专业工作流</div>
 </div>
 </div>
 </div>
@@ -581,31 +591,33 @@ class: deck-page
 
 # 中美差距缩小，竞争格局分散
 
-<div class="competition-stage">
-<div class="competition-headline">
-<div class="micro-label">全球竞赛</div>
-<div class="competition-thesis">关键问题不再是领先多少，而是优势能否持续</div>
+<div class="gap-stage">
+<div class="gap-hero">
+<div class="gap-hero-label">领先幅度</div>
+<div class="gap-hero-number"><AnimatedNumber :value="2.7" suffix="%" :decimals="1" :duration="1000" :delay="120" /></div>
+<div class="gap-hero-copy">截至 2026 年 3 月，顶级模型领先幅度</div>
+<div class="gap-hero-thesis">关键问题不再是领先多少，而是优势能否持续</div>
 </div>
-
-<div class="two-panel competition-panel">
-<div v-click class="hero-stat hero-stat-dark competition-hero">
-<div class="micro-label">领先幅度</div>
-<div class="mega-number"><AnimatedNumber :value="2.7" suffix="%" :decimals="1" :duration="1000" :delay="120" /></div>
-<div class="hero-stat-copy">截至 2026 年 3 月，顶级模型领先幅度</div>
+<div class="gap-cards">
+<div v-click class="gap-card">
+<div class="gap-card-index">01</div>
+<div class="gap-card-body">
+<div class="gap-card-label">变化</div>
+<div class="gap-card-copy">自 2025 年以来，中美模型在性能榜上多次交替领先</div>
 </div>
-
-<div class="stack-panel">
-<div v-click class="paper-card paper-card-small competition-note-card">
-<div class="micro-label">变化</div>
-<div class="small-copy">自 2025 年以来，中美模型在性能榜上多次交替领先</div>
 </div>
-<div v-click class="paper-card paper-card-small competition-note-card">
-<div class="micro-label">不过</div>
-<div class="small-copy">美国仍在顶级模型和私人投资上占优，但差距在缩小</div>
+<div v-click class="gap-card">
+<div class="gap-card-index">02</div>
+<div class="gap-card-body">
+<div class="gap-card-label">不过</div>
+<div class="gap-card-copy">美国仍在顶级模型和私人投资上占优，但差距在缩小</div>
 </div>
-<div v-click class="paper-card paper-card-small competition-note-card competition-note-card-final">
-<div class="micro-label">为什么重要</div>
-<div class="small-copy">AI 竞争已从单边领先，进入明显的多极化阶段</div>
+</div>
+<div v-click class="gap-card gap-card-conclusion">
+<div class="gap-card-index">03</div>
+<div class="gap-card-body">
+<div class="gap-card-label">为什么重要</div>
+<div class="gap-card-copy">AI 竞争已从单边领先，进入明显的多极化阶段</div>
 </div>
 </div>
 </div>
@@ -618,39 +630,38 @@ class: deck-page
 
 # AI 竞争已是系统竞争
 
-<div class="system-competition-layout">
-<div v-click class="hero-stat hero-stat-dark">
-<div class="micro-label">人才流动</div>
-<div class="mega-number text-amber"><AnimatedNumber :value="-89" suffix="%" :duration="1000" :delay="120" /></div>
-<div class="hero-stat-copy">流入美国的 AI 学者数量，自 2017 年以来的下降幅度</div>
+<div class="syscomp-layout">
+<div v-click class="syscomp-hero">
+<div class="syscomp-hero-label">人才流动</div>
+<div class="syscomp-hero-number"><AnimatedNumber :value="-89" suffix="%" :duration="1000" :delay="120" /></div>
+<div class="syscomp-hero-copy">流入美国的 AI 学者数量，自 2017 年以来的下降幅度</div>
 </div>
-
-<div class="system-map">
-<div v-click class="system-node">
-<div class="system-node-icon">
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><rect x="6" y="6" width="3" height="3" rx="0.5" fill="currentColor"/><rect x="11" y="6" width="3" height="3" rx="0.5" fill="currentColor"/><rect x="6" y="11" width="3" height="3" rx="0.5" fill="currentColor"/><rect x="11" y="11" width="3" height="3" rx="0.5" fill="currentColor"/></svg>
+<div class="syscomp-layers">
+<div v-click class="syscomp-layer">
+<div class="syscomp-layer-icon">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.3"/><rect x="8" y="8" width="5" height="5" rx="1" fill="currentColor"/><rect x="15" y="8" width="5" height="5" rx="1" fill="currentColor"/><rect x="8" y="15" width="5" height="5" rx="1" fill="currentColor"/><rect x="15" y="15" width="5" height="5" rx="1" fill="currentColor"/></svg>
 </div>
-<div class="system-node-body">
-<div class="system-node-label">芯片</div>
-<div class="system-node-copy">云、数据中心、电力——训练和部署的底座</div>
-</div>
-</div>
-<div v-click class="system-node">
-<div class="system-node-icon">
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M10 3a7 7 0 0 1 0 14" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="10" r="2.5" fill="currentColor"/></svg>
-</div>
-<div class="system-node-body">
-<div class="system-node-label">资本</div>
-<div class="system-node-copy">资金、人才、产业协同——留在牌桌的前提</div>
+<div class="syscomp-layer-body">
+<div class="syscomp-layer-title">芯片</div>
+<div class="syscomp-layer-copy">云、数据中心、电力——训练和部署的底座</div>
 </div>
 </div>
-<div v-click class="system-node system-node-final">
-<div class="system-node-icon">
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 2"/></svg>
+<div v-click class="syscomp-layer">
+<div class="syscomp-layer-icon">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3"/><path d="M14 4a10 10 0 0 1 0 20" stroke="currentColor" stroke-width="1.3"/><circle cx="14" cy="14" r="3.5" fill="currentColor"/></svg>
 </div>
-<div class="system-node-body">
-<div class="system-node-label">系统</div>
-<div class="system-node-copy">AI 竞争不是几个聊天机器人的比赛，而是系统能力竞争</div>
+<div class="syscomp-layer-body">
+<div class="syscomp-layer-title">资本</div>
+<div class="syscomp-layer-copy">资金、人才、产业协同——留在牌桌的前提</div>
+</div>
+</div>
+<div v-click class="syscomp-layer syscomp-layer-culmination">
+<div class="syscomp-layer-icon">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3" stroke-dasharray="3 3"/></svg>
+</div>
+<div class="syscomp-layer-body">
+<div class="syscomp-layer-title">系统能力</div>
+<div class="syscomp-layer-copy">AI 竞争不是几个聊天机器人的比赛，而是系统能力竞争</div>
 </div>
 </div>
 </div>
