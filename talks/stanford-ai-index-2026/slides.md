@@ -136,35 +136,39 @@ layout: default
 class: deck-page mood-page
 ---
 
-<div class="editorial-split">
-<div class="editorial-main">
-<div class="micro-label">普及速度</div>
-<div class="editorial-sentence">3 年超过 PC 用了 8 年的扩散</div>
-<div class="editorial-note">生成式 AI 已不是科技圈玩具，而是快速进入主流社会的通用能力。</div>
+<div class="adoption-stage">
+<div class="adoption-hero">
+<div class="adoption-hero-label">普及速度</div>
+<div class="adoption-hero-number"><AnimatedNumber :value="53" suffix="%" :duration="1100" :delay="80" /></div>
+<div class="adoption-hero-copy">生成式 AI 仅用 <strong>3 年</strong>就达到的人口采用率</div>
+<div class="adoption-hero-note">已不是科技圈玩具，而是快速进入主流社会的通用能力</div>
 </div>
-<div class="comparison-board">
-<div class="micro-label">对比</div>
-<div class="comparison-list">
-<div v-click class="comparison-item">
-<div class="comparison-head">
-<span>生成式 AI</span>
-<span>3 年 → 53%</span>
+<div class="adoption-race">
+<div v-click class="adoption-race-item adoption-race-winner">
+<div class="adoption-race-head">
+<div class="adoption-race-name">生成式 AI</div>
+<div class="adoption-race-tag">3 年</div>
 </div>
-<AnimatedBar :value="88" fill-class="comparison-fill comparison-fill-strong" />
+<div class="adoption-race-track">
+<AnimatedBar :value="92" fill-class="adoption-race-fill adoption-race-fill-hero" />
 </div>
-<div v-click class="comparison-item">
-<div class="comparison-head">
-<span>个人电脑</span>
-<span>8 年仍在扩散</span>
 </div>
-<AnimatedBar :value="54" fill-class="comparison-fill comparison-fill-soft" :delay="80" />
+<div v-click class="adoption-race-item">
+<div class="adoption-race-head">
+<div class="adoption-race-name">互联网</div>
+<div class="adoption-race-tag">5 年仍在扩散</div>
 </div>
-<div v-click class="comparison-item">
-<div class="comparison-head">
-<span>互联网</span>
-<span>5 年仍在扩散</span>
+<div class="adoption-race-track">
+<AnimatedBar :value="61" fill-class="adoption-race-fill adoption-race-fill-dim" :delay="80" />
 </div>
-<AnimatedBar :value="61" fill-class="comparison-fill comparison-fill-muted" :delay="140" />
+</div>
+<div v-click class="adoption-race-item">
+<div class="adoption-race-head">
+<div class="adoption-race-name">个人电脑</div>
+<div class="adoption-race-tag">8 年仍在扩散</div>
+</div>
+<div class="adoption-race-track">
+<AnimatedBar :value="54" fill-class="adoption-race-fill adoption-race-fill-dim" :delay="140" />
 </div>
 </div>
 </div>
@@ -221,21 +225,30 @@ class: deck-page
 
 # 不只是更会聊天
 
-<div class="tri-upgrade">
-<div v-click class="tri-upgrade-card">
+<div class="evolution-stage">
+<div class="evolution-trail">
+<div v-click class="evolution-step">
+<div class="evolution-step-marker"></div>
+<div class="evolution-step-body">
 <div class="micro-label">多模态</div>
-<div class="tri-upgrade-title">从文本走向图像、音频、视频</div>
-<div class="tri-upgrade-copy">前沿模型在博士级科学问题、多模态推理、竞赛数学等任务上持续进步</div>
+<div class="evolution-step-title">从文本走向图像、音频、视频</div>
+<div class="evolution-step-copy">前沿模型在博士级科学问题、多模态推理、竞赛数学等任务上持续进步</div>
 </div>
-<div v-click class="tri-upgrade-card">
+</div>
+<div v-click class="evolution-step">
+<div class="evolution-step-marker"></div>
+<div class="evolution-step-body">
 <div class="micro-label">推理能力</div>
-<div class="tri-upgrade-title">高难度任务接近人类表现</div>
-<div class="tri-upgrade-copy">从"看似理解"到"真正推理"——可测量的进步，不只是感觉</div>
+<div class="evolution-step-title">高难度任务接近人类表现</div>
+<div class="evolution-step-copy">从"看似理解"到"真正推理"——可测量的进步，不只是感觉</div>
 </div>
-<div v-click class="tri-upgrade-card tri-upgrade-card-accent">
-<div class="micro-label" style="color: rgba(255,253,249,0.45);">代理</div>
-<div class="tri-upgrade-title" style="color: var(--deck-white);">从"会聊"走向"会做"</div>
-<div class="tri-upgrade-copy" style="color: rgba(255,253,249,0.65);">真实任务中的 Agent 成功率从 20% 提升到 77%。AI 的角色正从聊天对象变成任务代理。</div>
+</div>
+</div>
+<div v-click class="evolution-destination">
+<div class="evolution-dest-badge">关键跃迁</div>
+<div class="evolution-dest-title">从"会聊"走向"会做"</div>
+<div class="evolution-dest-copy">真实任务中的 Agent 成功率从 20% 提升到 77%。AI 的角色正从聊天对象变成任务代理。</div>
+<div class="evolution-dest-number"><AnimatedNumber :value="77" suffix="%" :duration="1000" :delay="120" /></div>
 </div>
 </div>
 
@@ -246,33 +259,33 @@ class: deck-page
 
 # 从"会聊"走向"会做"
 
-<div class="shift-stage">
-<div class="shift-layout">
-<div v-click class="shift-before">
-<div class="micro-label">2025</div>
-<div class="shift-number"><AnimatedNumber :value="20" suffix="%" :duration="900" :delay="60" /></div>
-<div class="shift-desc">真实任务中的<br>Agent 成功率</div>
+<div class="leap-stage">
+<div class="leap-pair">
+<div v-click class="leap-card leap-card-before">
+<div class="leap-card-year">2025</div>
+<div class="leap-card-number"><AnimatedNumber :value="20" suffix="%" :duration="900" :delay="60" /></div>
+<div class="leap-card-desc">真实任务中的<br>Agent 成功率</div>
 </div>
-<div v-click class="shift-bridge">
-<div class="shift-arrow-line"></div>
-<div class="shift-arrow-label">一年之间</div>
-<div class="shift-arrow-caption">从单轮回答到连续执行</div>
-</div>
-<div v-click class="shift-after">
-<div class="micro-label">2026</div>
-<div class="shift-number shift-number-accent"><AnimatedNumber :value="77.3" suffix="%" :decimals="1" :duration="1000" :delay="160" /></div>
-<div class="shift-desc">同样的任务，<br>成功率大幅跃升</div>
+<div v-click class="leap-bridge">
+<div class="leap-bridge-line"></div>
+<div class="leap-bridge-body">
+<div class="leap-bridge-label">一年之间</div>
+<div class="leap-bridge-caption">从单轮回答<br>到连续执行</div>
 </div>
 </div>
-
-<div class="shift-footer">
-<div v-click class="shift-footer-stat">
-<div class="shift-footer-number"><AnimatedNumber :value="93" suffix="%" :duration="900" :delay="220" /></div>
-<div class="shift-footer-copy">网络安全 Agent 成功率</div>
+<div v-click class="leap-card leap-card-after">
+<div class="leap-card-year">2026</div>
+<div class="leap-card-number"><AnimatedNumber :value="77.3" suffix="%" :decimals="1" :duration="1000" :delay="160" /></div>
+<div class="leap-card-desc">同样的任务，<br>成功率大幅跃升</div>
 </div>
-<div v-click class="shift-footer-note">过去更多是"问 AI 一个问题"，现在越来越像"让 AI 替我做一串事"</div>
 </div>
-
+<div class="leap-footer">
+<div v-click class="leap-stat">
+<div class="leap-stat-number"><AnimatedNumber :value="93" suffix="%" :duration="900" :delay="220" /></div>
+<div class="leap-stat-copy">网络安全 Agent 成功率</div>
+</div>
+<div v-click class="leap-footer-note">过去更多是"问 AI 一个问题"，现在越来越像"让 AI 替我做一串事"</div>
+</div>
 </div>
 
 ---
@@ -391,26 +404,26 @@ class: deck-page
 
 # 制度落后于现实
 
-<div class="cascade-layout">
-<div class="cascade-stats">
-<div v-click class="cascade-row">
-<div class="cascade-number cascade-number-amber"><AnimatedNumber :value="50" suffix="%" :duration="900" :delay="80" /></div>
-<div class="cascade-desc">仅一半学校建立了 AI 使用政策</div>
+<div class="chasm-layout">
+<div class="chasm-drop">
+<div v-click class="chasm-top">
+<div class="chasm-top-number"><AnimatedNumber :value="50" suffix="%" :duration="900" :delay="80" /></div>
+<div class="chasm-top-desc">仅一半学校建立了 AI 使用政策</div>
 </div>
-<div v-click class="cascade-arrow-area">
-<div class="cascade-arrow-down"></div>
+<div v-click class="chasm-gorge">
+<div class="chasm-gorge-line"></div>
+<div class="chasm-gorge-label">落差</div>
+<div class="chasm-gorge-caption">学生已经往前走了，制度还在追</div>
 </div>
-<div v-click class="cascade-row cascade-row-highlight">
-<div class="cascade-number cascade-number-alert"><AnimatedNumber :value="6" suffix="%" :duration="900" :delay="160" /></div>
-<div class="cascade-desc">仅 6% 教师认为政策足够清晰</div>
+<div v-click class="chasm-bottom">
+<div class="chasm-bottom-number"><AnimatedNumber :value="6" suffix="%" :duration="900" :delay="160" /></div>
+<div class="chasm-bottom-desc">仅 6% 教师认为政策足够清晰</div>
 </div>
-<div v-click class="cascade-tension-note">学生已经往前走了，制度还在追——这不是单一国家的问题</div>
 </div>
-
-<div class="paper-card policy-question-card">
-<div class="micro-label">真正的问题</div>
-<div class="section-heading">当答案唾手可得，教育该评估什么？</div>
-<div v-click class="policy-question-emphasis">未来更重要的，不是"会不会做题"，而是"会不会提问、会不会验证、会不会独立思考"</div>
+<div class="chasm-question">
+<div class="chasm-question-label">真正的问题</div>
+<div class="chasm-question-title">当答案唾手可得，<br>教育该评估什么？</div>
+<div v-click class="chasm-question-answer">未来更重要的，不是"会不会做题"，而是"会不会提问、会不会验证、会不会独立思考"</div>
 </div>
 </div>
 
@@ -463,26 +476,30 @@ class: deck-page
 
 # 2025 年，AI 首次独立完成天气预测
 
-<div class="weather-layout">
-<div class="weather-flow">
-<div v-click class="weather-step">
-<div class="weather-step-label">原始观测</div>
-<div class="weather-step-detail">实时气象数据</div>
+<div class="milestone-stage">
+<div class="milestone-flow">
+<div v-click class="milestone-input">
+<div class="milestone-input-label">原始观测</div>
+<div class="milestone-input-detail">实时气象数据输入</div>
 </div>
-<div v-click class="weather-connector"></div>
-<div v-click class="weather-step weather-step-accent">
-<div class="weather-step-label">AI 模型</div>
-<div class="weather-step-detail">独立完成预测</div>
-</div>
-<div v-click class="weather-connector"></div>
-<div v-click class="weather-step">
-<div class="weather-step-label">最终输出</div>
-<div class="weather-step-detail">天气预测结果</div>
+<div v-click class="milestone-center">
+<div class="milestone-center-ring"></div>
+<div class="milestone-center-body">
+<div class="milestone-center-label">AI 模型</div>
+<div class="milestone-center-title">独立完成预测</div>
+<div class="milestone-center-copy">不再辅助判断，而是接管完整流程的一整段</div>
 </div>
 </div>
-<div v-click class="weather-note">
-<span class="micro-label">里程碑</span>
-AI 不再只是"辅助判断"，而是开始接管完整流程中的一整段。这类变化一旦发生在高价值场景里，影响通常会非常深。
+<div v-click class="milestone-output">
+<div class="milestone-output-label">最终输出</div>
+<div class="milestone-output-detail">天气预测结果</div>
+</div>
+</div>
+<div class="milestone-footer">
+<div class="milestone-impact">
+<span class="micro-label">里程碑意义</span>
+<span class="milestone-impact-copy">这类变化一旦发生在高价值场景里，影响通常会非常深。AI 的角色正在从"工具"变成"流程中的独立环节"。</span>
+</div>
 </div>
 </div>
 
