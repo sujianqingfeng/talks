@@ -179,8 +179,8 @@ class: statement-page
 <div class="statement-shell">
 <div class="statement-kicker">用户价值</div>
 <div class="statement-number"><AnimatedNumber :value="172" prefix="$" suffix="B" :duration="1200" :delay="120" /></div>
-<div class="statement-text">生成式 AI 给美国消费者的年价值</div>
-<div class="statement-support">用户中位价值一年增长 3 倍。很多人没意识到自己已在用 AI——节省时间、降低成本、减少重复劳动，这些价值往往体现在效率上，而非账单里。</div>
+<div class="statement-text">生成式 AI 带来的估算年价值</div>
+<div class="statement-support">以美国市场测算达 1720 亿美元，用户中位价值一年增长 3 倍。全球主要市场的采用曲线呈现相似趋势——很多人没意识到自己已在用 AI，节省时间、降低成本的价值往往体现在效率上，而非账单里。</div>
 </div>
 
 ---
@@ -362,8 +362,8 @@ class: statement-page
 <div class="statement-shell">
 <div class="statement-kicker">学生先用起来了</div>
 <div class="statement-number"><AnimatedNumber :value="80" suffix="%" :duration="900" :delay="100" /></div>
-<div class="statement-text">美国高中生和大学生已在学业中使用 AI</div>
-<div class="statement-support">学生的采用速度比制度更新更快。AI 已进入作业、写作、复习和资料整理，甚至正在重新定义"会学习"这件事。</div>
+<div class="statement-text">主流市场超 80% 学生已在学业中使用 AI</div>
+<div class="statement-support">学生的采用速度比制度更新更快。AI 已进入作业、写作、复习和资料整理，甚至正在重新定义"会学习"这件事。这一趋势在多个国家的教育场景中同步发生。</div>
 </div>
 
 ---
@@ -377,7 +377,7 @@ class: deck-page
 <div class="cascade-stats">
 <div v-click class="cascade-row">
 <div class="cascade-number cascade-number-amber"><AnimatedNumber :value="50" suffix="%" :duration="900" :delay="80" /></div>
-<div class="cascade-desc">仅一半中学和高中有 AI 政策</div>
+<div class="cascade-desc">仅一半学校建立了 AI 使用政策</div>
 </div>
 <div v-click class="cascade-arrow-area">
 <div class="cascade-arrow-down"></div>
@@ -386,7 +386,7 @@ class: deck-page
 <div class="cascade-number cascade-number-alert"><AnimatedNumber :value="6" suffix="%" :duration="900" :delay="160" /></div>
 <div class="cascade-desc">仅 6% 教师认为政策足够清晰</div>
 </div>
-<div v-click class="cascade-tension-note">学生已经往前走了，制度还在追</div>
+<div v-click class="cascade-tension-note">学生已经往前走了，制度还在追——这不是单一国家的问题</div>
 </div>
 
 <div class="paper-card policy-question-card">
@@ -597,7 +597,7 @@ class: statement-page statement-page-dark
 <div class="infra-topline">
 <div class="infra-power-block">
 <div class="statement-number"><AnimatedNumber :value="29.6" suffix="GW" :decimals="1" :duration="1100" :delay="100" /></div>
-<div class="statement-text">AI 数据中心电力容量，约等于纽约州峰值用电</div>
+<div class="statement-text">AI 数据中心电力容量，相当于一座大型城市的峰值用电</div>
 </div>
 <div v-click class="infra-verdict">AI 已从软件变成基础设施</div>
 </div>
