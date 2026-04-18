@@ -300,10 +300,6 @@ html, body {
 
 /* ── Question page ─────────────────────────────── */
 
-.question-page h1 {
-  display: none;
-}
-
 .question-stage {
   display: grid;
   grid-template-columns: 0.86fr 1.14fr;
@@ -1606,7 +1602,7 @@ html, body {
   font-size: 10rem;
   line-height: 0.82;
   letter-spacing: -0.05em;
-  color: var(--deck-line);
+  color: var(--deck-muted);
   font-weight: 300;
   text-align: right;
 }
@@ -2058,6 +2054,66 @@ html, body {
   line-height: 1.6;
 }
 
+/* ── System competition layout ─────────────────── */
+
+.system-competition-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  flex: 1;
+  align-items: stretch;
+}
+
+.system-competition-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+
+.system-competition-item {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--deck-line);
+}
+
+.system-competition-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.system-competition-icon {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--deck-accent-soft);
+  text-transform: uppercase;
+  align-self: start;
+  padding-top: 0.15rem;
+}
+
+.system-competition-copy {
+  color: var(--deck-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.system-competition-item-final {
+  border-top-color: var(--deck-line-strong);
+}
+
+.system-competition-item-final .system-competition-icon {
+  color: var(--deck-accent);
+}
+
+.system-competition-item-final .system-competition-copy {
+  color: var(--deck-ink);
+  font-weight: 500;
+}
+
 /* ── Responsive ───────────────────────────────── */
 
 @media (max-width: 1100px) {
@@ -2068,7 +2124,7 @@ html, body {
 
   .cover-right { display: none; }
 
-  .editorial-split, .two-panel, .data-split, .mood-stage, .cascade-layout, .capability-layout, .impact-layout, .funding-layout, .shift-layout, .question-stage, .keyword-stage, .infra-topline {
+  .editorial-split, .two-panel, .data-split, .mood-stage, .cascade-layout, .capability-layout, .impact-layout, .funding-layout, .shift-layout, .question-stage, .keyword-stage, .infra-topline, .system-competition-layout {
     grid-template-columns: 1fr;
   }
 
