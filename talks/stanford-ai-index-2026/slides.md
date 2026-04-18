@@ -40,8 +40,8 @@ class: statement-page
 
 <div class="statement-shell">
 <div class="statement-kicker">为什么看这份报告</div>
-<div class="statement-text">它是体检报告，<br>不是产品发布会</div>
-<div class="statement-support">Stanford HAI 从 2017 年起持续追踪 AI 的技术、产业和社会影响。想认真判断 AI 的真实进展，它比热搜更可靠。</div>
+<div class="statement-text">数据，<br>而非观点</div>
+<div class="statement-support">Stanford HAI 自 2017 年起持续追踪 AI 的技术、产业与社会影响。</div>
 </div>
 
 ---
@@ -278,14 +278,33 @@ class: deck-page
 
 ---
 layout: default
-class: statement-page
+class: deck-page
 ---
 
-<div class="statement-shell">
-<div class="statement-kicker">清醒一下</div>
-<div class="statement-number"><AnimatedNumber :value="12" suffix="%" :duration="900" :delay="100" /></div>
-<div class="statement-text">机器人在真实家庭任务中的成功率</div>
-<div class="statement-support">AI 确实更强了，但在看时间、多步规划、金融分析和部分专家级任务中仍会出错。合理的态度不是盲信 AI，而是学会和它协作、同时保留判断。</div>
+# 清醒一下
+
+<div class="reality-layout">
+<div class="reality-hero">
+<div class="reality-hero-label">现实检验</div>
+<div class="reality-hero-number"><AnimatedNumber :value="12" suffix="%" :duration="900" :delay="100" /></div>
+<div class="reality-hero-copy">机器人在真实家庭任务中的成功率</div>
+</div>
+<div class="reality-caveats">
+<div class="micro-label">仍会出错的领域</div>
+<div v-click class="reality-caveat-item">
+<div class="reality-caveat-title">看时间、多步规划</div>
+<div class="reality-caveat-copy">日常推理仍有盲区</div>
+</div>
+<div v-click class="reality-caveat-item">
+<div class="reality-caveat-title">金融分析</div>
+<div class="reality-caveat-copy">专家级判断尚未可靠</div>
+</div>
+<div v-click class="reality-caveat-item">
+<div class="reality-caveat-title">真实物理世界</div>
+<div class="reality-caveat-copy">机器人离通用还有很远的路</div>
+</div>
+<div class="reality-verdict">合理的态度不是盲信，而是学会协作、保留判断</div>
+</div>
 </div>
 
 ---
@@ -470,14 +489,33 @@ AI 不再只是"辅助判断"，而是开始接管完整流程中的一整段。
 
 ---
 layout: default
-class: statement-page
+class: deck-page
 ---
 
-<div class="statement-shell">
-<div class="statement-kicker">医疗场景</div>
-<div class="statement-number"><AnimatedNumber :value="83" suffix="%" :duration="1000" :delay="100" /></div>
-<div class="statement-text">医生病历书写时间最高减少</div>
-<div class="statement-support">AI 最现实的价值，不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去。当 AI 进入医疗、科研、天气这些高价值领域，它才真正开始改变专业工作流。</div>
+# 不只是辅助判断
+
+<div class="saving-layout">
+<div class="saving-main">
+<div class="micro-label">医疗场景</div>
+<div class="saving-sentence">病历书写时间<br>最高减少</div>
+<div class="saving-number"><AnimatedNumber :value="83" suffix="%" :duration="1000" :delay="100" /></div>
+<div class="saving-bar-area">
+<div class="saving-bar-track">
+<AnimatedBar :value="83" fill-class="saving-bar-fill" :duration="1100" :delay="160" />
+</div>
+<div class="saving-bar-label">2025 年自动生成临床笔记工具开始进入医院</div>
+</div>
+</div>
+<div class="saving-insight">
+<div v-click class="saving-insight-item">
+<div class="micro-label">AI 的角色</div>
+<div class="saving-insight-copy">不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去</div>
+</div>
+<div v-click class="saving-insight-item">
+<div class="micro-label">更大的画面</div>
+<div class="saving-insight-copy">当 AI 进入医疗、科研、天气这些高价值领域，它才真正开始改变专业工作流</div>
+</div>
+</div>
 </div>
 
 ---
@@ -571,18 +609,33 @@ class: deck-page
 <div class="hero-stat-copy">流入美国的 AI 学者数量，自 2017 年以来的下降幅度</div>
 </div>
 
-<div class="system-competition-stack">
-<div v-click class="system-competition-item">
-<div class="system-competition-icon">芯片</div>
-<div class="system-competition-copy">芯片、云、数据中心和电力，决定了谁能长期训练和部署更强模型</div>
+<div class="system-map">
+<div v-click class="system-node">
+<div class="system-node-icon">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><rect x="6" y="6" width="3" height="3" rx="0.5" fill="currentColor"/><rect x="11" y="6" width="3" height="3" rx="0.5" fill="currentColor"/><rect x="6" y="11" width="3" height="3" rx="0.5" fill="currentColor"/><rect x="11" y="11" width="3" height="3" rx="0.5" fill="currentColor"/></svg>
 </div>
-<div v-click class="system-competition-item">
-<div class="system-competition-icon">资本</div>
-<div class="system-competition-copy">谁能持续拿到资金、人才和产业协同，谁才更可能留在牌桌上</div>
+<div class="system-node-body">
+<div class="system-node-label">芯片</div>
+<div class="system-node-copy">云、数据中心、电力——训练和部署的底座</div>
 </div>
-<div v-click class="system-competition-item system-competition-item-final">
-<div class="system-competition-icon">系统</div>
-<div class="system-competition-copy">AI 竞争不是几个聊天机器人之间的比赛，而是一场系统能力竞争</div>
+</div>
+<div v-click class="system-node">
+<div class="system-node-icon">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M10 3a7 7 0 0 1 0 14" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="10" r="2.5" fill="currentColor"/></svg>
+</div>
+<div class="system-node-body">
+<div class="system-node-label">资本</div>
+<div class="system-node-copy">资金、人才、产业协同——留在牌桌的前提</div>
+</div>
+</div>
+<div v-click class="system-node system-node-final">
+<div class="system-node-icon">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 2"/></svg>
+</div>
+<div class="system-node-body">
+<div class="system-node-label">系统</div>
+<div class="system-node-copy">AI 竞争不是几个聊天机器人的比赛，而是系统能力竞争</div>
+</div>
 </div>
 </div>
 </div>
