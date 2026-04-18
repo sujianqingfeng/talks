@@ -91,32 +91,31 @@ layout: default
 class: deck-page keyword-page
 ---
 
-<div class="keyword-stage">
-<div class="keyword-lead">
-<div class="micro-label">先讲结论</div>
-<div class="keyword-thesis">AI 不是单线程演进<br>能力、普及、成本、治理，四线并行</div>
+<div class="keyword-stage-v2">
+<div class="keyword-v2-lead">
+<div class="keyword-v2-thesis">AI 不是单线程演进<br>能力、普及、成本、治理，四线并行</div>
 </div>
 
-<div class="keyword-column">
-<div v-click class="keyword-block">
-<span class="keyword-number">01</span>
-<span class="keyword-word">更强</span>
-<span class="keyword-desc">推理、多模态和 Agent 持续突破，在高难度任务上接近人类表现</span>
+<div class="keyword-v2-grid">
+<div v-click class="keyword-v2-card">
+<div class="keyword-v2-number">01</div>
+<div class="keyword-v2-word">更强</div>
+<div class="keyword-v2-desc">推理、多模态、Agent 持续突破<br>高难度任务上接近人类表现</div>
 </div>
-<div v-click class="keyword-block">
-<span class="keyword-number">02</span>
-<span class="keyword-word">更普及</span>
-<span class="keyword-desc">3 年达到 53% 人口采用率，速度超越 PC 和互联网</span>
+<div v-click class="keyword-v2-card">
+<div class="keyword-v2-number">02</div>
+<div class="keyword-v2-word">更普及</div>
+<div class="keyword-v2-desc">3 年达到 53% 人口采用率<br>扩散速度超越 PC 和互联网</div>
 </div>
-<div v-click class="keyword-block">
-<span class="keyword-number">03</span>
-<span class="keyword-word">更昂贵</span>
-<span class="keyword-desc">资本、算力、电力、用水，成本正在显性化</span>
+<div v-click class="keyword-v2-card">
+<div class="keyword-v2-number">03</div>
+<div class="keyword-v2-word">更昂贵</div>
+<div class="keyword-v2-desc">资本、算力、电力、用水<br>成本正在显性化</div>
 </div>
-<div v-click class="keyword-block keyword-block-dark">
-<span class="keyword-number">04</span>
-<span class="keyword-word">更不可知</span>
-<span class="keyword-desc">治理边界、责任归属、公众信任，问题正在被放大</span>
+<div v-click class="keyword-v2-card keyword-v2-card-dark">
+<div class="keyword-v2-number">04</div>
+<div class="keyword-v2-word">更不可知</div>
+<div class="keyword-v2-desc">治理边界、责任归属、公众信任<br>问题正在被放大</div>
 </div>
 </div>
 </div>
