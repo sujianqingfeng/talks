@@ -55,28 +55,28 @@ class: deck-page question-page
 <div class="question-manifesto">不追模型更新，<br>先看现实变化</div>
 </div>
 <div class="question-column">
-<div v-click class="question-item">
+<div class="question-item">
 <div class="question-index">01</div>
 <div class="question-body">
 <div class="question-title">强到哪了</div>
 <div class="question-sub">能力边界</div>
 </div>
 </div>
-<div v-click class="question-item question-item-shift">
+<div class="question-item question-item-shift">
 <div class="question-index">02</div>
 <div class="question-body">
 <div class="question-title">改变了谁</div>
 <div class="question-sub">渗透图景</div>
 </div>
 </div>
-<div v-click class="question-item question-item-tight">
+<div class="question-item question-item-tight">
 <div class="question-index">03</div>
 <div class="question-body">
 <div class="question-title">代价在哪</div>
 <div class="question-sub">隐性成本</div>
 </div>
 </div>
-<div v-click class="question-item question-item-accent">
+<div class="question-item question-item-accent">
 <div class="question-index">04</div>
 <div class="question-body">
 <div class="question-title">怎么判断</div>
@@ -97,22 +97,22 @@ class: deck-page keyword-page
 </div>
 
 <div class="keyword-v2-grid">
-<div v-click class="keyword-v2-card">
+<div class="keyword-v2-card">
 <div class="keyword-v2-number">01</div>
 <div class="keyword-v2-word">更强</div>
 <div class="keyword-v2-desc">推理、多模态、Agent 持续突破<br>高难度任务上接近人类表现</div>
 </div>
-<div v-click class="keyword-v2-card">
+<div class="keyword-v2-card">
 <div class="keyword-v2-number">02</div>
 <div class="keyword-v2-word">更普及</div>
 <div class="keyword-v2-desc">3 年达到 53% 人口采用率<br>扩散速度超越 PC 和互联网</div>
 </div>
-<div v-click class="keyword-v2-card">
+<div class="keyword-v2-card">
 <div class="keyword-v2-number">03</div>
 <div class="keyword-v2-word">更昂贵</div>
 <div class="keyword-v2-desc">资本、算力、电力、用水<br>成本正在显性化</div>
 </div>
-<div v-click class="keyword-v2-card keyword-v2-card-dark">
+<div class="keyword-v2-card keyword-v2-card-dark">
 <div class="keyword-v2-number">04</div>
 <div class="keyword-v2-word">更不可知</div>
 <div class="keyword-v2-desc">治理边界、责任归属、公众信任<br>问题正在被放大</div>
@@ -144,7 +144,7 @@ class: deck-page mood-page
 <div class="adoption-hero-note">已不是科技圈玩具，而是快速进入主流社会的通用能力</div>
 </div>
 <div class="adoption-race">
-<div v-click class="adoption-race-item adoption-race-winner">
+<div class="adoption-race-item adoption-race-winner">
 <div class="adoption-race-head">
 <div class="adoption-race-name">生成式 AI</div>
 <div class="adoption-race-tag">3 年</div>
@@ -153,7 +153,7 @@ class: deck-page mood-page
 <AnimatedBar :value="92" fill-class="adoption-race-fill adoption-race-fill-hero" />
 </div>
 </div>
-<div v-click class="adoption-race-item">
+<div class="adoption-race-item">
 <div class="adoption-race-head">
 <div class="adoption-race-name">互联网</div>
 <div class="adoption-race-tag">5 年仍在扩散</div>
@@ -162,7 +162,7 @@ class: deck-page mood-page
 <AnimatedBar :value="61" fill-class="adoption-race-fill adoption-race-fill-dim" :delay="80" />
 </div>
 </div>
-<div v-click class="adoption-race-item">
+<div class="adoption-race-item">
 <div class="adoption-race-head">
 <div class="adoption-race-name">个人电脑</div>
 <div class="adoption-race-tag">8 年仍在扩散</div>
@@ -195,22 +195,22 @@ class: deck-page
 
 <div class="mood-stage">
 <div class="mood-pair">
-<div v-click class="mood-item mood-item-positive">
+<div class="mood-item mood-item-positive">
 <div class="mood-number mood-number-positive"><AnimatedNumber :value="59" suffix="%" :duration="900" :delay="80" /></div>
 <div class="mood-label">看好 AI 带来的效率提升</div>
 </div>
-<div v-click class="mood-item mood-item-alert">
+<div class="mood-item mood-item-alert">
 <div class="mood-number mood-number-alert"><AnimatedNumber :value="52" suffix="%" :duration="900" :delay="160" /></div>
 <div class="mood-label">对其风险感到担忧</div>
 </div>
 </div>
 <div class="mood-body">
-<div class="mood-ledger">
-<div v-click class="mood-ledger-item">
+<div v-click class="mood-ledger">
+<div class="mood-ledger-item">
 <span class="mood-ledger-tag">喜欢的是</span>
 <span class="mood-ledger-copy">搜索、翻译、写作、总结、编程辅助——这些立刻提升效率的能力</span>
 </div>
-<div v-click class="mood-ledger-item">
+<div class="mood-ledger-item">
 <span class="mood-ledger-tag">担心的是</span>
 <span class="mood-ledger-copy">工作替代、深度伪造、隐私泄露、系统失控——这些现实后果</span>
 </div>
@@ -227,7 +227,7 @@ class: deck-page
 
 <div class="evolution-stage">
 <div class="evolution-trail">
-<div v-click class="evolution-step">
+<div class="evolution-step">
 <div class="evolution-step-marker"></div>
 <div class="evolution-step-body">
 <div class="micro-label">多模态</div>
@@ -235,7 +235,7 @@ class: deck-page
 <div class="evolution-step-copy">前沿模型在博士级科学问题、多模态推理、竞赛数学等任务上持续进步</div>
 </div>
 </div>
-<div v-click class="evolution-step">
+<div class="evolution-step">
 <div class="evolution-step-marker"></div>
 <div class="evolution-step-body">
 <div class="micro-label">推理能力</div>
@@ -261,30 +261,30 @@ class: deck-page
 
 <div class="leap-stage">
 <div class="leap-pair">
-<div v-click class="leap-card leap-card-before">
+<div class="leap-card leap-card-before">
 <div class="leap-card-year">2025</div>
 <div class="leap-card-number"><AnimatedNumber :value="20" suffix="%" :duration="900" :delay="60" /></div>
 <div class="leap-card-desc">真实任务中的<br>Agent 成功率</div>
 </div>
-<div v-click class="leap-bridge">
+<div class="leap-bridge">
 <div class="leap-bridge-line"></div>
 <div class="leap-bridge-body">
 <div class="leap-bridge-label">一年之间</div>
 <div class="leap-bridge-caption">从单轮回答<br>到连续执行</div>
 </div>
 </div>
-<div v-click class="leap-card leap-card-after">
+<div class="leap-card leap-card-after">
 <div class="leap-card-year">2026</div>
 <div class="leap-card-number"><AnimatedNumber :value="77.3" suffix="%" :decimals="1" :duration="1000" :delay="160" /></div>
 <div class="leap-card-desc">同样的任务，<br>成功率大幅跃升</div>
 </div>
 </div>
-<div class="leap-footer">
-<div v-click class="leap-stat">
+<div v-click class="leap-footer">
+<div class="leap-stat">
 <div class="leap-stat-number"><AnimatedNumber :value="93" suffix="%" :duration="900" :delay="220" /></div>
 <div class="leap-stat-copy">网络安全 Agent 成功率</div>
 </div>
-<div v-click class="leap-footer-note">过去更多是"问 AI 一个问题"，现在越来越像"让 AI 替我做一串事"</div>
+<div class="leap-footer-note">过去更多是"问 AI 一个问题"，现在越来越像"让 AI 替我做一串事"</div>
 </div>
 </div>
 
@@ -303,21 +303,21 @@ class: deck-page
 </div>
 <div class="reality-checks">
 <div class="micro-label">仍会出错的领域</div>
-<div v-click class="reality-check-row">
+<div class="reality-check-row">
 <div class="reality-check-num">01</div>
 <div class="reality-check-body">
 <div class="reality-check-title">看时间、多步规划</div>
 <div class="reality-check-copy">日常推理仍有盲区</div>
 </div>
 </div>
-<div v-click class="reality-check-row">
+<div class="reality-check-row">
 <div class="reality-check-num">02</div>
 <div class="reality-check-body">
 <div class="reality-check-title">金融分析</div>
 <div class="reality-check-copy">专家级判断尚未可靠</div>
 </div>
 </div>
-<div v-click class="reality-check-row">
+<div class="reality-check-row">
 <div class="reality-check-num">03</div>
 <div class="reality-check-body">
 <div class="reality-check-title">真实物理世界</div>
@@ -350,21 +350,21 @@ class: deck-page
 # 入门岗位，先被重写
 
 <div class="impact-layout">
-<div v-click class="impact-hero">
+<div class="impact-hero">
 <div class="impact-hero-label">谁先受影响</div>
 <div class="impact-hero-number"><AnimatedNumber :value="-20" suffix="%" :duration="950" :delay="120" /></div>
 <div class="impact-hero-copy">22-25 岁软件开发者就业率下降</div>
 </div>
-<div class="impact-details">
-<div v-click class="impact-item">
+<div v-click class="impact-details">
+<div class="impact-item">
 <div class="micro-label">任务迁移</div>
 <div class="impact-item-copy">标准化、可拆分、可审计的初级知识工作——资料整理、初稿生成、信息汇总、重复沟通</div>
 </div>
-<div v-click class="impact-item">
+<div class="impact-item">
 <div class="micro-label">为什么先影响年轻人</div>
 <div class="impact-item-copy">入门岗位承担的就是最容易被自动化的那一段工作流</div>
 </div>
-<div v-click class="impact-item">
+<div class="impact-item">
 <div class="micro-label">真正变了什么</div>
 <div class="impact-item-copy">不是整份工作消失，而是岗位内部的任务分工先被重写</div>
 </div>
@@ -379,18 +379,18 @@ class: deck-page
 # AI 先分走的是基础任务
 
 <div class="two-panel">
-<div v-click class="paper-card">
+<div class="paper-card">
 <div class="micro-label">任务分工</div>
 <div class="section-heading">AI 不直接取代所有人，而是先改写任务分工</div>
 <div class="chart-caption mt-5">原来由实习生、新人完成的工作，被 AI 分走一部分。这会改变团队结构，也会改变"从新手成长为专家"的路径。</div>
 </div>
 
-<div class="essay-stack">
-<div v-click class="essay-item">
+<div v-click class="essay-stack">
+<div class="essay-item">
 <div class="micro-label">团队结构</div>
 <div class="small-copy">组织会更少为基础产出买单，更看重能统筹上下文和压住质量的人</div>
 </div>
-<div v-click class="essay-item">
+<div class="essay-item">
 <div class="micro-label">值钱的能力</div>
 <div class="small-copy">定义问题、判断结果、整合复杂信息——而不是只做基础产出</div>
 </div>
@@ -418,16 +418,16 @@ class: deck-page
 
 <div class="chasm-layout">
 <div class="chasm-drop">
-<div v-click class="chasm-top">
+<div class="chasm-top">
 <div class="chasm-top-number"><AnimatedNumber :value="50" suffix="%" :duration="900" :delay="80" /></div>
 <div class="chasm-top-desc">仅一半学校建立了 AI 使用政策</div>
 </div>
-<div v-click class="chasm-gorge">
+<div class="chasm-gorge">
 <div class="chasm-gorge-line"></div>
 <div class="chasm-gorge-label">落差</div>
 <div class="chasm-gorge-caption">学生已经往前走了，制度还在追</div>
 </div>
-<div v-click class="chasm-bottom">
+<div class="chasm-bottom">
 <div class="chasm-bottom-number"><AnimatedNumber :value="6" suffix="%" :duration="900" :delay="160" /></div>
 <div class="chasm-bottom-desc">仅 6% 教师认为政策足够清晰</div>
 </div>
@@ -456,21 +456,21 @@ class: deck-page
 <div class="comparison-board">
 <div class="micro-label">论文增长</div>
 <div class="comparison-list">
-<div v-click class="comparison-item">
+<div class="comparison-item">
 <div class="comparison-head">
 <span>自然科学</span>
 <span>+26%</span>
 </div>
 <AnimatedBar :value="76" fill-class="comparison-fill comparison-fill-strong" />
 </div>
-<div v-click class="comparison-item">
+<div class="comparison-item">
 <div class="comparison-head">
 <span>物理科学</span>
 <span>+28%</span>
 </div>
 <AnimatedBar :value="82" fill-class="comparison-fill comparison-fill-soft" :delay="80" />
 </div>
-<div v-click class="comparison-item">
+<div class="comparison-item">
 <div class="comparison-head">
 <span>生命科学</span>
 <span>+26%</span>
@@ -532,12 +532,12 @@ class: deck-page
 </div>
 <div class="clinical-hero-caption">2025 年自动生成临床笔记工具开始进入医院</div>
 </div>
-<div class="clinical-side">
-<div v-click class="clinical-insight">
+<div v-click class="clinical-side">
+<div class="clinical-insight">
 <div class="clinical-insight-label">AI 的角色</div>
 <div class="clinical-insight-copy">不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去</div>
 </div>
-<div v-click class="clinical-insight clinical-insight-final">
+<div class="clinical-insight clinical-insight-final">
 <div class="clinical-insight-label">更大的画面</div>
 <div class="clinical-insight-copy">当 AI 进入医疗、科研、天气这些高价值领域，它才真正开始改变专业工作流</div>
 </div>
@@ -569,13 +569,13 @@ class: deck-page
 <div class="editorial-note">如果市场只把 AI 当成短期噱头，不会出现企业和私人资金同时翻倍增长的局面。AI 竞争越来越像一场持久战。</div>
 </div>
 <div class="funding-pair">
-<div v-click class="funding-card">
+<div class="funding-card">
 <div class="funding-card-label">企业 AI 投资</div>
 <div class="funding-card-number"><AnimatedNumber :value="581.7" prefix="$" suffix="B" :decimals="1" :duration="1100" :delay="90" /></div>
 <div class="funding-card-change">+130% YoY</div>
 <div class="funding-card-copy">2025 年全球企业 AI 投资</div>
 </div>
-<div v-click class="funding-card">
+<div class="funding-card">
 <div class="funding-card-label">私人 AI 投资</div>
 <div class="funding-card-number"><AnimatedNumber :value="344.7" prefix="$" suffix="B" :decimals="1" :duration="1100" :delay="170" /></div>
 <div class="funding-card-change">+127.5% YoY</div>
@@ -599,21 +599,21 @@ class: deck-page
 <div class="gap-hero-thesis">关键问题不再是领先多少，而是优势能否持续</div>
 </div>
 <div class="gap-cards">
-<div v-click class="gap-card">
+<div class="gap-card">
 <div class="gap-card-index">01</div>
 <div class="gap-card-body">
 <div class="gap-card-label">变化</div>
 <div class="gap-card-copy">自 2025 年以来，中美模型在性能榜上多次交替领先</div>
 </div>
 </div>
-<div v-click class="gap-card">
+<div class="gap-card">
 <div class="gap-card-index">02</div>
 <div class="gap-card-body">
 <div class="gap-card-label">不过</div>
 <div class="gap-card-copy">美国仍在顶级模型和私人投资上占优，但差距在缩小</div>
 </div>
 </div>
-<div v-click class="gap-card gap-card-conclusion">
+<div class="gap-card gap-card-conclusion">
 <div class="gap-card-index">03</div>
 <div class="gap-card-body">
 <div class="gap-card-label">为什么重要</div>
@@ -631,13 +631,13 @@ class: deck-page
 # AI 竞争已是系统竞争
 
 <div class="syscomp-layout">
-<div v-click class="syscomp-hero">
+<div class="syscomp-hero">
 <div class="syscomp-hero-label">人才流动</div>
 <div class="syscomp-hero-number"><AnimatedNumber :value="-89" suffix="%" :duration="1000" :delay="120" /></div>
 <div class="syscomp-hero-copy">流入美国的 AI 学者数量，自 2017 年以来的下降幅度</div>
 </div>
-<div class="syscomp-layers">
-<div v-click class="syscomp-layer">
+<div v-click class="syscomp-layers">
+<div class="syscomp-layer">
 <div class="syscomp-layer-icon">
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.3"/><rect x="8" y="8" width="5" height="5" rx="1" fill="currentColor"/><rect x="15" y="8" width="5" height="5" rx="1" fill="currentColor"/><rect x="8" y="15" width="5" height="5" rx="1" fill="currentColor"/><rect x="15" y="15" width="5" height="5" rx="1" fill="currentColor"/></svg>
 </div>
@@ -646,7 +646,7 @@ class: deck-page
 <div class="syscomp-layer-copy">云、数据中心、电力——训练和部署的底座</div>
 </div>
 </div>
-<div v-click class="syscomp-layer">
+<div class="syscomp-layer">
 <div class="syscomp-layer-icon">
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3"/><path d="M14 4a10 10 0 0 1 0 20" stroke="currentColor" stroke-width="1.3"/><circle cx="14" cy="14" r="3.5" fill="currentColor"/></svg>
 </div>
@@ -655,7 +655,7 @@ class: deck-page
 <div class="syscomp-layer-copy">资金、人才、产业协同——留在牌桌的前提</div>
 </div>
 </div>
-<div v-click class="syscomp-layer syscomp-layer-culmination">
+<div class="syscomp-layer syscomp-layer-culmination">
 <div class="syscomp-layer-icon">
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3" stroke-dasharray="3 3"/></svg>
 </div>
@@ -682,11 +682,11 @@ class: statement-page statement-page-dark
 <div v-click class="infra-verdict">AI 已从软件变成基础设施</div>
 </div>
 <div class="statement-detail infra-detail-grid">
-<div v-click class="infra-line infra-line-card">
+<div class="infra-line infra-line-card">
 <span class="infra-number"><AnimatedNumber :value="1200" suffix=" 万人" :duration="1000" :delay="160" /></span>
 <span class="infra-desc">GPT-4o 一年推理用水，估算可超过这么多人的饮水需求</span>
 </div>
-<div v-click class="infra-line infra-line-card">
+<div class="infra-line infra-line-card">
 <span class="infra-number"><AnimatedNumber :value="72816" suffix=" 吨" :duration="1100" :delay="220" :use-grouping="true" /></span>
 <span class="infra-desc">Grok 4 的估算训练排放，已是具体的基础设施成本</span>
 </div>
@@ -706,15 +706,15 @@ class: closing-page
 关心规则，而非模型
 </h1>
 <div class="closing-body">
-<div v-click class="closing-item">
+<div class="closing-item">
 <span class="closing-index">01</span>
 <span>AI 已渗透搜索、工作、学习、科研——它不再是未来</span>
 </div>
-<div v-click class="closing-item">
+<div class="closing-item">
 <span class="closing-index">02</span>
 <span>真正的变化是规则重写：工作方式、教育评估、科研流程、基础设施</span>
 </div>
-<div v-click class="closing-item closing-item-final">
+<div class="closing-item closing-item-final">
 <span class="closing-index">03</span>
 <span>核心能力是<strong>判断力</strong>：验证、质疑、协作——不只是会用 AI</span>
 </div>
