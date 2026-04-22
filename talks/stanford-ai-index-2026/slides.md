@@ -142,8 +142,8 @@ class: statement-page
 <div class="statement-shell">
 <div class="statement-kicker">用户价值</div>
 <div class="statement-number"><AnimatedNumber :value="172" prefix="$" suffix="B" :duration="1200" :delay="120" /></div>
-<div class="statement-text">生成式 AI 带来的估算年价值</div>
-<div class="statement-support">以美国市场测算达 1720 亿美元，用户中位价值一年增长 3 倍。全球主要市场的采用曲线呈现相似趋势——很多人没意识到自己已在用 AI，节省时间、降低成本的价值往往体现在效率上，而非账单里。</div>
+<div class="statement-text">价值常常不在账单里，<br>而在效率里</div>
+<div class="statement-support">以美国市场测算，生成式 AI 一年创造约 1720 亿美元用户价值。很多人没意识到自己已经在用 AI，因为它更多体现在省下的时间、压低的成本和被替代的服务里。</div>
 </div>
 
 ---
