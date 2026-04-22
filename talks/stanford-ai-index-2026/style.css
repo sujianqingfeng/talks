@@ -2370,6 +2370,13 @@ html, body {
   font-weight: 500;
 }
 
+.keyword-v2-support {
+  max-width: 42rem;
+  color: var(--deck-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
 .keyword-v2-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2442,6 +2449,10 @@ html, body {
 
   .keyword-v2-thesis {
     font-size: 2rem;
+  }
+
+  .keyword-v2-support {
+    max-width: none;
   }
 }
 

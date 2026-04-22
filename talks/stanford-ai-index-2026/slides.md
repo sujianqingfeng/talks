@@ -46,54 +46,14 @@ class: statement-page
 
 ---
 layout: default
-class: deck-page question-page
----
-
-<div class="question-stage">
-<div class="question-lead">
-<div class="micro-label">今天回答什么</div>
-<div class="question-manifesto">不追模型更新，<br>先看现实变化</div>
-</div>
-<div class="question-column">
-<div class="question-item">
-<div class="question-index">01</div>
-<div class="question-body">
-<div class="question-title">强到哪了</div>
-<div class="question-sub">能力边界</div>
-</div>
-</div>
-<div class="question-item question-item-shift">
-<div class="question-index">02</div>
-<div class="question-body">
-<div class="question-title">改变了谁</div>
-<div class="question-sub">渗透图景</div>
-</div>
-</div>
-<div class="question-item question-item-tight">
-<div class="question-index">03</div>
-<div class="question-body">
-<div class="question-title">代价在哪</div>
-<div class="question-sub">隐性成本</div>
-</div>
-</div>
-<div class="question-item question-item-accent">
-<div class="question-index">04</div>
-<div class="question-body">
-<div class="question-title">怎么判断</div>
-<div class="question-sub">个人应对</div>
-</div>
-</div>
-</div>
-</div>
-
----
-layout: default
 class: deck-page keyword-page
 ---
 
 <div class="keyword-stage-v2">
 <div class="keyword-v2-lead">
-<div class="keyword-v2-thesis">AI 不是单线程演进<br>能力、普及、成本、治理，四线并行</div>
+<div class="micro-label">先看全局</div>
+<div class="keyword-v2-thesis">不追模型更新，先看现实变化</div>
+<div class="keyword-v2-support">这一年真正重要的，不是单点突破，而是能力、普及、成本与治理四条变化线同时推进。</div>
 </div>
 
 <div class="keyword-v2-grid">
@@ -114,7 +74,7 @@ class: deck-page keyword-page
 </div>
 <div class="keyword-v2-card keyword-v2-card-dark">
 <div class="keyword-v2-number">04</div>
-<div class="keyword-v2-word">更不可知</div>
+<div class="keyword-v2-word">更难治理</div>
 <div class="keyword-v2-desc">治理边界、责任归属、公众信任<br>问题正在被放大</div>
 </div>
 </div>
