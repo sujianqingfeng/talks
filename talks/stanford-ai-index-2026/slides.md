@@ -287,26 +287,26 @@ layout: default
 class: deck-page
 ---
 
-# 入门岗位，先被重写
+# 最先受影响的，是入门岗位
 
 <div class="impact-layout">
 <div class="impact-hero">
-<div class="impact-hero-label">谁先受影响</div>
+<div class="impact-hero-label">就业信号</div>
 <div class="impact-hero-number"><AnimatedNumber :value="-20" suffix="%" :duration="950" :delay="120" /></div>
 <div class="impact-hero-copy">22-25 岁软件开发者就业率下降</div>
 </div>
 <div v-click class="impact-details">
 <div class="impact-item">
-<div class="micro-label">任务迁移</div>
-<div class="impact-item-copy">标准化、可拆分、可审计的初级知识工作——资料整理、初稿生成、信息汇总、重复沟通</div>
+<div class="micro-label">为什么先是年轻人</div>
+<div class="impact-item-copy">入门岗位承担的，正是最标准化、最易拆分、最容易被自动化的那段工作流</div>
 </div>
 <div class="impact-item">
-<div class="micro-label">为什么先影响年轻人</div>
-<div class="impact-item-copy">入门岗位承担的就是最容易被自动化的那一段工作流</div>
+<div class="micro-label">先被接走的任务</div>
+<div class="impact-item-copy">资料整理、初稿生成、信息汇总、重复沟通，这些基础任务最先被 AI 分走</div>
 </div>
 <div class="impact-item">
-<div class="micro-label">真正变了什么</div>
-<div class="impact-item-copy">不是整份工作消失，而是岗位内部的任务分工先被重写</div>
+<div class="micro-label">这不是失业预言</div>
+<div class="impact-item-copy">更准确的变化是：岗位还在，但岗位内部的任务分工已经先被重写</div>
 </div>
 </div>
 </div>
@@ -316,23 +316,27 @@ layout: default
 class: deck-page
 ---
 
-# AI 先分走的是基础任务
+# 真正被改写的，是成长路径
 
 <div class="two-panel">
 <div class="paper-card">
-<div class="micro-label">任务分工</div>
-<div class="section-heading">AI 不直接取代所有人，而是先改写任务分工</div>
-<div class="chart-caption mt-5">原来由实习生、新人完成的工作，被 AI 分走一部分。这会改变团队结构，也会改变"从新手成长为专家"的路径。</div>
+<div class="micro-label">成长路径</div>
+<div class="section-heading">当基础任务被 AI 接走，新人通往专家的路也会变化</div>
+<div class="chart-caption mt-5">过去很多人靠重复任务积累语感、判断和上下文；这些训练环节一旦被 AI 吃掉，组织和个人都得重新设计成长方式。</div>
 </div>
 
 <div v-click class="essay-stack">
 <div class="essay-item">
 <div class="micro-label">团队结构</div>
-<div class="small-copy">组织会更少为基础产出买单，更看重能统筹上下文和压住质量的人</div>
+<div class="small-copy">组织会更少为基础产出买单，更看重能统筹上下文、压住质量的人</div>
 </div>
 <div class="essay-item">
-<div class="micro-label">值钱的能力</div>
-<div class="small-copy">定义问题、判断结果、整合复杂信息——而不是只做基础产出</div>
+<div class="micro-label">成长路径</div>
+<div class="small-copy">新人更难靠重复任务自然积累经验，带教、审稿和真实项目会变得更重要</div>
+</div>
+<div class="essay-item">
+<div class="micro-label">更值钱的能力</div>
+<div class="small-copy">定义问题、验证结果、整合复杂信息，以及和 AI 协作而不失去判断</div>
 </div>
 </div>
 </div>
@@ -426,23 +430,23 @@ layout: default
 class: deck-page
 ---
 
-# 2025 年，AI 首次独立完成天气预测
+# 2025 年，AI 首次跑通端到端天气预测
 
 <div class="milestone-stage">
 <div class="milestone-flow">
-<div v-click class="milestone-input">
+<div class="milestone-input">
 <div class="milestone-input-label">原始观测</div>
 <div class="milestone-input-detail">实时气象数据输入</div>
 </div>
-<div v-click class="milestone-center">
+<div class="milestone-center">
 <div class="milestone-center-ring"></div>
 <div class="milestone-center-body">
 <div class="milestone-center-label">AI 模型</div>
-<div class="milestone-center-title">独立完成预测</div>
+<div class="milestone-center-title">直接输出预测结果</div>
 <div class="milestone-center-copy">不再辅助判断，而是接管完整流程的一整段</div>
 </div>
 </div>
-<div v-click class="milestone-output">
+<div class="milestone-output">
 <div class="milestone-output-label">最终输出</div>
 <div class="milestone-output-detail">天气预测结果</div>
 </div>
@@ -450,7 +454,7 @@ class: deck-page
 <div class="milestone-footer">
 <div class="milestone-impact">
 <span class="micro-label">里程碑意义</span>
-<span class="milestone-impact-copy">这类变化一旦发生在高价值场景里，影响通常会非常深。AI 的角色正在从"工具"变成"流程中的独立环节"。</span>
+<span class="milestone-impact-copy">关键不是天气，而是 AI 开始进入完整专业流程。它的价值，正在从辅助判断走向流程重写。</span>
 </div>
 </div>
 </div>
@@ -460,7 +464,7 @@ layout: default
 class: deck-page
 ---
 
-# 不只是辅助判断
+# AI 先接走的是重复劳动
 
 <div class="clinical-stage">
 <div class="clinical-hero">
@@ -474,12 +478,12 @@ class: deck-page
 </div>
 <div v-click class="clinical-side">
 <div class="clinical-insight">
-<div class="clinical-insight-label">AI 的角色</div>
-<div class="clinical-insight-copy">不是替代医生做判断，而是把大量重复、耗时、低附加值的工作先接过去</div>
+<div class="clinical-insight-label">AI 的现实价值</div>
+<div class="clinical-insight-copy">不是替代医生做判断，而是先把高频、重复、耗时的记录工作接过去</div>
 </div>
 <div class="clinical-insight clinical-insight-final">
-<div class="clinical-insight-label">更大的画面</div>
-<div class="clinical-insight-copy">当 AI 进入医疗、科研、天气这些高价值领域，它才真正开始改变专业工作流</div>
+<div class="clinical-insight-label">为什么重要</div>
+<div class="clinical-insight-copy">在医疗里，先被改写的不是诊断本身，而是专业人员每天最耗时的工作流</div>
 </div>
 </div>
 </div>
@@ -500,13 +504,13 @@ layout: default
 class: deck-page
 ---
 
-# 一边怀疑，一边押注
+# 资本没有把 AI 当成短期热点
 
 <div class="funding-layout">
 <div class="funding-lead">
 <div class="micro-label">资本</div>
-<div class="editorial-sentence">资本在按"长期基础设施"下注</div>
-<div class="editorial-note">如果市场只把 AI 当成短期噱头，不会出现企业和私人资金同时翻倍增长的局面。AI 竞争越来越像一场持久战。</div>
+<div class="editorial-sentence">钱已经先投票了</div>
+<div class="editorial-note">如果市场只把 AI 当成一阵热闹，不会出现企业和私人投资同时翻倍增长。资本真正押注的，是长期基础设施和持续竞争力。</div>
 </div>
 <div class="funding-pair">
 <div class="funding-card">
@@ -529,35 +533,35 @@ layout: default
 class: deck-page
 ---
 
-# 中美差距缩小，竞争格局分散
+# 单边领先，正在结束
 
 <div class="gap-stage">
 <div class="gap-hero">
-<div class="gap-hero-label">领先幅度</div>
+<div class="gap-hero-label">领先优势</div>
 <div class="gap-hero-number"><AnimatedNumber :value="2.7" suffix="%" :decimals="1" :duration="1000" :delay="120" /></div>
 <div class="gap-hero-copy">截至 2026 年 3 月，顶级模型领先幅度</div>
-<div class="gap-hero-thesis">关键问题不再是领先多少，而是优势能否持续</div>
+<div class="gap-hero-thesis">问题不再是谁遥遥领先，而是谁能持续保持优势</div>
 </div>
 <div class="gap-cards">
 <div class="gap-card">
 <div class="gap-card-index">01</div>
 <div class="gap-card-body">
-<div class="gap-card-label">变化</div>
-<div class="gap-card-copy">自 2025 年以来，中美模型在性能榜上多次交替领先</div>
+<div class="gap-card-label">交替领先</div>
+<div class="gap-card-copy">自 2025 年以来，中美模型在性能榜上多次互换领先位置</div>
 </div>
 </div>
 <div class="gap-card">
 <div class="gap-card-index">02</div>
 <div class="gap-card-body">
-<div class="gap-card-label">不过</div>
-<div class="gap-card-copy">美国仍在顶级模型和私人投资上占优，但差距在缩小</div>
+<div class="gap-card-label">领先收窄</div>
+<div class="gap-card-copy">美国仍占优，但顶级模型之间的差距已经明显缩小</div>
 </div>
 </div>
 <div class="gap-card gap-card-conclusion">
 <div class="gap-card-index">03</div>
 <div class="gap-card-body">
-<div class="gap-card-label">为什么重要</div>
-<div class="gap-card-copy">AI 竞争已从单边领先，进入明显的多极化阶段</div>
+<div class="gap-card-label">多极化加速</div>
+<div class="gap-card-copy">AI 竞争正从单边优势，进入更持久也更分散的多极化阶段</div>
 </div>
 </div>
 </div>
@@ -568,22 +572,23 @@ layout: default
 class: deck-page
 ---
 
-# AI 竞争已是系统竞争
+# 决定胜负的，不只是模型
 
 <div class="syscomp-layout">
 <div class="syscomp-hero">
-<div class="syscomp-hero-label">人才流动</div>
-<div class="syscomp-hero-number"><AnimatedNumber :value="-89" suffix="%" :duration="1000" :delay="120" /></div>
-<div class="syscomp-hero-copy">流入美国的 AI 学者数量，自 2017 年以来的下降幅度</div>
+<div class="syscomp-hero-label">系统竞争</div>
+<div class="syscomp-hero-thesis">最后拼的是整套底座</div>
+<div class="syscomp-hero-number"><span class="syscomp-hero-number-prefix">下降</span><AnimatedNumber :value="89" suffix="%" :duration="1000" :delay="120" /></div>
+<div class="syscomp-hero-copy">人才优势不再稳固，单向流入格局正在松动</div>
 </div>
-<div v-click class="syscomp-layers">
+<div class="syscomp-layers">
 <div class="syscomp-layer">
 <div class="syscomp-layer-icon">
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.3"/><rect x="8" y="8" width="5" height="5" rx="1" fill="currentColor"/><rect x="15" y="8" width="5" height="5" rx="1" fill="currentColor"/><rect x="8" y="15" width="5" height="5" rx="1" fill="currentColor"/><rect x="15" y="15" width="5" height="5" rx="1" fill="currentColor"/></svg>
 </div>
 <div class="syscomp-layer-body">
-<div class="syscomp-layer-title">芯片</div>
-<div class="syscomp-layer-copy">云、数据中心、电力——训练和部署的底座</div>
+<div class="syscomp-layer-title">人才</div>
+<div class="syscomp-layer-copy">研究者、工程师、带头人，决定创新和落地速度</div>
 </div>
 </div>
 <div class="syscomp-layer">
@@ -591,8 +596,17 @@ class: deck-page
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3"/><path d="M14 4a10 10 0 0 1 0 20" stroke="currentColor" stroke-width="1.3"/><circle cx="14" cy="14" r="3.5" fill="currentColor"/></svg>
 </div>
 <div class="syscomp-layer-body">
-<div class="syscomp-layer-title">资本</div>
-<div class="syscomp-layer-copy">资金、人才、产业协同——留在牌桌的前提</div>
+<div class="syscomp-layer-title">芯片与电力</div>
+<div class="syscomp-layer-copy">算力、数据中心和能源，决定训练与部署能否持续扩张</div>
+</div>
+</div>
+<div class="syscomp-layer">
+<div class="syscomp-layer-icon">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 8h16M6 14h16M6 20h16" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="9" cy="8" r="1.5" fill="currentColor"/><circle cx="19" cy="14" r="1.5" fill="currentColor"/><circle cx="13" cy="20" r="1.5" fill="currentColor"/></svg>
+</div>
+<div class="syscomp-layer-body">
+<div class="syscomp-layer-title">产业协同</div>
+<div class="syscomp-layer-copy">云平台、应用落地、供应链和资本，决定优势能不能变成规模</div>
 </div>
 </div>
 <div class="syscomp-layer syscomp-layer-culmination">
@@ -601,7 +615,7 @@ class: deck-page
 </div>
 <div class="syscomp-layer-body">
 <div class="syscomp-layer-title">系统能力</div>
-<div class="syscomp-layer-copy">AI 竞争不是几个聊天机器人的比赛，而是系统能力竞争</div>
+<div class="syscomp-layer-copy">最后真正拉开差距的，不是单个模型，而是整套系统能不能持续运转和迭代</div>
 </div>
 </div>
 </div>
