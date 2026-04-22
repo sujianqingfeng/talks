@@ -39,9 +39,9 @@ class: statement-page
 ---
 
 <div class="statement-shell">
-<div class="statement-kicker">为什么看这份报告</div>
-<div class="statement-text">数据，<br>而非观点</div>
-<div class="statement-support">Stanford HAI 自 2017 年起持续追踪 AI 的技术、产业与社会影响。</div>
+<div class="statement-kicker">这份报告是什么</div>
+<div class="statement-text">一份持续追踪<br>AI 变化的年度报告</div>
+<div class="statement-support">由 Stanford HAI 自 2017 年起持续发布，覆盖技术进展、产业变化、教育采用与社会影响。</div>
 </div>
 
 ---
@@ -223,7 +223,7 @@ layout: default
 class: deck-page
 ---
 
-# 不只是更会聊天
+# 不只是更会聊天，开始会做事
 
 <div class="evolution-stage">
 <div class="evolution-trail">
@@ -244,47 +244,27 @@ class: deck-page
 </div>
 </div>
 </div>
-<div v-click class="evolution-destination">
+<div class="evolution-destination">
 <div class="evolution-dest-badge">关键跃迁</div>
 <div class="evolution-dest-title">从"会聊"走向"会做"</div>
-<div class="evolution-dest-copy">真实任务中的 Agent 成功率从 20% 提升到 77%。AI 的角色正从聊天对象变成任务代理。</div>
-<div class="evolution-dest-number"><AnimatedNumber :value="77" suffix="%" :duration="1000" :delay="120" /></div>
+<div class="evolution-dest-copy">关键不只是模型更会回答，而是开始能在连续流程里稳定完成任务。</div>
+<div class="evolution-dest-metrics">
+<div class="evolution-dest-metric">
+<div class="evolution-dest-metric-label">2025</div>
+<div class="evolution-dest-metric-value"><AnimatedNumber :value="20" suffix="%" :duration="900" :delay="80" /></div>
+<div class="evolution-dest-metric-copy">真实任务成功率</div>
+</div>
+<div class="evolution-dest-arrow">→</div>
+<div class="evolution-dest-metric evolution-dest-metric-strong">
+<div class="evolution-dest-metric-label">2026</div>
+<div class="evolution-dest-metric-value"><AnimatedNumber :value="77.3" suffix="%" :decimals="1" :duration="1000" :delay="140" /></div>
+<div class="evolution-dest-metric-copy">同样任务，大幅跃升</div>
 </div>
 </div>
-
----
-layout: default
-class: deck-page
----
-
-# 从"会聊"走向"会做"
-
-<div class="leap-stage">
-<div class="leap-pair">
-<div class="leap-card leap-card-before">
-<div class="leap-card-year">2025</div>
-<div class="leap-card-number"><AnimatedNumber :value="20" suffix="%" :duration="900" :delay="60" /></div>
-<div class="leap-card-desc">真实任务中的<br>Agent 成功率</div>
+<div v-click class="evolution-dest-foot">
+<div class="evolution-dest-foot-stat"><span class="evolution-dest-foot-number"><AnimatedNumber :value="93" suffix="%" :duration="900" :delay="220" /></span><span class="evolution-dest-foot-copy">网络安全 Agent 成功率</span></div>
+<div class="evolution-dest-foot-note">从单轮回答，走向连续执行</div>
 </div>
-<div class="leap-bridge">
-<div class="leap-bridge-line"></div>
-<div class="leap-bridge-body">
-<div class="leap-bridge-label">一年之间</div>
-<div class="leap-bridge-caption">从单轮回答<br>到连续执行</div>
-</div>
-</div>
-<div class="leap-card leap-card-after">
-<div class="leap-card-year">2026</div>
-<div class="leap-card-number"><AnimatedNumber :value="77.3" suffix="%" :decimals="1" :duration="1000" :delay="160" /></div>
-<div class="leap-card-desc">同样的任务，<br>成功率大幅跃升</div>
-</div>
-</div>
-<div v-click class="leap-footer">
-<div class="leap-stat">
-<div class="leap-stat-number"><AnimatedNumber :value="93" suffix="%" :duration="900" :delay="220" /></div>
-<div class="leap-stat-copy">网络安全 Agent 成功率</div>
-</div>
-<div class="leap-footer-note">过去更多是"问 AI 一个问题"，现在越来越像"让 AI 替我做一串事"</div>
 </div>
 </div>
 
