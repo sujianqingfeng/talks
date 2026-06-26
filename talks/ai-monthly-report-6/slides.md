@@ -277,6 +277,7 @@ class: bar-clay
       <h3><carbon-rocket /> 资本信号</h3>
       <p class="text-sm text-stone-700 leading-relaxed">腾讯、宁德时代、网易、京东等参与，标志着 DeepSeek 从技术信仰路线转向商业化落地。</p>
     </div>
+    <div class="ai-footnote mt-4" v-click>DeepSeek V4 已于4月24日发布；6月5日昇腾910C完成 V4-Pro 万亿参数全参数后训练。</div>
   </div>
   <div class="col-span-7">
     <div class="ai-card-editorial h-full" v-click>
@@ -302,8 +303,6 @@ class: bar-clay
     </div>
   </div>
 </div>
-
-<div class="ai-footnote mt-4" v-click>DeepSeek V4 已于4月24日发布；6月5日昇腾910C完成 V4-Pro 万亿参数全参数后训练。</div>
 
 <div class="ai-side-label">Open Source</div>
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
@@ -363,16 +362,16 @@ class: bar-terracotta
 <div class="grid grid-cols-12 gap-6 mt-2">
   <div class="col-span-5">
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-4">时间线</div>
-    <div class="ai-timeline" v-click>
-      <div class="ai-timeline-item">
+    <div class="ai-timeline">
+      <div class="ai-timeline-item" v-click>
         <strong>6月9日</strong> Anthropic发布最强模型Fable 5<br />
         <span class="text-stone-600 text-sm">SWE-Bench Pro 80.3%，碾压所有竞品</span>
       </div>
-      <div class="ai-timeline-item">
+      <div class="ai-timeline-item" v-click>
         <strong>6月12日 17:21</strong> 美国商务部出口管制指令<br />
         <span class="text-stone-600 text-sm">要求禁止所有“外国公民”使用</span>
       </div>
-      <div class="ai-timeline-item">
+      <div class="ai-timeline-item" v-click>
         <strong>6月18日</strong> 恢复上线<br />
         <span class="text-stone-600 text-sm">增加国籍验证和数据留存</span>
       </div>
@@ -387,16 +386,16 @@ class: bar-terracotta
         <li>Anthropic市值一度蒸发，IPO计划蒙上阴影</li>
       </ul>
     </div>
-    <div class="ai-card">
+    <div class="ai-card" v-click>
       <div class="text-sm text-stone-500 mb-1">无法实时区分用户国籍</div>
       <div class="text-xl font-bold">→ 只能全球下线，包括美国用户</div>
     </div>
     <div class="grid grid-cols-2 gap-4">
-      <div class="ai-card text-center">
+      <div class="ai-card text-center" v-click>
         <div class="ai-metric-label">下线时长</div>
         <div class="ai-metric">72h</div>
       </div>
-      <div class="ai-card text-center">
+      <div class="ai-card text-center" v-click>
         <div class="ai-metric-label">恢复条件</div>
         <div class="text-base font-bold mt-1">国籍验证 + 数据留存</div>
       </div>
@@ -608,6 +607,9 @@ class: bar-ochre
     <div class="ai-footnote mt-2">2026年Q1动态显示昇腾份额升至约37%，英伟达约43%。</div>
   </div>
   <div class="col-span-7 flex flex-col gap-4">
+    <div class="ai-card ai-card-highlight" v-click>
+      <strong>昇腾950PR</strong> FP8算力突破1PFLOPS，推理性能是H20的2.87倍，部署成本仅同级别的三分之一。
+    </div>
     <div class="ai-card flex-1" v-click>
       <div class="text-base font-bold mb-2">国际动态</div>
       <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
@@ -615,9 +617,6 @@ class: bar-ochre
         <li>NVIDIA RTX Spark：正式进入PC处理器市场</li>
         <li>SpaceX算力帝国：月签约23亿美元</li>
       </ul>
-    </div>
-    <div class="ai-card ai-card-highlight" v-click>
-      <strong>昇腾950PR</strong> FP8算力突破1PFLOPS，推理性能是H20的2.87倍，部署成本仅同级别的三分之一。
     </div>
   </div>
 </div>
