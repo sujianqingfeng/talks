@@ -92,30 +92,50 @@ class: bar-terracotta table-terracotta
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-12 gap-5">
-  <div class="col-span-7 flex flex-col">
-    <div class="grid grid-cols-2 gap-4">
-      <div class="ai-rank-list">
-        <div class="ai-rank"><div class="ai-rank-num">01</div><div><div class="ai-rank-name">字节 · 豆包2.1 Pro</div><div class="ai-rank-meta">6.23 · 日耗180万亿Token</div></div></div>
-        <div class="ai-rank"><div class="ai-rank-num">02</div><div><div class="ai-rank-name">智谱 · GLM-5.2</div><div class="ai-rank-meta">6.13 · 编程开源第一</div></div></div>
+<p class="ai-lead mt-2">6月模型更新集中在4家头部厂商，DeepSeek 以首轮融资成为另一大资本信号。</p>
+
+<div class="grid grid-cols-12 gap-8 mt-2">
+  <div class="col-span-7">
+    <div class="ai-magazine-list">
+      <div class="ai-magazine-item" v-click>
+        <div class="ai-magazine-item-num">01</div>
+        <div>
+          <div class="ai-magazine-item-title">字节 · 豆包2.1 Pro</div>
+          <div class="ai-magazine-item-meta">6.23 发布，日耗 Token 达 180万亿，独立芯片设计能力显著</div>
+        </div>
       </div>
-      <div class="ai-rank-list">
-        <div class="ai-rank"><div class="ai-rank-num">03</div><div><div class="ai-rank-name">阿里 · Qwen3.7</div><div class="ai-rank-meta">6月 · 46个进TOP100</div></div></div>
-        <div class="ai-rank"><div class="ai-rank-num">04</div><div><div class="ai-rank-name">月之暗面 · K2.7 Code</div><div class="ai-rank-meta">6月 · 1T参数MoE</div></div></div>
+      <div class="ai-magazine-item" v-click>
+        <div class="ai-magazine-item-num">02</div>
+        <div>
+          <div class="ai-magazine-item-title">智谱 · GLM-5.2</div>
+          <div class="ai-magazine-item-meta">6.13 发布，CodeArena 全球第二、开源模型第一，市值破万亿港元</div>
+        </div>
+      </div>
+      <div class="ai-magazine-item" v-click>
+        <div class="ai-magazine-item-num">03</div>
+        <div>
+          <div class="ai-magazine-item-title">阿里 · Qwen3.7</div>
+          <div class="ai-magazine-item-meta">6月更新，46个模型进入全球 TOP100，开源生态持续扩张</div>
+        </div>
+      </div>
+      <div class="ai-magazine-item" v-click>
+        <div class="ai-magazine-item-num">04</div>
+        <div>
+          <div class="ai-magazine-item-title">月之暗面 · K2.7 Code</div>
+          <div class="ai-magazine-item-meta">6月发布，1T参数 MoE，聚焦代码与长上下文能力</div>
+        </div>
       </div>
     </div>
-    <div class="ai-footnote mt-3">6月模型更新集中在4家头部厂商，DeepSeek以首轮融资成为另一大事件。</div>
   </div>
-  <div class="col-span-5 flex flex-col gap-4">
-    <div class="ai-card ai-card-highlight py-5" v-click>
-      <div class="ai-metric-label">本月最密集信号</div>
-      <div class="ai-metric">4+</div>
-      <div class="text-sm text-stone-600 mt-2">家头部厂商同步发布重要模型更新</div>
+  <div class="col-span-5 flex flex-col gap-5">
+    <div class="ai-pull-stat" v-click>
+      <div class="ai-pull-stat-label">本月最密集信号</div>
+      <div class="ai-pull-stat-value">4<span class="ai-pull-stat-unit">+</span></div>
+      <div class="ai-pull-stat-caption">家头部厂商同步发布重要模型更新</div>
     </div>
-    <div class="ai-card py-5" v-click>
-      <div class="ai-metric-label">关键趋势</div>
-      <div class="text-lg font-bold mt-1">模型 · 芯片 · 应用</div>
-      <div class="text-sm text-stone-600 mt-2">三端同步突破，国产模型进入生态竞争</div>
+    <div class="ai-card-editorial" v-click>
+      <h3>关键趋势</h3>
+      <p class="text-sm text-stone-700 leading-relaxed"><strong>模型 · 芯片 · 应用</strong> 三端同步突破，国产模型从单点技术竞争进入生态竞争。</p>
     </div>
   </div>
 </div>
@@ -138,24 +158,33 @@ class: bar-ochre
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-12 gap-6 mt-2">
+<p class="ai-lead mt-2">两年 Token 消耗增长 1500 倍，豆包正从对话工具走向“可上岗的生产工人”。</p>
+
+<div class="grid grid-cols-12 gap-8 mt-2">
   <div class="col-span-7">
-    <div class="ai-card h-full" v-click>
-      <div class="text-base font-bold mb-3 flex items-center gap-2"><carbon-arrow-up-right /> 核心升级</div>
-      <ul class="list-disc pl-4 space-y-2 text-stone-700 text-sm">
-        <li>Coding能力接近GPT-5.5（<strong>Terminal Bench 71.0分</strong>）</li>
-        <li>成本相比Claude Opus 4.6-4.8系列<strong>降低80%</strong></li>
-        <li>输入<strong>6元/百万Token</strong>，输出<strong>30元</strong></li>
-        <li>能连续运行18小时、9轮迭代，独立完成芯片设计RTL流程</li>
+    <div class="ai-card-editorial" v-click>
+      <h3><carbon-arrow-up-right class="inline-block align-middle" /> 核心升级</h3>
+      <ul class="ai-feature-list">
+        <li>Coding 能力接近 GPT-5.5（Terminal Bench 71.0 分）</li>
+        <li>成本相比 Claude Opus 4.6-4.8 系列降低 80%</li>
+        <li>输入 6元/百万Token，输出 30元</li>
+        <li>可连续运行 18小时、9轮迭代，独立完成芯片设计 RTL 完整流程</li>
       </ul>
     </div>
+    <div class="ai-quote mt-4" v-click>
+      从 Demo 级演示到“可上岗的生产工人”——AI 已经能独立完成完整工程流程。
+    </div>
   </div>
-  <div class="col-span-5 flex flex-col gap-3">
-    <div class="grid grid-cols-2 gap-3">
-      <div class="ai-card text-center" v-click><div class="ai-metric-label">DAU</div><div class="ai-metric">2亿</div></div>
-      <div class="ai-card text-center" v-click><div class="ai-metric-label">MAU</div><div class="ai-metric">3.45亿</div></div>
-      <div class="ai-card text-center" v-click><div class="ai-metric-label">日均Token</div><div class="ai-metric ai-metric-small">180万亿</div></div>
-      <div class="ai-card text-center" v-click><div class="ai-metric-label">两年增长</div><div class="ai-metric ai-metric-small">1500×</div></div>
+  <div class="col-span-5 flex flex-col gap-4">
+    <div class="ai-pull-stat" v-click>
+      <div class="ai-pull-stat-label">日均 Token</div>
+      <div class="ai-pull-stat-value">180<span class="ai-pull-stat-unit">万亿</span></div>
+      <div class="ai-pull-stat-caption">两年增长 1500 倍</div>
+    </div>
+    <div class="ai-card-editorial" v-click>
+      <div class="ai-data-row"><span class="ai-data-row-name">DAU</span><span class="ai-data-row-value">2亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">MAU</span><span class="ai-data-row-value">3.45亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">两年增长</span><span class="ai-data-row-value">1500×</span></div>
     </div>
     <div class="ai-card flex items-center gap-3 p-3" v-click>
       <img src="./doubao-avatar.png" class="w-14 h-14 rounded-full border border-stone-200 bg-stone-100" alt="豆包" />
@@ -165,10 +194,6 @@ class: bar-ochre
       </div>
     </div>
   </div>
-</div>
-
-<div class="ai-quote mt-5" v-click>
-  从Demo级演示到“可上岗的生产工人”——AI 已经能独立完成完整工程流程。
 </div>
 
 <div class="ai-side-label">Domestic</div>
@@ -239,24 +264,42 @@ class: bar-clay
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-2 gap-5 mt-2">
-  <div class="ai-card" v-click>
-    <div class="text-base font-bold mb-3 flex items-center gap-2"><carbon-rocket /> 6月资本与生态里程碑</div>
-    <ul class="list-disc pl-4 text-stone-700 text-sm space-y-2">
-      <li>首轮融资<strong>超500亿元</strong>，估值<strong>超500亿美元</strong></li>
-      <li>创始人梁文锋个人出资约<strong>200亿元</strong></li>
-      <li>腾讯、宁德时代、网易、京东等参与</li>
-      <li>终结“三不”铁律：从技术信仰路线转向商业化落地</li>
-    </ul>
+<p class="ai-lead mt-2">DeepSeek 终结坚守 3 年的“三不”铁律，中国开源模型影响力进入新阶段。</p>
+
+<div class="grid grid-cols-12 gap-8 mt-2">
+  <div class="col-span-5 flex flex-col gap-5">
+    <div class="ai-pull-stat" v-click>
+      <div class="ai-pull-stat-label">首轮融资</div>
+      <div class="ai-pull-stat-value">500<span class="ai-pull-stat-unit">亿+</span></div>
+      <div class="ai-pull-stat-caption">估值超 500 亿美元，梁文锋个人出资约 200 亿元</div>
+    </div>
+    <div class="ai-card-editorial" v-click>
+      <h3><carbon-rocket /> 资本信号</h3>
+      <p class="text-sm text-stone-700 leading-relaxed">腾讯、宁德时代、网易、京东等参与，标志着 DeepSeek 从技术信仰路线转向商业化落地。</p>
+    </div>
   </div>
-  <div class="ai-card ai-card-highlight" v-click>
-    <div class="text-base font-bold mb-3 flex items-center gap-2"><carbon-globe /> 中国开源影响力</div>
-    <ul class="list-disc pl-4 text-stone-700 text-sm space-y-2">
-      <li>全球累计下载突破<strong>100亿次</strong></li>
-      <li>Hugging Face <strong>41%</strong>下载来自中国模型</li>
-      <li>Qwen <strong>46个</strong>模型进全球TOP100</li>
-      <li>中国机构占TOP100的<strong>58%</strong>份额</li>
-    </ul>
+  <div class="col-span-7">
+    <div class="ai-card-editorial h-full" v-click>
+      <h3><carbon-globe /> 中国开源影响力</h3>
+      <div class="grid grid-cols-2 gap-x-6 gap-y-3">
+        <div class="ai-pull-stat">
+          <div class="ai-pull-stat-value text-3xl">100<span class="ai-pull-stat-unit text-base">亿次</span></div>
+          <div class="ai-pull-stat-caption">全球累计下载</div>
+        </div>
+        <div class="ai-pull-stat">
+          <div class="ai-pull-stat-value text-3xl">41%</div>
+          <div class="ai-pull-stat-caption">Hugging Face 中国模型下载</div>
+        </div>
+        <div class="ai-pull-stat">
+          <div class="ai-pull-stat-value text-3xl">46</div>
+          <div class="ai-pull-stat-caption">Qwen 进全球 TOP100</div>
+        </div>
+        <div class="ai-pull-stat">
+          <div class="ai-pull-stat-value text-3xl">58%</div>
+          <div class="ai-pull-stat-caption">中国机构 TOP100 份额</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -597,26 +640,34 @@ class: bar-slate
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-2 gap-6 mt-2">
+<p class="ai-lead mt-2">国内看用户规模与云厂商份额，国际看订阅与企业落地速度。</p>
+
+<div class="grid grid-cols-2 gap-8 mt-2">
   <div v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国内</div>
-    <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">豆包</div><div class="ai-rank-meta">3.45亿MAU</div><div class="ai-rank-value">日均180万亿Token</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">DeepSeek</div><div class="ai-rank-meta">1.3亿MAU</div><div class="ai-rank-value">增速最快</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">火山引擎</div><div class="ai-rank-meta">—</div><div class="ai-rank-value">MaaS份额49.5%</div></div>
+    <div class="ai-pull-stat mb-4">
+      <div class="ai-pull-stat-value text-3xl">180<span class="ai-pull-stat-unit text-xl">万亿</span></div>
+      <div class="ai-pull-stat-caption">豆包日均 Token 消耗</div>
+    </div>
+    <div class="ai-card-editorial">
+      <div class="ai-data-row"><span class="ai-data-row-name">豆包 MAU</span><span class="ai-data-row-value">3.45亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">DeepSeek MAU</span><span class="ai-data-row-value">1.3亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">火山引擎 MaaS 份额</span><span class="ai-data-row-value">49.5%</span></div>
     </div>
   </div>
   <div v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国际</div>
-    <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">ChatGPT</div><div class="ai-rank-meta">10亿月活</div><div class="ai-rank-value">92%财富500强</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">Cursor</div><div class="ai-rank-meta">100万+日活</div><div class="ai-rank-value">年化30亿美元</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">Anthropic</div><div class="ai-rank-meta">—</div><div class="ai-rank-value">年化470亿美元</div></div>
+    <div class="ai-pull-stat mb-4">
+      <div class="ai-pull-stat-value text-3xl">10<span class="ai-pull-stat-unit text-xl">亿</span></div>
+      <div class="ai-pull-stat-caption">ChatGPT 月活</div>
+    </div>
+    <div class="ai-card-editorial">
+      <div class="ai-data-row"><span class="ai-data-row-name">ChatGPT 财富500强渗透率</span><span class="ai-data-row-value">92%</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">Cursor 年化收入</span><span class="ai-data-row-value">$30亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">Anthropic 年化收入</span><span class="ai-data-row-value">$470亿</span></div>
     </div>
   </div>
 </div>
-
-
 
 <div class="ai-side-label">Business</div>
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
@@ -636,55 +687,31 @@ class: bar-terracotta
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-2 gap-6 mt-2">
+<p class="ai-lead mt-2">6月资本市场活跃：国内一级市场与 IPO 并进，国际迎来史上最大 IPO。</p>
+
+<div class="grid grid-cols-2 gap-8 mt-2">
   <div v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国内</div>
-    <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank">
-        <div class="ai-rank-name">DeepSeek</div>
-        <div class="ai-rank-meta">首轮融资超500亿</div>
-        <div class="ai-rank-value">超500亿美元</div>
-      </div>
-      <div class="ai-rank">
-        <div class="ai-rank-name">智谱AI</div>
-        <div class="ai-rank-meta">市值破1万亿港元（6.22）</div>
-        <div class="ai-rank-value">约1万亿港元</div>
-      </div>
-      <div class="ai-rank">
-        <div class="ai-rank-name">月之暗面</div>
-        <div class="ai-rank-meta">上半年累计融资近60亿美元</div>
-        <div class="ai-rank-value">~300亿美元</div>
-      </div>
-      <div class="ai-rank">
-        <div class="ai-rank-name">宇树科技</div>
-        <div class="ai-rank-meta">IPO过会</div>
-        <div class="ai-rank-value">420亿</div>
-      </div>
+    <div class="ai-card-editorial">
+      <div class="ai-data-row"><span class="ai-data-row-name">DeepSeek</span><span class="ai-data-row-value">500亿+ / $500亿+</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">智谱 AI</span><span class="ai-data-row-value">~1万亿港元</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">月之暗面</span><span class="ai-data-row-value">~300亿美元</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">宇树科技</span><span class="ai-data-row-value">420亿</span></div>
     </div>
+    <div class="ai-footnote mt-3">智谱市值 6.22 破万亿港元；宇树科创板 IPO 过会。</div>
   </div>
   <div v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国际</div>
-    <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank">
-        <div class="ai-rank-name">SpaceX</div>
-        <div class="ai-rank-meta">IPO 750亿美元</div>
-        <div class="ai-rank-value">IPO估值1.77万亿，首日市值近2.3万亿</div>
-      </div>
-      <div class="ai-rank">
-        <div class="ai-rank-name">OpenAI</div>
-        <div class="ai-rank-meta">提交S-1</div>
-        <div class="ai-rank-value">8520亿美元</div>
-      </div>
-      <div class="ai-rank">
-        <div class="ai-rank-name">Anthropic</div>
-        <div class="ai-rank-meta">IPO准备</div>
-        <div class="ai-rank-value">9650亿美元</div>
-      </div>
+    <div class="ai-pull-stat mb-4">
+      <div class="ai-pull-stat-value text-3xl">$750<span class="ai-pull-stat-unit text-xl">亿</span></div>
+      <div class="ai-pull-stat-caption">SpaceX IPO 规模 · 首日市值近 2.3 万亿美元</div>
+    </div>
+    <div class="ai-card-editorial">
+      <div class="ai-data-row"><span class="ai-data-row-name">OpenAI S-1</span><span class="ai-data-row-value">$8520亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">Anthropic IPO 准备</span><span class="ai-data-row-value">$9650亿</span></div>
     </div>
   </div>
 </div>
-
-
 
 <div class="ai-side-label">Capital</div>
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
@@ -844,16 +871,25 @@ class: bar-slate
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-3 gap-4 mt-2">
-  <div class="ai-stat" v-click><div class="ai-stat-label">中国开源模型全球下载</div><div class="ai-stat-value">100亿次</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">豆包日均Token</div><div class="ai-stat-value">180万亿</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">火山引擎MaaS份额</div><div class="ai-stat-value">49.5%</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">昇腾市场份额</div><div class="ai-stat-value">~37%（2026Q1）</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">DeepSeek首轮融资</div><div class="ai-stat-value">超500亿元</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">智谱市值峰值</div><div class="ai-stat-value">1万亿港元</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">Cursor年化收入</div><div class="ai-stat-value">30亿美元</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">ChatGPT月活</div><div class="ai-stat-value">10亿</div></div>
-  <div class="ai-stat" v-click><div class="ai-stat-label">SpaceX IPO</div><div class="ai-stat-value">750亿美元</div></div>
+<div class="grid grid-cols-3 gap-5 mt-2">
+  <div class="ai-pull-stat ai-card-editorial py-5 px-6" v-click>
+    <div class="ai-pull-stat-label">中国开源模型全球下载</div>
+    <div class="ai-pull-stat-value">100<span class="ai-pull-stat-unit">亿次</span></div>
+  </div>
+  <div class="ai-pull-stat ai-card-editorial py-5 px-6" v-click>
+    <div class="ai-pull-stat-label">豆包日均 Token</div>
+    <div class="ai-pull-stat-value">180<span class="ai-pull-stat-unit">万亿</span></div>
+  </div>
+  <div class="ai-pull-stat ai-card-editorial py-5 px-6" v-click>
+    <div class="ai-pull-stat-label">火山引擎 MaaS 份额</div>
+    <div class="ai-pull-stat-value">49.5%</div>
+  </div>
+  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">~37%</div><div class="ai-stat-card-label">昇腾市场份额（2026Q1）</div></div>
+  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">500亿+</div><div class="ai-stat-card-label">DeepSeek 首轮融资</div></div>
+  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">1万亿</div><div class="ai-stat-card-label">智谱市值峰值（港元）</div></div>
+  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">$30亿</div><div class="ai-stat-card-label">Cursor 年化收入</div></div>
+  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">10亿</div><div class="ai-stat-card-label">ChatGPT 月活</div></div>
+  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">$750亿</div><div class="ai-stat-card-label">SpaceX IPO</div></div>
 </div>
 
 <div class="ai-side-label">Data</div>
