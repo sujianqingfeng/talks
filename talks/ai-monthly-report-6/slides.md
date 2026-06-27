@@ -9,16 +9,18 @@ fonts:
   sans: Inter
   serif: Noto Serif SC
   mono: JetBrains Mono
-class: text-center
+class: text-center bar-clay
 ---
 
 <img src="./cover-bg.jpg" class="ai-cover-bg" alt="circuit board" />
 
+<div class="absolute left-0 top-0 bottom-0 w-2 z-2" style="background: var(--jap-clay);"></div>
+
 <div class="ai-cover">
   <div>
-    <div class="ai-page-head-kicker mb-6">AI Monthly Report · June 2026</div>
+    <div class="ai-chip-block mb-8" style="background: var(--jap-clay);">AI Monthly Report · June 2026</div>
     <div class="ai-cover-title">AI月报</div>
-    <div class="ai-cover-title" style="margin-left: 0.18em;">· 6月号</div>
+    <div class="ai-mega ai-mega-xl ai-mega-ink" style="margin-top: 0.3rem;">6<span class="ai-mega-unit">月号</span></div>
     <div class="ai-cover-subtitle mt-8">2026年6月 · 全球AI进展追踪</div>
   </div>
   <div class="ai-cover-info">
@@ -55,8 +57,9 @@ class: bar-terracotta
 
 <div class="grid grid-cols-12 gap-8 h-full items-center relative z-1">
   <div class="col-span-7">
-    <div class="ai-statement-text" v-click>
-      6月是AI史上罕见的<br />密集变动月。
+    <div class="ai-chip-block mb-6" style="background: var(--jap-terracotta);">Editorial · 卷首语</div>
+    <div class="ai-hero-statement">
+      6月是AI史上<br />罕见的<em>密集变动月</em>。
     </div>
     <div class="w-20 h-px bg-stone-300 mt-8 mb-6"></div>
     <div class="ai-statement-lead max-w-xl">
@@ -64,11 +67,11 @@ class: bar-terracotta
     </div>
   </div>
   <div class="col-span-5 ai-statement-cards">
-    <div class="ai-card" v-click>
+    <div class="ai-card ai-card-highlight" v-click>
       <div class="text-base font-bold mb-2">中国</div>
       <p class="text-sm text-stone-700">豆包日耗180万亿Token、智谱市值破万亿、昇腾完成万亿参数训练。</p>
     </div>
-    <div class="ai-card" v-click>
+    <div class="ai-card ai-card-highlight" v-click>
       <div class="text-base font-bold mb-2">国际</div>
       <p class="text-sm text-stone-700">Anthropic最强模型72小时被封、SpaceX创下史上最大IPO、OpenAI推出自研芯片。</p>
     </div>
@@ -80,6 +83,24 @@ class: bar-terracotta
 <!--
 6月是AI史上罕见的密集变动月。中国这边，豆包日耗180万亿Token、智谱市值破万亿、昇腾完成万亿参数训练——国产AI在模型、芯片、应用三端同步突破。国际上，Anthropic最强模型发布72小时被政府封禁、SpaceX创下史上最大IPO、OpenAI推出自研芯片——监管、资本、技术的碰撞从未如此激烈。
 -->
+
+---
+layout: center
+class: bar-clay
+---
+
+<div class="ai-chapter">
+  <div class="ai-chapter-num">01</div>
+  <div>
+    <div class="ai-chapter-en">Chapter 01 · Models</div>
+    <div class="ai-chapter-name">模型</div>
+    <div class="ai-chip-bar"></div>
+    <div class="ai-chapter-lead">国内四家头部厂商同步发布，国际最强模型 72 小时被封。大模型竞争从单点技术进入生态与监管的全面碰撞。</div>
+  </div>
+  <div class="ai-chapter-band"></div>
+</div>
+
+<div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 ---
 layout: default
@@ -178,20 +199,13 @@ class: bar-ochre
   <div class="col-span-5 flex flex-col gap-4">
     <div class="ai-pull-stat" v-click>
       <div class="ai-pull-stat-label">日均 Token</div>
-      <div class="ai-pull-stat-value">180<span class="ai-pull-stat-unit">万亿</span></div>
+      <div class="ai-mega ai-mega-md">180<span class="ai-mega-unit">万亿</span></div>
       <div class="ai-pull-stat-caption">两年增长 1500 倍</div>
     </div>
     <div class="ai-card-editorial" v-click>
       <div class="ai-data-row"><span class="ai-data-row-name">DAU</span><span class="ai-data-row-value">2亿</span></div>
       <div class="ai-data-row"><span class="ai-data-row-name">MAU</span><span class="ai-data-row-value">3.45亿</span></div>
       <div class="ai-data-row"><span class="ai-data-row-name">两年增长</span><span class="ai-data-row-value">1500×</span></div>
-    </div>
-    <div class="ai-card flex items-center gap-3 p-3" v-click>
-      <img src="./doubao-avatar.png" class="w-14 h-14 rounded-full border border-stone-200 bg-stone-100" alt="豆包" />
-      <div>
-        <div class="text-sm font-bold">豆包智能助手</div>
-        <div class="text-xs text-stone-500">字节跳动旗下 AI 助手产品</div>
-      </div>
     </div>
   </div>
 </div>
@@ -270,7 +284,7 @@ class: bar-clay
   <div class="col-span-5 flex flex-col gap-5">
     <div class="ai-pull-stat" v-click>
       <div class="ai-pull-stat-label">首轮融资</div>
-      <div class="ai-pull-stat-value">500<span class="ai-pull-stat-unit">亿+</span></div>
+      <div class="ai-mega ai-mega-md">500<span class="ai-mega-unit">亿+</span></div>
       <div class="ai-pull-stat-caption">估值超 500 亿美元，梁文锋个人出资约 200 亿元</div>
     </div>
     <div class="ai-card-editorial" v-click>
@@ -359,9 +373,18 @@ class: bar-terracotta
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-12 gap-6 mt-2">
+<div class="grid grid-cols-12 gap-8 mt-2 items-center">
   <div class="col-span-5">
-    <div class="text-sm uppercase tracking-widest text-stone-400 mb-4">时间线</div>
+    <div class="ai-metric-label">全球下线时长</div>
+    <div class="ai-mega ai-mega-xl">72<span class="ai-mega-unit">h</span></div>
+    <div class="ai-chip-bar"></div>
+    <div class="ai-hero-statement" style="font-size:1.7rem; line-height:1.3;">
+      AI 史上首次：<em>已发布模型</em><br />被政府强制下线。
+    </div>
+    <div class="text-sm text-stone-500 mt-3">无法实时区分国籍 → 只能全球下线，<strong class="text-stone-800">包括美国用户自己</strong>。IPO 计划蒙上阴影。</div>
+  </div>
+  <div class="col-span-7">
+    <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">时间线</div>
     <div class="ai-timeline">
       <div class="ai-timeline-item" v-click>
         <strong>6月9日</strong> Anthropic发布最强模型Fable 5<br />
@@ -376,29 +399,9 @@ class: bar-terracotta
         <span class="text-stone-600 text-sm">增加国籍验证和数据留存</span>
       </div>
     </div>
-  </div>
-  <div class="col-span-7 flex flex-col gap-4">
-    <div class="ai-card ai-card-highlight" v-click>
-      <div class="text-lg font-bold mb-3 flex items-center gap-2"><carbon-warning /> 深远影响</div>
-      <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
-        <li>史上首次已发布AI模型被政府强制下线</li>
-        <li>开创“一键关停”AI模型的先例</li>
-        <li>Anthropic市值一度蒸发，IPO计划蒙上阴影</li>
-      </ul>
-    </div>
-    <div class="ai-card" v-click>
-      <div class="text-sm text-stone-500 mb-1">无法实时区分用户国籍</div>
-      <div class="text-xl font-bold">→ 只能全球下线，包括美国用户</div>
-    </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="ai-card text-center" v-click>
-        <div class="ai-metric-label">下线时长</div>
-        <div class="ai-metric">72h</div>
-      </div>
-      <div class="ai-card text-center" v-click>
-        <div class="ai-metric-label">恢复条件</div>
-        <div class="text-base font-bold mt-1">国籍验证 + 数据留存</div>
-      </div>
+    <div class="ai-alert mt-4" v-click>
+      <div class="ai-alert-title"><carbon-warning /> 深远影响</div>
+      开创政府可<strong>“一键关停”AI 模型</strong>的先例。
     </div>
   </div>
 </div>
@@ -422,7 +425,7 @@ class: bar-slate
 </div>
 
 <div class="grid grid-cols-2 gap-4 mt-2">
-  <div class="ai-card" v-click>
+  <div class="ai-card ai-card-highlight" v-click>
     <div class="text-base font-bold mb-2 flex items-center gap-2"><span class="ai-tag">OpenAI</span></div>
     <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
       <li>GPT-5.5-Cyber：网络安全专项，CyberGym 85.6%</li>
@@ -460,6 +463,24 @@ class: bar-slate
 -->
 
 ---
+layout: center
+class: bar-ochre
+---
+
+<div class="ai-chapter">
+  <div class="ai-chapter-num">02</div>
+  <div>
+    <div class="ai-chapter-en">Chapter 02 · Tools &amp; Media</div>
+    <div class="ai-chapter-name">工具与媒介</div>
+    <div class="ai-chip-bar"></div>
+    <div class="ai-chapter-lead">AI 编程赛道史上最大并购诞生，视频生成进入原生 4K。工具层竞争白热化的同时，新型攻击首次盯上编码 Agent。</div>
+  </div>
+  <div class="ai-chapter-band"></div>
+</div>
+
+<div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
+
+---
 layout: default
 class: bar-ochre table-ochre
 ---
@@ -473,11 +494,11 @@ class: bar-ochre table-ochre
 <div class="grid grid-cols-12 gap-5 mt-2">
   <div class="col-span-8">
     <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">Cursor</div><div class="ai-rank-meta">独立→SpaceX</div><div class="ai-rank-value">600亿美元被收购</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">Claude Code</div><div class="ai-rank-meta">Anthropic</div><div class="ai-rank-value">进入Pro订阅</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">Codex CLI</div><div class="ai-rank-meta">OpenAI</div><div class="ai-rank-value">Rust重写</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">Trae</div><div class="ai-rank-meta">字节</div><div class="ai-rank-value">挑战Cursor</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">CodeBuddy</div><div class="ai-rank-meta">腾讯</div><div class="ai-rank-value">混元驱动</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">01</div><div class="ai-rank-name">Cursor</div><div class="ai-rank-meta">独立→SpaceX</div><div class="ai-rank-value">600亿美元被收购</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Claude Code</div><div class="ai-rank-meta">Anthropic</div><div class="ai-rank-value">进入Pro订阅</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">03</div><div class="ai-rank-name">Codex CLI</div><div class="ai-rank-meta">OpenAI</div><div class="ai-rank-value">Rust重写</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">04</div><div class="ai-rank-name">Trae</div><div class="ai-rank-meta">字节</div><div class="ai-rank-value">挑战Cursor</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">05</div><div class="ai-rank-name">CodeBuddy</div><div class="ai-rank-meta">腾讯</div><div class="ai-rank-value">混元驱动</div></div>
     </div>
   </div>
   <div class="col-span-4 flex flex-col gap-3">
@@ -556,22 +577,42 @@ layout: center
 class: bar-sage
 ---
 
-<img src="./ai-chip-bg.jpg" class="ai-cover-bg" alt="AI chip background" />
+<div class="ai-chapter">
+  <div class="ai-chapter-num">03</div>
+  <div>
+    <div class="ai-chapter-en">Chapter 03 · Chips &amp; Markets</div>
+    <div class="ai-chapter-name">芯片与市场</div>
+    <div class="ai-chip-bar"></div>
+    <div class="ai-chapter-lead">国产算力首次完成万亿参数全参数后训练，市场份额此消彼长。商业化与资本同步爆发，史上最大 IPO 落地。</div>
+  </div>
+  <div class="ai-chapter-band"></div>
+</div>
 
-<div class="ai-page-head" style="position:absolute; top:2.6rem; left:3.2rem; right:3.2rem;">
+<div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
+
+---
+layout: center
+class: bar-sage
+---
+
+<img src="./ai-chip-bg.jpg" class="ai-bleed-image" alt="AI chip background" />
+<div class="ai-bleed-overlay"></div>
+
+<div class="ai-page-head ai-hero-on-image" style="position:absolute; top:2.6rem; left:3.2rem; right:3.2rem;">
   <div class="ai-page-head-kicker">AI Chip · 国产突破</div>
   <div class="ai-page-head-title">华为昇腾910C · 里程碑</div>
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="flex flex-col items-center justify-center h-full relative z-1">
-  <div class="text-xl text-stone-600 mb-8">6月5日 · 首次完成 DeepSeek-V4-Pro 万亿参数模型全参数后训练</div>
-  <div class="grid grid-cols-3 gap-6 max-w-4xl mb-8">
-    <div class="ai-card text-center" v-click><div class="ai-metric-label">算力利用率</div><div class="ai-metric">30%+</div></div>
-    <div class="ai-card text-center" v-click><div class="ai-metric-label">训练过程</div><div class="ai-metric">1500步</div><div class="text-sm text-stone-500">全程零中断</div></div>
-    <div class="ai-card text-center" v-click><div class="ai-metric-label">全球首个</div><div class="ai-metric ai-metric-small">第三方国产算力</div><div class="text-sm text-stone-500">完成该级别训练</div></div>
+<div class="flex flex-col justify-center h-full relative z-2 ai-hero-on-image" style="padding-top: 3rem;">
+  <div class="ai-mega ai-mega-lg mb-2">1500<span class="ai-mega-unit">步 · 全程零中断</span></div>
+  <div class="text-lg mb-8" style="color: rgba(248,247,244,0.85);">6月5日 · 首次完成 DeepSeek-V4-Pro 万亿参数模型全参数后训练</div>
+  <div class="grid grid-cols-3 gap-6 max-w-3xl mb-6">
+    <div><div class="ai-metric-label">算力利用率</div><div class="ai-metric" style="color:#fff;">30%+</div></div>
+    <div><div class="ai-metric-label">关键算子效率</div><div class="ai-metric" style="color:#fff;">+14%</div></div>
+    <div><div class="ai-metric-label">全球首个</div><div class="ai-metric ai-metric-small" style="color:#fff;">第三方国产算力</div><div class="text-sm" style="color: rgba(248,247,244,0.75);">完成该级别训练</div></div>
   </div>
-  <div class="ai-quote max-w-3xl" v-click>
+  <div class="ai-quote max-w-3xl" v-click style="background: rgba(255,255,255,0.08); border-left-color: #fff; color: rgba(248,247,244,0.9); backdrop-filter: blur(4px);">
     国产AI算力正式跨过从“只能推理”到“能训世界级大模型”的最难一关。
   </div>
 </div>
@@ -597,12 +638,32 @@ class: bar-ochre
 <div class="grid grid-cols-12 gap-5 mt-2">
   <div class="col-span-5" v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">中国市场份额</div>
-    <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">英伟达</div><div class="ai-rank-meta">55%</div><div class="ai-rank-value">2024年70% → 持续下滑</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">华为昇腾</div><div class="ai-rank-meta">20%</div><div class="ai-rank-value">2025全年国产第一（81.2万张）</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">寒武纪</div><div class="ai-rank-meta">3%</div><div class="ai-rank-value">2025出货11.6万张，同比+350%</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">海光</div><div class="ai-rank-meta">2%</div><div class="ai-rank-value">2025出货8.3万张</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">摩尔线程</div><div class="ai-rank-meta">~1%</div><div class="ai-rank-value">2025营收15亿元，同比+243%</div></div>
+    <div class="ai-rank-list">
+      <div class="ai-bar-rank"><div class="ai-bar-rank-num">01</div><div>
+        <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">英伟达</span><span class="ai-bar-rank-pct">55%</span></div>
+        <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:55%;"></div></div>
+        <div class="ai-bar-rank-note">2024年70% → 持续下滑</div>
+      </div></div>
+      <div class="ai-bar-rank"><div class="ai-bar-rank-num">02</div><div>
+        <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">华为昇腾</span><span class="ai-bar-rank-pct">20%</span></div>
+        <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:20%;"></div></div>
+        <div class="ai-bar-rank-note">2025全年国产第一（81.2万张）</div>
+      </div></div>
+      <div class="ai-bar-rank"><div class="ai-bar-rank-num">03</div><div>
+        <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">寒武纪</span><span class="ai-bar-rank-pct">3%</span></div>
+        <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:3%;"></div></div>
+        <div class="ai-bar-rank-note">2025出货11.6万张，同比+350%</div>
+      </div></div>
+      <div class="ai-bar-rank"><div class="ai-bar-rank-num">04</div><div>
+        <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">海光</span><span class="ai-bar-rank-pct">2%</span></div>
+        <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:2%;"></div></div>
+        <div class="ai-bar-rank-note">2025出货8.3万张</div>
+      </div></div>
+      <div class="ai-bar-rank"><div class="ai-bar-rank-num">05</div><div>
+        <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">摩尔线程</span><span class="ai-bar-rank-pct">~1%</span></div>
+        <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:1%;"></div></div>
+        <div class="ai-bar-rank-note">2025营收15亿元，同比+243%</div>
+      </div></div>
     </div>
     <div class="ai-footnote mt-2">2026年Q1动态显示昇腾份额升至约37%，英伟达约43%。</div>
   </div>
@@ -688,26 +749,32 @@ class: bar-terracotta
 
 <p class="ai-lead mt-2">6月资本市场活跃：国内一级市场与 IPO 并进，国际迎来史上最大 IPO。</p>
 
-<div class="grid grid-cols-2 gap-8 mt-2">
-  <div v-click>
-    <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国内</div>
-    <div class="ai-card-editorial">
-      <div class="ai-data-row"><span class="ai-data-row-name">DeepSeek</span><span class="ai-data-row-value">500亿+ / $500亿+</span></div>
-      <div class="ai-data-row"><span class="ai-data-row-name">智谱 AI</span><span class="ai-data-row-value">~1万亿港元</span></div>
-      <div class="ai-data-row"><span class="ai-data-row-name">月之暗面</span><span class="ai-data-row-value">~300亿美元</span></div>
-      <div class="ai-data-row"><span class="ai-data-row-name">宇树科技</span><span class="ai-data-row-value">420亿</span></div>
-    </div>
-    <div class="ai-footnote mt-3">智谱市值 6.22 破万亿港元；宇树科创板 IPO 过会。</div>
+<div class="grid grid-cols-12 gap-8 mt-2 items-center">
+  <div class="col-span-5 text-left">
+    <div class="ai-metric-label mb-2">SpaceX · 史上最大 IPO</div>
+    <div class="ai-mega ai-mega-xl">$750<span class="ai-mega-unit">亿</span></div>
+    <div class="text-sm text-stone-600 mt-3">首日市值近 2.3 万亿美元 · 纳斯达克上市</div>
   </div>
-  <div v-click>
-    <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国际</div>
-    <div class="ai-pull-stat mb-4">
-      <div class="ai-pull-stat-value text-3xl">$750<span class="ai-pull-stat-unit text-xl">亿</span></div>
-      <div class="ai-pull-stat-caption">SpaceX IPO 规模 · 首日市值近 2.3 万亿美元</div>
-    </div>
-    <div class="ai-card-editorial">
-      <div class="ai-data-row"><span class="ai-data-row-name">OpenAI S-1</span><span class="ai-data-row-value">$8520亿</span></div>
-      <div class="ai-data-row"><span class="ai-data-row-name">Anthropic IPO 准备</span><span class="ai-data-row-value">$9650亿</span></div>
+  <div class="col-span-7">
+    <div class="grid grid-cols-2 gap-6">
+      <div v-click>
+        <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国内</div>
+        <div class="ai-card-editorial">
+          <div class="ai-data-row"><span class="ai-data-row-name">DeepSeek</span><span class="ai-data-row-value">500亿+</span></div>
+          <div class="ai-data-row"><span class="ai-data-row-name">智谱 AI</span><span class="ai-data-row-value">~1万亿港元</span></div>
+          <div class="ai-data-row"><span class="ai-data-row-name">月之暗面</span><span class="ai-data-row-value">~300亿美元</span></div>
+          <div class="ai-data-row"><span class="ai-data-row-name">宇树科技</span><span class="ai-data-row-value">420亿</span></div>
+        </div>
+        <div class="ai-footnote mt-2">智谱市值 6.22 破万亿港元；宇树科创板 IPO 过会。</div>
+      </div>
+      <div v-click>
+        <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国际</div>
+        <div class="ai-card-editorial">
+          <div class="ai-data-row"><span class="ai-data-row-name">OpenAI S-1</span><span class="ai-data-row-value">$8520亿</span></div>
+          <div class="ai-data-row"><span class="ai-data-row-name">Anthropic IPO</span><span class="ai-data-row-value">$9650亿</span></div>
+          <div class="ai-data-row"><span class="ai-data-row-name">SpaceX 估值</span><span class="ai-data-row-value">$1.77万亿</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -718,6 +785,24 @@ class: bar-terracotta
 <!--
 资本市场这个月也非常活跃。国内：DeepSeek首轮融资超过500亿人民币，估值超过500亿美元。智谱AI在6月22日市值破了1万亿港元，从上市后低点算半年涨了2467%。月之暗面今年上半年累计融资近60亿美元，估值约300亿美元。宇树科技科创板IPO过会，估值420亿。MiniMax港股上市是今年1月的事，"市值翻4倍"也不是6月数据，已经删掉。国际：SpaceX在纳斯达克上市，750亿美元IPO是人类历史上最大的，IPO估值1.77万亿美元，首日收盘市值接近2.3万亿美元。OpenAI秘密提交了S-1，预计9月上市，估值8520亿美元。Anthropic IPO准备中，目标10月，估值9650亿美元。"中国AI独角兽总估值4.1万亿元"和"Q1新晋24家、AI占58%"这两组数据没有明确6月节点，也已经从正文里删掉。
 -->
+
+---
+layout: center
+class: bar-slate
+---
+
+<div class="ai-chapter">
+  <div class="ai-chapter-num">04</div>
+  <div>
+    <div class="ai-chapter-en">Chapter 04 · People &amp; Rules</div>
+    <div class="ai-chapter-name">人才与规则</div>
+    <div class="ai-chip-bar"></div>
+    <div class="ai-chapter-lead">诺奖得主与 Transformer 作者同步跳槽，Google 一周痛失两位 AI 领袖。中美欧日监管、出口管制与反制进入三重碰撞。</div>
+  </div>
+  <div class="ai-chapter-band"></div>
+</div>
+
+<div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 ---
 layout: default
@@ -733,8 +818,8 @@ class: bar-clay
 <div class="grid grid-cols-12 gap-5 mt-2">
   <div class="col-span-7">
     <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">John Jumper</div><div class="ai-rank-meta">DeepMind → Anthropic</div><div class="ai-rank-value">诺奖得主，AlphaFold</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">Noam Shazeer</div><div class="ai-rank-meta">DeepMind → OpenAI</div><div class="ai-rank-value">Transformer作者</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">01</div><div class="ai-rank-name">John Jumper</div><div class="ai-rank-meta">DeepMind → Anthropic</div><div class="ai-rank-value">诺奖得主，AlphaFold</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Noam Shazeer</div><div class="ai-rank-meta">DeepMind → OpenAI</div><div class="ai-rank-value">Transformer作者</div></div>
     </div>
     <div class="ai-card mt-4" v-click>
       <strong>国内</strong> <span class="text-sm text-stone-700">北京-深圳-上海三极主导；智谱/DeepSeek/月之暗面大规模招聘；海外华人AI科学家回流加速。</span>
@@ -743,13 +828,13 @@ class: bar-clay
   <div class="col-span-5 flex flex-col gap-4">
     <div class="ai-card ai-card-highlight text-center" v-click>
       <div class="ai-metric-label">DeepMind → Anthropic 工程师比例</div>
-      <div class="ai-metric">11 : 1</div>
-      <div class="text-sm text-stone-500 mt-1">Google一周内失去两位核心AI领袖</div>
+      <div class="ai-mega ai-mega-md">11 : 1</div>
+      <div class="text-sm text-stone-500 mt-2">Google一周内失去两位核心AI领袖</div>
     </div>
     <div class="ai-card ai-card-highlight text-center" v-click>
       <div class="ai-metric-label">Alphabet股价单日暴跌</div>
-      <div class="ai-metric">7.2%</div>
-      <div class="text-sm text-stone-500 mt-1">蒸发市值 2250亿美元</div>
+      <div class="ai-mega ai-mega-md">7.2%</div>
+      <div class="text-sm text-stone-500 mt-2">蒸发市值 2250亿美元</div>
     </div>
   </div>
 </div>
@@ -844,12 +929,9 @@ class: bar-sage
       <li>云深处10000台四足机器人量产</li>
       <li>中国人形机器人出货量占全球80%+</li>
     </ul>
+    <img src="./unitree-h1.jpg" class="ai-slide-image ai-slide-image-grayscale mt-3" style="height: 4.2rem; object-position: center 25%;" alt="宇树 H1 人形机器人官方示意图" />
+    <div class="ai-image-caption">宇树 H1（来源：unitree.com）</div>
   </div>
-</div>
-
-<div class="mt-4 mb-10" v-click>
-  <img src="./unitree-h1.jpg" class="ai-slide-image ai-slide-image-grayscale" style="height: 6.5rem; object-position: center 25%;" alt="宇树 H1 人形机器人官方示意图" />
-  <div class="ai-image-caption">宇树 H1 人形机器人官方示意图（来源：unitree.com）</div>
 </div>
 
 <div class="ai-side-label">Application</div>
@@ -870,25 +952,23 @@ class: bar-slate
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="grid grid-cols-3 gap-5 mt-2">
-  <div class="ai-pull-stat ai-card-editorial py-5 px-6" v-click>
+<div class="grid grid-cols-3 gap-4 mt-2">
+  <div class="ai-pull-stat ai-card-editorial py-3 px-5 col-span-2 ai-card-highlight" v-click>
+    <div class="ai-pull-stat-label">豆包日均 Token · 两年增长 1500 倍</div>
+    <div class="ai-mega ai-mega-md" style="font-size:3.2rem;">180<span class="ai-mega-unit">万亿</span></div>
+  </div>
+  <div class="ai-pull-stat ai-card-editorial py-3 px-5" v-click>
     <div class="ai-pull-stat-label">中国开源模型全球下载</div>
-    <div class="ai-pull-stat-value">100<span class="ai-pull-stat-unit">亿次</span></div>
+    <div class="ai-mega ai-mega-md" style="font-size:3.2rem;">100<span class="ai-mega-unit">亿次</span></div>
   </div>
-  <div class="ai-pull-stat ai-card-editorial py-5 px-6" v-click>
-    <div class="ai-pull-stat-label">豆包日均 Token</div>
-    <div class="ai-pull-stat-value">180<span class="ai-pull-stat-unit">万亿</span></div>
+  <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">49.5%</div><div class="ai-stat-card-label">火山引擎 MaaS 份额</div></div>
+  <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">~37%</div><div class="ai-stat-card-label">昇腾市场份额（2026Q1）</div></div>
+  <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">500亿+</div><div class="ai-stat-card-label">DeepSeek 首轮融资</div></div>
+  <div class="ai-pull-stat ai-card-editorial py-3 px-5 col-span-2 ai-card-highlight" v-click>
+    <div class="ai-pull-stat-label">SpaceX · 史上最大 IPO，首日市值近 2.3 万亿美元</div>
+    <div class="ai-mega ai-mega-md" style="font-size:3.2rem;">$750<span class="ai-mega-unit">亿</span></div>
   </div>
-  <div class="ai-pull-stat ai-card-editorial py-5 px-6" v-click>
-    <div class="ai-pull-stat-label">火山引擎 MaaS 份额</div>
-    <div class="ai-pull-stat-value">49.5%</div>
-  </div>
-  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">~37%</div><div class="ai-stat-card-label">昇腾市场份额（2026Q1）</div></div>
-  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">500亿+</div><div class="ai-stat-card-label">DeepSeek 首轮融资</div></div>
-  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">1万亿</div><div class="ai-stat-card-label">智谱市值峰值（港元）</div></div>
-  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">$30亿</div><div class="ai-stat-card-label">Cursor 年化收入</div></div>
-  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">10亿</div><div class="ai-stat-card-label">ChatGPT 月活</div></div>
-  <div class="ai-stat-card" v-click><div class="ai-stat-card-value">$750亿</div><div class="ai-stat-card-label">SpaceX IPO</div></div>
+  <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">1万亿</div><div class="ai-stat-card-label">智谱市值峰值（港元）</div></div>
 </div>
 
 <div class="ai-side-label">Data</div>
@@ -942,31 +1022,30 @@ layout: center
 class: bar-sage
 ---
 
-<div class="ai-page-head" style="position:absolute; top:2.6rem; left:3.2rem; right:3.2rem;">
+<div class="absolute inset-0" style="background: var(--jap-sage-dark); z-index: 0;"></div>
+
+<div class="ai-page-head ai-hero-on-image" style="position:absolute; top:2.6rem; left:3.2rem; right:3.2rem;">
   <div class="ai-page-head-kicker">Closing</div>
   <div class="ai-page-head-title">AI月报 · 6月号</div>
   <div class="ai-page-head-rule"></div>
 </div>
 
-<div class="flex flex-col items-center justify-center h-full relative z-1">
-  <div class="text-xl text-stone-600 mb-8">每月追踪全球人工智能进展</div>
-  <div class="grid grid-cols-3 gap-6 max-w-4xl w-full text-left">
-    <div class="ai-card" v-click>
-      <div class="text-sm text-stone-500 mb-1">数据来源</div>
-      <div class="text-sm text-stone-800">公开报道、企业官方发布、IDC/OpenRouter等第三方机构</div>
-    </div>
-    <div class="ai-card" v-click>
-      <div class="text-sm text-stone-500 mb-1">覆盖周期</div>
-      <div class="text-sm text-stone-800">2026年6月1日 — 6月25日</div>
-    </div>
-    <div class="ai-card" v-click>
-      <div class="text-sm text-stone-500 mb-1">反馈</div>
-      <div class="text-sm text-stone-800">如有遗漏或补充，欢迎联系</div>
-    </div>
+<div class="flex flex-col items-center justify-center h-full relative z-2 ai-hero-on-image text-center">
+  <div class="ai-hero-statement" style="font-size:3.2rem; color:#f8f7f4; max-width:46rem;">
+    6月，AI 从<em style="color:#f8f7f4;">技术竞争</em><br />走入<em style="color:#f8f7f4;">监管与资本</em>的正面对撞。
+  </div>
+  <div class="ai-chip-bar mt-8 mb-3" style="background: rgba(248,247,244,0.7);"></div>
+  <div class="text-base tracking-[0.2em] uppercase mb-12" style="color: rgba(248,247,244,0.7);">下期再见 · 7月号</div>
+  <div class="flex items-center gap-6 text-xs" style="color: rgba(248,247,244,0.55);">
+    <span>数据来源：公开报道 / 企业发布 / IDC·OpenRouter</span>
+    <span class="opacity-40">|</span>
+    <span>覆盖周期：2026.06.01 — 06.25</span>
+    <span class="opacity-40">|</span>
+    <span>如有补充欢迎联系</span>
   </div>
 </div>
 
-<div class="absolute bottom-8 left-0 right-0 text-center text-stone-400 text-sm">
+<div class="absolute bottom-8 left-0 right-0 text-center text-sm" style="color: rgba(248,247,244,0.5);">
   我们下期再见 <carbon-ai-status />
 </div>
 
