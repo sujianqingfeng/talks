@@ -525,37 +525,6 @@ html, body {
   z-index: 1;
 }
 
-/* ---------- footer (global-bottom) ---------- */
-.jap-footer {
-  position: absolute;
-  bottom: 1.1rem;
-  left: 3.2rem;
-  right: 3.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--jap-stone);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.jap-footer-page {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 50%;
-  border: 1px solid var(--jap-line);
-  background: #fff;
-  color: var(--jap-muted);
-  font-weight: 700;
-  font-size: 0.58rem;
-}
-
 /* =========================================================
    Magazine / Editorial layout system (demo pages)
    ========================================================= */

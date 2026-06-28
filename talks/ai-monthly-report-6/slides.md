@@ -57,7 +57,6 @@ class: bar-terracotta
 
 <div class="grid grid-cols-12 gap-8 h-full items-center relative z-1">
   <div class="col-span-7">
-    <div class="ai-chip-block mb-6" style="background: var(--jap-terracotta);">Editorial · 卷首语</div>
     <div class="ai-hero-statement">
       6月是AI史上<br />罕见的<em>密集变动月</em>。
     </div>
@@ -434,7 +433,6 @@ class: bar-slate
     <div class="text-base font-bold mb-2 flex items-center gap-2"><span class="ai-tag">OpenAI</span></div>
     <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
       <li>GPT-5.5-Cyber：网络安全专项，CyberGym 85.6%</li>
-      <li>Jalapeño芯片：与Broadcom首款自研推理芯片（6.24）</li>
       <li>秘密提交S-1，估值8520亿美元</li>
     </ul>
   </div>
@@ -449,13 +447,6 @@ class: bar-slate
     <div class="text-base font-bold mb-2 flex items-center gap-2"><span class="ai-tag">NVIDIA</span></div>
     <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
       <li>Nemotron 3 Ultra：550B参数开源</li>
-      <li>RTX Spark：Arm架构笔记本CPU，正式进入PC市场</li>
-    </ul>
-  </div>
-  <div class="ai-card" v-click>
-    <div class="text-base font-bold mb-2 flex items-center gap-2"><span class="ai-tag">Meta</span></div>
-    <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
-      <li>AI Mode：覆盖Meta全生态35.8亿日活（非Meta AI独立DAU），从链接到答案</li>
     </ul>
   </div>
 </div>
@@ -464,8 +455,9 @@ class: bar-slate
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-接着说国际其他动态。OpenAI这边，GPT-5.5-Cyber是网络安全专项模型，CyberGym得分85.6%，同时启动了Patch the Planet计划修复开源软件漏洞。Jalapeño芯片6月24日发布，和Broadcom联合设计的首款自研推理芯片，9个月完成设计，推理成本最高可以降低50%。OpenAI还在6月8日秘密提交了S-1，估值8520亿美元，不过上市时间尚未最终确定，有报道称可能推迟到2027年。Google这边，Computer Use能力让AI可以直接操控电脑界面。还有一个重要消息：苹果的WWDC上宣布新Siri由Google Gemini驱动，苹果每年付Google 10亿美元。NVIDIA发布了Nemotron 3 Ultra，550B参数开源模型。还有RTX Spark，Arm架构的笔记本CPU，这意味着NVIDIA正式进入PC处理器市场。Meta的AI Mode在6月15日上线，覆盖Meta全生态35.8亿日活用户。注意这不是Meta AI独立产品的DAU，而是Facebook、Instagram、WhatsApp等全家桶的日活总量；搜索从链接列表转向直接生成答案。
+接着说国际其他动态。OpenAI这边，GPT-5.5-Cyber是网络安全专项模型，CyberGym得分85.6%，同时启动了Patch the Planet计划修复开源软件漏洞。OpenAI还在6月8日秘密提交了S-1，估值8520亿美元，不过上市时间尚未最终确定，有报道称可能推迟到2027年。Google这边，Computer Use能力让AI可以直接操控电脑界面。还有一个重要消息：苹果的WWDC上宣布新Siri由Google Gemini驱动，苹果每年付Google 10亿美元。NVIDIA发布了Nemotron 3 Ultra，550B参数开源模型。芯片方面更多内容见下一章。Meta的AI Mode在总览页已经提过，这里不重复。
 -->
+
 
 ---
 layout: center
@@ -738,7 +730,7 @@ class: bar-slate
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-看商业化的核心数据。国内：豆包MAU 3.45亿，DAU 2亿，日均Token消耗180万亿。DeepSeek MAU 1.3亿，国内第三，增速最快。火山引擎的MaaS市场份额49.5%，这是IDC 2025全年的数据。国际：ChatGPT月活10亿，这是史上最快达到10亿月活的消费应用，92%的财富500强在使用。Cursor年化收入30亿美元，是人类历史上增长最快的SaaS公司。Anthropic年化收入470亿美元，这是5月的run-rate。这里删掉两个非6月的数据：一个是智谱MaaS平台"API年收入17亿元"，这是截至今年3月的数据；另一个是"5月第一周中国AI周调用量7.94万亿Token"，这个5月里程碑也不属于6月。
+看商业化的核心数据。国内：豆包MAU 3.45亿，DAU 2亿，日均Token消耗180万亿。DeepSeek MAU 1.3亿，国内第三，增速最快。火山引擎的MaaS市场份额49.5%，这是IDC 2025全年的数据。国际：ChatGPT月活10亿，这是史上最快达到10亿月活的消费应用，92%的财富500强在使用。Cursor年化收入40亿美元，是人类历史上增长最快的SaaS公司。Anthropic年化收入470亿美元，这是5月的run-rate。这里删掉两个非6月的数据：一个是智谱MaaS平台"API年收入17亿元"，这是截至今年3月的数据；另一个是"5月第一周中国AI周调用量7.94万亿Token"，这个5月里程碑也不属于6月。
 -->
 
 ---
@@ -976,7 +968,7 @@ class: bar-slate
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-最后看一组核心数据。中国开源模型全球累计下载100亿次。豆包日均Token消耗180万亿。火山引擎MaaS市场份额49.5%。昇腾市场份额按2026年一季度动态约37%。DeepSeek首轮融资超过500亿元。智谱市值峰值1万亿港元。Cursor年化收入30亿美元。ChatGPT月活10亿。SpaceX IPO规模750亿美元。
+最后看一组核心数据。中国开源模型全球累计下载100亿次。豆包日均Token消耗180万亿。火山引擎MaaS市场份额49.5%。昇腾市场份额按2026年一季度动态约37%。DeepSeek首轮融资超过500亿元。智谱市值峰值1万亿港元。Cursor年化收入40亿美元。ChatGPT月活10亿。SpaceX IPO规模750亿美元。
 -->
 
 ---
