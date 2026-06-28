@@ -357,7 +357,7 @@ html, body {
 
 .ai-timeline-item {
   position: relative;
-  padding-bottom: 0.9rem;
+  padding-bottom: var(--ai-tl-pad, 0.9rem);
 }
 
 .ai-timeline-item::before {

@@ -369,23 +369,23 @@ class: bar-terracotta
 
 <div class="ai-page-head">
   <div class="ai-page-head-kicker">International Event</div>
-  <div class="ai-page-head-title">Anthropic Fable 5 · 发布72小时被全球封禁</div>
+  <div class="ai-page-head-title">Anthropic Fable 5 · 被全球封禁</div>
   <div class="ai-page-head-rule"></div>
 </div>
 
 <div class="grid grid-cols-12 gap-8 mt-2 items-center">
   <div class="col-span-5">
     <div class="ai-metric-label">全球下线时长</div>
-    <div class="ai-mega ai-mega-xl">72<span class="ai-mega-unit">h</span></div>
+    <div class="ai-mega ai-mega-lg">72<span class="ai-mega-unit">h</span></div>
     <div class="ai-chip-bar"></div>
-    <div class="ai-hero-statement" style="font-size:1.7rem; line-height:1.3;">
+    <div class="ai-hero-statement" style="font-size:1.55rem; line-height:1.3;">
       AI 史上首次：<em>已发布模型</em><br />被政府强制下线。
     </div>
     <div class="text-sm text-stone-500 mt-3">无法实时区分国籍 → 只能全球下线，<strong class="text-stone-800">包括美国用户自己</strong>。IPO 计划蒙上阴影。</div>
   </div>
   <div class="col-span-7">
-    <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">时间线</div>
-    <div class="ai-timeline">
+    <div class="text-sm uppercase tracking-widest text-stone-400 mb-2">时间线</div>
+    <div class="ai-timeline" style="--ai-tl-pad: 0.5rem;">
       <div class="ai-timeline-item" v-click>
         <strong>6月9日</strong> Anthropic发布最强模型Fable 5<br />
         <span class="text-stone-600 text-sm">SWE-Bench Pro 80.3%，碾压所有竞品</span>
@@ -403,7 +403,7 @@ class: bar-terracotta
         <span class="text-stone-600 text-sm">应白宫要求分阶段发布 → 政府干预已成常态</span>
       </div>
     </div>
-    <div class="ai-alert mt-4" v-click>
+    <div class="ai-alert mt-3" v-click>
       <div class="ai-alert-title"><carbon-warning /> 深远影响</div>
       一个月内<strong>两次</strong>前沿模型被政府介入 → 政府可<strong>"一键关停"AI 模型</strong>正从先例变成常态。
     </div>
