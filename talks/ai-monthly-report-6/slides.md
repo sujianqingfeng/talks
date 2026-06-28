@@ -25,7 +25,7 @@ class: text-center bar-clay
   </div>
   <div class="ai-cover-info">
     <div class="ai-cover-label">数据截止</div>
-    <div class="ai-cover-value">2026.06.25</div>
+    <div class="ai-cover-value">2026.06.28</div>
     <div class="ai-cover-label mt-6">覆盖范围</div>
     <div class="ai-cover-value">全球 AI 模型 / 芯片 / 应用 / 资本</div>
     <div class="ai-cover-label mt-6">本期定位</div>
@@ -42,7 +42,7 @@ import './style.css'
 </script>
 
 <!--
-大家好，欢迎来到AI月报6月号。这期内容覆盖2026年6月1日到6月25日，全球AI领域的关键进展。这个月发生了太多事，我们尽量把最重要的梳理清楚。
+大家好，欢迎来到AI月报6月号。这期内容覆盖2026年6月1日到6月28日，全球AI领域的关键进展。这个月发生了太多事，我们尽量把最重要的梳理清楚。
 -->
 
 ---
@@ -245,7 +245,7 @@ class: bar-slate
         <div class="text-base font-bold mb-3 flex items-center gap-2"><carbon-chart-line /> 市场反应</div>
         <ul class="list-disc pl-4 text-stone-700 text-sm space-y-2">
           <li>6月22日市值突破<strong>1万亿港元</strong></li>
-          <li>半年涨幅 <strong>2467%</strong>（相对上市后低点）</li>
+          <li>半年涨幅 <strong>约1900%</strong>（相对上市后低点）</li>
           <li>港股 AI 大模型公司市值第一</li>
         </ul>
       </div>
@@ -264,7 +264,7 @@ class: bar-slate
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-第二个重磅是智谱的GLM-5.2，6月13日发布。CodeArena排名全球第二、开源模型第一。DesignArena排名全球第一。FrontierSWE得分74.4%，超越GPT-5.5的72.6%，只比最强的Claude Opus 4.8的75.1%低不到1个百分点。100万Token无损上下文，MIT协议完全开源免费商用。市场反应非常强烈。6月22日市值突破1万亿港元。从上市后低点算，半年涨了2467%，在港股AI大模型公司中市值领先。这里要提醒一个口径：之前常被引用的"API年收入17亿元"其实是截至今年3月的数据，不是6月的新增量，已经在正文里删掉。有一个关键的时机因素。Anthropic的Fable 5在6月9日发布，72小时后被美国政府全球下线。智谱在Fable 5下线后24小时内宣布GLM-5.2全量开放，精准卡住了全球开发者的替代焦虑。Vercel CEO说：对GLM-5.2的编码能力感到由衷的印象深刻，几乎震惊，这改变了局面。
+第二个重磅是智谱的GLM-5.2，6月13日发布。CodeArena排名全球第二、开源模型第一。DesignArena排名全球第一。FrontierSWE得分74.4%，超越GPT-5.5的72.6%，只比最强的Claude Opus 4.8的75.1%低不到1个百分点。100万Token无损上下文，MIT协议完全开源免费商用。市场反应非常强烈。6月22日市值突破1万亿港元。从上市后低点算，半年涨了约1900%，在港股AI大模型公司中市值领先。这里要提醒一个口径：之前常被引用的"API年收入17亿元"其实是截至今年3月的数据，不是6月的新增量，已经在正文里删掉。有一个关键的时机因素。Anthropic的Fable 5在6月9日发布，72小时后被美国政府全球下线。智谱在Fable 5下线后24小时内宣布GLM-5.2全量开放，精准卡住了全球开发者的替代焦虑。Vercel CEO说：对GLM-5.2的编码能力感到由衷的印象深刻，几乎震惊，这改变了局面。
 -->
 
 ---
@@ -302,16 +302,16 @@ class: bar-clay
           <div class="ai-pull-stat-caption">全球累计下载</div>
         </div>
         <div class="ai-pull-stat">
-          <div class="ai-pull-stat-value text-3xl">41%</div>
-          <div class="ai-pull-stat-caption">Hugging Face 中国模型下载</div>
+          <div class="ai-pull-stat-value text-3xl">17.1%</div>
+          <div class="ai-pull-stat-caption">Hugging Face 中国模型下载占比（首超美国）</div>
         </div>
         <div class="ai-pull-stat">
-          <div class="ai-pull-stat-value text-3xl">46</div>
-          <div class="ai-pull-stat-caption">Qwen 进全球 TOP100</div>
+          <div class="ai-pull-stat-value text-3xl">8/10</div>
+          <div class="ai-pull-stat-caption">下载量 TOP10 中国席位</div>
         </div>
         <div class="ai-pull-stat">
-          <div class="ai-pull-stat-value text-3xl">58%</div>
-          <div class="ai-pull-stat-caption">中国机构 TOP100 份额</div>
+          <div class="ai-pull-stat-value text-3xl">全球第一</div>
+          <div class="ai-pull-stat-caption">中国开源模型下载量</div>
         </div>
       </div>
     </div>
@@ -322,7 +322,7 @@ class: bar-clay
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-第三个是DeepSeek。6月的最大事件不是模型发布，而是完成了首轮融资。DeepSeek首轮融资超过500亿元人民币，估值超过500亿美元。创始人梁文锋个人出资约200亿元，腾讯、宁德时代、网易、京东等参与。这标志着DeepSeek终结了坚守3年的“三不”铁律——不融资、不商业化、不路演，从技术信仰路线转向商业化落地。模型方面，DeepSeek V4已经在4月24日发布，1M Token上下文全系标配。6月5日还有一个重要进展：昇腾910C完成了DeepSeek-V4-Pro万亿参数模型的全参数后训练，这是国产算力首次支撑该级别的训练。说到开源生态，这里有一组很重要的数据。中国AI开源大模型全球累计下载量突破了100亿次。这是李强总理6月24日在达沃斯致辞里亲自确认的数字。Hugging Face平台上41%的大模型下载量来自中国模型。阿里Qwen系列有46个模型进入全球TOP100。中国机构在模型下载量TOP100里占了58%的份额。
+第三个是DeepSeek。6月的最大事件不是模型发布，而是完成了首轮融资。DeepSeek首轮融资超过500亿元人民币，估值超过500亿美元。创始人梁文锋个人出资约200亿元，腾讯、宁德时代、网易、京东等参与。这标志着DeepSeek终结了坚守3年的“三不”铁律——不融资、不商业化、不路演，从技术信仰路线转向商业化落地。模型方面，DeepSeek V4已经在4月24日发布，1M Token上下文全系标配。6月5日还有一个重要进展：昇腾910C完成了DeepSeek-V4-Pro万亿参数模型的全参数后训练，这是国产算力首次支撑该级别的训练。说到开源生态，这里有一组很重要的数据。中国AI开源大模型全球累计下载量突破了100亿次。这是李强总理6月24日在达沃斯致辞里亲自确认的数字。根据MIT和HuggingFace的联合报告，Hugging Face平台上17.1%的大模型下载量来自中国，中国首次超越了美国的15.8%，居全球第一。在下载量TOP10里中国占了8席。
 -->
 
 ---
@@ -340,11 +340,12 @@ class: bar-clay table-clay
   <div class="col-span-8">
     <div class="ai-rank-list">
       <div class="ai-rank"><div class="ai-rank-num">01</div><div><div class="ai-rank-name">Anthropic · Claude Fable 5</div><div class="ai-rank-meta">6.9 · 最强编程模型，72小时被封</div></div></div>
-      <div class="ai-rank"><div class="ai-rank-num">02</div><div><div class="ai-rank-name">OpenAI · GPT-5.5-Cyber</div><div class="ai-rank-meta">6.23 · 网络安全专项</div></div></div>
-      <div class="ai-rank"><div class="ai-rank-num">03</div><div><div class="ai-rank-name">NVIDIA · Nemotron 3 Ultra</div><div class="ai-rank-meta">6.4 · 550B参数开源</div></div></div>
-      <div class="ai-rank"><div class="ai-rank-num">04</div><div><div class="ai-rank-name">Meta · AI Mode</div><div class="ai-rank-meta">6.15 · 覆盖Meta全生态35.8亿日活</div></div></div>
+      <div class="ai-rank"><div class="ai-rank-num">02</div><div><div class="ai-rank-name">OpenAI · GPT-5.6 Sol/Terra/Luna</div><div class="ai-rank-meta">6.26 · 应白宫要求有限预览</div></div></div>
+      <div class="ai-rank"><div class="ai-rank-num">03</div><div><div class="ai-rank-name">OpenAI · GPT-5.5-Cyber</div><div class="ai-rank-meta">6.23 · 网络安全专项</div></div></div>
+      <div class="ai-rank"><div class="ai-rank-num">04</div><div><div class="ai-rank-name">NVIDIA · Nemotron 3 Ultra</div><div class="ai-rank-meta">6.4 · 550B参数开源</div></div></div>
+      <div class="ai-rank"><div class="ai-rank-num">05</div><div><div class="ai-rank-name">Meta · AI Mode</div><div class="ai-rank-meta">6.15 · 覆盖Meta全生态35.8亿日活</div></div></div>
     </div>
-    <div class="ai-footnote mt-3">国际发布聚焦 Fable 5 事件与 OpenAI、NVIDIA、Meta 关键动态。</div>
+    <div class="ai-footnote mt-3">国际发布聚焦 Fable 5、GPT-5.6 政府干预事件，及 NVIDIA、Meta 关键动态。</div>
   </div>
   <div class="col-span-4">
     <div class="ai-card ai-card-highlight h-full flex flex-col justify-center" v-click>
@@ -359,7 +360,7 @@ class: bar-clay table-clay
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-看完国内，看国际。6月国际大模型的发布同样密集。Anthropic的Fable 5、OpenAI的GPT-5.5-Cyber、NVIDIA的Nemotron 3 Ultra、Meta的AI Mode是6月国际侧比较重要的更新。Google的Gemini 3.5 Flash和OpenAI的o3-pro其实不是6月新发布，已经在总览里删掉。我们重点说两个事件。
+看完国内，看国际。6月国际大模型的发布同样密集。Anthropic的Fable 5、OpenAI的GPT-5.6和GPT-5.5-Cyber、NVIDIA的Nemotron 3 Ultra、Meta的AI Mode是6月国际侧比较重要的更新。其中Fable 5和GPT-5.6都牵涉到美国政府介入，是本月的两个标志性事件。Google的Gemini 3.5 Flash和OpenAI的o3-pro其实不是6月新发布，已经在总览里删掉。我们重点说这两个事件。
 -->
 
 ---
@@ -391,17 +392,21 @@ class: bar-terracotta
         <span class="text-stone-600 text-sm">SWE-Bench Pro 80.3%，碾压所有竞品</span>
       </div>
       <div class="ai-timeline-item" v-click>
-        <strong>6月12日 17:21</strong> 美国商务部出口管制指令<br />
+        <strong>6月12日傍晚</strong> 美国商务部出口管制指令<br />
         <span class="text-stone-600 text-sm">要求禁止所有“外国公民”使用</span>
       </div>
       <div class="ai-timeline-item" v-click>
         <strong>6月18日</strong> 恢复上线<br />
         <span class="text-stone-600 text-sm">增加国籍验证和数据留存</span>
       </div>
+      <div class="ai-timeline-item" v-click>
+        <strong>6月26日</strong> OpenAI GPT-5.6 有限预览<br />
+        <span class="text-stone-600 text-sm">应白宫要求分阶段发布 → 政府干预已成常态</span>
+      </div>
     </div>
     <div class="ai-alert mt-4" v-click>
       <div class="ai-alert-title"><carbon-warning /> 深远影响</div>
-      开创政府可<strong>“一键关停”AI 模型</strong>的先例。
+      一个月内<strong>两次</strong>前沿模型被政府介入 → 政府可<strong>"一键关停"AI 模型</strong>正从先例变成常态。
     </div>
   </div>
 </div>
@@ -410,7 +415,7 @@ class: bar-terracotta
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-第一个重大事件是Anthropic Fable 5被封。6月9日，Anthropic发布了当时最强的编程模型Fable 5，SWE-Bench Pro得分80.3%，碾压所有竞品。6月12日下午5点21分，美国商务部发出出口管制指令，要求禁止所有“外国公民”使用。问题是Anthropic无法实时区分用户国籍，最后只能全球下线，包括美国用户自己。这是AI史上首次一个已经公开发布的模型被政府强制下线。6月18日恢复上线，但增加了国籍验证和数据留存要求。这件事的影响非常深远。它开创了政府可以“一键关停”AI模型的先例。Anthropic市值一度大幅波动，IPO计划也蒙上了阴影。
+第一个重大事件是Anthropic Fable 5被封。6月9日，Anthropic发布了当时最强的编程模型Fable 5，SWE-Bench Pro得分80.3%，碾压所有竞品。6月12日傍晚，美国商务部发出出口管制指令，要求禁止所有”外国公民”使用。问题是Anthropic无法实时区分用户国籍，最后只能全球下线，包括美国用户自己。这是AI史上首次一个已经公开发布的模型被政府强制下线。6月18日恢复上线，但增加了国籍验证和数据留存要求。这件事的影响非常深远。它开创了政府可以”一键关停”AI模型的先例。而且这个先例很快就成了常态——就在Fable 5恢复上线一周多，6月26日，OpenAI发布下一代GPT-5.6系列，白宫再次介入，要求它分阶段、有限预览发布。一个月之内，两家最头部的前沿模型公司都被美国政府直接干预了发布节奏，政府”一键关停”AI的能力正在从特例变成常态。
 -->
 
 ---
@@ -430,7 +435,7 @@ class: bar-slate
     <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
       <li>GPT-5.5-Cyber：网络安全专项，CyberGym 85.6%</li>
       <li>Jalapeño芯片：与Broadcom首款自研推理芯片（6.24）</li>
-      <li>秘密提交S-1，预计9月上市，估值8520亿美元</li>
+      <li>秘密提交S-1，估值8520亿美元</li>
     </ul>
   </div>
   <div class="ai-card" v-click>
@@ -459,7 +464,7 @@ class: bar-slate
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-接着说国际其他动态。OpenAI这边，GPT-5.5-Cyber是网络安全专项模型，CyberGym得分85.6%，同时启动了Patch the Planet计划修复开源软件漏洞。Jalapeño芯片6月24日发布，和Broadcom联合设计的首款自研推理芯片，9个月完成设计，推理成本最高可以降低50%。OpenAI还在6月8日秘密提交了S-1，预计9月上市，估值8520亿美元。Google这边，Computer Use能力让AI可以直接操控电脑界面。还有一个重要消息：苹果的WWDC上宣布新Siri由Google Gemini驱动，苹果每年付Google 10亿美元。NVIDIA发布了Nemotron 3 Ultra，550B参数开源模型。还有RTX Spark，Arm架构的笔记本CPU，这意味着NVIDIA正式进入PC处理器市场。Meta的AI Mode在6月15日上线，覆盖Meta全生态35.8亿日活用户。注意这不是Meta AI独立产品的DAU，而是Facebook、Instagram、WhatsApp等全家桶的日活总量；搜索从链接列表转向直接生成答案。
+接着说国际其他动态。OpenAI这边，GPT-5.5-Cyber是网络安全专项模型，CyberGym得分85.6%，同时启动了Patch the Planet计划修复开源软件漏洞。Jalapeño芯片6月24日发布，和Broadcom联合设计的首款自研推理芯片，9个月完成设计，推理成本最高可以降低50%。OpenAI还在6月8日秘密提交了S-1，估值8520亿美元，不过上市时间尚未最终确定，有报道称可能推迟到2027年。Google这边，Computer Use能力让AI可以直接操控电脑界面。还有一个重要消息：苹果的WWDC上宣布新Siri由Google Gemini驱动，苹果每年付Google 10亿美元。NVIDIA发布了Nemotron 3 Ultra，550B参数开源模型。还有RTX Spark，Arm架构的笔记本CPU，这意味着NVIDIA正式进入PC处理器市场。Meta的AI Mode在6月15日上线，覆盖Meta全生态35.8亿日活用户。注意这不是Meta AI独立产品的DAU，而是Facebook、Instagram、WhatsApp等全家桶的日活总量；搜索从链接列表转向直接生成答案。
 -->
 
 ---
@@ -495,15 +500,15 @@ class: bar-ochre table-ochre
   <div class="col-span-8">
     <div class="ai-rank-list ai-rank-compact">
       <div class="ai-rank"><div class="ai-rank-num">01</div><div class="ai-rank-name">Cursor</div><div class="ai-rank-meta">独立→SpaceX</div><div class="ai-rank-value">600亿美元被收购</div></div>
-      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Claude Code</div><div class="ai-rank-meta">Anthropic</div><div class="ai-rank-value">进入Pro订阅</div></div>
-      <div class="ai-rank"><div class="ai-rank-num">03</div><div class="ai-rank-name">Codex CLI</div><div class="ai-rank-meta">OpenAI</div><div class="ai-rank-value">Rust重写</div></div>
-      <div class="ai-rank"><div class="ai-rank-num">04</div><div class="ai-rank-name">Trae</div><div class="ai-rank-meta">字节</div><div class="ai-rank-value">挑战Cursor</div></div>
-      <div class="ai-rank"><div class="ai-rank-num">05</div><div class="ai-rank-name">CodeBuddy</div><div class="ai-rank-meta">腾讯</div><div class="ai-rank-value">混元驱动</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Claude Code</div><div class="ai-rank-meta">Anthropic</div><div class="ai-rank-value">年化$2.5B</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">03</div><div class="ai-rank-name">Codex CLI</div><div class="ai-rank-meta">OpenAI</div><div class="ai-rank-value">Rust重写·500万周活</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">04</div><div class="ai-rank-name">Project Polaris</div><div class="ai-rank-meta">微软自研</div><div class="ai-rank-value">8月替换GPT-4</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">05</div><div class="ai-rank-name">Trae</div><div class="ai-rank-meta">字节</div><div class="ai-rank-value">挑战Cursor</div></div>
     </div>
   </div>
   <div class="col-span-4 flex flex-col gap-3">
-    <div class="ai-card text-center" v-click><div class="ai-metric-label">Cursor年化</div><div class="ai-metric">$30亿</div></div>
-    <div class="ai-card text-center" v-click><div class="ai-metric-label">Cursor DAU</div><div class="ai-metric">100万</div></div>
+    <div class="ai-card text-center" v-click><div class="ai-metric-label">Cursor年化</div><div class="ai-metric">$40亿</div></div>
+    <div class="ai-card text-center" v-click><div class="ai-metric-label">Copilot付费</div><div class="ai-metric">470万</div></div>
   </div>
 </div>
 
@@ -516,7 +521,7 @@ class: bar-ochre table-ochre
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-AI编程工具这个赛道竞争已经非常白热化。Cursor年化收入30亿美元，100万以上的日活用户，64%的财富500强公司在使用。最重磅的消息是SpaceX以600亿美元收购了Cursor，这是AI编程赛道史上最大的并购案。Claude Code进入了Anthropic的Pro订阅，20美元一个月，项目容量提升了10倍。OpenAI的Codex CLI从TypeScript重写为Rust，9万个GitHub stars，500万周活用户。微软的Project Polaris是自研编程AI，8月份会替代GPT-4来驱动GitHub Copilot。安全方面有一个重要事件：Agentjacking攻击在6月被披露。攻击者通过伪造Sentry错误信息来劫持AI编码助手，成功率85%，2388个组织受影响。这是第一个专门针对AI编码时代的攻击类型，值得所有开发者关注。
+AI编程工具这个赛道竞争已经非常白热化。Cursor年化收入达到40亿美元，100万以上的日活用户，64%的财富500强公司在使用。最重磅的消息是SpaceX以600亿美元收购了Cursor，这是AI编程赛道史上最大的并购案。Claude Code成为Anthropic增长最快的产品线，年化收入25亿美元，连Anthropic自己80%以上的代码都是由Claude写的。OpenAI的Codex CLI在TypeScript重写为Rust之后，GitHub stars接近9万，周活用户超过500万。微软在Build 2026上发布自研的Project Polaris，8月份就会替换GPT-4来驱动GitHub Copilot，影响2600万开发者，这背后是微软在和OpenAI脱钩。GitHub Copilot付费用户达到470万，同比增长75%，6月份还从按席位计费全面转向了按使用量计费。安全方面有一个重要事件：Agentjacking攻击在6月被披露。攻击者通过伪造Sentry错误信息来劫持AI编码助手，成功率85%，2388个组织受影响。这是第一个专门针对AI编码时代的攻击类型，值得所有开发者关注。
 -->
 
 ---
@@ -652,12 +657,12 @@ class: bar-ochre
       <div class="ai-bar-rank"><div class="ai-bar-rank-num">03</div><div>
         <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">寒武纪</span><span class="ai-bar-rank-pct">3%</span></div>
         <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:3%;"></div></div>
-        <div class="ai-bar-rank-note">2025出货11.6万张，同比+350%</div>
+        <div class="ai-bar-rank-note">2025出货11.6万张，营收同比+453%</div>
       </div></div>
       <div class="ai-bar-rank"><div class="ai-bar-rank-num">04</div><div>
         <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">海光</span><span class="ai-bar-rank-pct">2%</span></div>
         <div class="ai-bar-rank-track"><div class="ai-bar-rank-fill" style="width:2%;"></div></div>
-        <div class="ai-bar-rank-note">2025出货8.3万张</div>
+        <div class="ai-bar-rank-note">2025营收143.8亿元，同比+57%</div>
       </div></div>
       <div class="ai-bar-rank"><div class="ai-bar-rank-num">05</div><div>
         <div class="ai-bar-rank-head"><span class="ai-bar-rank-name">摩尔线程</span><span class="ai-bar-rank-pct">~1%</span></div>
@@ -665,11 +670,11 @@ class: bar-ochre
         <div class="ai-bar-rank-note">2025营收15亿元，同比+243%</div>
       </div></div>
     </div>
-    <div class="ai-footnote mt-2">2026年Q1动态显示昇腾份额升至约37%，英伟达约43%。</div>
+    <div class="ai-footnote mt-2">2026年Q1动态趋势：昇腾份额预期升至约37%，英伟达约43%（季报数据待IDC披露）。</div>
   </div>
   <div class="col-span-7 flex flex-col gap-4">
     <div class="ai-card ai-card-highlight" v-click>
-      <strong>昇腾950PR</strong> FP8算力突破1PFLOPS，推理性能是H20的2.87倍，部署成本仅同级别的三分之一。
+      <strong>昇腾950PR</strong> FP4算力达1.56PFLOPS（国内唯一支持FP4），推理性能是H20的2.87倍，部署成本仅同级别的三分之一。
     </div>
     <div class="ai-card flex-1" v-click>
       <div class="text-base font-bold mb-2">国际动态</div>
@@ -686,7 +691,7 @@ class: bar-ochre
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-看市场份额。这里要用2025年IDC全年的实际数据：英伟达在中国AI加速卡市场占55%，华为昇腾占20%排国产第一，寒武纪3%，海光2%，摩尔线程约1%。如果看2026年第一季度的动态，昇腾份额已经升到约37%，英伟达约43%。昇腾950PR芯片的FP8算力突破了1PFLOPS，推理性能是英伟达H20的2.87倍，部署成本只有同级别的三分之一。国际方面，OpenAI的Jalapeño芯片是和Broadcom联合发布的首款自研推理芯片。RTX Spark意味着NVIDIA正式进入PC处理器市场。NVIDIA的Blackwell Ultra是下半年上市，不是6月事件，已经删掉。SpaceX也在建算力帝国，目前月签约23亿美元的算力合同。Anthropic每月付12.5亿，Google每月付9.2亿。
+看市场份额。这里要用2025年IDC全年的实际数据：英伟达在中国AI加速卡市场占55%，华为昇腾占20%排国产第一，寒武纪3%，海光2%，摩尔线程约1%。如果看2026年第一季度的动态趋势，昇腾份额预期升到约37%，英伟达约43%，但完整季报数据还要等IDC披露。昇腾950PR芯片的FP4算力达到1.56PFLOPS，是国内唯一支持FP4精度的推理产品，推理性能是英伟达H20的2.87倍，部署成本只有同级别的三分之一。国际方面，OpenAI的Jalapeño芯片是和Broadcom联合发布的首款自研推理芯片。RTX Spark意味着NVIDIA正式进入PC处理器市场。NVIDIA的Blackwell Ultra是下半年上市，不是6月事件，已经删掉。SpaceX也在建算力帝国，目前月签约23亿美元的算力合同。Anthropic每月付12.5亿，Google每月付9.2亿。
 -->
 
 ---
@@ -723,7 +728,7 @@ class: bar-slate
     </div>
     <div class="ai-card-editorial">
       <div class="ai-data-row"><span class="ai-data-row-name">ChatGPT 财富500强渗透率</span><span class="ai-data-row-value">92%</span></div>
-      <div class="ai-data-row"><span class="ai-data-row-name">Cursor 年化收入</span><span class="ai-data-row-value">$30亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">Cursor 年化收入</span><span class="ai-data-row-value">$40亿</span></div>
       <div class="ai-data-row"><span class="ai-data-row-name">Anthropic 年化收入</span><span class="ai-data-row-value">$470亿</span></div>
     </div>
   </div>
@@ -753,7 +758,7 @@ class: bar-terracotta
   <div class="col-span-5 text-left">
     <div class="ai-metric-label mb-2">SpaceX · 史上最大 IPO</div>
     <div class="ai-mega ai-mega-xl">$750<span class="ai-mega-unit">亿</span></div>
-    <div class="text-sm text-stone-600 mt-3">首日市值近 2.3 万亿美元 · 纳斯达克上市</div>
+    <div class="text-sm text-stone-600 mt-3">首日市值突破 2 万亿美元 · 纳斯达克上市</div>
   </div>
   <div class="col-span-7">
     <div class="grid grid-cols-2 gap-6">
@@ -783,7 +788,7 @@ class: bar-terracotta
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-资本市场这个月也非常活跃。国内：DeepSeek首轮融资超过500亿人民币，估值超过500亿美元。智谱AI在6月22日市值破了1万亿港元，从上市后低点算半年涨了2467%。月之暗面今年上半年累计融资近60亿美元，估值约300亿美元。宇树科技科创板IPO过会，估值420亿。MiniMax港股上市是今年1月的事，"市值翻4倍"也不是6月数据，已经删掉。国际：SpaceX在纳斯达克上市，750亿美元IPO是人类历史上最大的，IPO估值1.77万亿美元，首日收盘市值接近2.3万亿美元。OpenAI秘密提交了S-1，预计9月上市，估值8520亿美元。Anthropic IPO准备中，目标10月，估值9650亿美元。"中国AI独角兽总估值4.1万亿元"和"Q1新晋24家、AI占58%"这两组数据没有明确6月节点，也已经从正文里删掉。
+资本市场这个月也非常活跃。国内：DeepSeek首轮融资超过500亿人民币，估值超过500亿美元。智谱AI在6月22日市值破了1万亿港元，从上市后低点算半年涨了2467%。月之暗面今年上半年累计融资近60亿美元，估值约300亿美元。宇树科技科创板IPO过会，估值420亿。MiniMax港股上市是今年1月的事，"市值翻4倍"也不是6月数据，已经删掉。国际：SpaceX在纳斯达克上市，750亿美元IPO是人类历史上最大的，IPO估值1.77万亿美元，首日收盘市值突破2万亿美元。OpenAI秘密提交了S-1，预计9月上市，估值8520亿美元。Anthropic IPO准备中，目标10月，估值9650亿美元。"中国AI独角兽总估值4.1万亿元"和"Q1新晋24家、AI占58%"这两组数据没有明确6月节点，也已经从正文里删掉。
 -->
 
 ---
@@ -818,8 +823,8 @@ class: bar-clay
 <div class="grid grid-cols-12 gap-5 mt-2">
   <div class="col-span-7">
     <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-num">01</div><div class="ai-rank-name">John Jumper</div><div class="ai-rank-meta">DeepMind → Anthropic</div><div class="ai-rank-value">诺奖得主，AlphaFold</div></div>
-      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Noam Shazeer</div><div class="ai-rank-meta">DeepMind → OpenAI</div><div class="ai-rank-value">Transformer作者</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">01</div><div class="ai-rank-name">John Jumper <span class="ai-rank-cn">约翰·江珀</span></div><div class="ai-rank-meta">DeepMind → Anthropic</div><div class="ai-rank-value">诺奖得主，AlphaFold</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Noam Shazeer <span class="ai-rank-cn">诺姆·沙泽尔</span></div><div class="ai-rank-meta">DeepMind → OpenAI</div><div class="ai-rank-value">Transformer作者</div></div>
     </div>
     <div class="ai-card mt-4" v-click>
       <strong>国内</strong> <span class="text-sm text-stone-700">北京-深圳-上海三极主导；智谱/DeepSeek/月之暗面大规模招聘；海外华人AI科学家回流加速。</span>
@@ -832,9 +837,9 @@ class: bar-clay
       <div class="text-sm text-stone-500 mt-2">Google一周内失去两位核心AI领袖</div>
     </div>
     <div class="ai-card ai-card-highlight text-center" v-click>
-      <div class="ai-metric-label">Alphabet股价单日暴跌</div>
-      <div class="ai-mega ai-mega-md">7.2%</div>
-      <div class="text-sm text-stone-500 mt-2">蒸发市值 2250亿美元</div>
+      <div class="ai-metric-label">Alphabet股价单日跌幅</div>
+      <div class="ai-mega ai-mega-md">~5%</div>
+      <div class="text-sm text-stone-500 mt-2">盘中一度跌7.2%，市值蒸发约2250亿美元</div>
     </div>
   </div>
 </div>
@@ -843,7 +848,7 @@ class: bar-clay
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-人才方面，6月出现了前所未有的大迁徙。国际：John Jumper，2024年诺贝尔化学奖得主，AlphaFold的负责人，从Google DeepMind加入了Anthropic。Noam Shazeer，Transformer论文的作者之一，Gemini的联合负责人，从Google加入了OpenAI。Andrej Karpathy在5月加入Anthropic这件事不属于6月，已经删掉。一个惊人的数据：Google DeepMind流向Anthropic的工程师比例高达11比1。Google一周内失去了两位核心AI领袖，Alphabet股价单日暴跌7.2%，市值蒸发了2250亿美元。国内：北京、深圳、上海三极主导。智谱、DeepSeek、月之暗面都在大规模招聘，海外华人AI科学家回流在加速。
+人才方面，6月出现了前所未有的大迁徙。国际：John Jumper，2024年诺贝尔化学奖得主，AlphaFold的负责人，从Google DeepMind加入了Anthropic。Noam Shazeer，Transformer论文的作者之一，Gemini的联合负责人，从Google加入了OpenAI。Andrej Karpathy在5月加入Anthropic这件事不属于6月，已经删掉。一个惊人的数据：Google DeepMind流向Anthropic的工程师比例高达11比1。Google一周内失去了两位核心AI领袖，Alphabet股价盘中一度暴跌7.2%，收盘跌约5%，市值蒸发了约2250亿美元。国内：北京、深圳、上海三极主导。智谱、DeepSeek、月之暗面都在大规模招聘，海外华人AI科学家回流在加速。
 -->
 
 ---
@@ -861,19 +866,16 @@ class: bar-ochre
   <div v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国内</div>
     <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">6.18</div><div class="ai-rank-meta">8部门“人工智能+消费”实施意见</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">6.5</div><div class="ai-rank-meta">发改委“人工智能+”配套文件</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">6.2</div><div class="ai-rank-meta">AI计量体系指引</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">6月</div><div class="ai-rank-meta">剑网2026 AI版权整治</div></div>
+      <div class="ai-rank"><div class="ai-rank-name">6.18</div><div class="ai-rank-meta">8部门"人工智能+消费"实施意见</div></div>
+      <div class="ai-rank"><div class="ai-rank-name">6.1</div><div class="ai-rank-meta">剑网2026 AI版权专项整治启动</div></div>
     </div>
   </div>
   <div v-click>
     <div class="text-sm uppercase tracking-widest text-stone-400 mb-3">国际</div>
     <div class="ai-rank-list ai-rank-compact">
-      <div class="ai-rank"><div class="ai-rank-name">6.4</div><div class="ai-rank-meta">日本《AI基本法》生效</div></div>
       <div class="ai-rank"><div class="ai-rank-name">6.4</div><div class="ai-rank-meta">美国《Great American AI Act》草案</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">6.16</div><div class="ai-rank-meta">G7峰会首邀三大AI巨头CEO</div></div>
-      <div class="ai-rank"><div class="ai-rank-name">6.24</div><div class="ai-rank-meta">中国反制：56家美企列入黑名单</div></div>
+      <div class="ai-rank"><div class="ai-rank-name">6.15</div><div class="ai-rank-meta">G7峰会首邀三大AI巨头CEO</div></div>
+      <div class="ai-rank"><div class="ai-rank-name">6.22</div><div class="ai-rank-meta">中国反制：56家美企列入黑名单</div></div>
     </div>
   </div>
 </div>
@@ -887,7 +889,7 @@ class: bar-ochre
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-监管层面，国内和国际都有重要动作。国内：6月18日，8个部门发布了“人工智能+消费”的实施意见，把这上升为国家级战略行动。6月5日发改委发布了“人工智能+”配套文件，要求央国企开放高价值应用场景。6月2日市场监管总局发布了AI计量体系指引。6月还有剑网2026的AI版权专项整治。5月8日三个部门发布的智能体规范应用实施意见不属于6月，已经删掉。国际：6月4日，日本AI基本法生效，设立了AI战略本部。同一天美国公布了Great American AI Act的草案，269页的两党草案，计划取代所有州级AI法律3年。6月16日的G7峰会首次同时邀请了Altman、Amodei、Hassabis三位AI巨头CEO。6月24日，中国反制，将56家美国公司列入黑名单，回应美国的AI出口管制。欧盟AI Act的高风险条款将在8月2日执行，这个也不属于6月，已经删掉。
+监管层面，国内和国际都有重要动作。国内：6月18日，8个部门发布了"人工智能+消费"的实施意见，把这上升为国家级战略行动。6月还有剑网2026的AI版权专项整治。国际：6月4日美国公布了Great American AI Act的草案，269页的两党草案，计划在联邦层面优先于州级AI模型开发法律3年。6月15日的G7峰会首次同时邀请了Altman、Amodei、Hassabis三位AI巨头CEO。6月22日，中国反制，将56家美国公司列入黑名单，主要回应美国的五角大楼黑名单。
 -->
 
 ---
@@ -905,7 +907,7 @@ class: bar-sage
   <div class="ai-card" v-click>
     <div class="text-base font-bold mb-3 flex items-center gap-2"><carbon-mobile /> 消费级</div>
     <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
-      <li>Apple Siri重构：Gemini 1.2万亿参数驱动</li>
+      <li>Apple Siri重构：Gemini 1.2万亿参数驱动（欧盟及中国暂不开放）</li>
       <li>Meta AI Mode：覆盖Meta全生态35.8亿日活（非Meta AI独立DAU）</li>
       <li>AI手机：小米/OPPO/vivo旗舰内置大模型</li>
       <li>AI眼镜：Rokid/百度小度/小米预热</li>
@@ -917,8 +919,7 @@ class: bar-sage
       <li>AI医疗：影像诊断、药物发现</li>
       <li>AI教育：个性化学习</li>
       <li>AI金融：风控、投研</li>
-      <li>AI气象：管理办法6月1日施行</li>
-      <li>AI编程：64%财富500强使用</li>
+      <li>AI编程：Cursor进入64%财富500强</li>
     </ul>
   </div>
   <div class="ai-card" v-click>
@@ -926,7 +927,7 @@ class: bar-sage
     <ul class="list-disc pl-4 text-stone-700 text-sm space-y-1">
       <li>工信部标准体系发布</li>
       <li>宇树科技IPO过会，估值420亿</li>
-      <li>云深处10000台四足机器人量产</li>
+      <li>云深处四足机器人累计量产数千台</li>
       <li>中国人形机器人出货量占全球80%+</li>
     </ul>
     <img src="./unitree-h1.jpg" class="ai-slide-image ai-slide-image-grayscale mt-3" style="height: 4.2rem; object-position: center 25%;" alt="宇树 H1 人形机器人官方示意图" />
@@ -938,7 +939,7 @@ class: bar-sage
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-应用场景方面，消费级和行业级都在推进。消费级：苹果在WWDC上宣布Siri重构，由Google Gemini 1.2万亿参数定制模型驱动，但欧盟的iPhone和iPad暂时不开通。Meta的AI Mode覆盖Meta全生态35.8亿日活。注意这是Facebook、Instagram、WhatsApp等全家桶的日活总量，不是Meta AI独立产品的DAU。小米、OPPO、vivo的旗舰机型都内置了大模型，端侧推理成为标配。AI眼镜方面，Rokid、百度小度、小米都在推新产品。行业级：AI医疗在影像诊断和药物发现上有进展。AI教育做个性化学习平台。AI金融做风控和投研。AI气象方面，管理办法在6月1日施行。AI编程方面，64%的财富500强已经在使用AI编码工具。具身智能：工信部发布了人形机器人与具身智能标准体系。宇树科技科创板IPO过会，估值420亿。云深处第10000台四足机器人量产，单月产值破亿元。中国企业在全球人形机器人出货量中占比超过八成。
+应用场景方面，消费级和行业级都在推进。消费级：苹果在WWDC上宣布Siri重构，由Google Gemini 1.2万亿参数定制模型驱动，但欧盟和中国的iPhone、iPad暂时不开通。Meta的AI Mode覆盖Meta全生态35.8亿日活。注意这是Facebook、Instagram、WhatsApp等全家桶的日活总量，不是Meta AI独立产品的DAU。小米、OPPO、vivo的旗舰机型都内置了大模型，端侧推理成为标配。AI眼镜方面，Rokid、百度小度、小米都在推新产品。行业级：AI医疗在影像诊断和药物发现上有进展。AI教育做个性化学习平台。AI金融做风控和投研。AI气象方面，管理办法在6月1日施行。AI编程方面，64%的财富500强已经在使用AI编码工具。具身智能：工信部发布了人形机器人与具身智能标准体系。宇树科技科创板IPO过会，估值420亿。云深处四足机器人累计量产数千台。中国企业在全球人形机器人出货量中占比超过八成。
 -->
 
 ---
@@ -962,10 +963,10 @@ class: bar-slate
     <div class="ai-mega ai-mega-md" style="font-size:3.2rem;">100<span class="ai-mega-unit">亿次</span></div>
   </div>
   <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">49.5%</div><div class="ai-stat-card-label">火山引擎 MaaS 份额</div></div>
-  <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">~37%</div><div class="ai-stat-card-label">昇腾市场份额（2026Q1）</div></div>
+  <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">~37%</div><div class="ai-stat-card-label">昇腾市场份额（2026Q1趋势）</div></div>
   <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">500亿+</div><div class="ai-stat-card-label">DeepSeek 首轮融资</div></div>
   <div class="ai-pull-stat ai-card-editorial py-3 px-5 col-span-2 ai-card-highlight" v-click>
-    <div class="ai-pull-stat-label">SpaceX · 史上最大 IPO，首日市值近 2.3 万亿美元</div>
+    <div class="ai-pull-stat-label">SpaceX · 史上最大 IPO，首日市值突破 2 万亿美元</div>
     <div class="ai-mega ai-mega-md" style="font-size:3.2rem;">$750<span class="ai-mega-unit">亿</span></div>
   </div>
   <div class="ai-stat-card ai-stat-card-mega" v-click><div class="ai-stat-card-value">1万亿</div><div class="ai-stat-card-label">智谱市值峰值（港元）</div></div>
@@ -1039,7 +1040,7 @@ class: bar-sage
   <div class="flex items-center gap-6 text-xs" style="color: rgba(248,247,244,0.55);">
     <span>数据来源：公开报道 / 企业发布 / IDC·OpenRouter</span>
     <span class="opacity-40">|</span>
-    <span>覆盖周期：2026.06.01 — 06.25</span>
+    <span>覆盖周期：2026.06.01 — 06.28</span>
     <span class="opacity-40">|</span>
     <span>如有补充欢迎联系</span>
   </div>
@@ -1052,5 +1053,5 @@ class: bar-sage
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-以上就是AI月报6月号的全部内容。数据来源包括公开报道、企业官方发布、IDC和OpenRouter等第三方机构，覆盖周期是2026年6月1日到6月25日。部分数据因为统计口径差异可能存在偏差，仅供参考。如果有遗漏或补充，欢迎反馈。我们下期再见。
+以上就是AI月报6月号的全部内容。数据来源包括公开报道、企业官方发布、IDC和OpenRouter等第三方机构，覆盖周期是2026年6月1日到6月28日。部分数据因为统计口径差异可能存在偏差，仅供参考。如果有遗漏或补充，欢迎反馈。我们下期再见。
 -->
