@@ -492,7 +492,7 @@ class: bar-ochre table-ochre
   <div class="col-span-8">
     <div class="ai-rank-list ai-rank-compact">
       <div class="ai-rank"><div class="ai-rank-num">01</div><div class="ai-rank-name">Cursor</div><div class="ai-rank-meta">独立→SpaceX</div><div class="ai-rank-value">600亿美元被收购</div></div>
-      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Claude Code</div><div class="ai-rank-meta">Anthropic</div><div class="ai-rank-value">年化$2.5B</div></div>
+      <div class="ai-rank"><div class="ai-rank-num">02</div><div class="ai-rank-name">Claude Code</div><div class="ai-rank-meta">Anthropic · 增长最快产品线</div><div class="ai-rank-value">母公司年化$30B+</div></div>
       <div class="ai-rank"><div class="ai-rank-num">03</div><div class="ai-rank-name">Codex CLI</div><div class="ai-rank-meta">OpenAI</div><div class="ai-rank-value">Rust重写·500万周活</div></div>
       <div class="ai-rank"><div class="ai-rank-num">04</div><div class="ai-rank-name">Project Polaris</div><div class="ai-rank-meta">微软自研</div><div class="ai-rank-value">8月替换GPT-4</div></div>
       <div class="ai-rank"><div class="ai-rank-num">05</div><div class="ai-rank-name">Trae</div><div class="ai-rank-meta">字节</div><div class="ai-rank-value">挑战Cursor</div></div>
@@ -513,7 +513,7 @@ class: bar-ochre table-ochre
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-AI编程工具这个赛道竞争已经非常白热化。Cursor年化收入达到40亿美元，100万以上的日活用户，64%的财富500强公司在使用。最重磅的消息是SpaceX以600亿美元收购了Cursor，这是AI编程赛道史上最大的并购案。Claude Code成为Anthropic增长最快的产品线，年化收入25亿美元，连Anthropic自己80%以上的代码都是由Claude写的。OpenAI的Codex CLI在TypeScript重写为Rust之后，GitHub stars接近9万，周活用户超过500万。微软在Build 2026上发布自研的Project Polaris，8月份就会替换GPT-4来驱动GitHub Copilot，影响2600万开发者，这背后是微软在和OpenAI脱钩。GitHub Copilot付费用户达到470万，同比增长75%，6月份还从按席位计费全面转向了按使用量计费。安全方面有一个重要事件：Agentjacking攻击在6月被披露。攻击者通过伪造Sentry错误信息来劫持AI编码助手，成功率85%，2388个组织受影响。这是第一个专门针对AI编码时代的攻击类型，值得所有开发者关注。
+AI编程工具这个赛道竞争已经非常白热化。Cursor年化收入达到40亿美元，100万以上的日活用户，64%的财富500强公司在使用。最重磅的消息是SpaceX以600亿美元收购了Cursor，这是AI编程赛道史上最大的并购案。Claude Code成为Anthropic增长最快的产品线，母公司Anthropic整体年化收入已经突破300亿美元——这是Dario Amodei亲自确认的5月数据，号称crazy 80倍增长，连Anthropic自己80%以上的代码都是由Claude写的。OpenAI的Codex CLI在TypeScript重写为Rust之后，GitHub stars接近9万，周活用户超过500万。微软在Build 2026上发布自研的Project Polaris，8月份就会替换GPT-4来驱动GitHub Copilot，影响2600万开发者，这背后是微软在和OpenAI脱钩。GitHub Copilot付费用户达到470万，同比增长75%，6月份还从按席位计费全面转向了按使用量计费。安全方面有一个重要事件：Agentjacking攻击在6月被披露。攻击者通过伪造Sentry错误信息来劫持AI编码助手，成功率85%，2388个组织受影响。这是第一个专门针对AI编码时代的攻击类型，值得所有开发者关注。
 -->
 
 ---
@@ -567,6 +567,21 @@ class: bar-sage
 
 <!--
 AI视频生成进入了一个新阶段。国内有两个重要更新。字节跳动的Seedance 2.5在6月23日发布。单次生成时长从15秒翻倍到30秒，参考素材从12个提升到50个全模态素材，分辨率从1080p后补升级到原生4K，还新增了3D白膜预览能力。目前企业内测中，7月初正式上线。同时发布了一个很有意思的AI版权商用平台。周星驰是首批合作IP，把他的经典电影做成官方创作模板，用户可以在剪映、即梦、豆包里用这些模板来改编影视片段。相关模板单日的创作量已经突破了10万次。快手的可灵3.0 Fast/Turbo在6月17日发布。这是针对速度和成本优化的版本，内置音频和口型同步，720P 0.8元每秒、1080P 1元每秒，价格已经包含音频。同步升级的可灵3.0 Omni支持4K编辑和3到15秒的编辑流程。整个行业来看，AI全链路渗透率已经超过70%，AIGC内容占比超过60%，创作成本下降了70%，效率提升10倍以上。预计全年AI视频市场规模有望突破200亿元。
+-->
+
+---
+layout: cover
+class: bar-sage
+---
+
+<video class="ai-bleed-video" autoplay loop muted playsinline>
+  <source src="./seedance-demo.mp4" type="video/mp4" />
+</video>
+
+<div class="ai-video-credit">字节 Seedance 2.5 · 原生 4K · 60fps · 30秒成片</div>
+
+<!--
+我们直接看一段Seedance 2.5的实机生成效果。这段视频就是它原生生成的，4K分辨率、60帧，单段时长30秒，比上一代15秒整整翻了一倍。注意画面的连贯性和物理细节，这是它接入50个全模态参考素材、并用3D白膜做镜头预览之后才达到的稳定性。7月初正式上线之后，普通用户在即梦和剪映里就能直接用上。
 -->
 
 ---
@@ -721,7 +736,7 @@ class: bar-slate
     <div class="ai-card-editorial">
       <div class="ai-data-row"><span class="ai-data-row-name">ChatGPT 财富500强渗透率</span><span class="ai-data-row-value">92%</span></div>
       <div class="ai-data-row"><span class="ai-data-row-name">Cursor 年化收入</span><span class="ai-data-row-value">$40亿</span></div>
-      <div class="ai-data-row"><span class="ai-data-row-name">Anthropic 年化收入</span><span class="ai-data-row-value">$470亿</span></div>
+      <div class="ai-data-row"><span class="ai-data-row-name">Anthropic 年化收入</span><span class="ai-data-row-value">$30B+</span></div>
     </div>
   </div>
 </div>
@@ -730,7 +745,7 @@ class: bar-slate
 <div class="ai-page-watermark">{{ $slidev.nav.currentPage }}</div>
 
 <!--
-看商业化的核心数据。国内：豆包MAU 3.45亿，DAU 2亿，日均Token消耗180万亿。DeepSeek MAU 1.3亿，国内第三，增速最快。火山引擎的MaaS市场份额49.5%，这是IDC 2025全年的数据。国际：ChatGPT月活10亿，这是史上最快达到10亿月活的消费应用，92%的财富500强在使用。Cursor年化收入40亿美元，是人类历史上增长最快的SaaS公司。Anthropic年化收入470亿美元，这是5月的run-rate。这里删掉两个非6月的数据：一个是智谱MaaS平台"API年收入17亿元"，这是截至今年3月的数据；另一个是"5月第一周中国AI周调用量7.94万亿Token"，这个5月里程碑也不属于6月。
+看商业化的核心数据。国内：豆包MAU 3.45亿，DAU 2亿，日均Token消耗180万亿。DeepSeek MAU 1.3亿，国内第三，增速最快。火山引擎的MaaS市场份额49.5%，这是IDC 2025全年的数据。国际：ChatGPT月活10亿，这是史上最快达到10亿月活的消费应用，92%的财富500强在使用。Cursor年化收入40亿美元，是人类历史上增长最快的SaaS公司。Anthropic年化收入超过300亿美元，这是CEO Dario Amodei亲自确认的5月数据，号称crazy 80倍增长。这里删掉两个非6月的数据：一个是智谱MaaS平台"API年收入17亿元"，这是截至今年3月的数据；另一个是"5月第一周中国AI周调用量7.94万亿Token"，这个5月里程碑也不属于6月。
 -->
 
 ---

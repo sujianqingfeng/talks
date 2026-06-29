@@ -876,6 +876,30 @@ html, body {
   z-index: 1;
 }
 
+.ai-bleed-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  background: #000;
+}
+
+.ai-video-credit {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
 
 /* =========================================================
    Magazine editorial enhancements (v2)
